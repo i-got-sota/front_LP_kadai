@@ -168,3 +168,1275 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+
+html {
+    color: #000;
+    font-size: 62.5%;
+    height: 100%
+}
+
+body {
+    font-family: 'Zen Maru Gothic', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-weight: 500;
+    font-size: 160%;
+    line-height: 2;
+    height: 100%
+}
+
+#main {
+    display: block
+}
+
+/* aタグの設定 */
+/* リンクには下線 */
+a {
+    color: #000;
+    text-decoration: underline
+}
+
+/* サイトに訪れた履歴があっても色を変えない */
+a:visited {
+    color: #000;
+    text-decoration: none
+}
+/* aタグの設定終わり */
+
+/* .sp: スマホでは改行 */
+.sp {
+    display: none
+}
+
+
+.box-c {
+    position: relative
+}
+
+/* icon, button 関連 css */
+.btn01 {
+    display: inline-block;
+    line-height: 1.2;
+    text-align: center;
+    /* hover へのアニメーション指定 */
+    transition: all .4s ease;
+
+    background-color: #fff;
+    border: 1px solid #7f7f7f;
+    
+    min-width: 320px;
+    padding: 20px;
+    position: relative;
+
+    /* フォント関連 */
+    font-size: 1.5rem;
+    font-weight: 700
+}
+
+.btn01 [class*="icon-"] {
+    padding-right: 10px
+}
+
+[class*="icon-"] {
+    display: inline-block;
+    padding-left: 30px;
+    position: relative
+}
+
+[class*="icon-"]::before {
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.icon-ig::before {
+    background-image: url(img/icon_ig.svg);
+    background-size: 20px 20px;
+    height: 20px;
+    width: 20px
+}
+
+.icon-cart::before {
+    background-image: url(img/icon_cart.svg);
+    background-size: 22px 23px;
+    height: 23px;
+    width: 22px
+}
+/* icon, button css 終わり */
+
+img {
+    height: auto;
+    line-height: 1;
+    max-width: 100%;
+    vertical-align: top
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0
+}
+
+.slick-slide {
+    display: none;
+    height: 100%;
+    min-height: 1px
+}
+
+.slick-slide img {
+    display: block
+}
+
+.slick-initialized .slick-slide {
+    display: block
+}
+
+#hd {
+    line-height: 1;
+    position: relative;
+    z-index: 1000
+}
+
+.hd-logo {
+    position: absolute;
+    z-index: 10
+}
+
+.hd-logo::after,
+.hd-logo::before {
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.hd-logo::before {
+    background-image: url(img/header/hd_logo.svg)
+}
+
+
+.hd-btns {
+    /* 各要素をflexで並べる */
+    display: flex;
+    align-items: center;
+    /* position:absolute;で絶対位置を指定し */
+    /* アイコンの位置を決める */
+    position: absolute;
+    right: 5.63vw;
+    bottom: 4.63vw
+}
+
+/* ブロック要素にして各要素に大きさを持たせる */
+.hd-btns a {
+    display: block;
+}
+
+.hd-btns span {
+    display: block
+}
+
+.hd-btns .hd-btn-ig span,
+.hd-btns .hd-btn-online span {
+    color: transparent;
+    position: relative;
+    /* マークアップした文字を隠す */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap
+}
+
+.hd-btns .hd-btn-ig span::before,
+.hd-btns .hd-btn-online span::before {
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.hd-btns .hd-btn-online span {
+    height: 31px;
+    width: 27px
+}
+
+.hd-btns .hd-btn-online span::before {
+    background-image: url(img/icon_cart.svg);
+    background-size: 27px 31px
+}
+
+.hd-btns .hd-btn-ig span {
+    height: 33px;
+    width: 33px
+}
+
+.hd-btns .hd-btn-ig span::before {
+    background-image: url(img/icon_ig.svg);
+    background-size: 33px 33px
+}
+
+.hd-btns #hd-btn-menu a {
+    height: 33px;
+    width: 40px;
+    position: relative
+}
+
+.hd-btns #hd-btn-menu span {
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.hd-btns #hd-btn-menu span::after,
+.hd-btns #hd-btn-menu span::before {
+    background-color: #000;
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+/* メニューではbeforeとafterに線を引いてメニューアイコンを実現 */
+.hd-btns #hd-btn-menu span::before {
+    transform: translateY(-6px)
+}
+
+.hd-btns #hd-btn-menu span::after {
+    transform: translateY(6px)
+}
+
+/* news関連 css */
+#news {
+    margin-bottom: 140px;
+    padding-top: 90px;
+    position: relative
+}
+
+.news-slider-wrap {
+    position: relative
+}
+
+.news-slider {
+    position: relative
+}
+
+.news-slider .slick-track {
+    display: flex;
+}
+
+.news-slider .slick-slide {
+    float: none !important;
+    height: inherit !important;
+    position: relative;
+    padding-bottom: 60px;
+    width: 310px
+}
+
+.news-slide-in {
+    padding: 0 30px
+}
+
+.news-slide-img {
+    width: 250px;
+    height: 250px
+}
+
+.news-slide-ttl {
+    margin-top: 23px;
+    line-height: 1.6;
+    font-size: 2rem;
+    font-weight: 700
+}
+
+.news-slide-text {
+    margin-top: 11px;
+    font-size: 1.4rem
+}
+
+.news-slide-date {
+    border-top: 1px solid #000;
+    line-height: 1;
+    padding-top: 15px;
+    /* 絶対位置指定で必ず要素の最下部に来るようにしている */
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    width: calc(100% - 30px*2);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.news-slide-link {
+    margin-top: 11px
+}
+
+.news-slide-link a {
+    padding-right: 12px;
+    position: relative;
+    font-weight: 700
+}
+/* news css 終わり */
+
+/* about 関連のcss */
+.about-in {
+    padding: 180px 58px 110px
+}
+
+.about-lead,
+.about-ttl {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about-sct {
+    margin-top: 72px;
+    padding-left: 160px;
+    position: relative
+}
+
+.about-sct-ttl {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.8rem
+}
+
+.about-sct-text {
+    font-size: 1.8rem
+}
+
+.about-sct-text p+p {
+    margin-top: 28px
+}
+/* about 終わり */
+
+/* product 関連のcss */
+#products {
+    margin-bottom: 50px;
+}
+
+.products-sct {
+    position: relative
+}
+
+.products-sct-ttl {
+    position: absolute;
+    top: 60px;
+    z-index: 1
+}
+
+.products-slide {
+    cursor: pointer;
+    position: relative
+}
+
+.products-slide-in {
+    background-color: #fff
+}
+
+.products-slide-ttl {
+    /* 文字間の調整 */
+    letter-spacing: -.05em;
+    /* 行の高さの調整 */
+    line-height: 1.5;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.products-slide-text {
+    margin-top: 30px
+}
+
+.products-slide-text p+p {
+    margin-top: 21px
+}
+/* product 終わり */
+
+/* feature 関連 css */
+#feature {
+    margin-bottom: 80px;
+    padding-top: 90px
+}
+
+.feature-ttl {
+    /* 文字間の調整 */
+    letter-spacing: -.08em;
+    /* 行の高さの調整 */
+    line-height: 1.5;
+    /* 文字揃えの調整 */
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.feature-slider {
+    margin-top: 57px
+}
+
+.feature-sct-in {
+    flex: 1
+}
+
+.feature-sct-ttl {
+    /* 文字間の調整 */
+    letter-spacing: -.08em;
+    /* 行の高さの調整 */
+    line-height: 1.5;
+    margin-top: 30px;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.feature-sct-text {
+    /* 行の高さの調整 */
+    line-height: 1.75;
+    margin-top: 22px
+}
+
+.feature-sct-text p+p {
+    margin-top: 27px
+}
+
+/* feature 終わり */
+
+/* recipe 関連 css */
+#recipe {
+    margin-bottom: 100px;
+    padding-top: 90px
+}
+
+.recipe-ttl {
+    text-align: center
+}
+
+.recipe-lead {
+    line-height: 1.5;
+    margin-top: 40px;
+    padding: 0 70px;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.recipe-sct {
+    margin-top: 90px;
+    min-height: 500px;
+    padding-left: 115px;
+    position: relative
+}
+
+.recipe-sct-ttl-wrap {
+    height: 100%;
+    line-height: 1;
+    padding-top: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    font-weight: 700;
+}
+
+.recipe-sct-ttl-wrap::before {
+    background-color: #000;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 90px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%)
+}
+
+.recipe-sct-ttl {
+    height: 100%
+}
+
+.recipe-sct-ttl>span {
+    display: inline-block;
+    position: relative;
+    font-size: 3.6rem;
+    writing-mode: vertical-rl; /* 縦書き */
+    white-space: nowrap
+}
+
+.recipe-sct-lead {
+    height: 100%;
+    position: absolute;
+    left: 54px;
+    top: 25px
+}
+
+.recipe-sct-lead>span {
+    display: inline-block;
+    font-size: 1.8rem;
+    /* 縦書きにする */
+    writing-mode: vertical-rl;
+    white-space: nowrap
+}
+
+.recipe-slider-wrap {
+    padding-top: 25px;
+    position: relative
+}
+
+.recipe-slider .slick-track {
+    /* 各レシピの要素ブロックを横並びに */
+    display: flex;
+    /* 画面からはみ出したものをスクロールして見れるように */
+    overflow: scroll;
+}
+
+.recipe-slide-in {
+    padding: 0 30px
+}
+
+.recipe-slide-img {
+    width: 350px;
+    height: 350px
+}
+
+.recipe-slide-img img {
+    width: 100%;
+}
+
+.recipe-slide-ttl {
+    margin-top: 23px;
+    line-height: 1.5;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.recipe-slide-text {
+    margin-top: 14px;
+    font-size: 1.4rem
+}
+/* recipe css 終わり */
+
+/* shop 関連 css */
+#shop {
+    margin-bottom: 86px;
+    padding-top: 90px
+}
+
+.shop-ttl {
+    text-align: center
+}
+
+.shop-in {
+    display: flex;
+    margin-top: 65px
+}
+
+.shop-cafe {
+    flex: 1;
+    padding-left: 30px
+}
+
+.shop-cafe-ttl {
+    line-height: 1;
+    margin-top: 20px
+}
+
+.shop-cafe-text {
+    margin-top: 10px
+}
+
+.shop-cafe-text p+p {
+    margin-top: 28px
+}
+
+.shop-cafe-access {
+    line-height: 1.5;
+    margin-top: 30px;
+    font-size: 1.3rem
+}
+
+/* ここから table に関する記述 */
+table {
+    /* 上下に線 */
+    border-top: 1px solid #7f7f7f;
+    border-bottom: 1px solid #7f7f7f;
+    margin: 5px 0 15px;
+}
+
+th {
+    padding: 15px 5px;
+    width: 10vw
+}
+
+td {
+    padding: 10px 5px;
+}
+
+.shop-table p+p {
+    margin-top: 16px
+}
+
+.shop-online-ttl {
+    line-height: 1;
+    position: absolute;
+    left: 100px;
+    top: 37px
+}
+
+/* テキストとボタンを横並びに */
+.shop-online-in {
+    display: flex;
+}
+
+.shop-online-text {
+    letter-spacing: -.05em;
+    line-height: 1.5;
+    padding-right: 20px;
+
+     /* flex設定 */
+    flex: 1;
+}
+
+.shop-online-text .notes {
+    letter-spacing: normal;
+    margin-top: 10px;
+    font-size: 1.4rem
+}
+
+#contact {
+    padding-top: 90px;
+    text-align: center
+}
+/* shop css 終わり */
+
+/* contact 関連 css */
+.contact-ttl {
+    line-height: 1
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vw;
+    gap: 3vw;
+}
+
+.form-inner-container {
+    display: flex;
+    width: 90%;
+
+}
+
+.form-label {
+    width: 18vw;
+    text-align: start;
+}
+
+.form {
+    width: 60vw;
+    padding: 15px 10px;
+    border: 1px solid #7f7f7f;
+}
+
+.form:focus {
+    outline: none;
+    border: 2px solid #000;
+}
+
+
+input, select, input::placeholder {
+    font-family: 'Zen Maru Gothic', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+.submit-btn {
+    color: #fff;
+    background-color: #666;
+}
+
+.submit-btn:hover {
+    color: #000;
+}
+/* ここまで contact */
+
+#ft {
+    line-height: 1;
+    padding: 154px 0;
+    text-align: center;
+
+}
+
+@media screen and (max-width:767px) {
+    body {
+        font-size: 130%
+    
+    }
+    .sp {
+        display: block
+    }
+
+    .btn01 {
+        min-width: 59.33vw;
+        padding: 3.2vw;
+        font-size: 1.2rem
+    }
+
+    /* アイコン関連 css */
+    [class*="icon-"] {
+        padding-left: 22px
+    }
+    .icon-ig::before {
+        background-size: 16px 16px;
+        height: 16px;
+        width: 16px
+    }
+    .icon-cart::before {
+        background-size: 15px 16px;
+        height: 16px;
+        width: 15px
+    }
+
+    .hd-slider {
+        height: 133.33vw
+    }
+    .hd-logo {
+        left: 5.33vw;
+        bottom: 4vw;
+        width: 76.8vw;
+        height: 4.53vw
+    }
+
+
+    .hd-btns {
+        right: 5.33vw;
+        bottom: 0;
+        transform: translateY(12vw)
+    }
+    .hd-btns a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 11.2vw;
+        width: 11.2vw;
+        padding: 2.67vw
+    }
+    .hd-btns .hd-btn-online span {
+        height: 4.8vw;
+        width: 4.27vw
+    }
+
+    .hd-btns .hd-btn-online span::before {
+        background-size: 4.27vw 4.8vw
+    }
+    .hd-btns .hd-btn-ig span {
+        height: 5.07vw;
+        width: 5.07vw
+    }
+
+    .hd-btns .hd-btn-ig span::before {
+        background-size: 5.07vw 5.07vw
+    }
+    .hd-btns #hd-btn-menu a {
+        height: 11.2vw;
+        width: 11.2vw
+    }
+    .hd-btns #hd-btn-menu span {
+        height: 2px;
+        width: 5.87vw
+    }
+
+    /* 画面サイズに合わせてメニューアイコンの変更 */
+    .hd-btns #hd-btn-menu span::after,
+    .hd-btns #hd-btn-menu span::before {
+        height: 2px
+    }
+
+    .hd-btns #hd-btn-menu span::before {
+        transform: translateY(-1.07vw)
+    }
+
+    .hd-btns #hd-btn-menu span::after {
+        transform: translateY(1.07vw)
+    }
+    /* ここまでメニューアイコン */
+
+    /* news 関連 css */
+    #news {
+        margin-bottom: 1.88vw;
+        padding-top: 16vw
+    }
+    .news-ttl {
+        padding: 0 5.33vw
+    }
+
+    .news-ttl img {
+        width: 19.47vw
+    }
+    .news-slider-wrap {
+        margin-top: 8vw;
+        padding: 0 4.67vw 0 2vw
+    }
+    .news-slider .slick-slide {
+        padding-bottom: 45px;
+        width: 46.67vw
+    }
+    .news-slide-in {
+        padding: 0 3.33vw
+    }
+    .news-slide-img {
+        height: 40vw;
+        width: 40vw
+    }
+    .news-slide-ttl {
+        line-height: 1.19;
+        margin-top: 15px;
+        font-size: 1.6rem
+    }
+
+    .news-slide-text {
+        line-height: 1.73;
+        margin-top: 9px;
+        font-size: 1.1rem
+    }
+    .news-slide-date {
+        left: 3.33vw;
+        padding-top: 11px;
+        width: calc(100% - 6.67vw);
+        font-size: 1.1rem
+    }
+    .news-slide-link {
+        margin-top: 9px
+    }
+    .news-more {
+        margin-top: 35px;
+        text-align: center
+    }
+    /* news ここまで */
+
+    /* about 関連 css */
+    .about-in {
+        padding: 20vw 9.33vw 5.33vw
+    }
+
+    .about-lead,
+    .about-ttl {
+        font-size: 1.4rem
+    }
+    .about-sct {
+        padding-left: 0;
+        margin-top: 45px
+    }
+    .about-sct-ttl {
+        /* 行の高さ */
+        line-height: 1;
+        margin-bottom: 19px;
+        position: static;
+        font-size: 1.4rem
+    }
+    .about-sct-text {
+        /* 文字間の調整 */
+        letter-spacing: -.02em;
+        /* 行の高さ */
+        line-height: 1.58;
+        font-size: 1.2rem
+    }
+    .about-sct-text p+p {
+        margin-top: 20px
+    }
+    /* about ここまで */
+
+    /* product 関連 css */
+    #products {
+        margin-bottom: 0
+    }
+    .products-sct {
+        margin-top: 16vw
+    }
+
+    /* ロゴ部分の左右対称 */
+    .products-sct:nth-child(odd) .products-sct-ttl {
+        left: 5.33vw
+    }
+
+    .products-sct:nth-child(even) .products-sct-ttl {
+        right: 5.33vw
+    }
+    /* 左右対称 ここまで */
+    
+    .products-sct-ttl {
+        top: 6.67vw
+    }
+
+    .products-sct-ttl img {
+        width: auto;
+        height: 5.87vw
+    }
+    .products-slide {
+        padding: 0 13.87vw
+    }
+    .products-slide-ttl {
+        margin-top: 20px;
+        font-size: 2.2rem
+    }
+    .products-slide-text {
+        margin-top: 6px;
+        font-size: 1.3rem
+    }
+
+    .products-slide-text p+p {
+        margin-top: 11px
+    }
+    /* product ここまで */
+
+    #feature {
+        margin-bottom: 8vw;
+        padding-top: 16vw
+    }
+    .feature-ttl {
+        padding: 0 5.33vw;
+        font-size: 1.8rem
+    }
+    .feature-slider {
+        margin-top: 0;
+        position: relative
+    }
+    .feature-sct {
+        margin-top: 6.67vw;
+        padding: 0 13.87vw
+    }
+    .feature-sct-ttl {
+        margin-top: 18px;
+        font-size: 1.8rem
+    }
+    .feature-sct-text {
+        margin-top: 11px
+    }
+
+    .feature-sct-text p+p {
+        margin-top: 10px
+    }
+    #recipe {
+        margin-bottom: 9.87vw;
+        padding-top: 16vw
+    }
+    .recipe-ttl img {
+        width: 23.73vw;
+    }
+    .recipe-lead {
+        margin-top: 5.33vw;
+        padding: 0 5.33vw;
+        font-size: 1.8rem
+    }
+    .recipe-sct {
+        margin-top: 5.33vw;
+        min-height: 96vw;
+        padding-left: 21.87vw;
+        padding-right: 9.6vw
+    }
+    .recipe-sct-ttl-wrap {
+        padding-top: 3.47vw;
+        left: 5.33vw;
+        width: 12vw
+    }
+    .recipe-sct-ttl-wrap::before {
+        height: 2px;
+        width: 13.33vw
+    }
+    .recipe-sct-ttl>span {
+        font-size: 5.6vw
+    }
+    .recipe-sct-lead {
+        left: 9.07vw;
+        top: 3.47vw
+    }
+    .recipe-sct-lead>span {
+        font-size: 3.47vw
+    }
+    .recipe-slider-wrap {
+        padding-top: 3.47vw
+    }
+    .recipe-slider {
+        width: 68.53vw
+    }
+    .recipe-slide-in {
+        padding: 0 4.27vw
+    }
+    .recipe-slide-img {
+        height: 60vw;
+        width: 60vw
+    }
+    .recipe-slide-ttl {
+        margin-top: 15px;
+        font-size: 1.9rem
+    }
+    .recipe-slide-text {
+        line-height: 1.58;
+        margin-top: 6px;
+        font-size: 1.2rem
+    }
+
+    #shop {
+        margin-bottom: 6.13vw;
+        padding-top: 16vw
+    }
+    .shop-ttl img {
+        width: 68vw
+    }
+    .shop-in {
+        display: block;
+        margin-top: 9.07vw
+    }
+    .shop-cafe {
+        padding: 9.33vw
+    }
+    .shop-cafe-ttl img {
+        width: 34.13vw
+    }
+    .shop-cafe-text {
+        margin-top: 3.47vw;
+        font-size: 1.3rem
+    }
+
+    .shop-cafe-text p+p {
+        margin-top: 6px
+    }
+    .shop-cafe-access {
+        margin: 3.73vw 0;
+    }
+
+
+    /* オンライン通販 */
+    .shop-online {
+        margin-top: 6.67vw;
+        padding: 0 9.33vw
+    }
+    .shop-online-ttl {
+        position: static
+    }
+
+    .shop-online-ttl img {
+        width: 29.33vw
+    }
+    .shop-online-in {
+        display: block;
+        margin-top: 3.47vw
+    }
+    .shop-btn {
+        margin-top: 5.33vw;
+        text-align: center;
+        width: 100%
+    }
+    
+    #contact {
+        padding: 16vw 5.33vw 0
+    }
+    .contact-ttl img {
+        width: 26.67vw
+    }
+
+    .form-inner-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-label {
+        width: 60vw;
+    }
+    #ft {
+        padding: 12vw 0 24vw
+    }
+    .ft-copyright img {
+        width: 87px
+    }
+}
+
+@media screen and (min-width:768px), print {
+    .box-c {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1280px;
+        padding-left: 70px;
+        padding-right: 70px
+    }
+    .btn01:hover {
+        background-color: #f5f5f5
+    }
+    .icon-cart {
+        padding-left: 35px
+    }
+
+    .hd-logo {
+        left: 5.63vw;
+        bottom: 2.63vw;
+        width: 35.44vw;
+        height: 2.13vw
+    }
+    .hd-btns {
+        bottom: 2.63vw;
+    }
+    .hd-btns li+li {
+        margin-left: 30px
+    }
+
+    /* products css 開始 */
+    /* pc版、左右でそれぞれデザインを変える */
+    .products-sct {
+        margin-top: 90px
+    }
+
+    .products-sct:nth-child(odd) .products-sct-ttl {
+        left: -30px
+    }
+
+    .products-sct:nth-child(odd) .products-slide-in {
+        right: 5.0877192982%
+    }
+
+    .products-sct:nth-child(even) .products-sct-ttl {
+        right: -30px
+    }
+
+    .products-sct:nth-child(even) .products-slide-img {
+        margin-left: auto
+    }
+
+    .products-sct:nth-child(even) .products-slide-in {
+        left: 5.0877192982%
+    }
+    .products-slide-img {
+        height: 600px;
+        width: 61.4035087719%
+    }
+
+    .products-img {
+        height: 100%;
+        object-fit: cover;
+    } 
+
+    .products-slide-in {
+        padding: 72px 50px 90px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 39.4736842105%
+    }
+    /* products 終わり */
+
+    /* feature */
+    .feature-sct {
+        /* flexboxを使用 */
+        display: flex;
+        padding: 0 58px
+    }
+
+    .feature-sct+.feature-sct {
+        margin-top: 90px
+    }
+
+    /* 左右でデザインを変える */
+    .feature-sct:nth-child(odd) .feature-sct-in {
+        padding-left: 50px
+    }
+
+    .feature-sct:nth-child(even) {
+        flex-direction: row-reverse
+    }
+
+    .feature-sct:nth-child(even) .feature-sct-in {
+        padding-right: 50px
+    }
+    /* ここまで左右 */
+
+    .feature-sct-img {
+        width: 62.5%
+    }
+    /* ここまで feature */
+
+    .recipe-lead span {
+        display: inline-block
+    }
+    .recipe-sct-wrap {
+        padding-left: 70px
+    }
+    .recipe-slider .slick-slide {
+        width: 410px
+    }
+
+    .recipe-slider::after,
+    .recipe-slider::before {
+        width: 33px
+    }
+    .recipe-slider::before {
+        left: -3px
+    }
+    .recipe-slider::after {
+        display: none
+    }
+    .shop-img {
+        transform: translateX(-70px);
+        width: 60.701754386%
+    }
+    .shop-online {
+        border-top: 3px solid #000;
+        margin-top: 60px;
+        padding: 37px 7.0175438596% 0;
+        position: relative
+    }
+
+    .shop-online-ttl {
+        left: 60px;
+        margin-bottom: 20px;
+        position: static
+    }
+
+    #news {
+        padding-left: 40px;
+    }
+    .news-ttl {
+        padding-left: 30px
+    }
+    .news-slider-wrap {
+        margin-top: 55px
+    }
+    .news-more {
+        position: absolute;
+        right: 60px;
+        top: 94px
+    }
+
+    .news-more a {
+        background-color: transparent !important;
+        border: none;
+        padding: 0;
+        min-width: 0 !important
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1000px) {
+    /* feature要素を画面サイズに合わせる */
+    .feature-sct {
+        display: block;
+        width: 600px;
+        margin: 0 auto
+    }
+
+    /* 画像とテキストを縦揃えに */
+    .feature-sct-in {
+        padding: 0 !important
+    }
+}
