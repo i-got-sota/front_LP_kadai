@@ -8,7 +8,7 @@
 
 <link rel="icon" href="img/favicon.svg">
 <link rel="stylesheet" href="style.css">
-<title>ジンジャーラボ　UNE TABLE（ユヌターブル）</title>
+<title>ティーラボ DeMiA CAFE</title>
 
 <!-- google fonts を使用 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,23 +23,17 @@
 
   <h1 class="hd-logo"></h1>
 
-  <div class="hd-slider slick-initialized">
-    <div class="slick-list">
-      <div class="slick-track">
-        <picture class="img-a">
-          <source media="(min-width: 768px)" srcset="img/header/hd_img01_a.jpg">
-          <source media="(max-width: 767px)" srcset="img/header/hd_img01_a_sp.jpg">
-          <img src="img/header/hd_img01_a.jpg" width="1600" height="1067" 
-            alt="美味しい紅茶でやすらぎに満ちた至福のひと時を。 スリランカの茶葉を使用した本格手作りティープロダクツ">
-        </picture>    
-      </div>
-    </div>
-  </div><!-- // .hd-slider -->
+  <picture class="hd-img">
+    <source media="(min-width: 768px)" srcset="img/header/hd_img01_a.jpg">
+    <source media="(max-width: 767px)" srcset="img/header/hd_img01_a_sp.jpg">
+    <img src="img/header/hd_img01_a.jpg"
+      alt="美味しい紅茶でやすらぎに満ちた至福のひと時を。 スリランカの茶葉を使用した本格手作りティープロダクツ">
+  </picture>
 
   <ul class="hd-btns">
     <li class="hd-btn-online"><a href="#"><span>ONLINE SHOP</span></a></li>
     <li class="hd-btn-ig"><a href="#"><span>INSTAGRAM</span></a></li>
-    <li id="hd-btn-menu"><a href="#"><span></span></a></li>
+    <li class="hd-btn-menu"><a href="#"><span>MENU</span></a></li>
   </ul>
 
 </header>
@@ -60,9 +54,7 @@
 
             <div class="news-slide slick-slide">
               <div class="news-slide-in">
-                <p class="news-slide-img">
-                  <img width="350" height="350" alt="紅茶の日" src="img/news/tea_day.jpg">
-                </p>
+                <img alt="紅茶の日" src="img/news/tea_day.jpg">
                 <p class="news-slide-ttl">「紅茶の日」</p>
                 <p class="news-slide-text">
                   11月1日は、大黒屋光太夫が日本人として初めて外国の正式な茶会で紅茶を飲んだ日。<br>
@@ -75,9 +67,7 @@
 
             <div class="news-slide slick-slide">
               <div class="news-slide-in">
-                <p class="news-slide-img">
-                  <img width="350" height="350" alt="" src="img/news/notion.jpg">
-                </p>
+                <img alt="" src="img/news/notion.jpg">
                 <p class="news-slide-ttl">大切なお知らせ</p>
                 <p class="news-slide-text">
                   この度、創業10周年を記念して、セールを開催します。<br>
@@ -144,7 +134,7 @@
               <div class="products-slide-in">
                 <h3 class="products-slide-ttl">セイロンティー</h3>
                 <div class="products-slide-text">
-                  <p>スリランカの中でも世界三代紅茶として知られるウバで生産された爽やかな香りが特徴のセイロンティー。<br>ミルクティーにすることでフルーツのような香りへの変化を楽しむこともできます。</p>
+                  <p>スリランカの中でも世界三代紅茶として知られるウバで生産された爽やかな香りが特徴のセイロンティー。</p>
                   <p>S Size: 100g / 2,000yen (Tax in)<br>M Size: 200g / 3,500yen (Tax in)</p>
                 </div>
               </div>
@@ -155,7 +145,7 @@
       </section>
 
       <section class="products-sct">
-        <h2 class="products-sct-ttl"><img src="img/products/products_ttl_scone.svg" width="180" height="30" alt="GINGER SYRUP"></h2>
+        <h2 class="products-sct-ttl"><img src="img/products/products_ttl_scone.svg" width="180" height="30" alt="SCONE"></h2>
         <div class="slick-initialized">
           <div class="slick-list">
             <div class="slick-track">
@@ -186,7 +176,7 @@
       <div class="feature-slider">
 
           <section class="feature-sct">
-            <img src="img/feature/feature_img01.jpg" width="640" height="425" alt="茶畑" class="feature-sct-img">
+            <img src="img/feature/feature_img01.jpg" alt="茶畑" class="feature-sct-img">
             <div class="feature-sct-in">
               <h3 class="feature-sct-ttl">丁寧に生産された<br>スリランカの紅茶</h3>
               <div class="feature-sct-text">
@@ -196,12 +186,12 @@
           </section>
 
           <section class="feature-sct">
-              <img src="img/feature/feature_img02.jpg" width="640" height="425" alt="茶菓子" class="feature-sct-img">
+            <img src="img/feature/feature_img02.jpg" alt="茶菓子" class="feature-sct-img">
             <div class="feature-sct-in">
-              <h3 class="feature-sct-ttl">１０数年の研究を重ねた<br>究極のお茶菓子</h3>
+              <h3 class="feature-sct-ttl">研究を重ねた<br>究極のお茶菓子</h3>
               <div class="feature-sct-text">
-                <p>我々は、１０数年前イギリスで紅茶文化に衝撃を受けて以来、世界中から食材を取り寄せ、紅茶に合うお菓子の研究を日々重ねています。</p>
-                <p>それらのお菓子を店舗で販売すると共に皆様が真似しやすいようなレシピとしてホームページ等で紹介を行っています。</p>
+                <p>我々は、１０数年前紅茶文化に衝撃を受けて以来、世界中から食材を取り寄せ、紅茶に合うお菓子の研究を日々重ねています。</p>
+                <p>それらのお菓子を店舗で販売したりレシピとして紹介しています。</p>
               </div>
             </div>
           </section>
@@ -219,7 +209,7 @@
     <div class="recipe-sct-wrap">
 
       <!-- ////////////////////////////// jam start -->
-      <section id="recipe-jam" class="recipe-sct">
+      <section class="recipe-sct">
         <div class="recipe-sct-ttl-wrap">
           <h3 class="recipe-sct-ttl"><span>ティープロダクツ</span></h3>
           <p class="recipe-sct-lead"><span>甘いお菓子から紅茶のアレンジまで様々</span></p>
@@ -232,7 +222,7 @@
                 <div class="recipe-slide slick-slide">
                   <div class="recipe-slide-in">
                     <p class="recipe-slide-img">
-                      <img src="img/recipe/cookie.jpg" width="350" height="350" alt="紅茶クッキー">
+                      <img src="img/recipe/cookie.jpg" alt="紅茶クッキー">
                     </p>
                     <p class="recipe-slide-ttl">紅茶クッキー</p>
                     <p class="recipe-slide-text">通常のクッキーのレシピに当店の茶葉を練り込むだけで香り高いクッキーを楽しめます。</p>
@@ -242,7 +232,7 @@
                 <div class="recipe-slide slick-slide">
                   <div class="recipe-slide-in">
                     <p class="recipe-slide-img">
-                      <img src="img/recipe/ice_cream.jpg" width="350" height="350" alt="">
+                      <img src="img/recipe/ice_cream.jpg" alt="アイスクリーム">
                     </p>
                     <p class="recipe-slide-ttl">アイスクリーム</p>
                     <p class="recipe-slide-text">実はアイスクリームはセイロンティーにとても合います。当店で販売しているノンホモ牛乳を用いたアイスをぜひご堪能あれ。</p>
@@ -252,7 +242,7 @@
                 <div class="recipe-slide slick-slide">
                   <div class="recipe-slide-in">
                     <p class="recipe-slide-img">
-                      <img src="img/recipe/fruit_tea.jpg" width="350" height="350" alt="">
+                      <img src="img/recipe/fruit_tea.jpg" alt="フルーツティー">
                     </p>
                     <p class="recipe-slide-ttl">フルーツティー</p>
                     <p class="recipe-slide-text">当店では様々なフレーバーティーも販売しています。それらにあった果物をティーに加えることでより豊かなティータイムを楽しむことができます。</p>
@@ -262,7 +252,7 @@
                 <div class="recipe-slide slick-slide">
                   <div class="recipe-slide-in">
                     <p class="recipe-slide-img">
-                      <img src="img/recipe/roasted_pork.jpg" width="350" height="350" alt="">
+                      <img src="img/recipe/roasted_pork.jpg" alt="紅茶豚">
                     </p>
                     <p class="recipe-slide-ttl">紅茶豚</p>
                     <p class="recipe-slide-text">お好きな豚肉を紅茶で茹で、酒、醤油、みりんを合わせたタレに一晩漬け込むだけ。<br>紅茶に含まれるタンニンという成分により柔らかく、さっぱりしたチャーシューを味わえます。</p>
@@ -284,12 +274,12 @@
   <!-- ////////////////////////////////////////////////// shop info start -->
   <section id="shop">
     <div class="box-c">
-      <h2 class="shop-ttl"><img src="img/shop/shop_ttl.svg" width="423" height="42" alt="SHOP INFORMATION"></h2>
+      <h2 class="shop-ttl"><img src="img/shop/shop_ttl.svg" width="424" height="40" alt="SHOP INFORMATION"></h2>
       <div class="shop-in">
         <picture class="shop-img">
           <source media="(min-width: 768px)" srcset="img/shop/shop_img01.jpg">
           <source media="(max-width: 767px)" srcset="img/shop/shop_img01_sp.jpg">
-          <img src="img/shop/shop_img01.jpg" width="692" height="933" alt="ショップイメージ">
+          <img src="img/shop/shop_img01.jpg" alt="ショップイメージ">
         </picture>
         <section class="shop-cafe">
           <h3 class="shop-cafe-ttl"><img src="img/shop/shop_ttl_cafe.svg" width="80" alt="CAFE"></h3>

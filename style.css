@@ -172,7 +172,7 @@ body * {
 
 html {
     color: #000;
-    font-size: 62.5%;
+    font-size: 62%;
     height: 100%
 }
 
@@ -224,7 +224,7 @@ a:visited {
     border: 1px solid #7f7f7f;
     
     min-width: 320px;
-    padding: 20px;
+    padding: 24px;
     position: relative;
 
     /* フォント関連 */
@@ -232,13 +232,13 @@ a:visited {
     font-weight: 700
 }
 
-.btn01 [class*="icon-"] {
-    padding-right: 10px
+.btn01 .icon-cart {
+    padding-right: 16px;
 }
 
 [class*="icon-"] {
     display: inline-block;
-    padding-left: 30px;
+    padding-left: 32px;
     position: relative
 }
 
@@ -255,16 +255,16 @@ a:visited {
 
 .icon-ig::before {
     background-image: url(img/icon_ig.svg);
-    background-size: 20px 20px;
-    height: 20px;
-    width: 20px
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px
 }
 
 .icon-cart::before {
     background-image: url(img/icon_cart.svg);
-    background-size: 22px 23px;
-    height: 23px;
-    width: 22px
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px
 }
 /* icon, button css 終わり */
 
@@ -283,12 +283,6 @@ img {
     padding: 0
 }
 
-.slick-slide {
-    display: none;
-    height: 100%;
-    min-height: 1px
-}
-
 .slick-slide img {
     display: block
 }
@@ -303,13 +297,17 @@ img {
     z-index: 1000
 }
 
+.hd-img > img {
+    width: 100vw;
+}
+
 .hd-logo {
     position: absolute;
     z-index: 10
 }
 
-.hd-logo::after,
 .hd-logo::before {
+    background-image: url(img/header/hd_logo.svg);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: contain;
@@ -317,13 +315,7 @@ img {
     display: block;
     height: 100%;
     width: 100%;
-    position: absolute;
 }
-
-.hd-logo::before {
-    background-image: url(img/header/hd_logo.svg)
-}
-
 
 .hd-btns {
     /* 各要素をflexで並べる */
@@ -332,8 +324,8 @@ img {
     /* position:absolute;で絶対位置を指定し */
     /* アイコンの位置を決める */
     position: absolute;
-    right: 5.63vw;
-    bottom: 4.63vw
+    right: 64px;
+    bottom: 16px;
 }
 
 /* ブロック要素にして各要素に大きさを持たせる */
@@ -345,8 +337,9 @@ img {
     display: block
 }
 
-.hd-btns .hd-btn-ig span,
-.hd-btns .hd-btn-online span {
+.hd-btns span {
+    height: 32px;
+    width: 32px;
     color: transparent;
     position: relative;
     /* マークアップした文字を隠す */
@@ -355,76 +348,32 @@ img {
     white-space: nowrap
 }
 
-.hd-btns .hd-btn-ig span::before,
-.hd-btns .hd-btn-online span::before {
+.hd-btns span::before{
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     content: '';
     display: block;
     width: 100%;
-    height: 100%
-}
-
-.hd-btns .hd-btn-online span {
-    height: 31px;
-    width: 27px
+    height: 100%;
 }
 
 .hd-btns .hd-btn-online span::before {
     background-image: url(img/icon_cart.svg);
-    background-size: 27px 31px
-}
-
-.hd-btns .hd-btn-ig span {
-    height: 33px;
-    width: 33px
 }
 
 .hd-btns .hd-btn-ig span::before {
     background-image: url(img/icon_ig.svg);
-    background-size: 33px 33px
 }
 
-.hd-btns #hd-btn-menu a {
-    height: 33px;
-    width: 40px;
-    position: relative
-}
-
-.hd-btns #hd-btn-menu span {
-    height: 4px;
-    width: 100%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.hd-btns #hd-btn-menu span::after,
-.hd-btns #hd-btn-menu span::before {
-    background-color: #000;
-    content: '';
-    display: block;
-    height: 4px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0
-}
-
-/* メニューではbeforeとafterに線を引いてメニューアイコンを実現 */
-.hd-btns #hd-btn-menu span::before {
-    transform: translateY(-6px)
-}
-
-.hd-btns #hd-btn-menu span::after {
-    transform: translateY(6px)
+.hd-btns .hd-btn-menu span::before {
+    background-image: url(img/icon_menu.svg);
 }
 
 /* news関連 css */
 #news {
-    margin-bottom: 140px;
-    padding-top: 90px;
+    margin-bottom: 144px;
+    padding-top: 96px;
     position: relative
 }
 
@@ -441,53 +390,46 @@ img {
 }
 
 .news-slider .slick-slide {
-    float: none !important;
-    height: inherit !important;
     position: relative;
-    padding-bottom: 60px;
-    width: 310px
+    padding-bottom: 64px;
+    width: 320px
 }
 
 .news-slide-in {
-    padding: 0 30px
-}
-
-.news-slide-img {
-    width: 250px;
-    height: 250px
+    padding: 0 32px
 }
 
 .news-slide-ttl {
-    margin-top: 23px;
+    margin-top: 24px;
     line-height: 1.6;
     font-size: 2rem;
     font-weight: 700
 }
 
 .news-slide-text {
-    margin-top: 11px;
+    margin-top: 16px;
     font-size: 1.4rem
 }
 
 .news-slide-date {
     border-top: 1px solid #000;
     line-height: 1;
-    padding-top: 15px;
+    padding-top: 16px;
     /* 絶対位置指定で必ず要素の最下部に来るようにしている */
     position: absolute;
-    left: 30px;
+    left: 32px;
     bottom: 0;
-    width: calc(100% - 30px*2);
+    width: calc(100% - 32px*2);
     font-size: 1.4rem;
     font-weight: 700;
 }
 
 .news-slide-link {
-    margin-top: 11px
+    margin-top: 16px
 }
 
 .news-slide-link a {
-    padding-right: 12px;
+    padding-right: 16px;
     position: relative;
     font-weight: 700
 }
@@ -495,7 +437,7 @@ img {
 
 /* about 関連のcss */
 .about-in {
-    padding: 180px 58px 110px
+    padding: 184px 56px 120px
 }
 
 .about-lead,
@@ -522,13 +464,13 @@ img {
 }
 
 .about-sct-text p+p {
-    margin-top: 28px
+    margin-top: 32px
 }
 /* about 終わり */
 
 /* product 関連のcss */
 #products {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
 }
 
 .products-sct {
@@ -537,7 +479,7 @@ img {
 
 .products-sct-ttl {
     position: absolute;
-    top: 60px;
+    top: 64px;
     z-index: 1
 }
 
@@ -560,18 +502,18 @@ img {
 }
 
 .products-slide-text {
-    margin-top: 30px
+    margin-top: 32px
 }
 
 .products-slide-text p+p {
-    margin-top: 21px
+    margin-top: 24px
 }
 /* product 終わり */
 
 /* feature 関連 css */
 #feature {
     margin-bottom: 80px;
-    padding-top: 90px
+    padding-top: 96px
 }
 
 .feature-ttl {
@@ -586,8 +528,9 @@ img {
 }
 
 .feature-slider {
-    margin-top: 57px
+    margin-top: 56px
 }
+
 
 .feature-sct-in {
     flex: 1
@@ -598,7 +541,7 @@ img {
     letter-spacing: -.08em;
     /* 行の高さの調整 */
     line-height: 1.5;
-    margin-top: 30px;
+    margin-top: 32px;
     font-size: 2.8rem;
     font-weight: 700;
 }
@@ -606,19 +549,19 @@ img {
 .feature-sct-text {
     /* 行の高さの調整 */
     line-height: 1.75;
-    margin-top: 22px
+    margin-top: 24px
 }
 
 .feature-sct-text p+p {
-    margin-top: 27px
+    margin-top: 24px
 }
 
 /* feature 終わり */
 
 /* recipe 関連 css */
 #recipe {
-    margin-bottom: 100px;
-    padding-top: 90px
+    margin-bottom: 112px;
+    padding-top: 96px
 }
 
 .recipe-ttl {
@@ -628,36 +571,37 @@ img {
 .recipe-lead {
     line-height: 1.5;
     margin-top: 40px;
-    padding: 0 70px;
+    padding: 0 72px;
     text-align: center;
     font-size: 3.6rem;
     font-weight: 700;
 }
 
 .recipe-sct {
-    margin-top: 90px;
-    min-height: 500px;
-    padding-left: 115px;
+    margin-top: 96px;
+    min-height: 512px;
+    padding-left: 112px;
     position: relative
 }
 
 .recipe-sct-ttl-wrap {
     height: 100%;
     line-height: 1;
-    padding-top: 25px;
+    padding-top: 24px;
     position: absolute;
     left: 0;
     top: 0;
     width: 80px;
     font-weight: 700;
+
 }
 
 .recipe-sct-ttl-wrap::before {
     background-color: #000;
     content: '';
     display: block;
-    height: 3px;
-    width: 90px;
+    height: 8px;
+    width: 96px;
     position: absolute;
     left: 50%;
     top: 0;
@@ -679,8 +623,8 @@ img {
 .recipe-sct-lead {
     height: 100%;
     position: absolute;
-    left: 54px;
-    top: 25px
+    left: 56px;
+    top: 24px
 }
 
 .recipe-sct-lead>span {
@@ -692,7 +636,7 @@ img {
 }
 
 .recipe-slider-wrap {
-    padding-top: 25px;
+    padding-top: 24px;
     position: relative
 }
 
@@ -704,7 +648,7 @@ img {
 }
 
 .recipe-slide-in {
-    padding: 0 30px
+    padding: 0 32px
 }
 
 .recipe-slide-img {
@@ -717,22 +661,22 @@ img {
 }
 
 .recipe-slide-ttl {
-    margin-top: 23px;
+    margin-top: 24px;
     line-height: 1.5;
     font-size: 2.4rem;
     font-weight: 700;
 }
 
 .recipe-slide-text {
-    margin-top: 14px;
+    margin-top: 16px;
     font-size: 1.4rem
 }
 /* recipe css 終わり */
 
 /* shop 関連 css */
 #shop {
-    margin-bottom: 86px;
-    padding-top: 90px
+    margin-bottom: 80px;
+    padding-top: 96px
 }
 
 .shop-ttl {
@@ -741,30 +685,30 @@ img {
 
 .shop-in {
     display: flex;
-    margin-top: 65px
+    margin-top: 64px
 }
 
 .shop-cafe {
     flex: 1;
-    padding-left: 30px
+    padding-left: 32px
 }
 
 .shop-cafe-ttl {
     line-height: 1;
-    margin-top: 20px
+    margin-top: 24px
 }
 
 .shop-cafe-text {
-    margin-top: 10px
+    margin-top: 16px
 }
 
 .shop-cafe-text p+p {
-    margin-top: 28px
+    margin-top: 24px
 }
 
 .shop-cafe-access {
     line-height: 1.5;
-    margin-top: 30px;
+    margin-top: 32px;
     font-size: 1.3rem
 }
 
@@ -773,16 +717,20 @@ table {
     /* 上下に線 */
     border-top: 1px solid #7f7f7f;
     border-bottom: 1px solid #7f7f7f;
-    margin: 5px 0 15px;
 }
 
 th {
-    padding: 15px 5px;
-    width: 10vw
+    padding: 16px 8px;
 }
 
 td {
-    padding: 10px 5px;
+    padding: 16px 8px;
+}
+
+.shop-table {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
 }
 
 .shop-table p+p {
@@ -792,8 +740,8 @@ td {
 .shop-online-ttl {
     line-height: 1;
     position: absolute;
-    left: 100px;
-    top: 37px
+    left: 112px;
+    top: 40px
 }
 
 /* テキストとボタンを横並びに */
@@ -804,7 +752,7 @@ td {
 .shop-online-text {
     letter-spacing: -.05em;
     line-height: 1.5;
-    padding-right: 20px;
+    padding-right: 24px;
 
      /* flex設定 */
     flex: 1;
@@ -812,12 +760,12 @@ td {
 
 .shop-online-text .notes {
     letter-spacing: normal;
-    margin-top: 10px;
+    margin-top: 16px;
     font-size: 1.4rem
 }
 
 #contact {
-    padding-top: 90px;
+    padding-top: 96px;
     text-align: center
 }
 /* shop css 終わり */
@@ -832,8 +780,8 @@ td {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4vw;
-    gap: 3vw;
+    margin-top: 48px;
+    gap: 32px;
 }
 
 .form-inner-container {
@@ -843,13 +791,13 @@ td {
 }
 
 .form-label {
-    width: 18vw;
+    width: 24vw;
     text-align: start;
 }
 
 .form {
-    width: 60vw;
-    padding: 15px 10px;
+    width: 64vw;
+    padding: 16px 8px;
     border: 1px solid #7f7f7f;
 }
 
@@ -875,7 +823,7 @@ input, select, input::placeholder {
 
 #ft {
     line-height: 1;
-    padding: 154px 0;
+    padding: 160px 0;
     text-align: center;
 
 }
@@ -890,39 +838,31 @@ input, select, input::placeholder {
     }
 
     .btn01 {
-        min-width: 59.33vw;
-        padding: 3.2vw;
+        min-width: 64vw;
+        padding: 16px;
         font-size: 1.2rem
     }
 
     /* アイコン関連 css */
     [class*="icon-"] {
-        padding-left: 22px
+        padding-left: 24px
     }
-    .icon-ig::before {
+    .icon-ig::before, .icon-cart::before {
         background-size: 16px 16px;
         height: 16px;
         width: 16px
     }
-    .icon-cart::before {
-        background-size: 15px 16px;
-        height: 16px;
-        width: 15px
-    }
 
-    .hd-slider {
-        height: 133.33vw
-    }
     .hd-logo {
-        left: 5.33vw;
-        bottom: 4vw;
-        width: 76.8vw;
-        height: 4.53vw
+        left: 16px;
+        bottom: 8px;
+        width: 64vw;
+        height: 24px
     }
 
 
     .hd-btns {
-        right: 5.33vw;
+        right: 16px;
         bottom: 0;
         transform: translateY(12vw)
     }
@@ -930,106 +870,63 @@ input, select, input::placeholder {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 11.2vw;
-        width: 11.2vw;
-        padding: 2.67vw
+        width: 12vw
     }
-    .hd-btns .hd-btn-online span {
-        height: 4.8vw;
-        width: 4.27vw
-    }
-
-    .hd-btns .hd-btn-online span::before {
-        background-size: 4.27vw 4.8vw
-    }
-    .hd-btns .hd-btn-ig span {
-        height: 5.07vw;
-        width: 5.07vw
-    }
-
-    .hd-btns .hd-btn-ig span::before {
-        background-size: 5.07vw 5.07vw
-    }
-    .hd-btns #hd-btn-menu a {
-        height: 11.2vw;
-        width: 11.2vw
-    }
-    .hd-btns #hd-btn-menu span {
-        height: 2px;
-        width: 5.87vw
-    }
-
-    /* 画面サイズに合わせてメニューアイコンの変更 */
-    .hd-btns #hd-btn-menu span::after,
-    .hd-btns #hd-btn-menu span::before {
-        height: 2px
-    }
-
-    .hd-btns #hd-btn-menu span::before {
-        transform: translateY(-1.07vw)
-    }
-
-    .hd-btns #hd-btn-menu span::after {
-        transform: translateY(1.07vw)
+    .hd-btns span {
+        width: 5vw
     }
     /* ここまでメニューアイコン */
 
     /* news 関連 css */
     #news {
-        margin-bottom: 1.88vw;
-        padding-top: 16vw
+        margin-bottom: 8px;
+        padding-top: 16vw;
     }
     .news-ttl {
-        padding: 0 5.33vw
+        padding: 0 16px
     }
 
     .news-ttl img {
-        width: 19.47vw
+        width: 20vw
     }
     .news-slider-wrap {
-        margin-top: 8vw;
-        padding: 0 4.67vw 0 2vw
-    }
-    .news-slider .slick-slide {
-        padding-bottom: 45px;
-        width: 46.67vw
+        margin-top: 24px;
+        padding: 0 16px 0 8px
     }
     .news-slide-in {
-        padding: 0 3.33vw
-    }
-    .news-slide-img {
-        height: 40vw;
-        width: 40vw
+        padding: 0 8px
     }
     .news-slide-ttl {
-        line-height: 1.19;
-        margin-top: 15px;
+        line-height: 1.2;
+        margin-top: 16px;
         font-size: 1.6rem
     }
 
     .news-slide-text {
-        line-height: 1.73;
-        margin-top: 9px;
+        line-height: 1.7;
+        margin-top: 8px;
         font-size: 1.1rem
     }
     .news-slide-date {
-        left: 3.33vw;
-        padding-top: 11px;
-        width: calc(100% - 6.67vw);
+        position: absolute;
+        left: 8px;
+        bottom: 0;
+        padding-top: 16px;
+        width: calc(100% - 7vw);
         font-size: 1.1rem
     }
     .news-slide-link {
-        margin-top: 9px
+        margin-top: 8px
     }
     .news-more {
-        margin-top: 35px;
-        text-align: center
+        margin-top: 40px;
+        text-align: center;
     }
     /* news ここまで */
 
     /* about 関連 css */
     .about-in {
-        padding: 20vw 9.33vw 5.33vw
+        padding: 64px 40px 16px
     }
 
     .about-lead,
@@ -1038,12 +935,12 @@ input, select, input::placeholder {
     }
     .about-sct {
         padding-left: 0;
-        margin-top: 45px
+        margin-top: 48px
     }
     .about-sct-ttl {
         /* 行の高さ */
         line-height: 1;
-        margin-bottom: 19px;
+        margin-bottom: 24px;
         position: static;
         font-size: 1.4rem
     }
@@ -1051,7 +948,7 @@ input, select, input::placeholder {
         /* 文字間の調整 */
         letter-spacing: -.02em;
         /* 行の高さ */
-        line-height: 1.58;
+        line-height: 1.6;
         font-size: 1.2rem
     }
     .about-sct-text p+p {
@@ -1064,50 +961,50 @@ input, select, input::placeholder {
         margin-bottom: 0
     }
     .products-sct {
-        margin-top: 16vw
+        margin-top: 48px
     }
 
     /* ロゴ部分の左右対称 */
     .products-sct:nth-child(odd) .products-sct-ttl {
-        left: 5.33vw
+        left: 16px
     }
 
     .products-sct:nth-child(even) .products-sct-ttl {
-        right: 5.33vw
+        right: 16px
     }
     /* 左右対称 ここまで */
     
     .products-sct-ttl {
-        top: 6.67vw
+        top: 16px
     }
 
     .products-sct-ttl img {
+        height: 40px;
         width: auto;
-        height: 5.87vw
     }
     .products-slide {
-        padding: 0 13.87vw
+        padding: 0 40px
     }
     .products-slide-ttl {
-        margin-top: 20px;
+        margin-top: 24px;
         font-size: 2.2rem
     }
     .products-slide-text {
-        margin-top: 6px;
+        margin-top: 8px;
         font-size: 1.3rem
     }
 
     .products-slide-text p+p {
-        margin-top: 11px
+        margin-top: 16px
     }
     /* product ここまで */
 
     #feature {
-        margin-bottom: 8vw;
-        padding-top: 16vw
+        margin-bottom: 32px;
+        padding-top: 96px
     }
     .feature-ttl {
-        padding: 0 5.33vw;
+        padding: 0 16px;
         font-size: 1.8rem
     }
     .feature-slider {
@@ -1115,137 +1012,140 @@ input, select, input::placeholder {
         position: relative
     }
     .feature-sct {
-        margin-top: 6.67vw;
-        padding: 0 13.87vw
+        margin-top: 32px;
+        padding: 0 24px
     }
     .feature-sct-ttl {
-        margin-top: 18px;
+        margin-top: 16px;
         font-size: 1.8rem
     }
     .feature-sct-text {
-        margin-top: 11px
+        margin-top: 16px
     }
 
     .feature-sct-text p+p {
-        margin-top: 10px
+        margin-top: 8px
     }
+
     #recipe {
-        margin-bottom: 9.87vw;
-        padding-top: 16vw
+        margin-bottom: 56px;
+        padding-top: 56px
     }
     .recipe-ttl img {
-        width: 23.73vw;
+        width: 24vw;
     }
     .recipe-lead {
-        margin-top: 5.33vw;
-        padding: 0 5.33vw;
+        margin-top: 16px;
+        padding: 0 16px;
         font-size: 1.8rem
     }
     .recipe-sct {
-        margin-top: 5.33vw;
-        min-height: 96vw;
-        padding-left: 21.87vw;
-        padding-right: 9.6vw
+        margin-top: 16px;
+        padding-left: 24vw;
+        padding-right: 8vw
     }
     .recipe-sct-ttl-wrap {
-        padding-top: 3.47vw;
-        left: 5.33vw;
+        left: 32px;
         width: 12vw
     }
     .recipe-sct-ttl-wrap::before {
         height: 2px;
-        width: 13.33vw
+        width: 16vw
     }
     .recipe-sct-ttl>span {
         font-size: 5.6vw
     }
     .recipe-sct-lead {
-        left: 9.07vw;
-        top: 3.47vw
+        left: 8vw;
     }
     .recipe-sct-lead>span {
-        font-size: 3.47vw
+        font-size: 3.2vw
     }
     .recipe-slider-wrap {
-        padding-top: 3.47vw
+        padding-top: 16px
     }
     .recipe-slider {
-        width: 68.53vw
+        width: 72vw
     }
     .recipe-slide-in {
-        padding: 0 4.27vw
+        padding: 0 24px
     }
     .recipe-slide-img {
-        height: 60vw;
-        width: 60vw
+        width: 64vw;
+        height: auto;
     }
     .recipe-slide-ttl {
-        margin-top: 15px;
+        margin-top: 16px;
         font-size: 1.9rem
     }
     .recipe-slide-text {
-        line-height: 1.58;
-        margin-top: 6px;
+        line-height: 1.6;
+        margin-top: 8px;
         font-size: 1.2rem
     }
 
     #shop {
-        margin-bottom: 6.13vw;
-        padding-top: 16vw
+        margin-bottom: 56px;
+        padding-top: 8px;
     }
     .shop-ttl img {
-        width: 68vw
+        width: 72vw
     }
     .shop-in {
         display: block;
-        margin-top: 9.07vw
+        margin-top: 40px
     }
     .shop-cafe {
-        padding: 9.33vw
+        padding: 40px
     }
     .shop-cafe-ttl img {
-        width: 34.13vw
+        width: 16vw
     }
     .shop-cafe-text {
-        margin-top: 3.47vw;
+        margin-top: 24px;
         font-size: 1.3rem
     }
 
     .shop-cafe-text p+p {
-        margin-top: 6px
+        margin-top: 8px
     }
     .shop-cafe-access {
-        margin: 3.73vw 0;
+        margin: 24px 0;
     }
 
 
     /* オンライン通販 */
     .shop-online {
-        margin-top: 6.67vw;
-        padding: 0 9.33vw
+        margin-top: 24px;
+        padding: 0 40px
     }
     .shop-online-ttl {
         position: static
     }
 
     .shop-online-ttl img {
-        width: 29.33vw
+        width: 32vw
     }
     .shop-online-in {
         display: block;
-        margin-top: 3.47vw
+        margin-top: 24px
     }
     .shop-btn {
-        margin-top: 5.33vw;
+        margin-top: 16px;
         text-align: center;
         width: 100%
     }
     
     #contact {
-        padding: 16vw 5.33vw 0
+        padding: 40px 16px 0
     }
     .contact-ttl img {
-        width: 26.67vw
+        width: 32vw
+    }
+
+    .form-container {
+        margin-top: 24px;
+        gap: 16px;
     }
 
     .form-inner-container {
@@ -1255,13 +1155,13 @@ input, select, input::placeholder {
     }
 
     .form-label {
-        width: 60vw;
+        width: 64vw;
     }
     #ft {
-        padding: 12vw 0 24vw
+        padding: 64px 0 128px
     }
     .ft-copyright img {
-        width: 87px
+        width: 128px
     }
 }
 
@@ -1270,45 +1170,42 @@ input, select, input::placeholder {
         margin-left: auto;
         margin-right: auto;
         max-width: 1280px;
-        padding-left: 70px;
-        padding-right: 70px
+        padding-left: 72px;
+        padding-right: 72px
     }
     .btn01:hover {
         background-color: #f5f5f5
     }
     .icon-cart {
-        padding-left: 35px
+        padding-left: 32px
     }
 
     .hd-logo {
-        left: 5.63vw;
-        bottom: 2.63vw;
-        width: 35.44vw;
-        height: 2.13vw
-    }
-    .hd-btns {
-        bottom: 2.63vw;
+        left: 64px;
+        bottom: 16px;
+        width: 40vw;
+        height: 24px
     }
     .hd-btns li+li {
-        margin-left: 30px
+        margin-left: 32px
     }
 
     /* products css 開始 */
     /* pc版、左右でそれぞれデザインを変える */
     .products-sct {
-        margin-top: 90px
+        margin-top: 96px
     }
 
     .products-sct:nth-child(odd) .products-sct-ttl {
-        left: -30px
+        left: -32px
     }
 
     .products-sct:nth-child(odd) .products-slide-in {
-        right: 5.0877192982%
+        right: 5%
     }
 
     .products-sct:nth-child(even) .products-sct-ttl {
-        right: -30px
+        right: -32px
     }
 
     .products-sct:nth-child(even) .products-slide-img {
@@ -1316,11 +1213,11 @@ input, select, input::placeholder {
     }
 
     .products-sct:nth-child(even) .products-slide-in {
-        left: 5.0877192982%
+        left: 5%
     }
     .products-slide-img {
         height: 600px;
-        width: 61.4035087719%
+        width: 64%
     }
 
     .products-img {
@@ -1329,11 +1226,11 @@ input, select, input::placeholder {
     } 
 
     .products-slide-in {
-        padding: 72px 50px 90px;
+        padding: 72px 56px 96px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 39.4736842105%
+        width: 40%
     }
     /* products 終わり */
 
@@ -1341,16 +1238,16 @@ input, select, input::placeholder {
     .feature-sct {
         /* flexboxを使用 */
         display: flex;
-        padding: 0 58px
+        padding: 0 56px
     }
 
     .feature-sct+.feature-sct {
-        margin-top: 90px
+        margin-top: 96px
     }
 
     /* 左右でデザインを変える */
     .feature-sct:nth-child(odd) .feature-sct-in {
-        padding-left: 50px
+        padding-left: 56px
     }
 
     .feature-sct:nth-child(even) {
@@ -1358,12 +1255,13 @@ input, select, input::placeholder {
     }
 
     .feature-sct:nth-child(even) .feature-sct-in {
-        padding-right: 50px
+        padding-right: 56px
     }
     /* ここまで左右 */
 
     .feature-sct-img {
-        width: 62.5%
+        width: 64%;
+        object-fit: cover;
     }
     /* ここまで feature */
 
@@ -1371,15 +1269,15 @@ input, select, input::placeholder {
         display: inline-block
     }
     .recipe-sct-wrap {
-        padding-left: 70px
+        padding-left: 72px
     }
     .recipe-slider .slick-slide {
-        width: 410px
+        width: 400px
     }
 
     .recipe-slider::after,
     .recipe-slider::before {
-        width: 33px
+        width: 32px
     }
     .recipe-slider::before {
         left: -3px
@@ -1388,19 +1286,19 @@ input, select, input::placeholder {
         display: none
     }
     .shop-img {
-        transform: translateX(-70px);
-        width: 60.701754386%
+        transform: translateX(-72px);
     }
+    
     .shop-online {
         border-top: 3px solid #000;
-        margin-top: 60px;
-        padding: 37px 7.0175438596% 0;
+        margin-top: 64px;
+        padding: 40px 8% 0;
         position: relative
     }
 
     .shop-online-ttl {
-        left: 60px;
-        margin-bottom: 20px;
+        left: 64px;
+        margin-bottom: 24px;
         position: static
     }
 
@@ -1408,35 +1306,20 @@ input, select, input::placeholder {
         padding-left: 40px;
     }
     .news-ttl {
-        padding-left: 30px
+        padding-left: 32px
     }
     .news-slider-wrap {
-        margin-top: 55px
+        margin-top: 56px
     }
     .news-more {
         position: absolute;
-        right: 60px;
-        top: 94px
+        right: 64px;
+        top: 96px
     }
 
     .news-more a {
-        background-color: transparent !important;
         border: none;
         padding: 0;
-        min-width: 0 !important
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:1000px) {
-    /* feature要素を画面サイズに合わせる */
-    .feature-sct {
-        display: block;
-        width: 600px;
-        margin: 0 auto
-    }
-
-    /* 画像とテキストを縦揃えに */
-    .feature-sct-in {
-        padding: 0 !important
+        min-width: 0 
     }
 }
