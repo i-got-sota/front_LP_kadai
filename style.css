@@ -1274,17 +1274,7 @@ input, select, input::placeholder {
     .recipe-slider .slick-slide {
         width: 400px
     }
-
-    .recipe-slider::after,
-    .recipe-slider::before {
-        width: 32px
-    }
-    .recipe-slider::before {
-        left: -3px
-    }
-    .recipe-slider::after {
-        display: none
-    }
+    
     .shop-img {
         transform: translateX(-72px);
     }
