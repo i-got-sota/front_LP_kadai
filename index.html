@@ -45,7 +45,12 @@
 
   <!-- ////////////////////////////////////////////////// news start -->
   <section id="news">
-    <h2 class="news-ttl"><img src="img/news/news_ttl.svg" width="120" height="42" alt="NEWS"></h2>
+    <div class="news-title-container">
+      <h2 class="news-ttl"><img src="img/news/news_ttl.svg" width="120" height="42" alt="NEWS"></h2>
+      <p class="news-more pc">
+        <a href="#"><span class="icon-ig">最新情報はこちら</span></a>
+      </p>
+    </div>
 
     <div class="news-slider-wrap">
       <div class="news-slider slick-initialized">
@@ -83,7 +88,7 @@
       </div>
     </div><!-- // .news-slider-wrap -->
 
-    <p class="news-more">
+    <p class="news-more sp">
       <a href="#" class="btn01"><span class="icon-ig">最新情報はこちら</span></a>
     </p>
   </section>
@@ -348,7 +353,12 @@
           <div class="form-inner-container">
           <p class="form-label">内容：</p><textarea name="contents" cols="30" rows="10" class="form" required></textarea>
           </div>
+          <div>
+          <input type="checkbox" name="checkbox" required>
+          プライバシーポリシーに同意します
+          </div>
           <input type="submit" value="送信" class="btn01 submit-btn">
+          
         </form>
     </div>
   </section>
