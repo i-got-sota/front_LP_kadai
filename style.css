@@ -163,6 +163,11 @@ select {
     vertical-align: middle
 }
 
+select {
+    -webkit-appearance: button;
+    appearance: button;
+}
+
 body * {
     box-sizing: border-box;
 }
@@ -440,8 +445,12 @@ img {
 /* news css 終わり */
 
 /* about 関連のcss */
+#about {
+    padding-top: 144px;
+}
+
 .about-in {
-    padding: 144px 56px 0
+    padding: 0 56px;
 }
 
 .about-lead,
@@ -451,19 +460,17 @@ img {
 }
 
 .about-sct {
+    display: flex;
     margin-top: 72px;
-    padding-left: 160px;
-    position: relative
 }
 
 .about-sct-ttl {
-    position: absolute;
-    left: 0;
-    top: 0;
+    width: 20%;
     font-size: 1.8rem
 }
 
 .about-sct-text {
+    width: 80%;
     font-size: 1.8rem
 }
 
@@ -813,6 +820,11 @@ input, select, input::placeholder {
     font-family: 'Zen Maru Gothic', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
+.privacy {
+    display: flex;
+    align-items: center;
+}
+
 .submit-btn {
     color: #fff;
     background-color: #666;
@@ -923,8 +935,12 @@ input, select, input::placeholder {
     /* news ここまで */
 
     /* about 関連 css */
+    #section {
+        padding-top: 144px; 
+    }
+
     .about-in {
-        padding: 144px 40px 0
+        padding: 0 40px;
     }
 
     .about-lead,
@@ -932,14 +948,13 @@ input, select, input::placeholder {
         font-size: 1.4rem
     }
     .about-sct {
-        padding-left: 0;
-        margin-top: 48px
+        margin-top: 48px;
+        gap: 16px;
+        flex-direction: column;;
     }
     .about-sct-ttl {
         /* 行の高さ */
         line-height: 1;
-        margin-bottom: 24px;
-        position: static;
         font-size: 1.4rem
     }
     .about-sct-text {
@@ -947,7 +962,8 @@ input, select, input::placeholder {
         letter-spacing: -.02em;
         /* 行の高さ */
         line-height: 1.6;
-        font-size: 1.2rem
+        font-size: 1.2rem;
+        width: 100%;
     }
     .about-sct-text p+p {
         margin-top: 20px
