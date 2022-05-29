@@ -821,6 +821,10 @@ select {
     background-color: #fff;
     color: #000;
     font-size: 1.4rem;
+    background-image: url(img/select.svg);
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
 }
 
 .privacy {
