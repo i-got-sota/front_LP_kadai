@@ -164,8 +164,8 @@ select {
 }
 
 select {
-    -webkit-appearance: button;
-    appearance: button;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 body * {
