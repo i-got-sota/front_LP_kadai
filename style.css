@@ -160,10 +160,7 @@ hr {
 
 input,
 select {
-    vertical-align: middle
-}
-
-select {
+    vertical-align: middle;
     -webkit-appearance: none;
     appearance: none;
 }
@@ -822,7 +819,8 @@ input, select, input::placeholder {
 
 select {
     background-color: #fff;
-    color: #000
+    color: #000;
+    font-size: 1.2rem;
 }
 
 .privacy {
