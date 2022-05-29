@@ -161,6 +161,9 @@ hr {
 input,
 select {
     vertical-align: middle;
+}
+
+select {
     -webkit-appearance: none;
     appearance: none;
 }
@@ -957,7 +960,7 @@ select {
     .about-sct {
         margin-top: 48px;
         gap: 16px;
-        flex-direction: column;;
+        flex-direction: column;
     }
     .about-sct-ttl {
         /* 行の高さ */
