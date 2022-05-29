@@ -820,6 +820,11 @@ input, select, input::placeholder {
     font-family: 'Zen Maru Gothic', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
+select {
+    background-color: #fff;
+    color: #000
+}
+
 .privacy {
     display: flex;
     align-items: center;
