@@ -169,6 +169,76 @@ body * {
 
 /* ここまで リセットcss */
 
+body * {
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+body p {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+    body p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+}
+
+
+body h4 {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body h4 {
+        font-size: 16px;
+    }
+}
+
+body a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    body a {
+        font-size: 13px;
+    }
+}
+
+body button {
+    margin: 0 auto;
+    display: flex;
+    width: 300px;
+    height: 60px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    justify-content: center;;
+    align-items: center;
+}
+
+body button::before {
+    content: " ";
+    display: inline-block;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    body button::before {
+        margin-right: 5px;
+        width: 16px;
+        height: 16px;
+    }    
+}
+
 .h-img {
     width: 100%;
     height: 66vw;
@@ -198,7 +268,7 @@ body * {
 
 @media screen and (max-width: 768px) {
     .h-logo {
-        width: 70%;
+        width: 60%;
         max-width: 300px;
         position: absolute;
         left: 15px;
@@ -208,7 +278,7 @@ body * {
 
 .h-icons {
     display: flex;
-    width: 40vw;
+    width: 40%;
     max-width: 200px;
     position: absolute;
     right: 20px;
@@ -220,12 +290,139 @@ body * {
 
 @media screen and (max-width: 768px) {
     .h-icons {
-        right: 1vw;
-        bottom: -15vw;
+        width: 35%;
+        right: 0;
+        bottom: -12vw;
     }
     .h-icons img {
         width: 50%;
-        max-width: 30px;
+        max-width: 25px;
         height: auto;
+    }
+}
+
+main>section {
+    margin-top: 150px;
+}
+
+.news {
+    margin-left: 70px;
+    margin-right: 70px;
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .news {
+        margin-left: 20px;
+        margin-right: 20px;
+        position: static;
+    }
+}
+
+.news button {
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+}
+
+.news button::before, .shop button::before {
+    background-image: url(img/icon_ig.svg);
+}
+
+@media screen and (max-width: 768px) {
+    .news button {
+        width: 250px;
+        height: 50px;
+        font-size: 12px;
+        font-weight: bold;
+        position: static;
+        border: 1px solid #000;
+    }
+}
+
+.n-ttl {
+    margin-bottom: 60px;
+    width: 100%;
+    height: 50px;
+    background: url(img/news/news_ttl.svg) left top / contain no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .n-ttl {
+        height: 30px;
+        margin-bottom: 30px;
+        
+    }
+}
+
+.n-content {
+    display: flex;
+}
+
+.n-section {
+    position: relative;
+    width: 255px;
+    border-bottom: 1px solid #000;
+}
+
+.n-section::after {
+    content: " ";
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+}
+
+.n-section:first-child {
+    margin-right: 60px;
+}
+
+.n-section:first-child:after {
+    content: "2022.09.10";
+}
+.n-section:last-child:after {
+    content: "2022.06.30";
+}
+
+
+@media screen and (max-width: 768px) {
+    .n-section {
+        flex: 1 1 50%;
+        padding-bottom: 30px;
+    }
+    .n-section::after {
+        font-size: 10px;
+        bottom: -24px;
+    }
+
+    .n-section:first-child {
+        margin-right: 15px;
+    }
+}
+
+.n-section>* {
+    margin-bottom: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .n-section>* {
+        margin-bottom: 10px;
+    }
+}
+
+.n-section>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .n-bttn {
+        margin-top: 60px;
+        width: 100%;
     }
 }
