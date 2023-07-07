@@ -175,7 +175,7 @@ body * {
 
 body p {
     font-size: 14px;
-    line-height: 28px;
+    line-height: 2em;
 }
 
 @media screen and (max-width: 768px) {
@@ -185,13 +185,19 @@ body p {
     }
 }
 
+body h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2em;
+}
 
 body h4 {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
-    body h4 {
+    body h3 {
         font-size: 16px;
     }
 }
@@ -216,9 +222,9 @@ body button {
     height: 60px;
     font-size: 16px;
     background-color: #fff;
-    border: 1px solid #000;
+    border: 1px solid gray;
     cursor: pointer;
-    justify-content: center;;
+    justify-content: center;
     align-items: center;
 }
 
@@ -232,6 +238,11 @@ body button::before {
 }
 
 @media screen and (max-width: 768px) {
+    body button {
+        width: 72%;
+        height: 50px;
+    }
+
     body button::before {
         margin-right: 5px;
         width: 16px;
@@ -306,8 +317,9 @@ main>section {
 }
 
 .news {
-    margin-left: 70px;
-    margin-right: 70px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 
@@ -316,29 +328,6 @@ main>section {
         margin-left: 20px;
         margin-right: 20px;
         position: static;
-    }
-}
-
-.news button {
-    width: 180px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-}
-
-.news button::before, .shop button::before {
-    background-image: url(img/icon_ig.svg);
-}
-
-@media screen and (max-width: 768px) {
-    .news button {
-        width: 250px;
-        height: 50px;
-        font-size: 12px;
-        font-weight: bold;
-        position: static;
-        border: 1px solid #000;
     }
 }
 
@@ -420,9 +409,85 @@ main>section {
     object-fit: cover;
 }
 
+.n-bttn button {
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+}
+
+.n-bttn button::before, .s-bttn button::before {
+    background-image: url(img/icon_ig.svg);
+}
+
 @media screen and (max-width: 768px) {
     .n-bttn {
         margin-top: 60px;
         width: 100%;
+    }
+
+    .n-bttn button {
+        width: 72%;
+        font-size: 12px;
+        font-weight: bold;
+        position: static;
+        border: 1px solid gray;
+    }
+}
+
+.about {
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .about h3 {
+        font-size: 14px;
+    }
+}
+
+.a-section {
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.a-section>h4 {
+    flex: 1 1 20%;
+    padding-top: 8px;
+}
+
+.a-section>div {
+    flex: 4 4 80%;
+}
+
+.a-section p {
+    margin-top: 30px;
+    font-size: 18px;
+}
+.a-section p:first-of-type {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .a-section {
+        display: block;
+        margin-top: 60px;
+    }
+
+    .a-section>h4 {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    .a-section p {
+        font-size: 14px;
     }
 }
