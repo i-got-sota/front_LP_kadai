@@ -174,18 +174,19 @@ body * {
 }
 
 body p {
-    font-size: 14px;
+    margin-bottom: 20px;
+    font-size: 16px;
     line-height: 2em;
 }
 
-@media screen and (max-width: 768px) {
-    body p {
-        font-size: 11px;
-        line-height: 20px;
-    }
+body h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 2em;
 }
 
 body h3 {
+    margin: 15px 0;
     font-size: 20px;
     font-weight: bold;
     line-height: 2em;
@@ -194,12 +195,7 @@ body h3 {
 body h4 {
     font-size: 18px;
     font-weight: bold;
-}
-
-@media screen and (max-width: 768px) {
-    body h3 {
-        font-size: 16px;
-    }
+    line-height: 2em;
 }
 
 body a {
@@ -210,6 +206,23 @@ body a {
 }
 
 @media screen and (max-width: 768px) {
+    body p {
+        font-size: 13px;
+        line-height: 1.6em;
+    }
+
+    body h2 {
+        font-size: 21px;
+    }
+
+    body h3 {
+        font-size: 14px;
+    }
+
+    body h4 {
+        font-size: 14px;
+    }
+
     body a {
         font-size: 13px;
     }
@@ -317,22 +330,28 @@ main>section {
 }
 
 .news {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    margin-left: 72px;
+    margin-right: 72px;
     position: relative;
+}
+.news p {
+    font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {
     .news {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
         position: static;
+    }
+    .news p {
+        font-size: 10px;
     }
 }
 
 .n-ttl {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     width: 100%;
     height: 50px;
     background: url(img/news/news_ttl.svg) left top / contain no-repeat;
@@ -340,9 +359,8 @@ main>section {
 
 @media screen and (max-width: 768px) {
     .n-ttl {
-        height: 30px;
+        height: 8vw;
         margin-bottom: 30px;
-        
     }
 }
 
@@ -353,6 +371,7 @@ main>section {
 .n-section {
     position: relative;
     width: 255px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #000;
 }
 
@@ -376,6 +395,11 @@ main>section {
     content: "2022.06.30";
 }
 
+.n-section>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 @media screen and (max-width: 768px) {
     .n-section {
@@ -390,23 +414,6 @@ main>section {
     .n-section:first-child {
         margin-right: 15px;
     }
-}
-
-.n-section>* {
-    margin-bottom: 25px;
-}
-
-
-@media screen and (max-width: 768px) {
-    .n-section>* {
-        margin-bottom: 10px;
-    }
-}
-
-.n-section>img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 .n-bttn button {
@@ -448,10 +455,6 @@ main>section {
         margin-left: 40px;
         margin-right: 40px;
     }
-
-    .about h3 {
-        font-size: 14px;
-    }
 }
 
 .a-section {
@@ -469,10 +472,6 @@ main>section {
     flex: 4 4 80%;
 }
 
-.a-section p {
-    margin-top: 30px;
-    font-size: 18px;
-}
 .a-section p:first-of-type {
     margin-top: 0;
 }
@@ -480,14 +479,120 @@ main>section {
 @media screen and (max-width: 768px) {
     .a-section {
         display: block;
-        margin-top: 60px;
+        margin-top: 30px;
+    }
+}
+
+.product {
+    width: 80%;
+    margin-top: 215px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: auto;
+        margin-top: 200px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+.p-section {
+    width: 100%;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.p-section:last-child {
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    .p-section {
+        margin-bottom: 40px;
+    }
+}
+
+.p-ttl {
+    width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 65px;
+    z-index: 1;
+}
+
+.p-section:first-child .p-ttl {
+    height: 58px;
+    left: -33px;
+    background-image: url(img/products/products_ttl_tea.svg);
+    background-position: left top;
+}
+
+.p-section:last-child .p-ttl {
+    height: 68px;
+    right: -33px;
+    background-position: right top;
+    background-image: url(img/products/products_ttl_scone.svg);
+}
+
+@media screen and (max-width: 768px) {
+    .p-ttl {
+        width: 200px;
+        top: 20px;
     }
 
-    .a-section>h4 {
-        margin-bottom: 30px;
-        font-size: 16px;
+    .p-section:first-child .p-ttl {
+        height: 40px;
+        left: -25px;
     }
-    .a-section p {
-        font-size: 14px;
+    
+    .p-section:last-child .p-ttl {
+        height: 40px;
+        right: -25px;
+    }    
+}
+
+.p-section img {
+    width: 60%;
+    height: 600px;
+}
+
+@media screen and (max-width: 768px) {
+    .p-section img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.p-text {
+    text-align: left;
+    max-width: 450px;
+    padding: 65px 55px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.p-section:first-child .p-text {
+    left: 55%;
+}
+
+.p-section:last-child .p-text {
+    right: 55%;
+}
+
+@media screen and (max-width: 768px) {
+    .p-text {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        position: static;
+        transform: translateY(0);
     }
 }
