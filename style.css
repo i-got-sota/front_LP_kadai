@@ -176,26 +176,35 @@ body * {
 body p {
     margin-bottom: 20px;
     font-size: 16px;
-    line-height: 2em;
+    line-height: 2;
 }
 
 body h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
     line-height: 2em;
+    letter-spacing: -1px;
 }
 
 body h3 {
-    margin: 15px 0;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
-    line-height: 2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
 }
 
 body h4 {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+}
+
+body h5 {
     font-size: 18px;
     font-weight: bold;
-    line-height: 2em;
+    line-height: 2;
 }
 
 body a {
@@ -208,18 +217,22 @@ body a {
 @media screen and (max-width: 768px) {
     body p {
         font-size: 13px;
-        line-height: 1.6em;
+        line-height: 1.6;
     }
 
     body h2 {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     body h3 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     body h4 {
+        font-size: 14px;
+    }
+
+    body h5 {
         font-size: 14px;
     }
 
@@ -261,6 +274,19 @@ body button::before {
         width: 16px;
         height: 16px;
     }    
+}
+
+/*ここまで body*/
+
+.small-p {
+    font-size: 14px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .small-p {
+        font-size: 10px;
+    }
 }
 
 .h-img {
@@ -325,9 +351,13 @@ body button::before {
     }
 }
 
+/*ここまで header*/
+
 main>section {
     margin-top: 150px;
 }
+
+/*ここまで main*/
 
 .news {
     width: auto;
@@ -335,18 +365,12 @@ main>section {
     margin-right: 72px;
     position: relative;
 }
-.news p {
-    font-size: 14px;
-}
 
 @media screen and (max-width: 768px) {
     .news {
         margin-left: 15px;
         margin-right: 15px;
         position: static;
-    }
-    .news p {
-        font-size: 10px;
     }
 }
 
@@ -443,6 +467,8 @@ main>section {
     }
 }
 
+/*ここまで news*/
+
 .about {
     width: 72%;
     margin-left: auto;
@@ -463,7 +489,7 @@ main>section {
     margin-top: 80px;
 }
 
-.a-section>h4 {
+.a-section>h5 {
     flex: 1 1 20%;
     padding-top: 8px;
 }
@@ -483,8 +509,10 @@ main>section {
     }
 }
 
+/*ここまで about*/
+
 .product {
-    width: 80%;
+    width: 75%;
     margin-top: 215px;
     margin-left: auto;
     margin-right: auto;
@@ -515,7 +543,7 @@ main>section {
     }
 }
 
-.p-ttl {
+.p-label {
     width: 400px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -524,14 +552,14 @@ main>section {
     z-index: 1;
 }
 
-.p-section:first-child .p-ttl {
+.p-section:first-child .p-label {
     height: 58px;
     left: -33px;
     background-image: url(img/products/products_ttl_tea.svg);
     background-position: left top;
 }
 
-.p-section:last-child .p-ttl {
+.p-section:last-child .p-label {
     height: 68px;
     right: -33px;
     background-position: right top;
@@ -544,12 +572,12 @@ main>section {
         top: 20px;
     }
 
-    .p-section:first-child .p-ttl {
+    .p-section:first-child .p-label {
         height: 40px;
         left: -25px;
     }
     
-    .p-section:last-child .p-ttl {
+    .p-section:last-child .p-label {
         height: 40px;
         right: -25px;
     }    
@@ -558,6 +586,7 @@ main>section {
 .p-section img {
     width: 60%;
     height: 600px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
@@ -570,7 +599,6 @@ main>section {
 
 .p-text {
     text-align: left;
-    max-width: 450px;
     padding: 65px 55px;
     background-color: #fff;
     position: absolute;
@@ -596,3 +624,206 @@ main>section {
         transform: translateY(0);
     }
 }
+
+/*ここまで product*/
+
+.feature {
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .feature {
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+.f-section {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.f-section>img {
+    width: 60%;
+    height: inherit;
+    object-fit: cover;
+    flex: 3 3 60%;
+}
+
+.f-section:last-child {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+    .f-section {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .f-section img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+.f-text {
+    flex: 2 2 40%;
+    padding-top: 30px;
+    padding-left: 60px;
+    text-align: left;
+}
+
+.f-section:last-child .f-text {
+    padding-left: 0;
+    padding-right: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .f-text {
+        padding: 0;
+    }
+}
+
+/*ここまで feature*/
+
+.recipe {
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .recipe {
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+.r-ttl {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.r-ttl>div {
+    margin-bottom: 30px;
+    width: 800px;
+    height: 50px;
+    background: url(img/recipe/recipe_ttl.svg) center center / contain no-repeat;
+}
+
+.r-ttl>h2{
+    line-height: 1.5em;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .r-ttl {
+        width: 100%;
+        white-space: pre-line;
+    }
+
+    .r-ttl>div {
+        width: 100%;
+        height: 8vw;
+        margin-bottom: 0;
+    }
+
+    .r-ttl>h2 {
+        font-size: 18px;
+    }
+}
+
+.r-content {
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .r-content {
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+.r-label {
+    margin-right: 60px;
+    width: 108px;
+    height: 350px;
+    padding-top: 12px;
+    writing-mode: vertical-lr;
+    border-top: 8px solid #000;
+}
+
+@media screen and (max-width: 768px) {
+    .r-label {
+        margin-right: 30px;
+        width: 20%;
+        padding-top: 20px;
+        border-top: 2px solid #000;
+    }
+
+    .r-label>h2 {
+        font-size: 6vw;
+        line-height: 1.5;
+    }
+
+    .r-label>h5 {
+        font-size: 3vw;
+    }
+}
+.r-ul {
+    display: flex;
+    padding-top: 20px;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 768px) {
+    .r-ul {
+        width: 80%;
+    }
+}
+
+.r-li {
+    margin-right: 50px;
+    width: 350px;
+    height: inherit;
+}
+
+.r-li>img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.r-li>p {
+    font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+    .r-li {
+        width: auto;
+        height: auto;
+    }
+
+    .r-li>img {
+        width: 60vw;
+        height: auto;
+    }
+}
+
+.r-li:last-child {
+    margin-right: 0;
+}
+/*ここまで recipe*/
+/*ここまで shop*/
+/*ここまで contact*/
+/*ここまで footer*/
