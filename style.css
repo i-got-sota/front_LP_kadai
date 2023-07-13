@@ -244,9 +244,10 @@ body a {
 body button {
     margin: 0 auto;
     display: flex;
-    width: 300px;
-    height: 60px;
+    width: 310px;
+    height: 65px;
     font-size: 16px;
+    font-weight: bold;
     background-color: #fff;
     border: 1px solid gray;
     cursor: pointer;
@@ -267,6 +268,7 @@ body button::before {
     body button {
         width: 72%;
         height: 50px;
+        font-size: 12px;
     }
 
     body button::before {
@@ -448,7 +450,7 @@ main>section {
     border: none;
 }
 
-.n-bttn button::before, .s-bttn button::before {
+.n-bttn button::before, .s-info button::before {
     background-image: url(img/icon_ig.svg);
 }
 
@@ -694,7 +696,7 @@ main>section {
 /*ここまで feature*/
 
 .recipe {
-    width: 93%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -823,7 +825,174 @@ main>section {
 .r-li:last-child {
     margin-right: 0;
 }
+
 /*ここまで recipe*/
+
+.shop {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .shop {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.s-ttl {
+    width: 100%;
+    height: 50px;
+    background: url(img/shop/shop_ttl.svg) center center / contain no-repeat;
+    margin-bottom: 60px;
+}
+
+.s-content {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .s-content {
+        display:block;
+    }
+}
+
+.s-img {
+    width: 52%;
+    height: 960px;/*暫定*/
+    background: url(img/shop/shop_img01.jpg) left top / contain no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .s-img {
+        width: 100%;
+        height: 97vw;
+        background-image: url(img/shop/shop_img01_sp.jpg);
+    }
+}
+
+.s-info {
+    width: 48%;
+    padding: 25px 100px;
+}
+
+.s-info>div {
+    width: 100%;
+    height: 37px;
+    background: url(img/shop/shop_ttl_cafe.svg) left top / contain no-repeat;
+    margin-bottom: 15px;
+}
+
+.s-info>table {
+    margin: 10px 0;
+    width: 100%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.s-info>table * {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.s-info th {
+    padding: 20px 10px;
+}
+
+.s-info button {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .s-info {
+        width: auto;
+        margin: 60px 40px;
+        padding: 0;
+    }
+
+    .s-info>div {
+        height: 45px;
+    }
+
+    .s-info p {
+        line-height: 2;
+    }
+
+    .s-info>table {
+        margin: 25px 0;
+    }
+
+    .s-info button {
+        margin: 0 auto;
+    }
+}
+
+.s-online-info {
+    margin: 0 auto;
+    width: 90%;
+    padding: 40px 60px;
+    border-top: 3px solid #000;
+}
+
+.s-online-info>div:first-child {
+    width: 100%;
+    height: 25px;
+    background: url(img/shop/shop_ttl_online.svg) left center / contain no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .s-online-info {
+        width: auto;
+        margin: 40px;
+        padding: 0;
+        border-top: none;
+    }
+
+    .s-online-info>div:first-child {
+        height: 35px;
+    }
+}
+
+.s-online-content {
+    display: flex;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .s-online-content {
+        display: block;
+    }
+}
+
+.s-online-txt {
+    width: 70%;
+}
+
+.s-online-txt p:last-child {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .s-online-txt {
+        width: 100%;
+    }
+}
+
+.s-online-bttn {
+    width: 30%;
+}
+
+.s-online-bttn button::before {
+    background-image: url(img/icon_cart.svg);
+}
+
+@media screen and (max-width: 768px) {
+    .s-online-bttn {
+        width: 100%;
+    }
+}
 /*ここまで shop*/
 /*ここまで contact*/
 /*ここまで footer*/
