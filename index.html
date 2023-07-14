@@ -237,26 +237,41 @@
       </div>
     </section>
     <!-- shop -->
-    <section>
-      <div><img src="" alt=""></div>
-      <div>
+    <section class="contact">
+      <div></div>
+      <form action="" method="post">
         <ul>
-          <li><label for=""><input type="text"></label></li>
-          <li><label for=""><input type="text"></label></li>
-          <li><label for=""><input type="text"></label></li>
-          <li><label for=""><textarea name="" id="" cols="30" rows="10"></textarea></label></li>
-          <li><input type="radio"></li>
-          <li><button></button></li>
+          <li>
+            <label for="name">名前：</label>
+            <input type="text" id="name" placeholder="例）出見亜 太郎">
+          </li>
+          <li>
+            <label for="email">メールアドレス：</label>
+            <input type="email" id="email" placeholder="例）example@example.com">
+          </li>
+          <li>
+            <label for="title">件名：</label>
+            <select name="title" id="title">
+              <option value="about-products">商品について</option>
+              <option value="others">その他</option>
+            </select>
+          </li>
+          <li>
+            <label for="content">内容：</label>
+            <textarea name="content" id="content" cols="30" rows="7"></textarea>
+          </li>
         </ul>
-      </div>
+          <div class="c-privacy-checkbox-bttn">
+            <input type="checkbox">
+            <label for="privacy">プライバシーポリシーに同意します。</label>
+          </div>
+        <button type="submit">送信</button>
+      </form>
     </section>
     <!-- form -->
   </main>
   <footer>
-    <div>
-      <p></p>
-      <img src="" alt="">
-    </div>
+    <div></div>
   </footer>
 </body>
 </html>
