@@ -296,7 +296,7 @@ body button:hover {
     }
 }
 
-.h-img {
+header {
     width: 100%;
     height: 66vw;
     background: url(img/header/hd_img01_a.jpg) left top / cover no-repeat;
@@ -304,12 +304,40 @@ body button:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .h-img {
+    header {
         width: 100%;
         height: 133vw;
-        background: url(img/header/hd_img01_a_sp.jpg) left top / cover no-repeat;
         position: relative;
     }
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    background: left top / cover no-repeat;
+}
+
+.header-slide1 {
+    background-image: url(img/header/hd_img01_a.jpg);
+}
+
+@media screen and (max-width: 768px) {
+    .header-slide1 {
+        background-image: url(img/header/hd_img01_a_sp.jpg);
+    }    
+}
+
+.header-slide2 {
+    background-image: url(img/header/hd_img01_b.jpg);
+}
+
+@media screen and (max-width: 768px) {
+    .header-slide2 {
+        background-image: url(img/header/hd_img01_b_sp.jpg);
+    }    
 }
 
 .h-logo {
