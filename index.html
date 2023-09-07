@@ -237,7 +237,7 @@
             <p>※売り切れ次第閉店します。</p>
           </div>
           <div class="s-online-bttn">
-            <button>OPEN</button>  
+            <button id="open-bttn">OPEN</button>  
         </div>
         </div>
       </div>
@@ -271,7 +271,19 @@
             <input type="checkbox">
             <label for="privacy">プライバシーポリシーに同意します。</label>
           </div>
-        <button type="submit">送信</button>
+        <button id="confirm-bttn" class="black-bttn">送信</button>
+        <div class="layer js-modal">
+          <div class="confirm-modal">
+            <div class="modal-inner">
+              <h4>送信内容確認</h4>
+              <div id="confirm"></div>
+              <div class="modal-bttn-wrap">
+                <span><button id="js-close-bttn">キャンセル</button></span>
+                <span><button type="submit" class="black-bttn">送信</button></span>
+              </div>  
+            </div>  
+        </div>
+        </div>
       </form>
     </section>
     <!-- form -->
@@ -280,5 +292,6 @@
     <div></div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
