@@ -76,11 +76,11 @@ video {
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
-    background: 0 0
+    background: 0 0;
 }
 
 body {
-    line-height: 1
+    line-height: 1;
 }
 
 article,
@@ -167,6 +167,10 @@ body * {
     box-sizing: border-box;
 }
 
+address {
+    font-style: normal;
+}
+
 /* ここまで リセットcss */
 
 body * {
@@ -246,7 +250,8 @@ body a {
 body button {
     margin: 0 auto;
     display: flex;
-    width: 310px;
+    /* min関数を使うことで、800px付近でオーバーフローする問題を修正 */
+    width: min(310px, 100%);
     height: 65px;
     font-size: 16px;
     font-weight: bold;
@@ -255,6 +260,7 @@ body button {
     cursor: pointer;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 
 body button::before {
@@ -268,7 +274,6 @@ body button::before {
 
 body button:hover {
     background-color: whitesmoke;
-    transition: 0.5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -387,7 +392,10 @@ swiper-slide {
     position: absolute;
     right: 20px;
     bottom: 15px;
+    /* swiperの下にアイコンが隠れる問題を修正 */
+    z-index: 1;
 }
+
 .h-icons li {
     flex: 1 1 0;
 }
@@ -442,33 +450,29 @@ main>section {
 
 .n-content {
     display: flex;
+    gap: 60px;
 }
 
 .n-section {
     position: relative;
     width: 255px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #000;
 }
 
-.n-section::after {
-    content: " ";
+.n-section .horizontal-line {
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #000;
+    margin: 8px 0;
+}
+
+.n-date {
+    margin-top: 16px;
+}
+
+.n-date time {
     font-size: 14px;
     font-weight: bold;
-    position: absolute;
-    bottom: -28px;
-    left: 0;
-}
-
-.n-section:first-child {
-    margin-right: 60px;
-}
-
-.n-section:first-child:after {
-    content: "2022.09.10";
-}
-.n-section:last-child:after {
-    content: "2022.06.30";
 }
 
 .n-section>img {
@@ -757,12 +761,12 @@ main>section {
 
 .r-ttl {
     margin: 0 auto;
-    width: 800px;
+    width: min(800px, 100%);
 }
 
 .r-ttl>div {
     margin-bottom: 30px;
-    width: 800px;
+    width: 100%;
     height: 50px;
     background: url(img/recipe/recipe_ttl.svg) center center / contain no-repeat;
 }
@@ -831,7 +835,7 @@ main>section {
 .r-ul {
     display: flex;
     padding-top: 20px;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 @media screen and (max-width: 768px) {
@@ -922,7 +926,7 @@ main>section {
     padding: 25px 100px;
 }
 
-.s-info>div {
+.s-info__title {
     width: 100%;
     height: 37px;
     background: url(img/shop/shop_ttl_cafe.svg) left top / contain no-repeat;
@@ -1215,8 +1219,9 @@ main>section {
 
 #confirm {
     width: 100%;
-    height: 70vh;
-    overflow: scroll;
+    /* スマホでの表示などで、vhが実際のビューポートの高さと合っていない問題を修正する */
+    height: calc(70 * var(--vh));
+    overflow: auto;
     line-height: 2em;
 }
 
@@ -1238,13 +1243,9 @@ main>section {
 }
 
 .modal-bttn-wrap>span {
-    position: relative;
     flex: 1 1 auto;
 }
 .modal-bttn-wrap button {
-    position: absolute;
-    top: 0;
-    margin: 0;
     width: 140px;
     font-size: 14px;
 }
