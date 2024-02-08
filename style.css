@@ -168,3 +168,18 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+/* 一旦輪郭をつけとく */
+header, main, footer, div {
+    border: 1px solid black;
+}
+
+/* header */
+.top-image-box {
+    width: 100%;
+}
+
+.icon-image-box {
+    width:
+}
+
