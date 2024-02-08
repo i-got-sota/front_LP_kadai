@@ -191,6 +191,18 @@ header, main, footer, div {
     padding: 10px;
 }
 
+/* news */
+.all-news-box {
+    display: flex;
+}
+
+.one-news-box {
+    width: 200px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+
 
 
 
