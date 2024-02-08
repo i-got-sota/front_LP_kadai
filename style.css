@@ -175,11 +175,10 @@ header, main, footer, div {
 }
 
 /* header */
-.top-image-box {
+
+.top-image-box img {
     width: 100%;
 }
 
-.icon-image-box {
-    width:
-}
+
 
