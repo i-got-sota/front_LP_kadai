@@ -168,3 +168,306 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+/* 全体 */
+
+html {
+    font-family: 'Zen Maru Gothic', serif;
+}
+
+/* ヘッダー */
+
+.header_background img {
+    max-width: 100%;
+}
+
+.header_contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    position: relative;
+    bottom: 50px;
+}
+
+.hd_logo {
+    width: 330px;
+}
+
+.header_link {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_link a {
+    color: #000;
+}
+
+.header_button {
+    font-size: 2em;
+}
+
+/* ニュース */
+#news {
+    margin: 120px 70px;
+}
+
+.news-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-title img {
+    width: 150px;
+    margin-bottom: 70px;
+}
+
+.news-title a {
+    text-decoration: none;
+}
+
+.news-instagram::before {
+    content: '\f16d';
+    font: var(--fa-font-brands);
+    font-size: 28px;
+    position: relative;
+    top: 4px;
+    right: 4px;
+}
+
+.news-instagram {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.news-contents {
+    display: flex;
+}
+
+.news-image img {
+    width: 100%;
+}
+
+.news-topic {
+    width: 250px;
+    height: 500px;
+}
+
+.news-contents-title {
+    line-height: 3;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.news-contents-text {
+    line-height: 2;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.news-contents-link {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.news-contents-link a {
+    color: #000;
+}
+
+.news-contents-date {
+    border-top: solid black;
+    font-size: small;
+    color: black;
+    line-height: 3;
+    font-weight: 600;
+}
+
+.space_news {
+    width: 70px;
+}
+
+/* about */
+
+#about {
+    padding: 100px 140px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.about_top h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.comment {
+    display: flex;
+    padding-top: 80px;
+}
+
+.comment h3 {
+    width: 20%;
+    line-height: 2;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.comment_text {
+    width: 80%;
+    line-height: 2;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* product */
+
+#product {
+    padding: 100px 100px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.ceylon_title {
+    width: 300px;
+    z-index: 1;
+    position: relative;
+    top: 100px;
+    right: 30px;
+}
+
+.scone_title {
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+
+.product_image {
+    width: 70%;
+}
+
+.product_image img {
+    height: 600px;
+    width: 800px;
+    max-width:100%;
+    object-fit: cover;
+}
+
+.ceylon_image {
+    float: left;
+}
+
+.scone_image {
+    float: right;
+}
+
+.ceylon_text {
+    float: left;
+}
+
+.scone_title {
+    float: right;
+}
+
+.product_text {
+    width: 30%;
+    background-color: white;
+    padding: 50px;
+    margin: auto 0;
+}
+
+/* feature */
+
+#feature {
+    padding: 100px 140px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.feature_top {
+    clear: right;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.feature_tea {
+    display: flex;
+    gap: 56px;
+    padding-top: 60px;
+}
+.feature_sweets {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 56px;
+    padding-top: 100px;
+}
+
+.feature_text h3 {
+    font-size: 26px;
+    margin: 30px 0;
+}
+
+.feature_text div {
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* recipe */
+
+.recipe_top {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recipe_top img {
+    width: 250px;
+}
+
+.recipe_top h3 {
+    font-size: 36px;
+    margin: 50px 0 70px;
+}
+
+.recipe_container_title {
+    writing-mode: vertical-lr;
+    border-top: solid 10px #000;
+    margin: 0 70px;
+    padding: 20px;
+}
+
+.recipe_container {
+    display: flex;
+}
+
+.recipe_container_title {
+    flex-direction: column;
+}
+
+.recipe_container_element {
+    overflow-x: scroll;
+    display: flex;
+    height: 600px;
+    
+}
+
+.recipe_container_title h3 {
+    font-size: 36px;
+}
+
+.recipe_container_title div {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.recipe_element {
+    width: 500px;
+}
+
+.recipe_element img {
+    width: 380px;
+    object-fit: contain;
+}

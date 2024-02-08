@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2038.72207 239.48438"><defs><style>.cls-1{font-size:212.59842px;font-family:Roboto-Medium, Roboto;font-weight:500;}</style></defs><g id="レイヤー_2" data-name="レイヤー 2"><g id="レイヤー_1-2" data-name="レイヤー 1"><text class="cls-1" transform="translate(0.38759 181.87109)">SHOP INFORMATION</text></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2149.76 239.48">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        font-family: RobotoSlab-Regular, 'Roboto Slab';
+        font-size: 212.6px;
+        font-variation-settings: 'wght' 400;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_2" data-name="レイヤー 2">
+    <g id="_レイヤー_1-2" data-name="レイヤー 1-2">
+      <text class="cls-2" transform="translate(0 181.87)"><tspan x="0" y="0">SHOP IN</tspan><tspan class="cls-1" x="853.09" y="0">F</tspan><tspan x="978.29" y="0">ORMATION</tspan></text>
+    </g>
+  </g>
+</svg>

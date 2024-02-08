@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1061.72207 239.48438"><defs><style>.cls-1{font-size:212.59842px;font-family:Roboto-Medium, Roboto;font-weight:500;}</style></defs><g id="レイヤー_2" data-name="レイヤー 2"><g id="レイヤー_1-2" data-name="レイヤー 1"><text class="cls-1" transform="translate(0.20156 181.87109)">Ceylon Tea</text></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1115.62 239.48">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        font-family: RobotoSlab-Regular, 'Roboto Slab';
+        font-size: 212.6px;
+        font-variation-settings: 'wght' 400;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_2" data-name="レイヤー 2">
+    <g id="_レイヤー_1-2" data-name="レイヤー 1-2">
+      <text class="cls-3" transform="translate(0 181.87)"><tspan x="0" y="0">Cey</tspan><tspan class="cls-2" x="367.58" y="0">l</tspan><tspan class="cls-1" x="433.29" y="0">on Tea</tspan></text>
+    </g>
+  </g>
+</svg>
