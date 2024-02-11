@@ -203,14 +203,38 @@ header, main, footer, div {
 }
 
 /* news */
+.news {
+    width: 100%;
+    padding: 80px 60px;
+}
+
+.news-top {
+    display:  inline-block;
+    height: 100px;
+}
+
+.news-top p {
+    font-size: 60px;
+}
+
+.insta-button {
+    padding: auto 10px auto auto;
+}
+
 .all-news-box {
     display: flex;
 }
 
 .one-news-box {
-    width: 200px;
+    width: 260px;
     height: 600px;
     border: 1px solid black;
+    margin: 30px;
+}
+
+.one-news-box img {
+    object-fit: cover;
+    width: 100%;
 }
 
 
