@@ -257,8 +257,10 @@ body * {
     height: 800px;
     text-align: center;
 }
-.contact h2 {
-    font-size: 60px;
+
+.contact-top {
+    width: 10%;
+    margin: 20px auto;
 }
 
 footer {
