@@ -170,9 +170,10 @@ body * {
 /* ここまで リセットcss */
 
 /* 一旦輪郭をつけとく */
-/* header, main, footer, div {
-    border: 1px solid black;
-} */
+header, main, footer, div {
+    /* border: 1px solid black; */
+    line-height: 2;
+}
 
 /* header */
 .top-image-box {
@@ -246,7 +247,20 @@ body * {
 
 /* about-company */
 .about-company {
-    margin: 20px 40px 60px;
+    margin: 20px 10% 60px;
+}
+
+.about-1 {
+    font-size: large;
+}
+
+.about-2 {
+    margin: 60px 0;
+    display: flex;
+}
+
+.about-2 > p {
+    width: 10%;
 }
 
 
