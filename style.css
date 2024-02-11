@@ -244,6 +244,12 @@ header, main, footer, div {
     font-size: 20px;
 }
 
+/* about-company */
+.about-company {
+    margin: 20px 40px 60px;
+}
+
+
 
 /* contact */
 .contact {
@@ -253,6 +259,11 @@ header, main, footer, div {
 }
 .contact h2 {
     font-size: 60px;
+}
+
+footer {
+    text-align: center;
+    margin: 60px auto 120px;
 }
 
 
