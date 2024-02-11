@@ -170,9 +170,9 @@ body * {
 /* ここまで リセットcss */
 
 /* 一旦輪郭をつけとく */
-header, main, footer, div {
+/* header, main, footer, div {
     border: 1px solid black;
-}
+} */
 
 /* header */
 .top-image-box {
@@ -186,7 +186,7 @@ header, main, footer, div {
 .over-image-text {
     position: absolute;
     bottom: 20px;
-    left: 20px;
+    left: 60px;
 }
 
 .icon-image-box {
