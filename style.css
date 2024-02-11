@@ -205,7 +205,7 @@ header, main, footer, div {
 /* news */
 .news {
     width: 100%;
-    padding: 80px 60px;
+    padding: 80px 40px;
 }
 
 .news-top {
@@ -227,9 +227,10 @@ header, main, footer, div {
 
 .one-news-box {
     width: 260px;
-    height: 600px;
+    height: auto;
     border: 1px solid black;
     margin: 30px;
+    line-height: 2;
 }
 
 .one-news-box img {
@@ -237,6 +238,11 @@ header, main, footer, div {
     width: 100%;
 }
 
+.one-news-box p {
+    font-weight: bold;
+    margin: 20px 5px;
+    font-size: 20px;
+}
 
 
 /* contact */
