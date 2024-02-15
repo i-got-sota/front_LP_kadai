@@ -164,7 +164,7 @@ select {
 }
 
 body * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 /* ここまで リセットcss */
@@ -304,6 +304,30 @@ img {
     width: 15%;
     margin: 0 auto;
 }
+
+.recipe-main {
+    margin-left: 5%;
+}
+
+.recipe-overflow {
+    overflow-x: scroll;
+    display: flex;
+    white-space: nowrap;
+    width: 90%;
+    flex-wrap: nowrap;
+}
+
+.recipe-overflow > div {
+    width: 600px;
+    margin: 20px;
+    display: block;
+}
+
+.recipe-text {
+    overflow-wrap: break-word;
+}
+
+
 
 /* shop-information */
 .shop-information-title {
