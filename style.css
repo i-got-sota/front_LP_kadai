@@ -197,7 +197,7 @@ img {
 .icon-image-box {
     display: flex;
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     right: 50px;
 }
 
