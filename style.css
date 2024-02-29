@@ -179,6 +179,12 @@ img {
     max-width: 100%;
 }
 
+/*aタグの下線等を消す*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* header */
 .top-image-box {
     position: relative;
@@ -214,8 +220,9 @@ img {
 }
 
 .news-top {
-    display:  inline-block;
-    height: 100px;
+    display: flex;
+    height: 50px;
+    margin: 0 30px;
 }
 
 .news-top p {
@@ -223,7 +230,10 @@ img {
 }
 
 .insta-button {
-    padding: auto 10px auto auto;
+    margin-left: auto;
+    height: 50px;
+    line-height: 50px;
+    font-size: large;
 }
 
 .all-news-box {
@@ -245,7 +255,7 @@ img {
 
 .one-news-box p {
     font-weight: bold;
-    margin: 20px 5px;
+    margin: 10px 5px;
     font-size: 20px;
 }
 
@@ -289,7 +299,7 @@ img {
     background-color: white;
 }
 
-.product-text h1,p {
+.product-text h1, .product-text p {
     padding: 20px 60px;
 }
 
@@ -379,7 +389,7 @@ img {
 }
 
 .shop-information-left {
-    width: 50%;
+    width: 60%;
 }
 
 .shop-information-right {
@@ -389,11 +399,11 @@ img {
 
 .shop-information-right-title {
     width: 20%;
-    margin: 30px;
+    margin: 10px;
 }
 
 .shop-information-right p {
-    margin: 40px;
+    margin: 5px 0;
 }
 
 .shop-information-table {
@@ -411,6 +421,8 @@ th {
     padding: 20px;
     cursor: pointer;
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .intro-insta:hover {
