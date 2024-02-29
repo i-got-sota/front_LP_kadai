@@ -357,11 +357,14 @@ img {
     margin: 40px;
 }
 
+.shop-information-table {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 40px;
+}
 
-.online-shop {
-    margin: 40px 5%;
-    padding: 40px;
-    border-top: #000 4px solid;
+th {
+    padding: 8px 10px;
 }
 
 .intro-insta {
@@ -377,6 +380,11 @@ img {
 }
 
 /*online-shop*/
+.online-shop {
+    margin: 40px 5%;
+    padding: 40px;
+    border-top: #000 4px solid;
+}
 .online-shop-top {
     width: 20%;
 }
