@@ -165,6 +165,7 @@ select {
 
 body * {
     /* box-sizing: border-box; */
+    font-family:"Zen Maru Gothic", serif;
 }
 
 /* ここまで リセットcss */
@@ -257,6 +258,10 @@ a {
     font-weight: bold;
     margin: 10px 5px;
     font-size: 20px;
+}
+
+.under {
+    text-decoration: underline;
 }
 
 /* about-company */
