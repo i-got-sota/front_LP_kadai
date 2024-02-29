@@ -248,7 +248,15 @@
             </div>
 
             <div class="online-shop">
-                <img src="img/shop/shop_ttl_online.svg" alt="">
+                <div>
+                    <img src="img/shop/shop_ttl_online.svg" alt="">                    
+                </div>
+                <div>
+                    <div>
+                        オンラインショップをオープンしています。<br>
+                        ※売り切れ次第閉店します。
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -257,28 +265,31 @@
                 <img src="img/contact/contact_ttl.svg" alt="CONTACT">
             </div>
             <form action="">
-                <div>
+                <div class="one-contact">
                     <label for="">名前:</label>
-                    <input type="text">
+                    <input type="text" placeholder="例) でみあたろう">
                 </div>
-                <div>
+                <div class="one-contact">
                     <label for="">メールアドレス:</label>
-                    <input type="text">
+                    <input type="text" placeholder="例) example@example.com">
                 </div>
-                <div>
+                <div class="one-contact">
                     <label for="">件名:</label>
-                    <input type="text">
+                    <select name="choice">
+                        <option selected>商品について</option>
+                        <option>その他</option>
+                    </select>
                 </div>
-                <div>
+                <div class="one-contact">
                     <label for="">内容:</label>
-                    <input type="text">
+                    <textarea name="" id="" cols="" rows="10"></textarea>
                 </div>
                 <div>
                     <input type="checkbox" name="" id="">
                     <label for="">プライバシーポリシーに同意します</label>
                 </div>
-                <div>
-                    <button>送信</button>
+                <div class="contact-button">
+                    送信
                 </div>
             </form>
         </div>

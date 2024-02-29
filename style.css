@@ -209,7 +209,7 @@ img {
 
 /* news */
 .news {
-    width: 100%;
+    max-width: 100%;
     padding: 80px 40px;
 }
 
@@ -312,19 +312,20 @@ img {
 .recipe-overflow {
     overflow-x: scroll;
     display: flex;
-    white-space: nowrap;
     width: 90%;
     flex-wrap: nowrap;
 }
 
 .recipe-overflow > div {
-    width: 600px;
+    width: 35%;
     margin: 20px;
     display: block;
+    flex-shrink: 0;
 }
 
 .recipe-text {
     overflow-wrap: break-word;
+    display: block;
 }
 
 
@@ -389,6 +390,46 @@ img {
 .contact-top {
     width: 10%;
     margin: 20px auto;
+}
+
+.contact div {
+    margin-bottom: 20px;
+}
+
+.one-contact {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+}
+
+.one-contact label {
+    width: 30%;
+    text-align: left;
+}
+
+.one-contact input, select {
+    width: 100%;
+    height: 40px;
+}
+
+.one-contact textarea {
+    width: 100%;
+}
+
+.contact-button {
+    width: 30%;
+    height: 60px;
+    margin: 20px auto;
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    line-height: 60px;
+}
+
+.contact-button:hover {
+    color: black;
+    background: white;
+    transition: .5s;
 }
 
 footer {
