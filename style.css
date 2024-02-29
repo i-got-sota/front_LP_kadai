@@ -374,9 +374,30 @@ img {
 .intro-insta:hover {
     background-color: #eeeeee;
     transition: 1s;
-    
 }
 
+/*online-shop*/
+.online-shop-top {
+    width: 20%;
+}
+
+.online-shop-main {
+    display: flex;
+}
+
+.intro-shop {
+    border: 1px solid black;
+    margin-left: auto;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 40%;
+}
+
+.intro-shop:hover {
+    background-color: #eeeeee;
+    transition: 1s;
+}
 
 
 
