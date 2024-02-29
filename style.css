@@ -267,6 +267,45 @@ img {
     width: 10%;
 }
 
+/*product-intro*/
+.product-intro {
+    margin: 60px;
+}
+
+.product-img{
+    width: 60%;
+}
+
+.one-product {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.product-text {
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    z-index: 1;
+    background-color: white;
+}
+
+.product-text h1,p {
+    padding: 20px 60px;
+}
+
+.product-text h1 {
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+.product1 {
+    transform: translate(-100px,0);
+}
+.product2 {
+    transform: translate(100px, 0);
+}
+
+
 /* product-pride */
 .product-pride {
     text-align: center;
