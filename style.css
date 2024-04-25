@@ -199,6 +199,7 @@ a {
     position: absolute;
     bottom: 20px;
     left: 60px;
+    z-index: 10;
 }
 
 .icon-image-box {
@@ -206,6 +207,7 @@ a {
     position: absolute;
     bottom: 20px;
     right: 50px;
+    z-index: 10;
 }
 
 .icon-image-box li {
@@ -553,6 +555,10 @@ footer {
     margin: 60px auto 120px;
 }
 
+
+/*////////////////////////////////////////////////////////////////////*/
+
+  
 
 
 

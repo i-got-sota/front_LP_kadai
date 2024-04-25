@@ -13,13 +13,28 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&family=Ubuntu:ital,wght@0,500;0,700;1,500&family=Yusei+Magic&family=Zen+Maru+Gothic&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <title>ティーラボ DeMiA CAFE</title>
 </head>
 
 <body>
     <header>
         <div class="top-image-box">
-            <img src="img/header/hd_img01_a.jpg" alt="トップ画像">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="top-image-box swiper-slide">
+                        <img src="img/header/hd_img01_a.jpg" alt="トップ画像">
+                    </div>
+                    <div class="top-image-box swiper-slide">
+                        <img src="img/header/hd_img01_b.jpg" alt="トップ画像">
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
             <!--トップ画像の左下に重ねて配置-->
             <div class="over-image-text">
                 <img src="img/header/hd_logo.svg" alt="ロゴ">
@@ -46,11 +61,11 @@
                         <a href="#">
                             <img src="img/icon_menu.svg" alt="メニューボタン">
                         </a>
-
                     </div>
                 </li>
             </ul>
         </div>
+
     </header>
 
     <main>
@@ -350,8 +365,40 @@
         </div>
     </main>
 
-    <footer>copyright &copy; DeMiA CAFE</footer>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
 
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <footer>copyright &copy; DeMiA CAFE</footer>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper(".swiper", {
+            loop: true,
+            autoplay: true,
+            navigation: {
+                nextEl: ".swiper-button-next", //必須
+                prevEl: ".swiper-button-prev", //必須
+            }
+        });
+    </script>
 </body>
 
 </html>
