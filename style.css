@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /* リセットcss */
+button,
 abbr,
 address,
 article,
@@ -485,10 +486,16 @@ th {
 .intro-shop {
     border: 1px solid black;
     margin-left: auto;
+    margin-right: 50px;
     padding: 20px;
     cursor: pointer;
-    text-align: center;
-    width: 30%;
+    text-align: end;
+    width: 150px;
+}
+
+.intro-shop button {
+    width: 100%;
+    height: 100%;
 }
 
 .intro-shop:hover {
