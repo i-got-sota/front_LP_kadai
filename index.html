@@ -354,7 +354,7 @@
                 </div>
                 <div class="one-contact">
                     <label for="">内容:</label>
-                    <textarea name=""  cols="" rows="10" id="input-content"></textarea>
+                    <textarea name="" cols="" rows="10" id="input-content"></textarea>
                 </div>
                 <div>
                     <input type="checkbox" name="" id="">
@@ -369,6 +369,44 @@
         </div>
     </main>
     <footer>copyright &copy; DeMiA CAFE</footer>
+
+
+
+    <!--フォーム送信時の確認モーダル-->
+    <div id="easyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>送信内容確認</h1>
+            </div>
+            <div class="modal-body">
+                <div class="one-contact">
+                    <label for="">名前:</label>
+                    <p id="confirm-name"></p>
+                </div>
+                <div class="one-contact">
+                    <label for="">メールアドレス:</label>
+                    <p id="confirm-mail"></p>
+                </div>
+                <div class="one-contact">
+                    <label for="">件名:</label>
+                    <p id="confirm-about"></p>
+                </div>
+                <div class="one-contact">
+                    <label for="">内容:</label>
+                    <p id="confirm-content"></p>
+                </div>
+                <div class="confirm-button">
+                    <button type="button" class="modalClose">
+                        キャンセル
+                    </button>
+                    <button type="button" class="modalPost">
+                        送信
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 

@@ -166,16 +166,20 @@ select {
 
 body * {
     /* box-sizing: border-box; */
-    font-family:"Zen Maru Gothic", serif;
+    font-family: "Zen Maru Gothic", serif;
 }
 
 /* ここまで リセットcss */
 
 /* 一旦輪郭をつけとく */
-header, main, footer, div {
+header,
+main,
+footer,
+div {
     /* border: 1px solid black; */
     line-height: 2;
 }
+
 /* img が　divからはみ出すのを防ぐ */
 img {
     max-width: 100%;
@@ -281,7 +285,7 @@ a {
     display: flex;
 }
 
-.about-2 > p {
+.about-2>p {
     width: 10%;
 }
 
@@ -290,7 +294,7 @@ a {
     margin: 60px;
 }
 
-.product-img{
+.product-img {
     width: 60%;
 }
 
@@ -307,7 +311,8 @@ a {
     background-color: white;
 }
 
-.product-text h1, .product-text p {
+.product-text h1,
+.product-text p {
     padding: 20px 60px;
 }
 
@@ -317,8 +322,9 @@ a {
 }
 
 .product1 {
-    transform: translate(-100px,0);
+    transform: translate(-100px, 0);
 }
+
 .product2 {
     transform: translate(100px, 0);
 }
@@ -337,7 +343,7 @@ a {
 
 .product-pride h2 {
     font-size: 30px;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 .pride-img {
@@ -381,7 +387,7 @@ a {
     padding: 10px 0;
 }
 
- 
+
 .recipe h2 {
     font-size: 30px;
     text-align: center;
@@ -399,7 +405,7 @@ a {
     flex-wrap: nowrap;
 }
 
-.recipe-overflow > div {
+.recipe-overflow>div {
     width: 35%;
     margin: 20px;
     display: block;
@@ -411,7 +417,7 @@ a {
     display: block;
 }
 
-.recipe-text > h2 {
+.recipe-text>h2 {
     font-size: 30px;
     margin-bottom: 0;
     text-align: start;
@@ -475,6 +481,7 @@ th {
     padding: 40px;
     border-top: #000 4px solid;
 }
+
 .online-shop-top {
     width: 20%;
 }
@@ -532,7 +539,8 @@ th {
     text-align: left;
 }
 
-.one-contact input, select {
+.one-contact input,
+select {
     width: 100%;
     height: 40px;
 }
@@ -570,8 +578,80 @@ footer {
 
 /*////////////////////////////////////////////////////////////////////*/
 
-  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 5% auto;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
 
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
 
+    to {
+        opacity: 1
+    }
+}
 
+.modal-header h1 {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.modal-header {
+    background: lightblue;
+    padding: 3px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalClose {
+    font-size: 1rem;
+    background-color: white;
+}
+
+.modalClose:hover {
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    color: black;
+}
+
+.confirm-button {
+    width: 100%;
+    height: 60px;
+    margin: 20px auto;
+    color: white;
+    line-height: 60px;
+    display: flex;
+}
+
+.confirm-button button {
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.modalPost {
+    background-color: gray;
+    color: white;
+}
