@@ -326,7 +326,6 @@
                     <div class="intro-shop">
                         <button id="move-button">
                             <img src="img/icon_cart.svg" alt=""> OPEN
-
                         </button>
                     </div>
                 </div>
@@ -337,32 +336,34 @@
             <div class="contact-top">
                 <img src="img/contact/contact_ttl.svg" alt="CONTACT">
             </div>
-            <form action="">
+            <form action="" id="">
                 <div class="one-contact">
                     <label for="">名前:</label>
-                    <input type="text" placeholder="例) でみあたろう">
+                    <input type="text" placeholder="例) でみあたろう" id="input-name">
                 </div>
                 <div class="one-contact">
                     <label for="">メールアドレス:</label>
-                    <input type="text" placeholder="例) example@example.com">
+                    <input type="text" placeholder="例) example@example.com" id="input-mail">
                 </div>
                 <div class="one-contact">
                     <label for="">件名:</label>
-                    <select name="choice">
+                    <select name="choice" id="input-about">
                         <option selected>商品について</option>
                         <option>その他</option>
                     </select>
                 </div>
                 <div class="one-contact">
                     <label for="">内容:</label>
-                    <textarea name="" id="" cols="" rows="10"></textarea>
+                    <textarea name=""  cols="" rows="10" id="input-content"></textarea>
                 </div>
                 <div>
                     <input type="checkbox" name="" id="">
                     <label for="">プライバシーポリシーに同意します</label>
                 </div>
                 <div class="contact-button">
-                    送信
+                    <button id="form-submit" type="button">
+                        送信
+                    </button>
                 </div>
             </form>
         </div>
