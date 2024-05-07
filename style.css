@@ -274,7 +274,7 @@ a:visited {
 /* icon, button css 終わり */
 
 img {
-    height: auto;
+    /* height: auto; */
     line-height: 1;
     max-width: 100%;
     vertical-align: top
@@ -1001,7 +1001,7 @@ select {
 
     .products-sct-ttl img {
         height: 40px;
-        width: auto;
+        /* width: auto; */
     }
     .products-slide {
         padding: 0 40px
@@ -1163,9 +1163,9 @@ select {
     #ft {
         padding: 64px 0 128px
     }
-    .ft-copyright img {
+    /* .ft-copyright img {
         width: 128px
-    }
+    } */
 
     .pc {
         display: none;
