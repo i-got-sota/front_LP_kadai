@@ -70,17 +70,17 @@ tr,
 ul,
 var,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: 0 0
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
 }
 
 body {
-    line-height: 1
+  line-height: 1;
 }
 
 article,
@@ -94,1229 +94,1224 @@ hgroup,
 menu,
 nav,
 section {
-    display: block
+  display: block;
 }
 
 ul {
-    list-style: none
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none
+  quotes: none;
 }
 
 blockquote:after,
 blockquote:before,
 q:after,
 q:before {
-    content: none
+  content: none;
 }
 
 a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: 0 0
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
 }
 
 ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: 700
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700;
 }
 
 del {
-    text-decoration: line-through
+  text-decoration: line-through;
 }
 
 abbr[title],
 dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 input,
 select {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 select {
-    -webkit-appearance: none;
-    appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 body * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* ここまで リセットcss */
 
-
 html {
-    color: #000;
-    font-size: 62%;
-    height: 100%
+  color: #000;
+  font-size: 62%;
+  height: 100%;
 }
 
 body {
-    font-family: 'Zen Maru Gothic', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-    font-weight: 500;
-    font-size: 160%;
-    line-height: 2;
-    height: 100%
+  font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-weight: 500;
+  font-size: 160%;
+  line-height: 2;
+  height: 100%;
 }
 
 #main {
-    display: block
+  display: block;
 }
 
 /* aタグの設定 */
 /* リンクには下線 */
 a {
-    color: #000;
-    text-decoration: underline
+  color: #000;
+  text-decoration: underline;
 }
 
 /* サイトに訪れた履歴があっても色を変えない */
 a:visited {
-    color: #000;
-    text-decoration: none
+  color: #000;
+  text-decoration: none;
 }
 /* aタグの設定終わり */
 
 /* .sp: スマホでは改行 */
 .sp {
-    display: none
+  display: none;
 }
 
-
 .box-c {
-    position: relative
+  position: relative;
 }
 
 /* icon, button 関連 css */
 .btn01 {
-    display: inline-block;
-    line-height: 1.2;
-    text-align: center;
-    /* hover へのアニメーション指定 */
-    transition: all .4s ease;
+  display: inline-block;
+  line-height: 1.2;
+  text-align: center;
+  /* hover へのアニメーション指定 */
+  transition: all 0.4s ease;
 
-    background-color: #fff;
-    border: 1px solid #7f7f7f;
-    
-    min-width: 320px;
-    padding: 24px;
-    position: relative;
+  background-color: #fff;
+  border: 1px solid #7f7f7f;
 
-    /* フォント関連 */
-    font-size: 1.5rem;
-    font-weight: 700
+  min-width: 320px;
+  padding: 24px;
+  position: relative;
+
+  /* フォント関連 */
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .btn01 .icon-cart {
-    padding-right: 16px;
+  padding-right: 16px;
 }
 
 [class*="icon-"] {
-    display: inline-block;
-    padding-left: 32px;
-    position: relative
+  display: inline-block;
+  padding-left: 32px;
+  position: relative;
 }
 
 [class*="icon-"]::before {
-    background-repeat: no-repeat;
-    background-position: center center;
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%)
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .icon-ig::before {
-    background-image: url(img/icon_ig.svg);
-    background-size: 24px 24px;
-    height: 24px;
-    width: 24px
+  background-image: url(img/icon_ig.svg);
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
 }
 
 .icon-cart::before {
-    background-image: url(img/icon_cart.svg);
-    background-size: 24px 24px;
-    height: 24px;
-    width: 24px
+  background-image: url(img/icon_cart.svg);
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
 }
 /* icon, button css 終わり */
 
 img {
-    /* height: auto; */
-    line-height: 1;
-    max-width: 100%;
-    vertical-align: top
+  /* height: auto; */
+  line-height: 1;
+  max-width: 100%;
+  vertical-align: top;
 }
 
 .slick-list {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .slick-slide img {
-    display: block
+  display: block;
 }
 
 .slick-initialized .slick-slide {
-    display: block
+  display: block;
 }
 
 #hd {
-    line-height: 1;
-    position: relative;
-    z-index: 1000
+  line-height: 1;
+  position: relative;
+  z-index: 1000;
 }
 
 .hd-img > img {
-    width: 100vw;
+  width: 100vw;
 }
 
 .hd-logo {
-    position: absolute;
-    z-index: 10
+  position: absolute;
+  z-index: 10;
 }
 
 .hd-logo::before {
-    background-image: url(img/header/hd_logo.svg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: contain;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
+  background-image: url(img/header/hd_logo.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .hd-btns {
-    /* 各要素をflexで並べる */
-    display: flex;
-    align-items: center;
-    /* position:absolute;で絶対位置を指定し */
-    /* アイコンの位置を決める */
-    position: absolute;
-    right: 64px;
-    bottom: 16px;
+  /* 各要素をflexで並べる */
+  display: flex;
+  align-items: center;
+  /* position:absolute;で絶対位置を指定し */
+  /* アイコンの位置を決める */
+  position: absolute;
+  right: 64px;
+  bottom: 16px;
 }
 
 /* ブロック要素にして各要素に大きさを持たせる */
 .hd-btns a {
-    display: block;
+  display: block;
 }
 
 .hd-btns span {
-    display: block
+  display: block;
 }
 
 .hd-btns span {
-    height: 32px;
-    width: 32px;
-    color: transparent;
-    position: relative;
-    /* マークアップした文字を隠す */
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap
+  height: 32px;
+  width: 32px;
+  color: transparent;
+  position: relative;
+  /* マークアップした文字を隠す */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 
-.hd-btns span::before{
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
+.hd-btns span::before {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .hd-btns .hd-btn-online span::before {
-    background-image: url(img/icon_cart.svg);
+  background-image: url(img/icon_cart.svg);
 }
 
 .hd-btns .hd-btn-ig span::before {
-    background-image: url(img/icon_ig.svg);
+  background-image: url(img/icon_ig.svg);
 }
 
 .hd-btns .hd-btn-menu span::before {
-    background-image: url(img/icon_menu.svg);
+  background-image: url(img/icon_menu.svg);
 }
 
 /* news関連 css */
 #news {
-    padding-top: 144px;
-    position: relative
+  padding-top: 144px;
+  position: relative;
 }
 
 .news-slider-wrap {
-    position: relative
+  position: relative;
 }
 
 .news-slider {
-    position: relative
+  position: relative;
 }
 
 .news-slider .slick-track {
-    display: flex;
+  display: flex;
 }
 
 .news-slider .slick-slide {
-    position: relative;
-    padding-bottom: 64px;
-    width: 320px
+  position: relative;
+  padding-bottom: 64px;
+  width: 320px;
 }
 
 .news-slide-in {
-    padding: 0 32px
+  padding: 0 32px;
 }
 
 .news-title-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .news-slide-ttl {
-    margin-top: 24px;
-    line-height: 1.6;
-    font-size: 2rem;
-    font-weight: 700
+  margin-top: 24px;
+  line-height: 1.6;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .news-slide-text {
-    margin-top: 16px;
-    font-size: 1.4rem
+  margin-top: 16px;
+  font-size: 1.4rem;
 }
 
 .news-slide-date {
-    border-top: 1px solid #000;
-    line-height: 1;
-    padding-top: 16px;
-    /* 絶対位置指定で必ず要素の最下部に来るようにしている */
-    position: absolute;
-    left: 32px;
-    bottom: 0;
-    width: calc(100% - 32px*2);
-    font-size: 1.4rem;
-    font-weight: 700;
+  border-top: 1px solid #000;
+  line-height: 1;
+  padding-top: 16px;
+  /* 絶対位置指定で必ず要素の最下部に来るようにしている */
+  position: absolute;
+  left: 32px;
+  bottom: 0;
+  width: calc(100% - 32px * 2);
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .news-slide-link {
-    margin-top: 16px
+  margin-top: 16px;
 }
 
 .news-slide-link a {
-    padding-right: 16px;
-    position: relative;
-    font-weight: 700
+  padding-right: 16px;
+  position: relative;
+  font-weight: 700;
 }
 /* news css 終わり */
 
 /* about 関連のcss */
 #about {
-    padding-top: 144px;
+  padding-top: 144px;
 }
 
 .about-in {
-    padding: 0 56px;
+  padding: 0 56px;
 }
 
 .about-lead,
 .about-ttl {
-    font-size: 2rem;
-    font-weight: 700;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .about-sct {
-    display: flex;
-    margin-top: 72px;
+  display: flex;
+  margin-top: 72px;
 }
 
 .about-sct-ttl {
-    width: 20%;
-    font-size: 1.8rem
+  width: 20%;
+  font-size: 1.8rem;
 }
 
 .about-sct-text {
-    width: 80%;
-    font-size: 1.8rem
+  width: 80%;
+  font-size: 1.8rem;
 }
 
-.about-sct-text p+p {
-    margin-top: 32px
+.about-sct-text p + p {
+  margin-top: 32px;
 }
 /* about 終わり */
 
 /* product 関連のcss */
 #products {
-    padding-top: 144px;
+  padding-top: 144px;
 }
 
 .products-sct {
-    position: relative
+  position: relative;
 }
 
 .products-sct-ttl {
-    position: absolute;
-    top: 64px;
-    z-index: 1
+  position: absolute;
+  top: 64px;
+  z-index: 1;
 }
 
 .products-slide {
-    cursor: pointer;
-    position: relative
+  cursor: pointer;
+  position: relative;
 }
 
 .products-slide-in {
-    background-color: #fff
+  background-color: #fff;
 }
 
 .products-slide-ttl {
-    /* 文字間の調整 */
-    letter-spacing: -.05em;
-    /* 行の高さの調整 */
-    line-height: 1.5;
-    font-size: 3.2rem;
-    font-weight: 700;
+  /* 文字間の調整 */
+  letter-spacing: -0.05em;
+  /* 行の高さの調整 */
+  line-height: 1.5;
+  font-size: 3.2rem;
+  font-weight: 700;
 }
 
 .products-slide-text {
-    margin-top: 32px
+  margin-top: 32px;
 }
 
-.products-slide-text p+p {
-    margin-top: 24px
+.products-slide-text p + p {
+  margin-top: 24px;
 }
 /* product 終わり */
 
 /* feature 関連 css */
 #feature {
-    padding-top: 144px
+  padding-top: 144px;
 }
 
 .feature-ttl {
-    /* 文字間の調整 */
-    letter-spacing: -.08em;
-    /* 行の高さの調整 */
-    line-height: 1.5;
-    /* 文字揃えの調整 */
-    text-align: center;
-    font-size: 3.6rem;
-    font-weight: 700;
+  /* 文字間の調整 */
+  letter-spacing: -0.08em;
+  /* 行の高さの調整 */
+  line-height: 1.5;
+  /* 文字揃えの調整 */
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 700;
 }
 
 .feature-slider {
-    margin-top: 56px
+  margin-top: 56px;
 }
 
-
 .feature-sct-in {
-    flex: 1
+  flex: 1;
 }
 
 .feature-sct-ttl {
-    /* 文字間の調整 */
-    letter-spacing: -.08em;
-    /* 行の高さの調整 */
-    line-height: 1.5;
-    margin-top: 32px;
-    font-size: 2.8rem;
-    font-weight: 700;
+  /* 文字間の調整 */
+  letter-spacing: -0.08em;
+  /* 行の高さの調整 */
+  line-height: 1.5;
+  margin-top: 32px;
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 
 .feature-sct-text {
-    /* 行の高さの調整 */
-    line-height: 1.75;
-    margin-top: 24px
+  /* 行の高さの調整 */
+  line-height: 1.75;
+  margin-top: 24px;
 }
 
-.feature-sct-text p+p {
-    margin-top: 24px
+.feature-sct-text p + p {
+  margin-top: 24px;
 }
 
 /* feature 終わり */
 
 /* recipe 関連 css */
 #recipe {
-    padding-top: 144px
+  padding-top: 144px;
 }
 
 .recipe-ttl {
-    text-align: center
+  text-align: center;
 }
 
 .recipe-lead {
-    line-height: 1.5;
-    margin-top: 40px;
-    padding: 0 72px;
-    text-align: center;
-    font-size: 3.6rem;
-    font-weight: 700;
+  line-height: 1.5;
+  margin-top: 40px;
+  padding: 0 72px;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 700;
 }
 
 .recipe-sct {
-    margin-top: 96px;
-    min-height: 512px;
-    padding-left: 112px;
-    position: relative
+  margin-top: 96px;
+  min-height: 512px;
+  padding-left: 112px;
+  position: relative;
 }
 
 .recipe-sct-ttl-wrap {
-    height: 100%;
-    line-height: 1;
-    padding-top: 24px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 80px;
-    font-weight: 700;
-
+  height: 100%;
+  line-height: 1;
+  padding-top: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  font-weight: 700;
 }
 
 .recipe-sct-ttl-wrap::before {
-    background-color: #000;
-    content: '';
-    display: block;
-    height: 8px;
-    width: 96px;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%)
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 8px;
+  width: 96px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }
 
 .recipe-sct-ttl {
-    height: 100%
+  height: 100%;
 }
 
-.recipe-sct-ttl>span {
-    display: inline-block;
-    position: relative;
-    font-size: 3.6rem;
-    writing-mode: vertical-rl; /* 縦書き */
-    white-space: nowrap
+.recipe-sct-ttl > span {
+  display: inline-block;
+  position: relative;
+  font-size: 3.6rem;
+  writing-mode: vertical-rl; /* 縦書き */
+  white-space: nowrap;
 }
 
 .recipe-sct-lead {
-    height: 100%;
-    position: absolute;
-    left: 56px;
-    top: 24px
+  height: 100%;
+  position: absolute;
+  left: 56px;
+  top: 24px;
 }
 
-.recipe-sct-lead>span {
-    display: inline-block;
-    font-size: 1.8rem;
-    /* 縦書きにする */
-    writing-mode: vertical-rl;
-    white-space: nowrap
+.recipe-sct-lead > span {
+  display: inline-block;
+  font-size: 1.8rem;
+  /* 縦書きにする */
+  writing-mode: vertical-rl;
+  white-space: nowrap;
 }
 
 .recipe-slider-wrap {
-    padding-top: 24px;
-    position: relative
+  padding-top: 24px;
+  position: relative;
 }
 
 .recipe-slider .slick-track {
-    /* 各レシピの要素ブロックを横並びに */
-    display: flex;
-    /* 画面からはみ出したものをスクロールして見れるように */
-    overflow: scroll;
+  /* 各レシピの要素ブロックを横並びに */
+  display: flex;
+  /* 画面からはみ出したものをスクロールして見れるように */
+  overflow: scroll;
 }
 
 .recipe-slide-in {
-    padding: 0 32px
+  padding: 0 32px;
 }
 
 .recipe-slide-img {
-    width: 350px;
-    height: 350px
+  width: 350px;
+  height: 350px;
 }
 
 .recipe-slide-img img {
-    width: 100%;
+  width: 100%;
 }
 
 .recipe-slide-ttl {
-    margin-top: 24px;
-    line-height: 1.5;
-    font-size: 2.4rem;
-    font-weight: 700;
+  margin-top: 24px;
+  line-height: 1.5;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .recipe-slide-text {
-    margin-top: 16px;
-    font-size: 1.4rem
+  margin-top: 16px;
+  font-size: 1.4rem;
 }
 /* recipe css 終わり */
 
 /* shop 関連 css */
 #shop {
-    padding-top: 144px
+  padding-top: 144px;
 }
 
 .shop-ttl {
-    text-align: center
+  text-align: center;
 }
 
 .shop-in {
-    display: flex;
-    margin-top: 64px
+  display: flex;
+  margin-top: 64px;
 }
 
 .shop-cafe {
-    flex: 1;
-    padding-left: 32px
+  flex: 1;
+  padding-left: 32px;
 }
 
 .shop-cafe-ttl {
-    line-height: 1;
-    margin-top: 24px
+  line-height: 1;
+  margin-top: 24px;
 }
 
 .shop-cafe-text {
-    margin-top: 16px
+  margin-top: 16px;
 }
 
-.shop-cafe-text p+p {
-    margin-top: 24px
+.shop-cafe-text p + p {
+  margin-top: 24px;
 }
 
 .shop-cafe-access {
-    line-height: 1.5;
-    margin-top: 32px;
-    font-size: 1.3rem
+  line-height: 1.5;
+  margin-top: 32px;
+  font-size: 1.3rem;
 }
 
 /* ここから table に関する記述 */
 table {
-    /* 上下に線 */
-    border-top: 1px solid #7f7f7f;
-    border-bottom: 1px solid #7f7f7f;
+  /* 上下に線 */
+  border-top: 1px solid #7f7f7f;
+  border-bottom: 1px solid #7f7f7f;
 }
 
 th {
-    padding: 16px 8px;
+  padding: 16px 8px;
 }
 
 td {
-    padding: 16px 8px;
+  padding: 16px 8px;
 }
 
 .shop-table {
-    display: flex;
-    flex-direction: column;
-    gap: 8px
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.shop-table p+p {
-    margin-top: 16px
+.shop-table p + p {
+  margin-top: 16px;
 }
 
 .shop-online-ttl {
-    line-height: 1;
-    position: absolute;
-    left: 112px;
-    top: 40px
+  line-height: 1;
+  position: absolute;
+  left: 112px;
+  top: 40px;
 }
 
 /* テキストとボタンを横並びに */
 .shop-online-in {
-    display: flex;
+  display: flex;
 }
 
 .shop-online-text {
-    letter-spacing: -.05em;
-    line-height: 1.5;
-    padding-right: 24px;
+  letter-spacing: -0.05em;
+  line-height: 1.5;
+  padding-right: 24px;
 
-     /* flex設定 */
-    flex: 1;
+  /* flex設定 */
+  flex: 1;
 }
 
 .shop-online-text .notes {
-    letter-spacing: normal;
-    margin-top: 16px;
-    font-size: 1.4rem
+  letter-spacing: normal;
+  margin-top: 16px;
+  font-size: 1.4rem;
 }
 /* shop css 終わり */
 
 #contact {
-    padding-top: 144px;
-    text-align: center
+  padding-top: 144px;
+  text-align: center;
 }
-
 
 /* contact 関連 css */
 .contact-ttl {
-    line-height: 1
+  line-height: 1;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 48px;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  gap: 32px;
 }
 
 .form-inner-container {
-    display: flex;
-    width: 90%;
-
+  display: flex;
+  width: 90%;
 }
 
 .form-label {
-    width: 24vw;
-    text-align: start;
+  width: 24vw;
+  text-align: start;
 }
 
 .form {
-    width: 64vw;
-    padding: 16px 8px;
-    border: 1px solid #7f7f7f;
+  width: 64vw;
+  padding: 16px 8px;
+  border: 1px solid #7f7f7f;
 }
 
 .form:focus {
-    outline: none;
-    border: 2px solid #000;
+  outline: none;
+  border: 2px solid #000;
 }
 
-
-input, select, input::placeholder {
-    font-family: 'Zen Maru Gothic', "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+input,
+select,
+input::placeholder {
+  font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
 select {
-    background-color: #fff;
-    color: #000;
-    font-size: 1.4rem;
-    background-image: url(img/select.svg);
-    background-position: right 8px center;
-    background-repeat: no-repeat;
-    background-size: 16px 16px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.4rem;
+  background-image: url(img/select.svg);
+  background-position: right 8px center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
 }
 
 .privacy {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .submit-btn {
-    color: #fff;
-    background-color: #666;
+  color: #fff;
+  background-color: #666;
 }
 
 .submit-btn:hover {
-    color: #000;
+  color: #000;
 }
 /* ここまで contact */
 
 #ft {
-    line-height: 1;
-    padding: 160px 0;
-    text-align: center;
-
+  line-height: 1;
+  padding: 160px 0;
+  text-align: center;
 }
 
-@media screen and (max-width:767px) {
-    body {
-        font-size: 130%
-    
-    }
-    .sp {
-        display: block
-    }
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 130%;
+  }
+  .sp {
+    display: block;
+  }
 
-    .btn01 {
-        min-width: 64vw;
-        padding: 16px;
-        font-size: 1.2rem
-    }
+  .btn01 {
+    min-width: 64vw;
+    padding: 16px;
+    font-size: 1.2rem;
+  }
 
-    /* アイコン関連 css */
-    [class*="icon-"] {
-        padding-left: 24px
-    }
-    .icon-ig::before, .icon-cart::before {
-        background-size: 16px 16px;
-        height: 16px;
-        width: 16px
-    }
+  /* アイコン関連 css */
+  [class*="icon-"] {
+    padding-left: 24px;
+  }
+  .icon-ig::before,
+  .icon-cart::before {
+    background-size: 16px 16px;
+    height: 16px;
+    width: 16px;
+  }
 
-    .hd-logo {
-        left: 16px;
-        bottom: 8px;
-        width: 64vw;
-        height: 24px
-    }
+  .hd-logo {
+    left: 16px;
+    bottom: 8px;
+    width: 64vw;
+    height: 24px;
+  }
 
+  .hd-btns {
+    right: 16px;
+    bottom: 0;
+    transform: translateY(12vw);
+  }
+  .hd-btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+  }
+  .hd-btns span {
+    width: 5vw;
+  }
+  /* ここまでメニューアイコン */
 
-    .hd-btns {
-        right: 16px;
-        bottom: 0;
-        transform: translateY(12vw)
-    }
-    .hd-btns a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 12vw
-    }
-    .hd-btns span {
-        width: 5vw
-    }
-    /* ここまでメニューアイコン */
+  /* news 関連 css */
+  .news-ttl {
+    padding: 0 16px;
+  }
 
-    /* news 関連 css */
-    .news-ttl {
-        padding: 0 16px
-    }
+  .news-ttl img {
+    width: 20vw;
+  }
+  .news-slider-wrap {
+    margin-top: 24px;
+    padding: 0 16px 0 8px;
+  }
+  .news-slide-in {
+    padding: 0 8px;
+  }
+  .news-slide-ttl {
+    line-height: 1.2;
+    margin-top: 16px;
+    font-size: 1.6rem;
+  }
 
-    .news-ttl img {
-        width: 20vw
-    }
-    .news-slider-wrap {
-        margin-top: 24px;
-        padding: 0 16px 0 8px
-    }
-    .news-slide-in {
-        padding: 0 8px
-    }
-    .news-slide-ttl {
-        line-height: 1.2;
-        margin-top: 16px;
-        font-size: 1.6rem
-    }
+  .news-slide-text {
+    line-height: 1.7;
+    margin-top: 8px;
+    font-size: 1.1rem;
+  }
+  .news-slide-date {
+    position: absolute;
+    left: 8px;
+    bottom: 0;
+    padding-top: 16px;
+    width: calc(100% - 7vw);
+    font-size: 1.1rem;
+  }
+  .news-slide-link {
+    margin-top: 8px;
+  }
+  .news-more {
+    margin-top: 40px;
+    text-align: center;
+  }
+  /* news ここまで */
 
-    .news-slide-text {
-        line-height: 1.7;
-        margin-top: 8px;
-        font-size: 1.1rem
-    }
-    .news-slide-date {
-        position: absolute;
-        left: 8px;
-        bottom: 0;
-        padding-top: 16px;
-        width: calc(100% - 7vw);
-        font-size: 1.1rem
-    }
-    .news-slide-link {
-        margin-top: 8px
-    }
-    .news-more {
-        margin-top: 40px;
-        text-align: center;
-    }
-    /* news ここまで */
+  /* about 関連 css */
+  #section {
+    padding-top: 144px;
+  }
 
-    /* about 関連 css */
-    #section {
-        padding-top: 144px; 
-    }
+  .about-in {
+    padding: 0 40px;
+  }
 
-    .about-in {
-        padding: 0 40px;
-    }
+  .about-lead,
+  .about-ttl {
+    font-size: 1.4rem;
+  }
+  .about-sct {
+    margin-top: 48px;
+    gap: 16px;
+    flex-direction: column;
+  }
+  .about-sct-ttl {
+    /* 行の高さ */
+    line-height: 1;
+    font-size: 1.4rem;
+  }
+  .about-sct-text {
+    /* 文字間の調整 */
+    letter-spacing: -0.02em;
+    /* 行の高さ */
+    line-height: 1.6;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .about-sct-text p + p {
+    margin-top: 20px;
+  }
+  /* about ここまで */
 
-    .about-lead,
-    .about-ttl {
-        font-size: 1.4rem
-    }
-    .about-sct {
-        margin-top: 48px;
-        gap: 16px;
-        flex-direction: column;
-    }
-    .about-sct-ttl {
-        /* 行の高さ */
-        line-height: 1;
-        font-size: 1.4rem
-    }
-    .about-sct-text {
-        /* 文字間の調整 */
-        letter-spacing: -.02em;
-        /* 行の高さ */
-        line-height: 1.6;
-        font-size: 1.2rem;
-        width: 100%;
-    }
-    .about-sct-text p+p {
-        margin-top: 20px
-    }
-    /* about ここまで */
+  /* product 関連 css */
+  .products-sct {
+    margin-top: 48px;
+  }
 
-    /* product 関連 css */
-    .products-sct {
-        margin-top: 48px
-    }
+  /* ロゴ部分の左右対称 */
+  .products-sct:nth-child(odd) .products-sct-ttl {
+    left: 16px;
+  }
 
-    /* ロゴ部分の左右対称 */
-    .products-sct:nth-child(odd) .products-sct-ttl {
-        left: 16px
-    }
+  .products-sct:nth-child(even) .products-sct-ttl {
+    right: 16px;
+  }
+  /* 左右対称 ここまで */
 
-    .products-sct:nth-child(even) .products-sct-ttl {
-        right: 16px
-    }
-    /* 左右対称 ここまで */
-    
-    .products-sct-ttl {
-        top: 16px
-    }
+  .products-sct-ttl {
+    top: 16px;
+  }
 
-    .products-sct-ttl img {
-        height: 40px;
-        /* width: auto; */
-    }
-    .products-slide {
-        padding: 0 40px
-    }
-    .products-slide-ttl {
-        margin-top: 24px;
-        font-size: 2.2rem
-    }
-    .products-slide-text {
-        margin-top: 8px;
-        font-size: 1.3rem
-    }
+  .products-sct-ttl img {
+    height: 40px;
+    /* width: auto; */
+  }
+  .products-slide {
+    padding: 0 40px;
+  }
+  .products-slide-ttl {
+    margin-top: 24px;
+    font-size: 2.2rem;
+  }
+  .products-slide-text {
+    margin-top: 8px;
+    font-size: 1.3rem;
+  }
 
-    .products-slide-text p+p {
-        margin-top: 16px
-    }
-    /* product ここまで */
-    .feature-ttl {
-        padding: 0 16px;
-        font-size: 1.8rem
-    }
-    .feature-slider {
-        margin-top: 0;
-        position: relative
-    }
-    .feature-sct {
-        margin-top: 32px;
-        padding: 0 24px
-    }
-    .feature-sct-ttl {
-        margin-top: 16px;
-        font-size: 1.8rem
-    }
-    .feature-sct-text {
-        margin-top: 16px
-    }
+  .products-slide-text p + p {
+    margin-top: 16px;
+  }
+  /* product ここまで */
+  .feature-ttl {
+    padding: 0 16px;
+    font-size: 1.8rem;
+  }
+  .feature-slider {
+    margin-top: 0;
+    position: relative;
+  }
+  .feature-sct {
+    margin-top: 32px;
+    padding: 0 24px;
+  }
+  .feature-sct-ttl {
+    margin-top: 16px;
+    font-size: 1.8rem;
+  }
+  .feature-sct-text {
+    margin-top: 16px;
+  }
 
-    .feature-sct-text p+p {
-        margin-top: 8px
-    }
-    .recipe-ttl img {
-        width: 24vw;
-    }
-    .recipe-lead {
-        margin-top: 16px;
-        padding: 0 16px;
-        font-size: 1.8rem
-    }
-    .recipe-sct {
-        margin-top: 16px;
-        padding-left: 24vw;
-        padding-right: 8vw
-    }
-    .recipe-sct-ttl-wrap {
-        left: 32px;
-        width: 12vw
-    }
-    .recipe-sct-ttl-wrap::before {
-        height: 2px;
-        width: 16vw
-    }
-    .recipe-sct-ttl>span {
-        font-size: 5.6vw
-    }
-    .recipe-sct-lead {
-        left: 8vw;
-    }
-    .recipe-sct-lead>span {
-        font-size: 3.2vw
-    }
-    .recipe-slider-wrap {
-        padding-top: 16px
-    }
-    .recipe-slider {
-        width: 72vw
-    }
-    .recipe-slide-in {
-        padding: 0 24px
-    }
-    .recipe-slide-img {
-        width: 64vw;
-        height: auto;
-    }
-    .recipe-slide-ttl {
-        margin-top: 16px;
-        font-size: 1.9rem
-    }
-    .recipe-slide-text {
-        line-height: 1.6;
-        margin-top: 8px;
-        font-size: 1.2rem
-    }
+  .feature-sct-text p + p {
+    margin-top: 8px;
+  }
+  .recipe-ttl img {
+    width: 24vw;
+  }
+  .recipe-lead {
+    margin-top: 16px;
+    padding: 0 16px;
+    font-size: 1.8rem;
+  }
+  .recipe-sct {
+    margin-top: 16px;
+    padding-left: 24vw;
+    padding-right: 8vw;
+  }
+  .recipe-sct-ttl-wrap {
+    left: 32px;
+    width: 12vw;
+  }
+  .recipe-sct-ttl-wrap::before {
+    height: 2px;
+    width: 16vw;
+  }
+  .recipe-sct-ttl > span {
+    font-size: 5.6vw;
+  }
+  .recipe-sct-lead {
+    left: 8vw;
+  }
+  .recipe-sct-lead > span {
+    font-size: 3.2vw;
+  }
+  .recipe-slider-wrap {
+    padding-top: 16px;
+  }
+  .recipe-slider {
+    width: 72vw;
+  }
+  .recipe-slide-in {
+    padding: 0 24px;
+  }
+  .recipe-slide-img {
+    width: 64vw;
+    height: auto;
+  }
+  .recipe-slide-ttl {
+    margin-top: 16px;
+    font-size: 1.9rem;
+  }
+  .recipe-slide-text {
+    line-height: 1.6;
+    margin-top: 8px;
+    font-size: 1.2rem;
+  }
 
-    .shop-ttl img {
-        width: 72vw
-    }
-    .shop-in {
-        display: block;
-        margin-top: 40px
-    }
-    .shop-cafe {
-        padding: 40px
-    }
-    .shop-cafe-ttl img {
-        width: 16vw
-    }
-    .shop-cafe-text {
-        margin-top: 24px;
-        font-size: 1.3rem
-    }
+  .shop-ttl img {
+    width: 72vw;
+  }
+  .shop-in {
+    display: block;
+    margin-top: 40px;
+  }
+  .shop-cafe {
+    padding: 40px;
+  }
+  .shop-cafe-ttl img {
+    width: 16vw;
+  }
+  .shop-cafe-text {
+    margin-top: 24px;
+    font-size: 1.3rem;
+  }
 
-    .shop-cafe-text p+p {
-        margin-top: 8px
-    }
-    .shop-cafe-access {
-        margin: 24px 0;
-    }
+  .shop-cafe-text p + p {
+    margin-top: 8px;
+  }
+  .shop-cafe-access {
+    margin: 24px 0;
+  }
 
+  /* オンライン通販 */
+  .shop-online {
+    margin-top: 24px;
+    padding: 0 40px;
+  }
+  .shop-online-ttl {
+    position: static;
+  }
 
-    /* オンライン通販 */
-    .shop-online {
-        margin-top: 24px;
-        padding: 0 40px
-    }
-    .shop-online-ttl {
-        position: static
-    }
+  .shop-online-ttl img {
+    width: 32vw;
+  }
+  .shop-online-in {
+    display: block;
+    margin-top: 24px;
+  }
+  .shop-btn {
+    margin-top: 16px;
+    text-align: center;
+    width: 100%;
+  }
 
-    .shop-online-ttl img {
-        width: 32vw
-    }
-    .shop-online-in {
-        display: block;
-        margin-top: 24px
-    }
-    .shop-btn {
-        margin-top: 16px;
-        text-align: center;
-        width: 100%
-    }
+  .contact-ttl img {
+    width: 32vw;
+  }
 
-    .contact-ttl img {
-        width: 32vw
-    }
+  .form-container {
+    margin-top: 24px;
+    gap: 16px;
+  }
 
-    .form-container {
-        margin-top: 24px;
-        gap: 16px;
-    }
+  .form-inner-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .form-inner-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .form-label, .form {
-        width: 100vw;
-    }
-    #ft {
-        padding: 64px 0 128px
-    }
-    /* .ft-copyright img {
+  .form-label,
+  .form {
+    width: 100vw;
+  }
+  #ft {
+    padding: 64px 0 128px;
+  }
+  /* .ft-copyright img {
         width: 128px
     } */
 
-    .pc {
-        display: none;
-    }
+  .pc {
+    display: none;
+  }
 }
 
-@media screen and (min-width:768px), print {
-    .box-c {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1280px;
-        padding-left: 72px;
-        padding-right: 72px
-    }
-    .btn01:hover {
-        background-color: #f5f5f5
-    }
-    .icon-cart {
-        padding-left: 32px
-    }
+@media screen and (min-width: 768px), print {
+  .box-c {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+  .btn01:hover {
+    background-color: #f5f5f5;
+  }
+  .icon-cart {
+    padding-left: 32px;
+  }
 
-    .hd-logo {
-        left: 64px;
-        bottom: 16px;
-        width: 40vw;
-        height: 24px
-    }
-    .hd-btns li+li {
-        margin-left: 32px
-    }
+  .hd-logo {
+    left: 64px;
+    bottom: 16px;
+    width: 40vw;
+    height: 24px;
+  }
+  .hd-btns li + li {
+    margin-left: 32px;
+  }
 
-    /* products css 開始 */
-    /* pc版、左右でそれぞれデザインを変える */
-    .products-sct {
-        margin-top: 96px
-    }
+  /* products css 開始 */
+  /* pc版、左右でそれぞれデザインを変える */
+  .products-sct {
+    margin-top: 96px;
+  }
 
-    .products-sct:nth-child(odd) .products-sct-ttl {
-        left: -32px
-    }
+  .products-sct:nth-child(odd) .products-sct-ttl {
+    left: -32px;
+  }
 
-    .products-sct:nth-child(odd) .products-slide-in {
-        right: 5%
-    }
+  .products-sct:nth-child(odd) .products-slide-in {
+    right: 5%;
+  }
 
-    .products-sct:nth-child(even) .products-sct-ttl {
-        right: -32px
-    }
+  .products-sct:nth-child(even) .products-sct-ttl {
+    right: -32px;
+  }
 
-    .products-sct:nth-child(even) .products-slide-img {
-        margin-left: auto
-    }
+  .products-sct:nth-child(even) .products-slide-img {
+    margin-left: auto;
+  }
 
-    .products-sct:nth-child(even) .products-slide-in {
-        left: 5%
-    }
-    .products-slide-img {
-        height: 600px;
-        width: 64%
-    }
+  .products-sct:nth-child(even) .products-slide-in {
+    left: 5%;
+  }
+  .products-slide-img {
+    height: 600px;
+    width: 64%;
+  }
 
-    .products-img {
-        height: 100%;
-        object-fit: cover;
-    } 
+  .products-img {
+    height: 100%;
+    object-fit: cover;
+  }
 
-    .products-slide-in {
-        padding: 72px 56px 96px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%
-    }
-    /* products 終わり */
+  .products-slide-in {
+    padding: 72px 56px 96px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+  }
+  /* products 終わり */
 
-    /* feature */
-    .feature-sct {
-        /* flexboxを使用 */
-        display: flex;
-        padding: 0 56px
-    }
+  /* feature */
+  .feature-sct {
+    /* flexboxを使用 */
+    display: flex;
+    padding: 0 56px;
+  }
 
-    .feature-sct+.feature-sct {
-        margin-top: 96px
-    }
+  .feature-sct + .feature-sct {
+    margin-top: 96px;
+  }
 
-    /* 左右でデザインを変える */
-    .feature-sct:nth-child(odd) .feature-sct-in {
-        padding-left: 56px
-    }
+  /* 左右でデザインを変える */
+  .feature-sct:nth-child(odd) .feature-sct-in {
+    padding-left: 56px;
+  }
 
-    .feature-sct:nth-child(even) {
-        flex-direction: row-reverse
-    }
+  .feature-sct:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 
-    .feature-sct:nth-child(even) .feature-sct-in {
-        padding-right: 56px
-    }
-    /* ここまで左右 */
+  .feature-sct:nth-child(even) .feature-sct-in {
+    padding-right: 56px;
+  }
+  /* ここまで左右 */
 
-    .feature-sct-img {
-        width: 64%;
-        object-fit: cover;
-    }
-    /* ここまで feature */
+  .feature-sct-img {
+    width: 64%;
+    object-fit: cover;
+  }
+  /* ここまで feature */
 
-    .recipe-lead span {
-        display: inline-block
-    }
-    .recipe-sct-wrap {
-        padding-left: 72px
-    }
-    .recipe-slider .slick-slide {
-        width: 400px
-    }
-    
-    .shop-img {
-        transform: translateX(-72px);
-    }
-    
-    .shop-online {
-        border-top: 3px solid #000;
-        margin-top: 64px;
-        padding: 40px 56px 0;
-        position: relative
-    }
+  .recipe-lead span {
+    display: inline-block;
+  }
+  .recipe-sct-wrap {
+    padding-left: 72px;
+  }
+  .recipe-slider .slick-slide {
+    width: 400px;
+  }
 
-    .shop-online-ttl {
-        left: 64px;
-        margin-bottom: 24px;
-        position: static
-    }
+  .shop-img {
+    transform: translateX(-72px);
+  }
 
-    #news {
-        padding-left: 40px;
-        padding-right: 72px;
-    }
-    .news-ttl {
-        padding-left: 32px
-    }
-    .news-slider-wrap {
-        margin-top: 56px
-    }
+  .shop-online {
+    border-top: 3px solid #000;
+    margin-top: 64px;
+    padding: 40px 56px 0;
+    position: relative;
+  }
 
-    .news-more a {
-        border: none;
-        padding: 0;
-        min-width: 0 
-    }
+  .shop-online-ttl {
+    left: 64px;
+    margin-bottom: 24px;
+    position: static;
+  }
 
-    .sp {
-        display: none;
-    }
+  #news {
+    padding-left: 40px;
+    padding-right: 72px;
+  }
+  .news-ttl {
+    padding-left: 32px;
+  }
+  .news-slider-wrap {
+    margin-top: 56px;
+  }
+
+  .news-more a {
+    border: none;
+    padding: 0;
+    min-width: 0;
+  }
+
+  .sp {
+    display: none;
+  }
 }
