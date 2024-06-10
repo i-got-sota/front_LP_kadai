@@ -70,17 +70,17 @@ tr,
 ul,
 var,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: 0 0
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
 }
 
 body {
-    line-height: 1
+  line-height: 1;
 }
 
 article,
@@ -94,77 +94,115 @@ hgroup,
 menu,
 nav,
 section {
-    display: block
+  display: block;
 }
 
 ul {
-    list-style: none
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none
+  quotes: none;
 }
 
 blockquote:after,
 blockquote:before,
 q:after,
 q:before {
-    content: none
+  content: none;
 }
 
 a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: 0 0
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: 0 0;
 }
 
 ins {
-    background-color: #ff9;
-    color: #000;
-    text-decoration: none
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 mark {
-    background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: 700
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: 700;
 }
 
 del {
-    text-decoration: line-through
+  text-decoration: line-through;
 }
 
 abbr[title],
 dfn[title] {
-    border-bottom: 1px dotted;
-    cursor: help
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 input,
 select {
-    vertical-align: middle
+  vertical-align: middle;
 }
 
 body * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* ここまで リセットcss */
+
+/* フォント */
+.zen-maru-gothic-light {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.zen-maru-gothic-regular {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zen-maru-gothic-medium {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.zen-maru-gothic-bold {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.zen-maru-gothic-black {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* ここまで フォント */
+
+header img {
+  width: 100%;
+  height: auto;
+}
