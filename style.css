@@ -168,3 +168,138 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+.header {
+    width: 100%;
+}
+
+.header-wrap {
+position: relative;
+margin-bottom: 10%;
+}
+
+.site-advertise {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 50px;
+}
+
+.site-name {
+    background-image: url(img/header/hd_logo.svg);
+    width: 25%;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    object-fit: cover;
+}
+
+ul {
+    display: flex;
+}
+
+li + li {
+    margin-left: 32px;
+}
+
+li img {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-menu {
+    margin-right: 60px;
+}
+
+.news-wrap {
+    width: 95%;
+    margin-left: 5%;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.news-title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.news-insta {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.news-insta > img {
+    width: 24px;
+    height: 24px;
+}
+
+.news-info {
+    margin-left: 3%;
+    /* margin-right: 10%; */
+    font-weight: bold;
+}
+
+.news-content {
+    display: flex;
+}
+
+.news-content > div + div {
+    margin-left: 5%;
+}
+
+.news-content-1 {
+    width: 23%;
+}
+
+.news-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.text-title {
+    margin: 8% auto;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.text-title > span {
+    font-weight: bold;
+}
+
+.news-text-content {
+    line-height: 2;
+    font-size: 90%;
+}
+
+/* .news-text-content > a {
+    display: block;
+    margin: 30% 0 30%;
+} */
+
+.news-span {
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline black;
+    display: block;
+    margin: 10% 0 10%;
+}
+
+.news-date {
+    border-top: solid 1px #000;
+    padding: 5%;
+    padding-left: 0;
+    font-size: 70%;
+    font-weight: bold;
+}
+
+.ceylon-tea {
+    background-image: url(img/products/products_tea.jpg);
+}
+
+.scone {
+    background-image: url(img/products/products_scone.jpg);
+}
