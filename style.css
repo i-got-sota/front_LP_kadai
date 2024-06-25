@@ -168,3 +168,191 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+a:active, a:hover, a:link, a:visited {
+  color: #000;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  background: url(img/header/hd_img01_a.jpg)no-repeat center/contain;
+  padding-bottom: calc(1067/1600*100%);
+  margin-bottom: 150px;
+}
+
+@media (max-width: 768px){
+  .header {
+    position: relative;
+    padding-bottom: calc(1000/750*100%);
+    background: url(img/header/hd_img01_a_sp.jpg)no-repeat center/contain;
+  }
+}
+
+.img-title {
+  position: absolute;
+  width: 300px;
+  bottom: 3%;
+  left: 7%;
+}
+
+@media (max-width: 768px) {
+  .img-title {
+    bottom: 1%;
+    left: 3%;
+  }
+}
+
+.header-icon {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  right: 50px;
+  bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .header-icon {
+    bottom: -60px;
+  }
+}
+
+.header-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.title {
+  display: inline;
+  font-size: xx-large;
+}
+
+.news {
+  position: relative;
+  height: 700px;
+  margin: 0 60px;
+}
+
+@media (max-width: 768px) {
+  .news {
+    height: 600px;
+    margin: 0 15px;
+  }
+}
+
+.news-article-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  width: 550px;
+}
+
+@media (max-width: 768px) {
+  .news-article-wrapper {
+    gap: 10px;
+    justify-content: start;
+    width: 100%;
+    max-width: 670px;
+  }
+}
+
+.news-article {
+  position: relative;
+  width: 250px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .news-article {
+    padding-bottom: 70px;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.news-img {
+  width: 100%;
+}
+
+.news-title {
+  font-size: x-large;
+  margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+  .news-title {
+    font-size: medium;
+    margin: 15px 0;
+  }
+}
+
+.news-title-bold {
+  font-weight: bold;
+}
+
+.news-text, .news-date {
+  font-size: small;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .news-text, .news-date {
+    font-size: x-small;
+    line-height: 2;
+  }
+}
+
+.news-bottom {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.detail {
+  font-size: large;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+  .detail {
+    font-size: small;
+    margin: 15px 0;
+  }
+}
+
+.news-hr {
+  background-color: #000;
+  height: 1.5px;
+}
+
+.news-info {
+  display: inline;
+  font-size: small;
+  position: absolute;
+  right: 70px;
+}
+
+@media (max-width: 768px) {
+  .news-info {
+    border: 1px solid #000;
+    bottom: 0;
+    display: block;
+    margin: 0 15%;
+    /* position: relative; */
+  }
+}
+
+.news-info::before {
+  content: url(img/icon_ig.svg);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.news-info > a {
+  text-decoration: none;
+}
+
+
