@@ -1,0 +1,10 @@
+html {
+    font-family: "Zen Maru Gothic", serif;
+}
+
+.logo {
+    transform: translate(10px, -40px);
+}
+.three {
+    display: flex;
+}
