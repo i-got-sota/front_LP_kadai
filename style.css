@@ -230,14 +230,13 @@ a:active, a:hover, a:link, a:visited {
 
 .news {
   position: relative;
-  height: 700px;
-  margin: 0 60px;
+  margin: 10px 60px;
 }
 
 @media (max-width: 768px) {
   .news {
-    height: 600px;
-    margin: 0 15px;
+    margin: 10px 15px;
+    padding-bottom: 70px;
   }
 }
 
@@ -343,9 +342,7 @@ a:active, a:hover, a:link, a:visited {
 @media (max-width: 768px) {
   .news-info {
     border: 1px solid #000;
-    bottom: 0px;
     justify-content: center;
-    position: relative;
     right: auto;
     top: auto;
     margin: 0 20%;
@@ -376,4 +373,77 @@ a:active, a:hover, a:link, a:visited {
     padding: 17px 0;
   }
 }
+
+.about {
+  margin: 50px 125px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin: 80px 50px;
+  }
+}
+
+.about > h2 {
+  font-size: large;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .about > h2 {
+    font-size: small;
+  }
+}
+
+.about-sections {
+  margin: 100px 0;
+  justify-content: space-between;
+}
+
+.about-sections :first-child {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .about-sections :first-child {
+    padding-bottom: 30px;
+  }
+}
+
+.about-section {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    display:block;
+  }
+}
+
+.about-section > h3 {
+  line-height: 2;
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .about-section > h3 {
+    font-size: small;
+    line-height: 0;
+  }
+}
+
+.about-text {
+  line-height: 2;
+  padding-left: 20px;
+  width: calc(100% - 100px);
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    font-size: x-small;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
 
