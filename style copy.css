@@ -269,7 +269,7 @@ header {
 .news-container {
   margin-top: 64px;
   display: flex;
-  column-gap: 36px;
+  column-gap: 64px;
 }
 
 .news-content {
@@ -320,8 +320,8 @@ header {
 .belief {
   position: relative;
   margin-top: 128px;
-  margin-left: 16%;
-  margin-right: 16%;
+  margin-left: 256px;
+  margin-right: 256px;
   font-size: 18px;
 }
 
@@ -375,13 +375,13 @@ header {
 
 .products-container.ceylon h1 {
   z-index: 1;
-  left: 7%;
+  left: 100px;
   top: 64px;
 }
 
 .products-container.scone h1 {
   z-index: 1;
-  right: 7%;
+  right: 100px;
   top: 64px;
 }
 
@@ -686,7 +686,7 @@ header {
 .contact {
   margin-top: 128px;
   margin-left: 192px;
-  margin-right: 192px;
+  margin-right: 128px;
   position: relative;
 }
 
@@ -712,11 +712,8 @@ header {
   right: 64px;
 }
 
-.contact .container.detail textarea {
-  position: absolute;
-  width: 800px;
+.contact .container.detail input {
   height: 128px;
-  right: 64px;
 }
 
 .contact select {
@@ -746,172 +743,3 @@ header {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  img {
-    width: 100%;
-    height: auto;
-  }
-
-  .belief {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-
-  .products {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .products-container {
-    position: relative;
-  }
-
-  .products-img > img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .products-img {
-    position: relative;
-    width: 100vw;
-    height: 50vw;
-  }
-
-  .products-img.ceylon {
-    left: 0;
-  }
-
-  .products-img.scone {
-    right: 0;
-  }
-
-  .products-container {
-    height: auto;
-  }
-
-  .products-container.ceylon > h1 {
-    left: 50px;
-  }
-
-  .products-container.scone > h1 {
-    right: initial;
-    left: 50px;
-  }
-
-  .products-text {
-    position: relative;
-    padding-top: initial;
-    padding-top: initial;
-    padding-bottom: initial;
-    padding-right: initial;
-    padding-left: initial;
-    width: 100vw;
-    height: auto;
-    top: auto;
-  }
-
-  .products-text.ceylon {
-    right: initial;
-  }
-
-  .products-text.scone {
-    left: initial;
-  }
-
-  .feature {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .feature-container {
-    position: static;
-    height: auto;
-  }
-
-  .feature-text {
-    position: relative;
-    width: 100vw;
-    height: auto;
-  }
-
-  .feature-text.black_tea {
-    right: initial;
-  }
-
-  .feature-text.sweets {
-    left: initial;
-  }
-
-  .feature-img {
-    position: relative;
-  }
-
-  .feature-img.black_tea {
-    left: initial;
-  }
-
-  .feature-img.sweets {
-    right: initial;
-  }
-
-  .feature-img > img {
-    object-fit: cover;
-  }
-
-  .shop-info {
-    display: inline;
-  }
-
-  .shop-img {
-    margin: 32px;
-  }
-
-  .shop-online {
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-    height: auto;
-  }
-
-  .shop-button {
-    margin: 0 auto;
-    width: 400px;
-  }
-
-  .shop-online > .shop-button {
-    position: static;
-    margin-top: 20px;
-  }
-
-  .contact {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .contact label {
-    display: block;
-  }
-
-  .contact input:not(.submit, .policy) {
-    position: relative;
-    width: 100vw;
-    right: 0;
-  }
-
-  .contact select {
-    position: relative;
-    width: 100vw;
-    right: 0;
-  }
-
-  .contact .container.detail textarea {
-    position: relative;
-    width: 100vw;
-    right: 0;
-  }
-
-  .contact .container.button input {
-    width: 50vw;
-    background: #ddd;
-  }
-}
