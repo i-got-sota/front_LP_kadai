@@ -168,3 +168,498 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+.header-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+
+.header-icons {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    bottom: 0;
+    right: 5%;
+}
+
+.header-icons li {
+    padding-left: 40px;
+    font-size: 50px;
+}
+
+.header-logo{
+    position: absolute;
+    width:40%;
+    bottom: 0;
+    left: 5%;
+}
+
+.news-header {
+    display: flex;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.news-header img {
+    width: 20vw;
+    margin-right: 60px;
+}
+
+.news-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 50%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.news-more-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.news-more-info i {
+    padding-right: 10px;
+}
+
+.news-field {
+    display: flex;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.news-box {
+    margin-left: 5%;
+    width: 25%;
+}
+
+.capital {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.content {
+    line-height: 25px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.detail-url {
+    font-size: large;
+    font-weight: bold;
+}
+
+.detail-url a {
+    color: #000;
+}
+
+.news-text hr {
+    border: 1px solid;
+}
+
+.about-body {
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 30px;
+}
+
+.about-header {
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.about-content {
+    padding-top: 50px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.about-font {
+    font-family: "Zen Maru Gothic", serif;
+    font-style: normal;
+    line-height: 30px;
+}
+
+.about-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.about-detail p {
+    margin-bottom: 25px;
+}
+
+/*共通フォント--------------------------------------*/
+.product-font {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 30px;
+}
+/*------------------------------------------------*/
+
+.product-leftbox {
+    position: relative;
+    width: 60%;
+    margin: 40px 10%;
+}
+
+.product-rightbox {
+    position: relative;
+    width: 60%;
+    margin: 40px 30%;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-lefttitle {
+    position: absolute;
+    font-weight: 700;
+    font-size: 60px;
+    left: -5%;
+    top: 10%;
+}
+
+.product-rightcontent {
+    position: absolute;
+    width: 50%;
+    background-color: white;
+    left: 90%;
+    top: 5%;
+    padding: 10% 5%;
+}
+
+.product-content-title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.prosuct-content-detail {
+    margin-bottom: 30px;
+}
+
+.product-righttitle {
+    position: absolute;
+    font-weight: 700;
+    font-size: 60px;
+    left: 95%;
+    top: 10%;
+}
+
+.product-leftcontent {
+    position: absolute;
+    width: 45%;
+    background-color: white;
+    left: -15%;
+    top: 20%;
+    padding: 15% 5%;
+}
+
+
+.feature-title {
+    margin-top: 10%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.feature-box {
+    display: flex;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.feature-leftimg {
+    width: 90%;
+    margin-right: 5%;
+}
+
+.feature-rightimg {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.feature-leftimg img {
+    width: 100%;
+}
+
+.feature-rightimg img {
+    width: 100%;
+}
+
+.feature-rightcontent {
+    width: 40%;
+}
+
+.feature-leftcontent {
+    width: 40%;
+}
+
+.feature-content-title {
+    font-weight: 700;
+    font-size: x-large;
+    margin-bottom: 10%;
+}
+
+
+.recipe-title {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.recipe-title h1 {
+    font-size: xx-large;
+    font-weight: 500;
+    margin-bottom: 3%;
+}
+
+.recipe-title p {
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.recipe-wrapper {
+    display: flex;
+}
+
+.recipe-title-border hr{
+    border: 5px solid;
+    margin-top: 0;
+}
+
+.recipe-wrapper-title {
+    margin-left: 5%;
+}
+
+.recipe-title-content {
+    writing-mode: vertical-rl;
+}
+
+.recipe-title-content .recipe-title-small {
+    font-size: large;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.recipe-title-content .recipe-title-large {
+    font-size: xx-large;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+.recipe-content-wrapper {
+    display: flex;
+    margin-left: 3%;
+    margin-top: 10px;
+    width: 100%;
+    overflow-x: scroll;
+
+}
+
+.recipe-content {
+    width: 350px;
+    margin: 0 1%;
+}
+
+.recipe-content-img img {
+    width: 350px;
+}
+
+.recipe-content-title {
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.recipe-content-detail {
+    font-size: medium;
+    font-weight: 500;
+}
+
+
+
+.shop-title {
+    font-size: xx-large;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.shop-wrapper {
+    display: flex;
+}
+
+.shop-content-title {
+    font-size: xx-large;
+    margin-bottom: 5%;
+}
+
+.shop-content {
+    width: 50%;
+    margin: 0 7%;
+}
+
+.shop-content-hr {
+    border: solid 1px #ababab;
+}
+
+.shop-img {
+    width: 80%;
+}
+
+.shop-content-address {
+    font-size: small;
+}
+
+.shop-content-address table {
+    border-collapse: separate;
+    border-spacing: 30px 0;
+}
+
+.address-item {
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.shop-content-btn {
+    width: 350px;
+    height: 70px;
+    background-color: white;
+    border: 1px solid;
+    margin-top: 5%;
+    font-weight: 700;
+    font-size: medium;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.shop-content-btn:hover {
+    background-color: #cbcbcb;
+}
+
+.shop-content-btn i {
+    font-size: 30px;
+    margin-right: 5%;
+    vertical-align: -5px;
+}
+
+.onlineshop-wrapper {
+    padding: 0 7%;
+}
+
+.onlineshop-wrapper hr {
+    border: solid 2px black;
+}
+
+.onlineshop-content {
+    display: flex;
+    margin-left: 5%;
+}
+
+.onlineshop-detail {
+    width: 50%;
+}
+
+.onlineshop-content-btn {
+    width: 350px;
+    height: 70px;
+    background-color: white;
+    border: 1px solid;
+    font-weight: 700;
+    font-size: medium;
+    margin-left: 10%;
+    transition: all 0.5s ease-in-out;
+}
+
+.onlineshop-content-btn i {
+    font-size: 25px;
+    margin-right: 5%;
+    vertical-align: -5px;
+}
+
+.onlineshop-content-btn:hover {
+    background-color: #cbcbcb;
+}
+
+.onlineshop-title {
+    font-size: x-large;
+    font-weight: 400;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+.onlineshop-detail h5 {
+    font-size: small;
+    font-weight: 500;
+}
+
+
+
+.contact-title {
+    font-size: xx-large;
+    margin: 5% 0;
+}
+
+.contact-wrapper {
+    text-align: center;
+}
+
+.form-item {
+    margin-bottom: 3%;
+}
+
+.form-item label {
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.form-item input, .form-item select, .form-item textarea {
+    width: 55%;
+    margin-left: 10%;
+}
+
+.form-item input, .form-item select {
+    height: 50px;
+}
+
+.form-item textarea {
+    height: 180px;
+}
+
+.form-button {
+    width: 350px;
+    height: 70px;
+    color: white;
+    background-color: #666666;
+    border: 1px solid;
+    font-weight: 700;
+    font-size: medium;
+    margin-top: 3%;
+    transition: all 0.5s ease-in-out;
+}
+
+.form-button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.copyright {
+    color: #666666;
+    font-size: small;
+    margin: 10% 0;
+    text-align: center;
+}
