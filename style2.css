@@ -1,10 +1,939 @@
 html {
-    font-family: "Zen Maru Gothic", serif;
+    line-height: 2.0;
+    overflow-x: hidden;
 }
 
-.logo {
-    transform: translate(10px, -40px);
+@media (min-width: 600px) {
+    * {
+        font-family: "Zen Maru Gothic", serif;
+        font-size: 1.4vw;
+    }
 }
-.three {
-    display: flex;
+
+@media (max-width: 599px) {
+    * {
+        font-family: "Zen Maru Gothic", serif;
+        font-size: 1.9vw;
+    }
 }
+
+/*-------------------header and news -------------------*/
+@media (min-width: 600px) {
+
+    .header2 {
+        display: none;
+    }
+    .logo {
+        transform: translate(2%, -150%);
+        width: 80vw;
+    }
+
+    .three_group {
+        display: flex;
+        transform: translate(75vw,-8vw);
+        width: 16.4vw;
+    }    
+
+    .three_member {
+        cursor: pointer;
+        margin: 7.5%;
+    }
+
+    .button_news {
+        cursor: pointer;
+        font-size: 1.5vw;
+        transform: translate(80vw,-5.5vw);
+        width: 14.5%;
+    }
+
+    .button_news_photo {
+        transform: translate(-0.55vw, 0.40vw);
+        width: 12%;
+    }
+
+    .news_main1 {
+        padding-left: 5%;
+        width: 10%;
+    }
+
+    .news_main2 {
+        padding-left: 5%;
+        width: 25%;
+    }
+
+    .black_tea {
+        width: 25%;
+        padding-left: 5%;
+    }
+
+    .sale {
+        width: 25%;
+        padding-left: 5%;
+        line-height: 2.0;
+    }
+
+    .news_text {
+        display: flex;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 1.7vw;
+    }
+
+    h4 {
+        font-weight: 500;
+        font-size: 1.3vw;
+    }
+
+    .detail {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1.50vw;
+        text-decoration: underline;
+        width: 9.5vw;
+    }
+
+    .news_date {
+        font-size: 1.30vw;
+        font-weight: 600;
+    }
+}
+
+/*----------------responsive header and news-------------*/
+
+@media(max-width: 599px) {
+
+    .header1 {
+        display: none;
+    }
+
+    .logo {
+        transform: translate(2%, -150%);
+        width: 200vw;
+    }
+
+    .three_group {
+        display: flex;
+        transform: translate(60vw, -3.5vw);
+        width: 30vw;
+    }    
+
+    .three_member {
+        cursor: pointer;
+        margin: 11%;
+    }
+
+    .button_news {
+        width: 60vw;
+        height: 6.0vw;
+        font-size: 2.1vw;
+        font-weight: 700;
+        border: solid #000 0.1vw;
+        text-align: center;
+        padding-top: 2.0vw;
+        margin: 0 auto;
+        cursor: pointer;
+        transform: translate(0, 100vw);
+    }
+
+    .button_news_photo {
+        transform: translate(-0.55vw, 0.40vw);
+        width: 4.5%
+    }
+
+    .news_main1 {
+        padding-left: 3%;
+        width: 20%;
+        
+    }
+
+    .news_main2 {
+        padding-left: 2.5%;
+        width: 47%;
+    }
+
+    .black_tea {
+        width: 47%;
+        padding-left: 2.5%;
+    }
+
+    .sale {
+        width: 47%;
+        padding-left: 2.5%;
+        line-height: 2.0;
+    }
+
+    .news_text {
+        display: flex;
+        padding-bottom: 20vw;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 3.0vw;
+    }
+
+    h4 {
+        font-weight: 500;
+        font-size: 1.7vw;
+    }
+
+    .detail {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 2.0vw;
+        text-decoration: underline;
+        width: 12.5vw;
+    }
+
+    .news_date {
+        font-size: 1.7vw;
+        font-weight: 600;
+    }
+}
+
+/*----------------about------------------*/
+
+@media(min-width: 600px) {
+    .about {
+        width: 80.0vw;
+        padding: 10.0vw;
+    }
+
+    .tea_potential {
+        font-size: 1.70vw;
+        font-weight: 700;
+        padding-bottom: 5vw;
+    }
+
+    .about_title {
+        font-weight: 700;
+        font-size: 1.50vw;
+        width: 18vw;
+        transform: translate(0,1vw)
+    }
+
+    .about_detail {
+        font-size: 1.50vw;
+        font-weight: 500;
+        width: 61vw;
+        transform: translate(18vw,-4vw);
+    }
+}
+
+/*------------responsive about----------*/
+
+@media(max-width: 599px) {
+    .about {
+        width: 80.0vw;
+        padding: 10.0vw;
+    }
+    
+    .tea_potential {
+        font-size: 2.0vw;
+        font-weight: 700;
+        padding-bottom: 5vw;
+    }
+    
+    .about_title {
+        font-weight: 700;
+        font-size: 1.9vw;
+        width: 18vw;
+        transform: translate(0,1vw)
+    }
+    
+    .about_detail {
+        font-size: 1.9vw;
+        font-weight: 500;
+        width: 80vw;
+        padding-bottom: 4.0vw;
+    }
+}
+
+
+p {
+    margin-bottom: 2.4vw;
+    font-weight: 500;
+}
+
+
+/*-----------------product---------------*/
+
+@media(min-width: 600px) {
+    .product {
+        height: 140vw;
+    }
+    .tea_ttl {
+        transform: translate(0, 10vw);
+        width: 20%;
+    }
+
+    .scone_ttl {
+        margin-left: auto;
+        transform: translate(0, 10vw);
+        width: 12.5%;
+    }
+
+    .tea_img {
+        width: 60%;
+    }
+
+    .scone_img {
+        margin-left: auto;
+        width: 60%;
+    }
+
+
+    .ceylon_tea {
+        height: 22vw;
+        width: 27.5vw;
+        padding: 2.0vw 4.5vw 15vw 4.5vw;
+        position: absolute;
+        background-color: #fff;
+        transform: translate(50vw, -50vw);
+    }
+
+    .scone {
+        height: 22vw;
+        width: 27.5vw;
+        padding: 2.0vw 4.5vw 15vw 4.5vw;
+        background-color: #fff;
+        transform: translate(10vw, -50vw);
+    }
+
+    .product_title {
+        font-size: 2.4vw;
+        font-weight: 700;
+    }
+
+    .product_detail {
+        font-size: 1.5vw;
+    }
+}
+
+/*---------------responsive product-------------*/
+
+@media(max-width:599px) {
+
+    .tea_ttl {
+        transform: translate(0, 10vw);
+        width: 32%;
+    }
+    
+    .scone_ttl {
+        margin-left: auto;
+        transform: translate(0, 10vw);
+        width: 25%;
+    }
+    
+    .tea_img {
+        width: 100%;
+    }
+    
+    .scone_img {
+        margin-left: auto;
+        width: 100%;
+    }
+    
+    
+    .ceylon_tea {
+        height: 22vw;
+        width: 90vw;
+        background-color: #fff;
+        padding-left: 2.5vw;
+    }
+    
+    .scone {
+        height: 22vw;
+        width: 90vw;
+        background-color: #fff;
+        padding-left: 2.5vw;
+        padding-bottom: 20vw;
+    }
+    
+    .product_title {
+        font-size: 3.5vw;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    
+    .product_detail {
+        font-size: 2.1vw;
+    }
+}
+
+/*----------------feature-----------*/
+@media(min-width:600px){
+    .feature {
+        height: 110vw;
+    }
+
+    .feature_title {
+        text-align: center;
+        font-size: 3.0vw;
+        font-weight: 700;
+        padding-bottom: 7vw;
+    }
+
+    .sri_img {
+        padding-bottom: 4.0vw;
+        transform: translate(5vw, 0);
+        height: 40vw;
+        width: 55vw;
+    }
+
+    .sri_tea {
+        height: 22vw;
+        width: 25.0vw;
+        padding: 2.0vw 4.5vw 15vw 4.5vw;
+        position: absolute;
+        background-color: #fff;
+        transform: translate(59vw, -45vw);
+    }
+
+    .sweet_img {
+        transform: translate(40vw,0);
+        height: 40vw;
+        width: 55vw;
+    }
+
+    .tea_sweet {
+        height: 22vw;
+        width: 25.0vw;
+        padding: 2.0vw 4.5vw 15vw 4.5vw;
+        background-color: #fff;
+        transform: translate(5vw, -45vw);
+    }
+}
+
+/*--------------responsive feature------------*/
+
+@media(max-width:599px){
+    
+    .feature {
+        padding-bottom: 13vw;
+    }
+
+
+    .feature_title {
+        text-align: center;
+        font-size: 3.0vw;
+        font-weight: 700;
+        padding-bottom: 3.5vw;
+    }
+    
+    .sri_img {
+        width: 100vw;
+    }
+    
+    .sri_tea {
+        padding-left: 2.5vw;
+        padding-bottom: 5vw;
+        width: 90vw;
+        background-color: #fff;
+    }
+    
+    .sweet_img {
+        width: 100vw;
+    }
+    
+    .tea_sweet {
+        padding-left: 2.5vw;
+        padding-bottom: 5.0vw;
+        width: 90vw;
+        background-color: #fff;
+    }
+}
+
+
+/*-------------------recipe-----------*/
+
+@media(min-width:600px){
+
+    .recipe_title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 3.0vw;
+        padding-bottom: 9.0vw;
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    .br {
+        display: none;
+    }
+
+    .recipe_main {
+        display: flex;
+    }
+
+    .left {
+        writing-mode: vertical-rl;
+        font-weight: 700;
+        border-top: solid 0.7vw #000;
+        padding-top: 1.7vw;
+        margin: 0 4.0vw 0 5.0vw;
+        width: 8.5vw;
+    }
+
+    .left1 {
+        font-size: 1.7vw;
+    }
+
+    .left2 {
+        font-size: 3.0vw;
+    }
+
+    .recipe_detail {
+        height: 50vw;
+        display: flex;
+        overflow: auto;
+    }
+
+    .recipes {
+        margin: 3.0vw;
+        min-width: 28vw;
+    }
+
+    .recipe_text1 {
+        font-size: 2.0vw;
+        font-weight: 700;
+        margin-bottom: 1.0vw;
+    }
+
+    .recipe_text2 {
+        font-size: 1.2vw;
+    }
+}
+
+/*------------------responsive recipe-----------*/
+
+@media(max-width:599px){
+
+    .recipe_title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 3.0vw;
+        padding-bottom: 4.5vw;
+        width:100vw;
+    }
+    
+    .recipe_main {
+        display: flex;
+        padding-bottom: 5vw;
+    }
+    
+    .left {
+        writing-mode: vertical-rl;
+        font-weight: 700;
+        border-top: solid 0.3vw #000;
+        padding-top: 1.7vw;
+        margin: 0 4.0vw 0 5.0vw;
+        width: 14.0vw;
+    }
+    
+    .left1 {
+        font-size: 2.5vw;
+    }
+    
+    .left2 {
+        font-size: 5.0vw;
+    }
+    
+    .recipe_detail {
+        height: 85vw;
+        display: flex;
+        overflow: auto;
+    }
+    
+    .recipes {
+        margin: 3.0vw;
+        min-width: 50vw;
+    }
+    
+    .recipe_text1 {
+        font-size: 3.0vw;
+        font-weight: 700;
+        margin-bottom: 1.0vw;
+    }
+    
+    .recipe_text2 {
+        font-size: 1.8vw;
+    }
+}
+
+/*-----------------shop---------------*/
+
+@media(min-width:600px){
+
+    .shop_title {
+        text-align: center;
+        padding: 15vw 0 5vw 0;
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .shop_img {
+        width: 55%;
+    }
+
+    .shop_cafe {
+        width: 35%;
+        padding: 3vw 0 0 8vw;
+    }
+
+    .shop_text1 {
+        font-size: 1.3vw;
+    }
+
+    .shop_main {
+        display: flex;
+        padding-bottom: 4.0vw;
+    }
+
+    .shop_text2 {
+        font-weight: 700;
+        font-size: 1.0vw;
+        text-align: center;
+        transform: translate(-13vw, 0);
+    }
+
+    .cafe_info {
+        font-weight: 500;
+        font-size: 1.0vw;
+        transform: translate(9.5vw, -2.1vw);
+    }
+
+    .shop_button {
+        width: 25vw;
+        height: 4.5vw;
+        font-size: 1.3vw;
+        font-weight: 700;
+        border: solid #000 0.1vw;
+        text-align: center;
+        padding-top: 1.3vw;
+        cursor: pointer;
+    }
+
+    .shop_button:hover {
+        background-color: gainsboro;
+        transition: 0.5s;
+    }
+
+    .shop_button_photo {
+        transform: translate(-0.65vw, 0.65vw);
+        width: 9%;
+    }
+
+    .thick {
+        background-color: #000;
+        width: 90%;
+        height: 0.25vw;
+    }
+
+    .online1 {
+        width: 40vw;
+        font-size: 1.3vw;
+        line-height: 3.0;
+        padding: 2.0vw 0 0 10%;
+    }
+
+    .online2 {
+        height: 4.5vw;
+        width: 27.5vw;
+        border: solid #000 0.1vw;
+        cursor: pointer;
+        font-size: 1.4vw;
+        text-align: center;
+        padding-top: 0.70vw;
+        transform: translate(60vw, -7.5vw);
+    }
+
+    .online2_photo {
+        width: 8%;
+        transform: translate(-0.70vw, 0.70vw);
+    }
+
+    .online2:hover {
+        background-color: gainsboro;
+        transition: 0.5s;
+    }
+}
+
+/*----------------responsive shop----------*/
+
+@media(max-width:599px){
+
+    .shop {
+        padding-bottom: 15vw;
+    }
+
+    .shop_title {
+        text-align: center;
+        padding: 15vw 0 5vw 0;
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    .shop_img {
+        width: 100%;
+    }
+    
+    .shop_cafe {
+        width: 95%;
+        padding: 7vw 0 0 2.5vw;
+    }
+    
+    .shop_text1 {
+        font-size: 2.1vw;
+    }
+    
+    .shop_main {
+        padding-bottom: 4.0vw;
+    }
+    
+    .shop_text2 {
+        font-weight: 700;
+        font-size: 1.8vw;
+        text-align: center;
+        transform: translate(-30vw, 1.5vw)
+    }
+    
+    .cafe_info {
+        font-weight: 500;
+        font-size: 1.8vw;
+        transform: translate(25vw, -2.2vw)
+    }
+    
+    .shop_button {
+        width: 60vw;
+        height: 6.0vw;
+        font-size: 2.1vw;
+        font-weight: 700;
+        border: solid #000 0.1vw;
+        text-align: center;
+        padding-top: 2.0vw;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    
+    .shop_button:hover {
+        background-color: gainsboro;
+        transition: 0.5s;
+    }
+    
+    .shop_button_photo {
+        transform: translate(-0.65vw, 0.65vw);
+        width: 4.5%;
+    }
+    
+    .thick {
+        display: none;
+    }
+    
+    .online1 {
+        width: 80vw;
+        font-size: 2.0vw;
+        line-height: 3.0;
+        padding: 2.0vw 0 0 5%;
+    }
+    
+    .online2 {
+        height: 6.0vw;
+        width: 60vw;
+        border: solid #000 0.1vw;
+        cursor: pointer;
+        font-size: 2.1vw;
+        text-align: center;
+        padding-top: 0.85vw;
+        margin: 0 auto;
+    }
+
+    .online2_photo {
+        width: 4%;
+        transform: translate(-0.70vw, 0.75vw);
+    }
+    
+    .online2:hover {
+        background-color: gainsboro;
+        transition: 0.5s;
+    }
+}
+
+
+/*-------------contact--------------*/
+@media(min-width:600px){
+
+    .contact {
+        font-size: 1.4vw;
+        font-weight: 500;
+        width: 80%;
+        padding-left: 10%;
+    }
+
+    input, select, textarea {
+        font-weight: 500;
+    }
+
+    .contact_title {
+        text-align: center;
+        padding: 5vw 0 5vw 0;
+        margin: 0 auto;
+        width: 17%;
+    }
+
+    .form1 {
+        width: 75%;
+        height: 4.5vw;
+        transform: translate(24vw, -2.2vw);
+    }
+
+    .form2 {
+        width: 76%;
+        height: 4.5vw;
+        transform: translate(24vw, -2.2vw);
+    }
+
+    .form2:focus {
+        border-width: 0.2vw;
+        border-color: #000;
+    }
+
+    .form3 {
+        width: 75.25%;
+        height: 16em;
+        transform: translate(24vw, -2.2vw);
+    }
+
+    .privacy {
+        text-align: center;
+        padding-bottom: 3vw;
+    }
+
+    .approve {
+        height: 1.4vw;
+        width: 1.4vw;
+        margin-right: 0.15vw;
+    }
+
+    .approve:focus {
+        accent-color: #0080ff;
+    }
+
+    .submit_button {
+        width: 35%;
+        height: 5.5vw;
+        color: #fff;
+        background-color: #000;
+        font-weight: 700;
+    }
+
+    .submit {
+        text-align: center;
+    }
+
+    .submit_button:hover {
+        color: #000;
+        background-color: gainsboro;
+        border: solid #000 0.1vw;
+        transition: 0.5s;
+    }
+}
+
+/*-----------------responsive contact----------*/
+
+@media(max-width:599px){
+
+    .contact {
+        font-size: 2.1vw;
+        font-weight: 500;
+        width: 80%;
+        padding-left: 10%;
+    }
+    
+    input, select, textarea {
+        font-weight: 500;
+    }
+    
+    .contact_title {
+        text-align: center;
+        margin: 0 auto;
+        padding: 5vw 0 5vw 0;
+        width: 40%
+    }
+    
+    .form1 {
+        width: 97.75%;
+        height: 4.5vw;
+        margin-bottom: 3.0vw;
+    }
+    
+    .form2 {
+        width: 100%;
+        height: 4.5vw;
+        margin-bottom: 3.0vw;
+    }
+    
+    .form2:focus {
+        border-width: 0.2vw;
+        border-color: #000;
+    }
+    
+    .form3 {
+        width: 98.5%;
+        height: 16em;
+        margin-bottom: 3.0vw;
+    }
+    
+    .privacy {
+        text-align: center;
+        padding-bottom: 3vw;
+    }
+    
+    .approve {
+        height: 1.4vw;
+        width: 1.4vw;
+        margin-right: 0.15vw;
+    }
+    
+    .approve:focus {
+        accent-color: #0080ff;
+    }
+    
+    .submit_button {
+        width: 75%;
+        height: 8.5vw;
+        color: #fff;
+        background-color: #000;
+        font-weight: 700;
+    }
+    
+    .submit {
+        text-align: center;
+    }
+    
+    .submit_button:hover {
+        color: #000;
+        background-color: gainsboro;
+        border: solid #000 0.1vw;
+        transition: 0.5s;
+    }
+}
+
+/*--------------footer------------*/
+@media(min-width:600px){
+    .copyright {
+        padding-top: 15vw;
+        text-align: center;
+    }
+}
+
+/*-------------responsive footer------------*/
+@media(max-width:599px){
+    .copyright {
+        padding-top: 7.5vw;
+        text-align: center;
+    }
+}
+
