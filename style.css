@@ -168,3 +168,528 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+header {
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        gap: 30px;
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+    }
+
+    i {
+        font-size: 30px;
+    }
+
+    .header {
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
+        font-size: 20px;
+        white-space: pre;
+    }
+
+    .news-contents {
+        width: 50%;
+    }
+
+    .news .information {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        font-size: 15px;
+    }
+    
+    .about-container div {
+        display: flex;
+    }
+
+    .about-container h1 {
+        flex: 1 0 0
+    }
+
+    .about-container p {
+        flex: 4 0 0;
+    }
+
+    .tea, .scone {
+        display: flex;
+        align-items: center;
+    }
+    
+    .tea img, .scone img {
+        width: 60%;
+        z-index: 1;
+    }
+
+    .tea .introduction {
+        width: 35%;
+        padding: 50px 40px;
+        transform: translate(-25%, 0);
+        z-index: 2;
+        background-color: #fff;
+    }
+    
+    .scone {
+        flex-direction: row-reverse;
+    }
+
+    .scone .introduction {
+        width: 35%;
+        padding: 50px 40px;
+        transform: translate(25%, 0);
+        z-index: 2;
+        background-color: #fff;
+    }
+    
+    .featureheadline {
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .feature-container1, .feature-container2 {
+        display: flex;
+        gap: 5%;
+        margin-top: 100px;
+    }
+
+    .feature-container2 {
+        flex-direction: row-reverse;
+    }
+
+    .feature img {
+        flex: 2 0 0;
+    }
+
+    .explanation {
+        flex: 1 0 0;
+    }
+
+    .explanation h1 {
+        font-size: 30px;
+        line-height: 1.5;
+        margin-bottom: 1em;
+    }
+    .recipeheadline h1 {
+        font-size: 35px;
+        margin-top: 1em;
+    }
+
+    .recipe-container div {
+        flex: 1 0 400px
+    }
+
+    .shop-contents {
+        display: flex;
+        margin-right:5%;
+        gap: 8%;
+    }
+
+    .shop-contents img {
+        flex: 1.5 0 0;
+    }
+
+    .shop-information {
+        flex: 1 0 0;
+    }
+    
+    .shop > hr {
+        margin: 70px 5% 25px;
+        border: solid 1.5px#000;
+    }
+
+    .shop .information {
+        width: 300px;
+    }
+
+    .onlineshop {
+        display: flex;
+        margin: auto 7%;
+        gap: 40%;
+    }
+
+    label {
+        display: flex;
+    }
+
+    label > :first-child {
+        flex: 1 0 0;
+    }
+
+    label > :last-child {
+        flex: 2 0 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        gap: 30px;
+        position: absolute;
+        top: 103%;
+        left: 65%;
+    }
+
+    i {
+        font-size: 20px;
+    }
+    
+    .header {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 15px;
+        white-space: pre;
+    }
+
+    .news .information {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%,0);
+        margin-top: 30px;
+        padding: 10px 30px;
+        border: solid 1px #ccc;
+        white-space: nowrap;
+    }
+
+    .news-contents {
+        width: 100%;
+    }
+    
+    .news2 {
+        margin-right: 10%;
+    }
+
+    .about > :first-child {
+        font-size: 15px;
+    }
+
+    .about-container h1 {
+        margin-bottom: 1em;
+    }
+
+    .tea img, .scone img {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .explanation h1 {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-top: 10px;
+        margin-bottom: 1em;
+    }
+
+    .recipeheadline h1 {
+        font-size: 23px;
+        white-space: pre-line;
+    }
+
+    .recipe-container div {
+        flex: 1 0 95%
+    }
+
+    .featureheadline {
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .feature-container1, .feature-container2 {
+        margin-top: 30px;
+    }
+
+    .shop hr {
+        border: 0;
+    }
+
+    .shop-information > h1 {
+        margin: 50px 5% 0;  
+    }
+
+    .shop-information > p {
+        padding-bottom: 15px;
+        margin: 30px 6% 0;
+    }
+
+    table {
+        margin: 0 6% 0;
+        border-top: 1px solid#000;
+        border-bottom: 1px solid#000;
+    }
+
+    .shop .information {
+        margin: 0 5% 0;
+    }
+
+    .sentences {
+        margin: 10px 6% 10px;
+    }
+
+    label input, select {
+        width: 100%;
+        height: 40px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+p, option, tr {
+    font-family: "Zen Maru Gothic", serif;
+    line-height: 2;
+}
+
+h1 {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.news {
+    position: relative;
+    margin-top: 100px;
+}
+
+.newsheadline {
+    margin-left: 5%;
+    font-size: 30px;
+}
+
+.information {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+}
+
+.information i {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.news-contents {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.news-contents h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.news1, .news2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10%;
+}
+
+.description {
+    flex-grow: 1;
+}
+
+.news-contents p {
+    line-height: 2;
+    font-size: 13px;
+}
+
+hr {
+    border-color: #000;
+}
+
+.detail {
+    text-decoration: underline;
+}
+
+.about {
+    margin: 150px 10% auto;
+}
+
+.about > h1 {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.product {
+    margin: 100px 5% auto;
+}
+
+.menu1, .menu2 {
+    position: relative;
+    margin-top: 100px;
+}
+
+.introduction h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.menu1 >  h1{
+    font-size: 40px;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    z-index: 2;
+}
+
+.menu2 > h1 {
+    font-size: 40px;
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    z-index: 2;
+}
+
+.feature {
+    margin: 100px 10% auto;
+}
+
+.recipeheadline {
+    text-align: center;
+}
+
+.recipeheadline p {
+    margin-top: 100px;
+    font-size: 35px;
+}
+
+.recipe {
+    margin: 50px 0 auto 40px ;
+    display: flex;
+}
+
+.recipe-lead {
+    margin-right: 50px;
+    flex-basis: 90px;
+    border-top: 3px solid #000;
+    writing-mode: vertical-rl;
+    position: relative;
+}
+
+.recipe-lead p {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.recipe-lead h1 {
+    font-size: 35px;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.recipe-container {
+    flex: 11 0 0;
+    display: flex;
+    gap: 40px;
+    scroll-snap-type: x mandatory;
+    overflow: auto;
+}
+
+.recipe-container h1 {
+    font-size: 25px;
+}
+
+.shop {
+    margin-top: 100px;
+}
+
+.headline {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shop-information h1 {
+    font-size: 30px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+tr {
+    font-size: 14px;
+    font-family: "Zen Maru Gothic", serif;
+}
+
+tr > :first-child {
+    font-weight: bold;
+}
+
+tr > :last-child {
+    text-align: left;
+}
+
+.attention {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.shop .information {
+    display: block;
+    height: 60px;
+    padding: 20px 30px;
+    text-align: center;
+    border: solid 1px #ccc;
+    white-space: nowrap;
+}
+
+.shop > p {
+    margin-left: 7%;
+    font-size: 20px;
+    font-weight: 2;;
+}
+
+.contact {
+    margin: 100px 10% auto;
+}
+
+form > * {
+    margin-top: 30px;
+}
+
+form > p {
+    text-align: center;
+}
+
+button {
+    width: 256px;
+    height: 50px;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    margin: 50px 10%;
+}
