@@ -16,12 +16,19 @@
 <header>
     <div class="header-wrapper">
         <div class="header-img">
-            <img src="../front_intern_LPkadai/img/header/hd_img01_a.jpg" alt="" width="100%">
+            <picture>
+                <source media="(min-width: 768px)" srcset="../front_intern_LPkadai/img/header/hd_img01_a.jpg" width="100%">
+                <source media="(max-width: 767px)" srcset="../front_intern_LPkadai/img/header/hd_img01_a_sp.jpg" width="100%">
+                <img src="img/header/hd_img01_a.jpg" alt="美味しい紅茶でやすらぎに満ちた至福のひと時を。 スリランカの茶葉を使用した本格手作りティープロダクツ" width="100%">
+            </picture>
+            
+            
+            <!--  <img src="../front_intern_LPkadai/img/header/hd_img01_a.jpg" alt="" width="100%">-->
         </div>
         <ul class="header-icons">
-            <li><i class="fa-solid fa-cart-shopping"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-solid fa-equals"></i></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
         <img src="../front_intern_LPkadai/img/header/hd_logo.svg" alt="" class="header-logo">
     </div>
@@ -29,62 +36,67 @@
 
 <body>
 <!-- News -->
-    <div class="news-header">
-        <p class="news-title">NEWS</p>
+    <div class="news-wrapper general-font">
+        <div class="news-field">
+            <div class="news-header">
+                <p class="news-title">NEWS</p>
+            </div>
+            <div class="news-box-wrapper">
+                <div class="news-box">
+                    <div class="news-img"><img src="../front_intern_LPkadai/img/news/tea_day.jpg" alt="" width="100%"></div>
+                    <div class="news-text">
+                        <div class="capital">「紅茶の日」</div>
+                        <div class="content">11月1日は、大黒屋光太夫が日本人として初めて外国の正式な茶会で紅茶を飲んだ日。<br>2022年11月1日から一週間限定商品を発売予定です。</div>
+                        <div class="detail-url"><a href="#">詳細はこちら</a></div>
+                        <hr>
+                        <div class="date">2022.09.10</div>
+                    </div>
+                </div>
+                <div class="news-box">
+                    <div class="news-img"><img src="../front_intern_LPkadai/img/news/notion.jpg" alt="" width="100%"></div>
+                    <div class="news-text">
+                        <div class="capital">大切なお知らせ</div>
+                        <div class="content">この度、創業10周年を記念して、セールを開催します。セールには、定番商品の各種フレーバーティーからその他アレンジ商品まで様々なものが対象になっています。</div>
+                        <div class="detail-url"><a href="#">詳細はこちら</a></div>
+                        <hr>
+                        <div class="date">2022.06.30</div>
+                    </div>
+                </div> 
+            </div>
+        </div>
         <p class="news-more-info"><i class="fa-brands fa-instagram"></i>最新情報はこちら</p>
     </div>
-    <div class="news-field">
-        <div class="news-box">
-            <div class="news-img"><img src="../front_intern_LPkadai/img/news/tea_day.jpg" alt="" width="100%"></div>
-            <div class="news-text">
-                <div class="capital">「紅茶の日」</div>
-                <div class="content">11月1日は、大黒屋光太夫が日本人として初めて外国の正式な茶会で紅茶を飲んだ日。<br>2022年11月1日から一週間限定商品を発売予定です。</div>
-                <div class="detail-url"><a href="#">詳細はこちら</a></div>
-                <hr>
-                <div class="date">2022.09.10</div>
-            </div>
-        </div>
-        <div class="news-box">
-            <div class="news-img"><img src="../front_intern_LPkadai/img/news/notion.jpg" alt="" width="100%"></div>
-            <div class="news-text">
-                <div class="capital">大切なお知らせ</div>
-                <div class="content">この度、創業10周年を記念して、セールを開催します。セールには、定番商品の各種フレーバーティーからその他アレンジ商品まで様々なものが対象になっています。</div>
-                <div class="detail-url"><a href="#">詳細はこちら</a></div>
-                <hr>
-                <div class="date">2022.06.30</div>
-            </div>
-        </div>
-    </div>
-
+    
 <!-- About -->
     <div class="about-body about-font">
         <div class="about-header">TEAの無限の可能性を私たちは信じている。<br>
-        「DeMiA CAFE」は、スリランカから仕入れた茶葉や紅茶にマリアージュする原料を世界中から<br>
+        「DeMiA CAFE」は、スリランカから仕入れた茶葉や紅茶にマリアージュする原料を世界中から
         仕入れ、手作りでアレンジし、店舗で販売しています。
         </div>
         <div class="about-content">
             <div class="about-title">T; Tea</div>
-            <div class="about-detail"><p class="sentence">DeMiA CAFEは、十数年前、イギリスで本場の紅茶と共にティータイムを嗜んだ創業メンバーがこの習慣を日本で<br>
+            <div class="about-detail"><p>DeMiA CAFEは、十数年前、イギリスで本場の紅茶と共にティータイムを嗜んだ創業メンバーがこの習慣を日本で
             も広めたいということで始まりました。</p>
-            <p class="sentence">紅茶は本格的な茶葉を使用するとともに、それに見合ったお茶菓子も必要だ。</p>
-            <p class="sentence">このような精神の元、本格的な茶葉を提供するとともにそれにマリアージュするお菓子を販売したり、レシピを紹<br>
+            <p>紅茶は本格的な茶葉を使用するとともに、それに見合ったお茶菓子も必要だ。</p>
+            <p>このような精神の元、本格的な茶葉を提供するとともにそれにマリアージュするお菓子を販売したり、レシピを紹
             介しています。</p>
             </div>
         </div>
         <div class="about-content">
             <div class="about-title">T; Tempting</div>
-            <div class="about-detail"><p class="sentence">紅茶は17世紀ごろ大英帝国のコーヒーハウスが大衆化したことで、そこで売られていた紅茶は一般の人にも愛飲さ<br>
+            <div class="about-detail"><p>紅茶は17世紀ごろ大英帝国のコーヒーハウスが大衆化したことで、そこで売られていた紅茶は一般の人にも愛飲さ
             れるようになりました。</p>
-            <p class="sentence">人々はこのような紅茶の持つ魅惑に心酔し、紅茶の取引の利益が大英帝国の礎を築き、産業革命にまでつながった<br>
+            <p>人々はこのような紅茶の持つ魅惑に心酔し、紅茶の取引の利益が大英帝国の礎を築き、産業革命にまでつながった
             と言われるほどです。</p>
-            <p class="sentence">「おいしい紅茶で、やすらぎに満ちた至福のひと時を」過ごしてほしい。</p>
-            <p class="sentence">魅惑の詰まった我々のプロダクトをぜひお楽しみください。</p>
+            <p>「おいしい紅茶で、やすらぎに満ちた至福のひと時を」過ごしてほしい。</p>
+            <p>魅惑の詰まった我々のプロダクトをぜひお楽しみください。</p>
             </div>
         </div>
-    </div> 
-
+        </div> 
+   
 <!-- Product -->
-    <div class="product-leftbox product-font">
+    <div class="product-wrapper"></div>
+    <div class="product-leftbox general-font">
         <div class="product-lefttitle">
             Ceylon Tea
         </div>
@@ -110,7 +122,7 @@
 
         </div>
     </div>
-    <div class="product-rightbox product-font">
+    <div class="product-rightbox general-font">
         <div class="product-righttitle">
             Scone
         </div>
@@ -125,7 +137,7 @@
             </div>
 
             <div class="prosuct-content-detail">
-                世界中の小麦粉を取り寄せ、我がカフェ独自の生地の配合を研究<br>
+                世界中の小麦粉を取り寄せ、我がカフェ独自の生地の配合を研究
                 し、お茶菓子としては究極の域に達したスコーン。
             </div>
 
@@ -137,8 +149,8 @@
     </div>
 
 <!-- Feature -->
-    <h1 class="feature-title product-font">伝統と魅惑のティープロダクツ</h1>
-    <div class="feature-box product-font">
+    <h1 class="feature-title general-font">伝統と魅惑のティープロダクツ</h1>
+    <div class="feature-box general-font">
         <div class="feature-leftimg">
             <img src="../front_intern_LPkadai/img/feature/feature_img01.jpg" alt="">
         </div>
@@ -155,7 +167,7 @@
         </div>
     </div>
 
-    <div class="feature-box product-font">
+    <div class="feature-box general-font feature-box-reverse">
         <div class="feature-leftcontent">
             <div class="feature-content-title">
                 10数年の研究を重ねた究極のお茶菓子
@@ -175,11 +187,11 @@
     </div>
 
 <!-- Recipe -->
-    <div class="recipe-title product-font">
+    <div class="recipe-title general-font">
         <h1>RECIPE</h1>
         <p>紅茶に合う簡単でおいしいレシピ</p>
     </div>
-    <div class="recipe-wrapper product-font">
+    <div class="recipe-wrapper general-font">
         <div class="recipe-wrapper-title">
             <div class="recipe-title-border">
                <hr>  
@@ -221,8 +233,8 @@
     </div>  
 
 <!-- Shop -->
-    <div class="shop-title product-font">SHOP INFORMATION</div>
-    <div class="shop-wrapper product-font">
+    <div class="shop-title general-font">SHOP INFORMATION</div>
+    <div class="shop-wrapper general-font">
         <div class="shop-img"><img src="../front_intern_LPkadai/img/shop/shop_img01.jpg" alt="" width="100%"></div>
         <div class="shop-content">
             <div class="shop-content-title">CAFE</div>
@@ -254,10 +266,10 @@
                 <hr class="shop-content-hr">
                 <p>※営業日など最新情報はInstagramでご確認ください。</p>
             </div>
-                <button class="shop-content-btn product-font"><i class="fa-brands fa-instagram"></i>最新情報はこちら</button>
+                <button class="shop-content-btn general-font"><i class="fa-brands fa-instagram"></i>最新情報はこちら</button>
         </div>
     </div>
-    <div class="onlineshop-wrapper product-font">
+    <div class="onlineshop-wrapper general-font">
         <hr>
         <div class="onlineshop-title">ONLINE SHOP</div>
         <div class="onlineshop-content">       
@@ -268,7 +280,7 @@
     </div>
 
 <!-- Contact -->
-    <div class="contact-wrapper product-font">
+    <div class="contact-wrapper general-font">
         <div class="contact-title">CONTACT</div>
         <div class="contact-form">
             <form action="#">

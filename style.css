@@ -169,36 +169,89 @@ body * {
 
 /* ここまで リセットcss */
 
+/*スマホ：@media screen and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) {
+}
+*/
+
 .header-wrapper {
     width: 100%;
     position: relative;
 }
 
-
-.header-icons {
+@media screen and (max-width: 767px) {
+  .header-icons {
     position: absolute;
     list-style: none;
     display: flex;
-    bottom: 0;
-    right: 5%;
+    bottom: -20px;
+    right: 5%;  
+}
 }
 
-.header-icons li {
-    padding-left: 40px;
-    font-size: 50px;
+@media screen and (min-width: 768px) {
+    .header-icons {
+      position: absolute;
+      list-style: none;
+      display: flex;
+      bottom: 10px;
+      right: 5%;  
+  }
+  }
+
+  @media screen and (max-width: 767px) {
+    .header-icons li {
+        padding-left: 30px;
+        font-size: 20px;
+    }
 }
 
-.header-logo{
-    position: absolute;
-    width:40%;
-    bottom: 0;
-    left: 5%;
+@media screen and (min-width: 768px) {
+    .header-icons li {
+        padding-left: 30px;
+        font-size: 35px;
+    }
+}
+  
+
+
+.header-icons li a {
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .header-logo{
+        position: absolute;
+        width:50%;
+        bottom: 10px;
+        left: 5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-logo{
+        position: absolute;
+        width:30%;
+        bottom: 10px;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+}
+@media screen and (min-width: 768px) {
+    .news-wrapper {
+        display: flex;
+        margin-top: 10%;
+    }   
 }
 
 .news-header {
     display: flex;
     font-family: "Zen Maru Gothic", serif;
-    font-weight: 700;
+    font-weight: 500;
+    width: 100%;
     font-style: normal;
 }
 
@@ -216,25 +269,56 @@ body * {
     padding-bottom: 20px;
 }
 
-.news-more-info {
-    padding-top: 20px;
-    padding-bottom: 20px;
+@media screen and (max-width: 767px) {
+    .news-more-info {
+        margin: 10% auto;
+        text-align: center;
+        border: 1px solid #666666;
+        width: 80%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 700;
+    }
 }
+@media screen and (min-width: 768px) {
+    .news-more-info {
+        width: 20%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: 700;
+    }
+}
+
 
 .news-more-info i {
     padding-right: 10px;
 }
 
-.news-field {
+.news-box-wrapper {
     display: flex;
+}
+
+.news-field {
     font-family: "Zen Maru Gothic", serif;
     font-weight: 700;
     font-style: normal;
+    width: 100%;
 }
 
-.news-box {
-    margin-left: 5%;
-    width: 25%;
+@media screen and (max-width: 767px) {
+    .news-box {
+        padding: 0 10px;
+        width: 50%;
+        margin: 0 auto;
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .news-box {
+        margin-left: 5%;
+        width: 25%;
+    }
 }
 
 .capital {
@@ -263,79 +347,197 @@ body * {
     border: 1px solid;
 }
 
+
+
+
 .about-body {
-    margin: 0 auto;
-    width: 900px;
+    margin: 10% auto;
     margin-top: 30px;
 }
 
 .about-header {
+    width: 90%;
+    margin: 0 auto;
     line-height: 30px;
     font-weight: 700;
+    font-size: medium;
 }
+@media screen and (max-width: 767px) {
+    .about-content {
+        width: 90%;
+        padding-top: 50px;
+        line-height: 30px;
+        font-weight: 500;
+        margin: 0 auto;
+    }
 
-.about-content {
-    padding-top: 50px;
-    line-height: 30px;
-    font-weight: 500;
+    .about-title {
+        text-align: left;
+        width: auto;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .about-detail p {
+        margin-bottom: 25px;
+    }
+
+    .about-font {
+        font-family: "Zen Maru Gothic", serif;
+        font-style: normal;
+        line-height: 20px;
+        font-size: small;
+    }
 }
+@media screen and (min-width: 768px) {
+    .about-content {
+        width: 90%;
+        display: flex;
+        padding-top: 50px;
+        line-height: 30px;
+        font-weight: 500;
+        margin: 0 auto;
+    }
 
-.about-font {
+    .about-title {
+        width: 150px;
+        text-align: left;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .about-detail p {
+        margin-bottom: 25px;
+    }
+
+    .about-font {
     font-family: "Zen Maru Gothic", serif;
     font-style: normal;
     line-height: 30px;
 }
-
-.about-title {
-    font-size: 20px;
-    margin-bottom: 25px;
-    font-weight: 700;
 }
 
-.about-detail p {
-    margin-bottom: 25px;
-}
+
 
 /*共通フォント--------------------------------------*/
-.product-font {
-    font-family: "Zen Maru Gothic", serif;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 30px;
+
+@media screen and (max-width: 767px) {
+    .general-font {
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 20px;
+        font-size: small;
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .general-font {
+        font-family: "Zen Maru Gothic", serif;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 30px;
+    }
+}
+
 /*------------------------------------------------*/
 
-.product-leftbox {
-    position: relative;
-    width: 60%;
-    margin: 40px 10%;
-}
 
-.product-rightbox {
-    position: relative;
-    width: 60%;
-    margin: 40px 30%;
-}
 
 .product-img {
     width: 100%;
 }
 
-.product-lefttitle {
-    position: absolute;
-    font-weight: 700;
-    font-size: 60px;
-    left: -5%;
-    top: 10%;
+@media screen and (max-width: 767px) {
+    .product-leftbox {
+        position: relative;
+        width: 90%;
+        margin: 40px auto;
+    }
+    
+    .product-rightbox {
+        position: relative;
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .product-rightcontent {
+        width: 100%;
+        background-color: white;
+        padding: 10% 5%;
+        margin: 0 auto;
+    }
+
+    .product-leftcontent {
+        width: 100%;
+        background-color: white;
+        padding: 15% 5%;
+        margin: 0 auto;
+    }
+
+    .product-lefttitle {
+        position: absolute;
+        font-weight: 500;
+        font-size: 300%;
+        left: 0%;
+        top: 5%;
+    }
+
+    .product-righttitle {
+        position: absolute;
+        font-weight: 500;
+        font-size: 300%;
+        right: 0;
+        top: 5%;
+    }
 }
 
-.product-rightcontent {
-    position: absolute;
-    width: 50%;
-    background-color: white;
-    left: 90%;
-    top: 5%;
-    padding: 10% 5%;
+@media screen and (min-width: 768px) {
+    .product-leftbox {
+        position: relative;
+        width: 60%;
+        margin: 40px 10%;
+    }
+
+    .product-rightbox {
+        position: relative;
+        width: 60%;
+        margin: 40px 30%;
+    }
+
+    .product-rightcontent {
+        position: absolute;
+        width: 50%;
+        background-color: white;
+        left: 90%;
+        top: 5%;
+        padding: 10% 5%;
+    }
+
+    .product-leftcontent {
+        position: absolute;
+        width: 45%;
+        background-color: white;
+        left: -15%;
+        top: 20%;
+        padding: 15% 5%;
+    }
+
+    .product-lefttitle {
+        position: absolute;
+        font-weight: 700;
+        font-size: 300%;
+        left: -5%;
+        top: 10%;
+    }
+
+    .product-righttitle {
+        position: absolute;
+        font-weight: 700;
+        font-size: 300%;
+        right: 0;
+        top: 10%;
+    }
 }
 
 .product-content-title {
@@ -348,35 +550,70 @@ body * {
     margin-bottom: 30px;
 }
 
-.product-righttitle {
-    position: absolute;
-    font-weight: 700;
-    font-size: 60px;
-    left: 95%;
-    top: 10%;
+
+
+
+@media screen and (max-width: 767px) {
+    .feature-box {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .feature-box-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .feature-rightcontent {
+        width: 100%;
+    }
+    
+    .feature-leftcontent {
+        width: 100%;
+    }
+    
+    .feature-content-title {
+        width: 60%;
+        font-weight: 700;
+        font-size: large;
+        margin-bottom: 5%;
+    }
+
+    .feature-title {
+        margin-top: 10%;
+        text-align: center;
+        font-size: large;
+        font-weight: 700;
+    }
 }
 
-.product-leftcontent {
-    position: absolute;
-    width: 45%;
-    background-color: white;
-    left: -15%;
-    top: 20%;
-    padding: 15% 5%;
-}
+@media screen and (min-width: 768px) {
+    .feature-box {
+        display: flex;
+        width: 80%;
+        margin: 5% auto;
+    }
 
+    .feature-rightcontent {
+        width: 40%;
+    }
+    
+    .feature-leftcontent {
+        width: 40%;
+    }
+    
+    .feature-content-title {
+        font-weight: 700;
+        font-size: x-large;
+        margin-bottom: 10%;
+    }
 
-.feature-title {
-    margin-top: 10%;
-    text-align: center;
-    font-size: xx-large;
-    font-weight: 700;
-}
-
-.feature-box {
-    display: flex;
-    width: 80%;
-    margin: 5% auto;
+    .feature-title {
+        margin-top: 10%;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 700;
+    }
 }
 
 .feature-leftimg {
@@ -397,19 +634,6 @@ body * {
     width: 100%;
 }
 
-.feature-rightcontent {
-    width: 40%;
-}
-
-.feature-leftcontent {
-    width: 40%;
-}
-
-.feature-content-title {
-    font-weight: 700;
-    font-size: x-large;
-    margin-bottom: 10%;
-}
 
 
 .recipe-title {
@@ -418,19 +642,10 @@ body * {
     margin-bottom: 3%;
 }
 
-.recipe-title h1 {
-    font-size: xx-large;
-    font-weight: 500;
-    margin-bottom: 3%;
-}
-
-.recipe-title p {
-    font-size: xx-large;
-    font-weight: 700;
-}
-
 .recipe-wrapper {
     display: flex;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .recipe-title-border hr{
@@ -467,14 +682,62 @@ body * {
 
 }
 
-.recipe-content {
-    width: 350px;
+@media screen and (max-width: 767px) {
+    .recipe-content {
+    width: 200px;
     margin: 0 1%;
+    }
+
+    .recipe-content-img img {
+        width: 200px;
+    }
+
+    .recipe-title h1 {
+        font-size: large;
+        font-weight: 500;
+        margin-bottom: 3%;
+    }
+    
+    .recipe-title p {
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    .onlineshop-detail {
+        width: 100%;
+        margin-bottom: 5%;
+        font-size: small;
+    }
 }
 
-.recipe-content-img img {
-    width: 350px;
+@media screen and (min-width: 768px) {
+    .recipe-content {
+        width: 350px;
+        margin: 0 1%;
+    }
+
+    .recipe-content-img img {
+        width: 350px;
+    }
+
+    .recipe-title h1 {
+        font-size: xx-large;
+        font-weight: 500;
+        margin-bottom: 3%;
+    }
+    
+    .recipe-title p {
+        font-size: xx-large;
+        font-weight: 700;
+    }
+
+    .onlineshop-detail {
+        width: 100%;
+        margin-bottom: 5%;
+        font-size: medium;
+    }
 }
+
 
 .recipe-content-title {
     font-size: x-large;
@@ -496,8 +759,121 @@ body * {
     margin: 5% 0;
 }
 
-.shop-wrapper {
-    display: flex;
+@media screen and (max-width: 767px) {
+    .shop-wrapper {
+        width: 100%;
+    }
+
+    .shop-img {
+        width: 100%;
+    }
+
+    .shop-content {
+        width: 90%;
+        margin: 0 7%;
+        font-size: small;
+    }
+
+    .address-item {
+        font-weight: 700;
+        margin-right: 2px;
+        width: 25%;
+    }
+
+    .shop-content-btn {
+        width: 70%;
+        height: 50px;
+        background-color: white;
+        border: 1px solid;
+        margin: 5% auto;
+        font-weight: 700;
+        font-size: small;
+        transition: all 0.5s ease-in-out;
+        margin-left: 45px;
+    
+    }
+
+    .onlineshop-wrapper hr {
+        border: solid 2px white;
+    }
+
+    .onlineshop-content {
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .onlineshop-detail {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .onlineshop-content-btn {
+        width: 230px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid;
+        font-weight: 700;
+        font-size: small;
+        margin-left: 10%;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .shop-wrapper {
+        display: flex;
+        width: 100%;
+    }
+
+    .shop-img {
+        width: 80%;
+    }
+
+    .shop-content {
+        width: 50%;
+        margin: 0 7%;
+    }
+
+    .address-item {
+        font-weight: 700;
+        margin-right: 10px;
+    }
+
+    .shop-content-btn {
+        width: 80%;
+        height: 70px;
+        background-color: white;
+        border: 1px solid;
+        margin-top: 5%;
+        font-weight: 700;
+        font-size: medium;
+        transition: all 0.5s ease-in-out;
+    
+    }
+
+    .onlineshop-wrapper hr {
+        border: solid 2px black;
+    }
+
+    .onlineshop-content {
+        display: flex;
+        margin-left: 5%;
+    }
+
+    .onlineshop-detail {
+        width: 50%;
+    }
+
+    .onlineshop-content-btn {
+        width: 350px;
+        height: 70px;
+        background-color: white;
+        border: 1px solid;
+        font-weight: 700;
+        font-size: medium;
+        margin-left: 10%;
+        transition: all 0.5s ease-in-out;
+    }
 }
 
 .shop-content-title {
@@ -505,17 +881,8 @@ body * {
     margin-bottom: 5%;
 }
 
-.shop-content {
-    width: 50%;
-    margin: 0 7%;
-}
-
 .shop-content-hr {
     border: solid 1px #ababab;
-}
-
-.shop-img {
-    width: 80%;
 }
 
 .shop-content-address {
@@ -525,24 +892,13 @@ body * {
 .shop-content-address table {
     border-collapse: separate;
     border-spacing: 30px 0;
+    width: 100%;
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-all;
 }
 
-.address-item {
-    font-weight: 700;
-    margin-right: 10px;
-}
 
-.shop-content-btn {
-    width: 350px;
-    height: 70px;
-    background-color: white;
-    border: 1px solid;
-    margin-top: 5%;
-    font-weight: 700;
-    font-size: medium;
-    transition: all 0.5s ease-in-out;
-
-}
 
 .shop-content-btn:hover {
     background-color: #cbcbcb;
@@ -556,30 +912,6 @@ body * {
 
 .onlineshop-wrapper {
     padding: 0 7%;
-}
-
-.onlineshop-wrapper hr {
-    border: solid 2px black;
-}
-
-.onlineshop-content {
-    display: flex;
-    margin-left: 5%;
-}
-
-.onlineshop-detail {
-    width: 50%;
-}
-
-.onlineshop-content-btn {
-    width: 350px;
-    height: 70px;
-    background-color: white;
-    border: 1px solid;
-    font-weight: 700;
-    font-size: medium;
-    margin-left: 10%;
-    transition: all 0.5s ease-in-out;
 }
 
 .onlineshop-content-btn i {
@@ -611,9 +943,56 @@ body * {
     margin: 5% 0;
 }
 
-.contact-wrapper {
-    text-align: center;
+@media screen and (max-width: 767px) {
+    .form-item input, .form-item select, .form-item textarea {
+        width: 90%;
+    }
+
+    .contact-wrapper {
+        text-align: center;
+    }
+
+    .form-item label {
+        margin-right: 50%;
+    }
+
+    .form-button {
+        width: 230px;
+        height: 50px;
+        color: white;
+        background-color: #666666;
+        border: 1px solid;
+        font-weight: 700;
+        font-size: medium;
+        margin-top: 3%;
+        transition: all 0.5s ease-in-out;
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .form-item input, .form-item select, .form-item textarea {
+        width: 55%;
+        margin-left: 10%;
+    }
+
+    .contact-wrapper {
+        text-align: center;
+    }
+
+    .form-button {
+        width: 350px;
+        height: 70px;
+        color: white;
+        background-color: #666666;
+        border: 1px solid;
+        font-weight: 700;
+        font-size: medium;
+        margin-top: 3%;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+
 
 .form-item {
     margin-bottom: 3%;
@@ -626,29 +1005,12 @@ body * {
     text-align: left;
 }
 
-.form-item input, .form-item select, .form-item textarea {
-    width: 55%;
-    margin-left: 10%;
-}
-
 .form-item input, .form-item select {
     height: 50px;
 }
 
 .form-item textarea {
     height: 180px;
-}
-
-.form-button {
-    width: 350px;
-    height: 70px;
-    color: white;
-    background-color: #666666;
-    border: 1px solid;
-    font-weight: 700;
-    font-size: medium;
-    margin-top: 3%;
-    transition: all 0.5s ease-in-out;
 }
 
 .form-button:hover {
