@@ -181,6 +181,7 @@ body * {
 
 /* ここまで リセットcss */
 
+
 /* ここからヘッダーcss */
 .zen-maru-gothic-regular {
     font-family: "Zen Maru Gothic", serif;
@@ -197,13 +198,15 @@ font-style: normal;
 .header {
     font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3",
     "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-    display: flex;
-    font-weight: 500;
-    font-size: 300%;
     position: absolute;
-    top: 800px;
-    left: 10px;
-    margin: 830px 800px 0 10px;
+    display: block;
+    bottom: 0;
+    left: 0px;
+    margin: 2%;
+    color: #000000;
+    font-size: 3.8rem;
+    width: max-content;
+    height: max-content;
 }
 
 .art01 {
@@ -220,11 +223,18 @@ font-style: normal;
     height: auto;
 }
 
+.wrapper {
+    position: relative;
+}
+
 .hd-btns {
     display: flex;
     position: absolute;
-    right: 10px;
-    top: 1500px;
+    bottom: 0%;
+    right: 0%;
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 2%;
 }
 
 .hd-btns .hd-btn-online {
@@ -237,6 +247,12 @@ font-style: normal;
     color: transparent;
     overflow: hidden;
     background-image: url(img/icon_ig.svg);
+}
+
+.hd-btns .hd-btn-menu {
+    color: transparent;
+    overflow: hidden;
+    background-image: url(img/icon_menu.svg);
 }
 /* ここまでヘッダーCSS */
 
@@ -341,111 +357,121 @@ font-style: normal;
 .hr {
     color: black;
     margin: 50px 0 20px 0;
-    height: ;
 }
 /* ここまでニュースCSS */
 
 /* ここからアバウトCSS */
+#about {
+    width: 100%;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.about-wrap {
+    display: flex;
+}
+
 .about-tea {
     display: flex;
     flex-direction: column;
-    width: 1650px;
-    font-size: 25px;
-    margin: 0 auto;
+    width: 100%;
+    font-size: 2.0rem;
+    margin: 0 auto 50px auto;
 }
 
 .boxA {
-    font-size: 30px;
+    font-size: 2.0rem;
+    flex-grow: 2;
+    width: 20%;
 }
 
 .tea-h {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1650px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.p1 {
+    flex-grow: 8;
+}
+
+.p2 {
+    flex-grow: 8;
 }
 /* ここまでアバウトCSS */
 
 /* ここからのプロダクツCSS */
-.pro-st {
-    display: flex;
-}
 
-.pro-sc {
-    display: flex;
-}
+#products {
+    margin: 10% 0 10% 0;
 
-.products-pic01 {
-    position: relative;
-    width: 900px;
-    height: auto;
-    right: 400px;
-    top: 300px;
-    margin: 0 900px;
-    z-index: 1;
-}
-
-.products-pic02 {
-    position: relative;
-    width: 900px;
-    bottom: 200px;
-    height: auto;
-    left: 300px;
-    margin: 0 900px;
-    z-index: 1;
-}
-
-.pro-head-cey {
-    position: relative;
-    top: 400px;
-    right: 2250px;
-    z-index: 2;
-    font-size: 50px;
-    white-space: nowrap;
-    font-size: 80px;
-}
-
-.pro-head-sec {
-    position: relative;
-    bottom: 60px;
-    right: 800px;
-    z-index: 2;
-    font-size: 50px;
-    white-space: nowrap;
-    font-size: 80px;
 }
 
 .pro-container {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    height: 2800px;
+}
+
+.pro-container > div {
+    display: flex;
+    position: relative;
+}
+
+.pro-wrap01 {
+    flex-direction: row-reverse;
+    margin-top: 10%;
 }
 
 .st {
-    position: relative;
-    bottom: 550px;
-    left: 500px;
-    margin: auto;
-    padding: 170px 100px;
-    width: fit-content;
-    font-size: 40px;
+    width: 30%;
+    height: fit-content;
     background-color: white;
-    z-index: 2;
+    padding: 72px 56px 96px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25%;
+}
+
+.products-pic01 {
+    width: 30%;
+    position: relative;
+    left: 20%;
 }
 
 .sc {
-    position: relative;
-    bottom: 1000px;
-    right: 500px;
-    margin: auto;
-    padding: 170px 100px;
-    width: fit-content;
-    font-size: 40px;
+    position: absolute;
+    width: 30%;
+    height: fit-content;
+    padding: 72px 56px 96px;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
     background-color: white;
-    z-index: 2;
 }
+
+.products-pic02 {
+    width: 30%;
+    position: relative;
+    left: 45%;
+}
+
+.pro-head-cey {
+    font-size: 4.0rem;
+    position: absolute;
+    right: 70%;
+    top: 10%;
+}
+
+.pro-head-sec {
+    font-size: 4.0rem;
+    position: absolute;
+    right: 22%;
+    top: 10%;
+}
+
 
 /* ここまでプロダクツCSS */
 
@@ -527,7 +553,7 @@ font-style: normal;
 
 /* ここからレシピCSS */
 .recipe-wrap {
-    font-size: 50px;
+    font-size: 3.5rem;
     width: fit-content;
     margin: 50px auto 200px auto;
     text-align: center;
@@ -535,8 +561,8 @@ font-style: normal;
 
 .tea-wrap {
     position: relative;
-    bottom: 220px;
-    font-size: 50px;
+    bottom: 0;
+    font-size: 3.5rem;
     width: 250px;
     margin: 50px;
     padding: 50px 0;
@@ -550,9 +576,11 @@ font-style: normal;
 }
 
 .img-wrap {
+    position: relative;
+    right: 10%;
     display: flex;
     flex-direction: row;
-    width: 7000px;
+    width: 60%;
     height: auto;
     overflow: scroll;
 }
@@ -825,7 +853,6 @@ font-style: normal;
     top: 100px;
     width: fit-content;
     /* top: 100px; */
-    background-color: aqua;
 }
 
 .btn02-submit-btn {
@@ -833,7 +860,7 @@ font-style: normal;
     padding: 30px 200px;
 }
 
-.ft-copyright {
+.ft-copyright { 
     position: relative;
     text-align: center;
     margin: 0 0 800px 0;
@@ -845,3 +872,128 @@ font-style: normal;
     width: fit-content;
 }
 /* ここまでコンタクトCSS */
+
+/* ここからレスポンシブ対応 */
+@media screen and (max-width: 767px) {
+    /* ここからheader */
+    #hd ul img {
+        display: flex;
+        position: relative;
+        width: 20px;
+        height: auto;
+    }
+
+    #hd .hd-img {
+        width: 20px;
+        height: auto;
+    }
+
+    .hd-btns {
+        display: flex;
+        padding: 0 10%;
+        bottom: -10%;
+    }
+
+    .hd-btns img {
+        display: flex;
+        margin: 0 10px;
+    }
+
+    #hd {
+        padding: 0 4% 80px 4%;
+    }
+
+    #hd .header {
+        font-size: 1.0rem;
+    }
+    /* ここまでheader */
+
+    /* ここからnews */
+    .news {
+        display: block;
+        position: relative;
+        font-size: 2.0rem;
+        bottom: 200px;
+        width: fit-content;
+        top: -5px;
+        left: 2px;
+    }
+
+    #new .news-slide-in img {
+        width: 180px
+    }
+
+    #new .news-slide-in {
+        width: 800%;
+        margin: 0;
+    }
+
+    #new .art01 {
+        margin: 0 0 300px 0;
+        width: 200px;
+    }
+
+    #new .art02 {
+        margin: 0 0 300px 0;
+    }
+
+    #new ul {
+        margin: 0;
+    }
+
+    .news-slide-wrap {
+        width: auto;
+    }
+
+    .news-p {
+        font-size: 0.86rem;
+    }
+
+    .h3 {
+        font-size: 1.0rem;
+    }
+
+    .detail {
+        font-size: 1.0rem;
+    }
+
+    .time {
+        font-size: 1.0rem;
+    }
+
+    .latest {
+        background-color: aqua;
+        width: fit-content;
+    }
+
+    .new-imf {
+        position: relative;
+        background-color: #ff9;
+        width: fit-content;
+        height: fit-content;
+        font-size: 1.0rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .new-imf-ig {
+        background-color: red;
+    }
+
+    #new {
+        background-color: chocolate;
+    }
+    /* ここまでnews */
+
+    /* ここからabout */
+    .tea-h {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    /* ここまでabout */
+}

@@ -12,17 +12,19 @@
 <body class="zen-maru-gothic-regular">
     <header id="hd">
         <h1 class="hd-logo"></h1>
-        <picture class="hd-img">
-            <source media="(min-width: 768px)" srcset="img/header/hd_img01_a.jpg">
-            <source media="(max-width: 767px)" srcset="img/header/hd_img01_a_sp.jpg">
-            <img src="img/header/hd_img01_a.jpg" alt="">
-        </picture>
-        <ul class="hd-btns">
-            <img src="img/icon_cart.svg" alt="" style="width: 150px; height: 125px;"> 
-            <img src="img/icon_ig.svg" alt="" style="width: 150px; height: 125px;">
-            <img src="img/icon_menu.svg" alt="" style="width: 150px; height: 125px;">
-        </ul>
-        <p class="header">TEA PRODUCTS by DeMiA CAFE</p>
+        <div class="wrapper">
+            <picture class="hd-img">
+                <source media="(min-width: 768px)" srcset="img/header/hd_img01_a.jpg">
+                <source media="(max-width: 767px)" srcset="img/header/hd_img01_a_sp.jpg">
+                <img src="img/header/hd_img01_a.jpg" alt="">
+            </picture>
+            <ul class="hd-btns"> 
+                <img src="img/icon_cart.svg" alt="">
+                <img src="img/icon_ig.svg" alt="">
+                <img src="img/icon_menu.svg" alt="" class="hd-btn-menu">
+            </ul>
+            <ul class="header">TEA PRODUCTS by DeMiA CAFE</ul>
+        </div>
     </header>
     <section id="new">
         <div class="NEWS">
@@ -53,13 +55,13 @@
             </div>
         </div>
         </ul>
-        <a class="latest">
+        <div class="latest">
             <div class="svg-container">
             <button class="new-imf">
-            <img src="img/icon_ig.svg" alt="" width="1" height="1" class="new-imf-ig">
+            <img src="img/icon_ig.svg" alt="" class="new-imf-ig">
                 最新情報はこちら</button>
             </div>
-        </a> 
+        </div> 
         </div>   
     </section>
 
@@ -70,18 +72,22 @@
             <h2>「DeMiA CAFE」は、スリランカから仕入れた茶葉や紅茶にマリアージュする原料を世界中から<br>仕入れ、手作りでアレンジし、店舗に販売しています。</h2>
         </div>
         <div class="tea-h">
-            <h2 class="boxA">T;Tea</h2>
-            <div class="p1">
-                <p>DeMiA CAFEは、十数年前、イギリスで本場の紅茶と共にティータイムを嗜んだ創業メンバーがこの習慣を日本で<br>も広めたいということで始まりました。</p>
-                <p>紅茶は本格的な紅茶を使用すると共に、それに見合ったお菓子も必要だ。</p>
-                <p>このような精神の元、本格的な茶葉を提供するとともにそれに見合ったマリアージュするお菓子を販売したり、レシピを紹<br>介しています。</p>
+            <div class="about-wrap">
+                <h2 class="boxA">T;Tea</h2>
+                <div class="p1">
+                    <p>DeMiA CAFEは、十数年前、イギリスで本場の紅茶と共にティータイムを嗜んだ創業メンバーがこの習慣を日本で<br>も広めたいということで始まりました。</p>
+                    <p>紅茶は本格的な紅茶を使用すると共に、それに見合ったお菓子も必要だ。</p>
+                    <p>このような精神の元、本格的な茶葉を提供するとともにそれに見合ったマリアージュするお菓子を販売したり、レシピを紹<br>介しています。</p>
+                </div>
             </div>
-            <h2 class="boxA">T;Tempting</h2>
-            <div class="p2">
-                <p>紅茶は17世紀ごろ大英帝国のコーヒーハウスが大衆化したことで、そこで売られていた紅茶は一般の人にも愛飲さ<br>れるようになりました。</p>
-                <p>人々はこのような紅茶の魅力に心酔し、紅茶の取引の利益が大英帝国の礎を築き、産業革命にまでつながった<br>と言われるほどです。</p>
-                <p>「おいしい紅茶で、安らぎに満ちた至福のひと時を」過ごしてほしい。</p>
-                <p>魅力の詰まった我々のプロジェクトをぜひお楽しみください。</p>
+            <div class="about-wrap">
+                <h2 class="boxA">T;Tempting</h2>
+                <div class="p2">
+                    <p>紅茶は17世紀ごろ大英帝国のコーヒーハウスが大衆化したことで、そこで売られていた紅茶は一般の人にも愛飲さ<br>れるようになりました。</p>
+                    <p>人々はこのような紅茶の魅力に心酔し、紅茶の取引の利益が大英帝国の礎を築き、産業革命にまでつながった<br>と言われるほどです。</p>
+                    <p>「おいしい紅茶で、安らぎに満ちた至福のひと時を」過ごしてほしい。</p>
+                    <p>魅力の詰まった我々のプロジェクトをぜひお楽しみください。</p>
+                </div>
             </div>
         </div>
     </section>
@@ -91,30 +97,34 @@
     <section id="products">
         
         <div class="pro-container">
-            <!-- セイロンティー -->
-            <div class="pro-wrap">
-                <h2 class="pro-st">
-                    <img src="img/products/products_tea.jpg" alt="" class="products-pic01">
-                    <span class="pro-head-cey">Ceylon Tea</span>
-                </h2>
+            
+            <div>
+                <div class="pro-wrap">
+                    <h2 class="pro-st">
+                        <img src="img/products/products_tea.jpg" alt="" class="products-pic01">
+                        <span class="pro-head-cey">Ceylon Tea</span>
+                    </h2>
+                </div>
+                <div class="st">
+                    <h3 class="pro-st-in">セイロンティー</h3>
+                    <p>スリランカの中で世界三大紅茶として知られるウバで生産された<br>爽やかな香りが特徴のセイロンティー。</p>
+                    <p>ミルクティーにすることでフルーツのような香りへの変化を楽しむ<br>こともできます。</p>
+                    <p class="price">S size: 100g / 2,000yen(Tax in) <br>M Size: 200g / 3,500yen(Tax in)</p>
+                </div>
             </div>
-            <div class="st">
-                <h3 class="pro-st-in">セイロンティー</h3>                    
-                <p>スリランカの中で世界三大紅茶として知られるウバで生産された<br>爽やかな香りが特徴のセイロンティー。</p>
-                <p>ミルクティーにすることでフルーツのような香りへの変化を楽しむ<br>こともできます。</p>
-                <p class="price">S size: 100g / 2,000yen(Tax in) <br>M Size: 200g / 3,500yen(Tax in)</p>
-            </div>
-            <!-- スコーン -->
-            <div class="pro-wrap">
-                <h2 class="pro-sc">
-                    <img src="img/products/products_scone.jpg" alt="" class="products-pic02">
-                    <span class="pro-head-sec">Scone</span>
-                </h2>
-            </div>
-            <div class="sc">
-                <h3 class="pro-sc-in">スコーン</h3>
-                <p>世界中の小麦粉を取り寄せ、わがカフェ独自の生地の配合を研究<br>し、お茶菓子としては究極の域に達したスコーン。</p>
-                <p class="price">240g / 900yen(Tax in)</p>
+            
+            <div class="pro-wrap01">
+                <div class="pro-wrap">
+                    <h2 class="pro-sc">
+                        <img src="img/products/products_scone.jpg" alt="" class="products-pic02">
+                        <span class="pro-head-sec">Scone</span>
+                    </h2>
+                </div>
+                <div class="sc">
+                    <h3 class="pro-st-in">スコーン</h3>
+                    <p>世界中の小麦粉を取り寄せ、わがカフェ独自の生地の配合を研究<br>し、お茶菓子としては究極の域に達したスコーン。</p>
+                    <p class="price">240g / 900yen(Tax in)</p>
+                </div>
             </div>
         </div>
     </section>
