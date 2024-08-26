@@ -446,4 +446,653 @@ a:active, a:hover, a:link, a:visited {
   }
 }
 
+.product-wrapper {
+  margin: 50px 75px;
+}
 
+@media (max-width: 768px) {
+  .product-wrapper {
+    margin: 50px 50px;
+  }
+}
+
+.product {
+  display: flex;
+  position: relative;
+  margin: 50px 0;
+}
+
+@media (max-width: 768px) {
+  .product {
+    display: block;
+  }
+}
+
+.product-main {
+  position: relative;
+  width: 100%;
+}
+
+.product-name {
+  position: absolute;
+  font-size: xx-large;
+  top: 75px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .product-name {
+    top: 10px;
+  }
+}
+
+.product-wrapper :last-child .product-name {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .product-wrapper :last-child .product-name {
+    left: 0;
+  }
+}
+
+.product-img {
+  width: 100%;
+}
+
+.product-img > img {
+  object-fit: cover;
+  width: 70%;
+  height: 600px;
+}
+
+@media (max-width: 768px) {
+  .product-img > img {
+    width: 100%;
+    height: 800px;
+  }
+}
+
+.product-wrapper :last-child .product-img > img {
+  margin-left: 30%;
+}
+
+@media (max-width: 768px) {
+  .product-wrapper :last-child .product-img > img {
+    margin-left: 0;
+  }
+}
+
+.product-about {
+  position: absolute;
+  width: 40%;
+  background-color: #fff;
+  padding: 50px;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+@media (max-width: 768px) {
+  .product-about {
+    position: relative;
+    width: 100%;
+    background-color: none;
+    padding: 25px 0;
+    left: 0;
+    top: 0;
+    transform: translate(0,0);
+  }
+}
+
+.product-wrapper :last-child .product-about {
+  left: 0;
+}
+
+.product-title {
+  font-size: x-large;
+  line-height: 3;
+}
+
+@media (max-width: 768px) {
+  .product-title {
+    font-size: large;
+  }
+}
+
+.product-detail {
+  font-size: medium;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    font-size: small;
+  }
+}
+
+.feature-wrapper {
+  margin: 150px 90px;
+}
+
+@media (max-width: 768px) {
+  .feature-wrapper {
+    margin: 150px 20px;
+  }
+}
+
+.feature-wrapper > h2 {
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .feature-wrapper > h2 {
+    font-size: medium;
+  }
+}
+
+.feature {
+  display: flex;
+  position: relative;
+  margin: 50px 0;
+}
+
+@media (max-width: 768px) {
+  .feature {
+    display: block;
+  }
+}
+
+.feature > img {
+  object-fit: cover;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .feature > img {
+    width: 100%;
+  }
+}
+
+.feature-wrapper :last-child img {
+  position: relative;
+  left: 40%;
+}
+
+@media (max-width: 768px) {
+  .feature-wrapper :last-child img {
+    left: 0;
+  }
+}
+
+.feature-about {
+  margin: 50px;
+}
+
+@media (max-width: 768px) {
+  .feature-about {
+    margin: 20px 0;
+  }
+}
+
+.feature-wrapper :last-child .feature-about {
+  position: relative;
+  left: -60%;
+}
+
+@media (max-width: 768px) {
+  .feature-wrapper :last-child .feature-about {
+    left: 0;
+  }
+}
+
+.feature-title {
+  font-size: x-large;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .feature-title {
+    font-size: medium;
+  }
+}
+
+.feature-detail {
+  font-size: medium;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .feature-detail {
+    font-size: small;
+  }
+}
+
+.recipe-wrapper {
+  margin: 50px 0 50px 50px;
+}
+
+@media (max-width: 768px) {
+  .recipe-wrapper {
+    margin: 50px 10px;
+  }
+}
+
+.recipe-heading1 {
+  padding: 10px;
+}
+
+.recipe-heading1 h3 {
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+  line-height: 2;
+}
+
+.recipe-heading1 :last-child > br{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .recipe-heading1 :last-child {
+    font-size: medium;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe-heading1 :last-child > br {
+    display: inline;
+  }
+}
+
+.recipe-main {
+  display: flex;
+  padding: 50px 0;
+}
+
+@media (max-width: 768px) {
+  .recipe-main {
+    padding: 20px 0;
+  }
+}
+
+.recipe-heading2 {
+  border-top: 10px solid #000;
+  font-size: xx-large;
+  padding: 10px;
+  margin: 10px;
+  writing-mode: vertical-lr;
+}
+
+@media (max-width: 768px) {
+  .recipe-heading2 {
+    border-top: 2px solid #000;
+    line-height: 1.5;
+    width: 15%;
+  }
+}
+
+.recipe-heading2 > span {
+  font-size: large;
+  margin: 0 10px;
+}
+
+.recipes {
+  display: flex;
+  margin: 20px 0;
+  overflow: scroll;
+}
+
+@media (max-width: 768px) {
+  .recipes {
+    width: 85%;
+  }
+}
+
+.recipe {
+  padding: 0 25px;
+}
+
+@media (max-width: 768px) {
+  .recipe {
+    width: 100%;
+  }
+}
+
+.recipe > img {
+  object-fit: cover;
+  width: 350px;
+}
+
+@media (max-width: 768px) {
+  .recipe > img {
+    width: 300px;
+  }
+}
+
+.recipe > h3 {
+  font-size: x-large;
+  padding: 30px 0;
+}
+
+.recipe > p {
+  font-size: medium;
+  line-height: 1.5;
+}
+
+.shop-title {
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.shop-information {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .shop-information {
+    display: block;
+  }
+}
+
+.shop-img-box {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .shop-img-box {
+    display: none;
+  }
+}
+
+.shop-img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.shop-img-sp {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .shop-img-sp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.shop-detail {
+  margin: 20px 80px;
+}
+
+@media (max-width: 768px) {
+  .shop-detail {
+    margin: 50px 50px;
+  }
+}
+
+.shop-detail > h3 {
+  font-size: x-large;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .shop-detail > h3 {
+    font-size: xx-large;
+  }
+}
+
+.shop-detail > p {
+  font-size: medium;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .shop-detail > p {
+    font-size: small;
+  }
+}
+
+.shop-detail > table {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .shop-detail > table {
+    width: 100%;
+  }
+}
+
+.shop-detail th,td {
+  font-size: small;
+  padding: 20px;
+}
+
+.shop-detail > a {
+  text-decoration: none;
+}
+
+.shop-info {
+  border: 1px solid #000;
+  display: flex;
+  font-size: small;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .shop-info {
+    margin: 10%;
+    padding: 5px;
+    width: 80%;
+  }
+}
+
+.shop-info-img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .shop-info-img {
+    width: 20px;
+    height: 20px;
+    transform: translate(0,30%);
+  }
+}
+
+.shop-info-text {
+  padding: 15px 0;
+}
+
+.online-shop {
+  display: flex;
+  border-top: 1px solid #000;
+  margin: 0 10%;
+  padding: 50px 70px;
+}
+
+@media (max-width: 768px) {
+  .online-shop {
+    display: block;
+    border-top: none;
+    margin: 0;
+    padding: 50px;
+  }
+}
+
+.online-detail {
+  width: 60%;
+  padding-right: 10px;
+}
+
+.online-detail > h3 {
+  font-size: large;
+  padding-bottom: 20px;
+}
+
+.online-detail > p {
+  font-size: medium;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .online-detail > p {
+    font-size: small;
+  }
+}
+
+.online-shop > a {
+  margin: 0 10px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.online-info {
+  border: 1px solid #000;
+  display: flex;
+  font-size: small;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .online-info {
+    margin: 0 10%;
+    width: 80%;
+  }
+}
+
+.online-info-img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .online-info-img {
+    width: 20px;
+    height: 20px;
+    transform: translate(0,30%);
+  }
+}
+
+.online-info-text {
+  padding: 15px 0;
+}
+
+.contact {
+  margin: 20px 80px;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 20px 20px;
+  }
+}
+
+.contact-title {
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+}
+
+.contact p {
+  margin: 70px 0;
+}
+
+@media (max-width: 768px) {
+  .contact p {
+    position: relative;
+    margin: 70px 0;
+  }
+}
+
+label br {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  label br {
+    display: block;
+  }
+}
+
+.input-form, select, textarea{
+  position: absolute;
+  right: 50px;
+  width: 60%;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .input-form, select, textarea {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+.context {
+  padding-bottom: 100px;
+}
+
+textarea {
+  height: 200px;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#submit > input {
+  width: 400px;
+  height: 70px;
+  background-color: #000;
+  color: #fff;
+}
+
+#submit > input:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer > img {
+  width: 200px;
+  padding: 150px 0;
+}
+
+@media (max-width: 768px) {
+  footer > img {
+    padding: 100px 0 200px 0;
+  }
+}
