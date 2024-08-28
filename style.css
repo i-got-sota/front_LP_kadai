@@ -258,6 +258,10 @@ main {
     font-style: normal;
 }
 
+section {
+    margin-bottom: 90px;
+}
+
 .section_title_img {
     display: block;
     height: 2.5rem;
@@ -795,8 +799,9 @@ main {
     flex: 1;
 
     @media screen and (max-width:480px) {
-        max-width: 80%;
+        max-width: 90%;
         margin: auto;
+        font-size: 1.2rem;
     }
 }
 
@@ -830,15 +835,33 @@ main {
     border-spacing: 0 10px;
     font-style: normal;
     font-size: 0.8rem;
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.2rem;
+    }
+
 }
 
 
 .shop_address td {
-    padding: 1.5em 0;
+    padding: 1.5rem 0;
 
     line-height: 1.5;
     font-weight: 500;
 }
+
+.shop_instagram_explain {
+    font-weight: 500;
+    margin: 1rem 0;
+
+    @media screen and (max-width:480px) {
+        margin: 36px 0;
+        
+    }
+
+
+}
+
 
 
 .shop_online {
@@ -863,10 +886,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.shop_instagram_explain {
-    font-weight: 500;
-    margin: 1rem 0;
-}
 
 .button_link.instagram {
     margin-top: 2em;
