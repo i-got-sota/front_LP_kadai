@@ -168,3 +168,850 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+/* htmlのcss (rem) */
+
+.sp_only {
+    display: none !important;
+
+    @media screen and (max-width:480px) {
+        display: initial;
+    }
+}
+
+@media screen and (max-width:480px) {
+        html {
+            font-size: 75%;
+        }
+}
+
+@media screen and (max-width:480px) {
+    .pc_only {
+        display: none !important;
+    }    
+}
+
+
+/* headerのcss */
+    
+.header {
+    position: relative;
+
+}
+
+
+
+.header_image {
+    width: 100vw;
+}
+
+.header_image img {
+    width: 100%;
+}
+
+ul.icons {
+    display: flex;
+    position: absolute;
+    bottom: 12px;
+    right: 32px;
+
+    @media screen and (max-width:480px) {
+        right: 0px;
+        bottom: -40px;
+    }
+
+}
+
+.icons img{
+    width: 32px;
+    height: 32px;
+    margin-right: 32px;
+
+    @media screen and (max-width:480px) {
+        width: 22px;
+        height: 22px;
+        margin-right: 26px;
+    }
+}
+
+.logo img{
+    position: absolute;
+    left: 66px;
+    bottom: 14px;
+    height: 24px;
+
+    @media screen and (max-width:480px) {
+        left: 20px;
+        height: 18px;
+    }
+}
+
+
+
+/* ここまで　headerのcss */
+
+/* mainのcss */
+
+main {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.section_title_img {
+    display: block;
+    height: 2.5rem;
+    margin: 20px auto;
+}
+
+.section_title_txt {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 60px 0;
+
+    @media screen and (max-width:480px) {
+        font-size: 1.5rem;
+        margin: 30px 0;
+    }
+}
+
+.button_link {
+    display: block;
+    width: 300px;
+    height: 4rem;
+    background: white;
+
+    text-align: center;
+    border: 1px solid gray;
+
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+
+    @media screen and (max-width:480px) {
+        width: 260px;
+        margin: auto;
+    }
+}
+
+.button_link:hover {
+    background: whitesmoke;
+}
+
+/* ここまでmainのcss */
+
+
+/*newsのcss*/
+
+.news {
+    margin-top: 160px;
+}
+
+.news_head_container {
+    display: flex;
+    max-width: 90vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.news_title {
+    height: 3rem;
+    margin: initial;
+}
+
+.news_instagram_link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+
+     &:hover, &:visited, &:active {
+        color: black;
+    }
+}
+
+.news_instagram_link::before{
+    content: url(img/icon_ig.svg);
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.news_article_container {
+    display: flex;
+}
+
+.news_article {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 5vw;
+    margin-top: 4vw;
+
+    @media screen and (max-width:480px) {
+        width: 46vw;
+    }
+}
+
+.news_article_img {
+    width: 100%;
+    height: auto;
+}
+
+.news_article_title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1.5vw;   
+
+}
+
+.news_article_content {
+    flex-grow: 1;
+}
+
+.news_article_lead {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1.5vw;
+    line-height: 2;
+    
+
+}
+
+.news_article_link {
+    margin: 24px 0;
+    font-weight: bold;
+}
+
+.news_article_link a{
+    color: #000;
+}
+
+.news_article_date {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 12px;
+    border-top: 1px solid gray;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.news_instagram_button {
+    margin: 40px auto;
+}
+
+/* ここまでnewsのcss */
+
+/* historyのcss */
+
+.history {
+    max-width:  70vw;
+    margin: 120px auto;
+
+    @media screen and (max-width:480px) {
+        max-width: 90vw;
+    }
+}
+
+.history_lead {
+    font-size: 1.2rem;
+    line-height: 2;
+
+}
+
+.history_item {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:480px) {
+        display: block;
+    }
+
+
+}
+
+.history_item_title {
+    @media screen and (max-width:480px) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.history_item_content {
+    width: 55vw;
+    margin-top: -0.5em;
+
+    line-height: 2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+
+    @media screen and (max-width:480px) {
+        width: 100%;
+        line-height: 1.5;
+    }
+}
+
+.history_item_content p {
+    margin-bottom: 2em;
+}
+
+/*　ここまでhistoryのcss */
+
+/* productのcss */
+
+
+
+.products_item {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.product_title {
+    height: 2.75rem;
+    top: 60px;
+    position: absolute;
+    z-index: 1;
+
+    @media screen and (max-width:480px) {
+        height: 3rem;
+        top: 1rem;
+    }
+    
+}
+
+.product_image_wrapper {
+    width: 700px;
+    height: 580px;
+    position: relative; 
+
+    @media screen and (max-width:480px) {
+        width: 85vw;
+        height: auto;
+        margin: auto;
+    }
+}
+
+.product_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product_explain{
+    background: white;
+    padding: 80px 60px;
+    width: 440px;
+    z-index: 1;
+    align-self: center;
+
+    @media screen and (max-width:480px) {
+        position: initial;
+        padding: initial;
+        top:initial;
+        max-width: 85%;
+        margin: 2rem auto;
+    }
+}
+
+.explain_title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.explain_content {
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.explain_price {
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+
+
+.products_tea_wrapper {
+
+    .product_content_container {
+        flex-direction: row;
+
+        margin-left: 140px;
+
+        @media screen and (max-width:480px) {
+            margin-left: initial;
+        }
+    }
+
+    .product_title {
+        left: 134px;
+
+        @media screen and (max-width:480px) {
+            left: 40px;
+        }
+    }
+
+
+    .product_explain {
+        translate: -80px;
+
+        @media screen and (max-width:480px) {
+            translate:initial
+        }
+    }
+
+} 
+
+.products_scone_wrapper {
+
+    .product_content_container {
+        flex-direction: row-reverse;
+
+        margin-right: 140px;
+
+        @media screen and (max-width:480px) {
+            margin-right: initial;
+        }
+    }
+
+    .product_title {
+        right: 134px;
+
+        @media screen and (max-width:480px) {
+            right: 40px;
+        }
+    }
+
+    .product_explain {
+        translate: 80px;
+
+        @media screen and (max-width:480px) {
+            translate:initial
+        }
+    }
+}
+
+
+.product_content_container {
+    display: flex;
+
+    @media screen and (max-width:480px) {
+        display: initial;
+    }
+}
+
+
+
+
+/* ここまでproductのcss */
+
+/* featureのcss */
+
+
+   
+
+.feature_item_wrapper {
+    max-width: 70%;
+    margin: auto;
+
+    @media screen and (max-width:480px) {
+        max-width: 90%;
+    }
+}
+
+.feature_item_container {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width:480px) {
+        display: block;
+    }
+}
+
+.feature_item_img_wrapper {
+    flex: 2;
+}
+
+
+.feature_item_img {
+    width: 100%;
+}
+
+.feature_item_content{
+    flex: 1;
+}
+
+.feature_item_lead {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+.feature_item_explain {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 2rem;
+}
+
+.feature_sweet {
+    flex-direction: row-reverse;
+}
+
+/*　ここまでfeatureのcss */
+
+
+/* recipeのcss */
+
+.recipe {
+    margin-bottom: 120px;
+}
+
+.recipe_wrapper {
+    position: relative;
+}
+
+.recipe_lead_wrapper {
+    height: 540px;
+    width: 180px;
+    position: absolute;
+    z-index: 1;
+    background: white;
+
+    @media screen and (max-width:480px) {
+        height: 500px;
+        width: 100px;
+    }
+}
+
+.recipe_lead {
+    position: absolute;
+    left: 60px;
+    writing-mode: vertical-lr;
+    border-top:  solid 8px black;
+    background: white;
+    z-index: 2;
+    height: 100%;
+    padding:10px;
+
+    @media screen and (max-width:480px) {
+        border-top: solid 2px black;
+        left: 20px;
+    }
+}
+
+
+.recipe_lead_title {
+    font-size: 2.2rem;
+}
+
+.recipe_lead_explain {
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.recipe_instance_container {
+    padding-top: 24px;
+    display: flex;
+    gap: 60px;
+    overflow: scroll;
+
+    @media screen and (max-width:480px) {
+        padding-top: 16px;
+    }
+} 
+
+.recipe_instance:first-child{
+    margin-left: 240px;
+
+    @media screen and (max-width:480px) {
+        margin-left: 130px;
+    }
+}
+
+.recipe_instance {
+    width: 360px;
+
+    @media screen and (max-width:480px) {
+        width: 62vw;
+    }
+}
+
+.recipe_image {
+    width: 360px;
+
+    @media screen and (max-width:480px) {
+        width: 62vw;
+    }
+}
+
+.recipe_name {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.recipe_explain {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 2;
+
+    @media screen and (max-width:480px) {
+        font-size: 1rem;
+    }
+}
+
+
+/* ここまでrecipeのcss */
+
+
+/* shopのcss */
+
+.shop_cafe {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+
+    @media screen and (max-width:480px) {
+        display: block;
+    }
+}
+
+.shop_cafe_image_wrapper {
+    margin-left: 80px;
+    flex: 1.5;
+
+    @media screen and (max-width:480px) {
+        margin: initial;
+        height: 420px;
+    }
+}
+
+.shop_cafe_content {
+    margin-right: 120px;
+    flex: 1;
+
+    @media screen and (max-width:480px) {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+.shop_cafe_image {
+    width: 100%;
+
+    @media screen and (max-width:480px) {
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+    }
+    
+}
+
+.shop_cafe_title {
+    height: 30px;
+    margin: 30px 0;
+}
+
+.shop_cafe_explain {
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.shop_address {
+    width: 100%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+    border-spacing: 0 10px;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+
+.shop_address td {
+    padding: 1.5em 0;
+
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+.shop_online {
+    max-width: 1080px;
+    margin: 20px auto;
+    padding: 40px;
+    border-top: 3px solid black;
+
+    @media screen and (max-width:480px) {
+        border-top: initial;
+    }
+}
+
+.shop_online_title {
+    height: 20px;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.shop_online_explain {
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.shop_instagram_explain {
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.button_link.instagram {
+    margin-top: 2em;
+}
+
+.button_link.instagram span::before {
+    content: url(img/icon_ig.svg);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.shop_online_explain_container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:480px) {
+        display: initial;
+    }
+}
+
+.button_link.onlineshop span::before{
+    content: url(img/icon_cart.svg);
+    width: 1em;
+    vertical-align: middle;
+    margin-right: 10px;
+
+}
+
+/* ここまでshopのcss */
+
+
+/* formのcss */
+
+.contact {
+    margin-top: 120px;
+}
+
+.form_wrapper {
+    margin-top: 60px;
+}
+
+
+.form_item_wrapper {
+    max-width: 1080px;
+    padding: 0 40px;
+    margin: 20px auto;
+
+    @media screen and (max-width:480px) {
+        max-width: 90%;
+        padding: initial;
+    }
+}
+
+.form_item{
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:480px) {
+        display: block;
+    }
+}
+
+.form_item_name {
+    font-weight: 500; 
+    font-size: 1rem;
+    @media screen and (max-width:480px) {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.form_item_content {
+    width: 54em;
+    height: 4em;
+    margin-bottom: 3em;
+
+    font-family: inherit;
+
+    @media screen and (max-width:480px) {
+        width: 100%;
+    }
+}
+
+.form_item_select {
+    appearance: none;
+    background-image: url(img/select.svg);
+    background-repeat: no-repeat;
+    background-size: 1em auto;
+    background-position: right 12px center;
+
+    font-weight: 500;
+}
+
+.form_item_textarea {
+    height: 18em;
+}
+
+.form_item_checkbox {
+    text-align: center;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+
+    @media screen and (max-width:480px) {
+        font-size: 1.1rem;
+    }
+}
+
+.form_button_wrapper {
+    text-align: center;
+}
+
+.form_button {
+    margin: auto;
+    width: 310px;
+    height: 4rem;
+    background: dimgray;
+    color: white;
+    border: 1px solid dimgray;
+
+    font-weight: bold;
+    font-family: inherit;
+
+    @media screen and (max-width:480px) {
+        width: 260px;
+    }
+}
+
+.form_button:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+/* ここまでformのcss */
+
+/* ここまでmainのcss */
+
+/* footerのcss */
+
+.copyright_wrapper{
+    padding: 100px;
+    text-align: center;
+}
+
+.copyright {
+    height: 16px;
+}
+
+/* ここまでfooterのcss */
