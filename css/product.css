@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.wrapper {
+    width: 70%;
+    max-width: 800px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: auto;
+    overflow: visible;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-wrapper {
+    position: relative; 
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+
+.ceylon-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.ceylon-title {
+    position: absolute; 
+    top: 20px; 
+    left: -30px;
+    width: 30% !important; 
+}
+
+
+h1 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 0.2em;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 0.2em;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 0.2em;
+}
+
+.scone-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 60px 0 0;
+}
+
+
+.scone-title {
+    position: absolute; 
+    top: 30px; 
+    right: -30px;
+    width: 30% !important; 
+}
+
+
+
+.scone-description {
+    padding: 5px 0;
+}
+
+@media print, screen and (min-width: 768px) {
+    
+    .ceylon-description {
+        position: absolute; 
+        font-size: 1.8em;
+        line-height: 1.6;
+        top: 2%; 
+        right: 20%; 
+        width: 20%; 
+        height: 400px;
+        background-color: white; 
+        padding: 20px; 
+        z-index: 10; 
+    }
+
+    .scone-description {
+        position: relative; 
+        font-size: 1.8em;
+        line-height: 1.6;
+        bottom: 400px;
+        left: 20%; 
+        width: 20%; 
+        height: 200px;
+        background-color: white; 
+        padding: 20px; 
+        z-index: 10; 
+    }
+    
+
+    .scone-image{
+        position: relative;
+        right: -45% ;
+    }
+
+    .image-wrapper {
+        margin-bottom: 0;
+        width: 70%;
+    }
+
+
+
+
+    .ceylon-description, .scone-description {
+        margin-bottom: 0;
+    }
+}

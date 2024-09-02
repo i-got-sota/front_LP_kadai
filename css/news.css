@@ -1,0 +1,131 @@
+.catch-copy {
+    position: absolute;
+    width: 80px;
+    padding: 10px;
+    top: 0;
+    left: 20px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 0 4%;
+}
+
+ul {
+    list-style: none;
+}
+
+.news-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.news {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+.news-img img {
+    width: 100%;
+    height: auto;
+
+}
+
+.news-content {
+    padding: 10px 0;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.news-description {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: black;
+}
+
+.news-detail {
+    font-size: 0.9em;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.news-footer {
+    margin-top: auto; 
+    text-align: left;
+}
+
+.news-separator {
+    border-top: 1px solid black;
+}
+
+.news-date {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: black;
+
+}
+
+.instagram-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.instagram-link .button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 40px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    font-size: 1em;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-link .button:hover {
+    background-color: #fff;
+}
+
+.button-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .news-wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .instagram-link {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        margin-top: 0;
+    }
+
+    .instagram-link .button {
+        border: none;
+    }
+    
+}

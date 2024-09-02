@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+
+.wrapper {
+    width: 70%;
+    max-width: 1200px;
+    background-color: #fff;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .row {
+        flex-direction: row; 
+    }
+}
+
+.image-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+
+}
+
+@media screen and (min-width: 768px) {
+    .image-wrapper {
+        width: 120%; 
+    }
+}
+
+.tea-description,
+.sweets-description {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .tea-description,
+    .sweets-description {
+        width: 70%; 
+        
+    }
+    
+    h1 {
+        font-size: 1.2em; 
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
