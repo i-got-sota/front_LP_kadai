@@ -483,69 +483,75 @@ font-style: normal;
     "b b c"
     "d e e";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 900px 900px;
+    grid-template-rows: 7vw 45vw 45vw;
     justify-content: center;
 }
 
 .fe-h2 {
     grid-area: a;
-    font-size: 70px;
+    font-size: 3.0vw;
     width: fit-content;
     height: fit-content;
-    margin: 0 auto;
+    margin: 3vw auto 0 auto;
 }
 
 .fe-h301 {
     position: relative;
     grid-area: c;
-    top: 50px;
-    left: -100px;
-    font-size: 50px;
+    top: 13%;
+    right: 10%;
+    font-size: 2.0vw;
+    width: 90%;
     height: fit-content;
-    letter-spacing: 10px;
+    letter-spacing: 2.0;
     line-height: 1.3;
 }
 
 .fe-h302 {
     position: relative;
     grid-area: d;
-    font-size: 50px;
-    left: 300px;
+    font-size: 2.0vw;
+    width: 90%;
+    left: 40%;
     height: fit-content;
-    letter-spacing: 10px;
+    letter-spacing: 0.3vw;
     line-height: 1.3;
 }
 
 .fe-img01 {
     position: relative;
     grid-area: b;
-    width: 1200px;
+    width: 70%;
     height: auto;
-    left: 300px;
+    top: 10%;
+    left: 20%;
 }
 
 .fe-img02 {
     position: relative;
     grid-area: e;
-    width: 1200px;
+    width: 70%;
     height: auto;
-    left: 300px;
+    left: 20%;
 }
 
 .fe-p01 {
     position: relative;
     grid-area: d;
-    top: 10px;
-    letter-spacing: 8px;
+    top: 1.0vw;
+    letter-spacing: 0.05vw;
     line-height: 2;
+    font-size: 1.4vw;
 }
 
 .fe-p02 {
     position: relative;
     grid-area: d;
     left: 0;
-    top: 10px;
-    letter-spacing: 8px;
+    width: 100%;
+    top: 1.0vw;
+    font-size: 1.4vw;
+    letter-spacing: 0.05vw;
     line-height: 2;
 }
 
@@ -553,7 +559,7 @@ font-style: normal;
 
 /* ここからレシピCSS */
 .recipe-wrap {
-    font-size: 3.5rem;
+    font-size: 2.0vw;
     width: fit-content;
     margin: 50px auto 200px auto;
     text-align: center;
@@ -562,9 +568,9 @@ font-style: normal;
 .tea-wrap {
     position: relative;
     bottom: 0;
-    font-size: 3.5rem;
-    width: 250px;
-    margin: 50px;
+    font-size: 2.2vw;
+    width: 10%;
+    margin: 6%;
     padding: 50px 0;
     writing-mode: vertical-lr;
     left: 60px;
@@ -572,7 +578,8 @@ font-style: normal;
 }
 
 .tea-wrap-in {
-    font-size: 30px;
+    font-size: 1.4vw;
+    margin-left: 2vw;
 }
 
 .img-wrap {
@@ -586,7 +593,7 @@ font-style: normal;
 }
 
 .ck-img, .fr-img, .ic-img, .ro-img {
-    width: 600px;
+    width: 20vw;
 }
 
 .recipe-big-wrap {
@@ -601,16 +608,17 @@ font-style: normal;
     margin: 0 40px;
     width: 4000px;
     height: auto;
-    font-size: 50px;
+    font-size: 1.4vw;
 }
 
 .img-wrap > p {
     font-size: 2000px;
 }
 
-.p {
-    font-size: 25px;
-    }
+div.img-wrap  p {
+    font-size: 0.8vw;
+    line-height: 2;
+}
 
 /* ここまでレシピCSS */
 
@@ -622,33 +630,43 @@ font-style: normal;
     "b b c"
     "d d d";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 1800px 400px;
+    grid-template-rows: 30vw 55vw 20vw;
     justify-content: center;
 }
 
 .inf-h2 {
     position: relative;
     grid-area: a;
-    font-size: 50px;
+    font-size: 2.5vw;
     display: flex;
     justify-content: center;
     text-align: center;
     padding: auto;
-    top: 100px;
+    top: 50%;
 }
 
 .inf-img {
     position: relative;
     grid-area: b;
-    width: 1300px;
+    width: 35vw;
     height: auto;
-    left: 100px;
+    left: 18vw;
 }
 
 .inf-container01 {
     position: relative;
     grid-area: c;
-    right: 100px;
+    right: 25%;
+    width: 30vw;
+    height: 30vw;
+}
+
+.inf-container01 p {
+    font-size: 1.0vw;
+}
+
+.cafe-h3 {
+    font-size: 1.4vw;
 }
 
 .online-container {
@@ -670,8 +688,11 @@ font-style: normal;
 
 .shop-btn {
     position: relative;
-    top: 100px;
-    right: 3000px;
+    font-size: 1.0vw;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: baseline;
+    background-color: rgb(173, 153, 255);
 }
 
 .icon-cart::before {
@@ -685,10 +706,6 @@ font-style: normal;
     position: relative;
     top: 50px;
     left: 170px;
-}
-
-.cafe-h3 {
-    font-size: 50px;
 }
 
 .cafe-p01 {
@@ -708,11 +725,11 @@ font-style: normal;
     position: relative;
     display: grid;
     grid-template-areas: 
-    "a b b"
-    "c d d"
-    "e f f";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 150px 150px;
+    "a b"
+    "c d"
+    "e f";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 5vw 5vw;
     justify-content: center;
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -751,6 +768,18 @@ font-style: normal;
 .inf-container02 {
     position: relative;
     grid-area: d;
+}
+
+.btn01 {
+    background-color: #ff9;
+}
+
+.icon-ig::before {
+    background-image: url(http://www.w3.org/2000/svg);
+    background-color: #ff9;
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
 }
 
 /* ここまでショップCSS */
