@@ -54,12 +54,8 @@ nav,
 object,
 ol,
 
-p {
-    position: relative;
-    top: 0;
-    left: 0;
-    font-size: 30px;
-}
+p
+
 
 pre,
 q,
@@ -204,7 +200,7 @@ font-style: normal;
     left: 0px;
     margin: 2%;
     color: #000000;
-    font-size: 3.8rem;
+    font-size: 3.8vw;
     width: max-content;
     height: max-content;
 }
@@ -214,17 +210,22 @@ font-style: normal;
 }
 
 .tea-day {
-    width: 650px;
+    width: 100%;
     height: auto;
 }
 
 .notion {
-    width: 650px;
+    width: 100%;
     height: auto;
 }
 
 .wrapper {
     position: relative;
+}
+
+.icon {
+    width: 6vw;
+    margin: 10px;
 }
 
 .hd-btns {
@@ -260,9 +261,9 @@ font-style: normal;
 .news {
     position: relative;
     left: 75px;
-    top: 40px;
-    font-size: 100px;
-    margin: 0;
+    top: 70px;
+    font-size: 2vw;
+    margin: 4vw 0 4vw 0;
     padding: 0;
 }
 .news-slide-in {
@@ -279,7 +280,7 @@ font-style: normal;
 .news-slide-wrap {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 80vw;
 }
 
 .news-slide-in {
@@ -291,24 +292,25 @@ font-style: normal;
 .h3 {
     position: relative;
     left: 0;
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .news-p {
     position: relative;
     left: 0;
-    font-size: 32px;
+    font-size: 2vw;
     line-height: 2;
-    letter-spacing: 0.em;
+    letter-spacing: 0;
     font-family: "Zen Maru Gothic", serif;
     font-weight: 400;
     font-style: normal;
+    height: 27vw;
 }
 
 .detail {
     position: relative;
     left: 0;
-    font-size: 30px;
+    font-size: 2vw;
     background-color: transparent;
     border: transparent;
     text-decoration: underline;    
@@ -317,10 +319,13 @@ font-style: normal;
 .time {
     position: relative;
     left: 0;
-    font-size: 30px;
+    font-size: 2vw;
+    margin-top: 5vw;
+    padding-top: 2vw;
+    border-top: solid 0.1vw;
 }
 
-.new-imf {
+/* .new-imf {
     position: relative;
     left: 900px;
     bottom: 1000px;
@@ -329,7 +334,7 @@ font-style: normal;
     padding: 4px 8px;
     background-color: transparent;
     border: none;
-}
+} */
 
 .new-imf-ig {
     position: relative;
@@ -340,18 +345,29 @@ font-style: normal;
     margin: 10px;
 }
 
-.svg-container {
+/* .svg-container {
     position: relative;
     top: -400px;
     left: 1000px;
     width: 200px;
-}
+} */
 
 .new-imf {
-    width: 500px;
-    height: 20px;
-    font-size: 40px;
+    display: block;
+    position: relative;
+    left: 80%;
+    /* width: 5vw;
+    height: 3vw; */
+    font-size: 2vw;
     white-space: nowrap;
+    background-color: transparent;
+    border: none;
+}
+
+.new-imf::before {
+    content: url(../img/icon_ig.svg);
+    width: 100%;
+    height: auto;
 }
 
 .hr {
@@ -363,8 +379,15 @@ font-style: normal;
 /* ここからアバウトCSS */
 #about {
     width: 100%;
+    font-size: 3vw;
     margin: 0 auto;
     width: fit-content;
+}
+
+.tea-h2 {
+    font-size: 1vw;
+    width: 100%;
+    margin: auto;
 }
 
 .about-wrap {
@@ -375,12 +398,12 @@ font-style: normal;
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-size: 2.0rem;
+    font-size: 1vw;
     margin: 0 auto 50px auto;
 }
 
 .boxA {
-    font-size: 2.0rem;
+    font-size: 1vw;
     flex-grow: 2;
     width: 20%;
 }
@@ -394,11 +417,11 @@ font-style: normal;
 }
 
 .p1 {
-    flex-grow: 8;
+    font-size: 1vw;
 }
 
 .p2 {
-    flex-grow: 8;
+    font-size: 1vw;
 }
 /* ここまでアバウトCSS */
 
@@ -435,6 +458,14 @@ font-style: normal;
     right: 25%;
 }
 
+.st > * {
+    font-size: 1vw;
+}
+
+.sc > * {
+    font-size: 1vw;
+}
+
 .products-pic01 {
     width: 30%;
     position: relative;
@@ -459,14 +490,14 @@ font-style: normal;
 }
 
 .pro-head-cey {
-    font-size: 4.0rem;
+    font-size: 3vw;
     position: absolute;
     right: 70%;
     top: 10%;
 }
 
 .pro-head-sec {
-    font-size: 4.0rem;
+    font-size: 3vw;
     position: absolute;
     right: 22%;
     top: 10%;
@@ -674,16 +705,17 @@ div.img-wrap  p {
     position: relative;
     grid-area: d;
     text-align: left;
-    width: fit-content;
-    height: fit-content;
     margin: 0 auto;
     border-top: 8px #000;
 }
 
 .online-p {
-    border-top: 10px solid;
-    width: 2000px;
+    border-top: 3px solid;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 2;
+    height: auto;
 }
 
 .shop-btn {
@@ -692,7 +724,12 @@ div.img-wrap  p {
     font-weight: 700;
     text-align: center;
     vertical-align: baseline;
-    background-color: rgb(173, 153, 255);
+    margin-top: 20px;
+}
+
+.shop-btn::before {
+    content: url(../img/icon_ig.svg);
+    height: 6em;
 }
 
 .icon-cart::before {
@@ -704,8 +741,11 @@ div.img-wrap  p {
 
 .span {
     position: relative;
-    top: 50px;
-    left: 170px;
+    /* top: 50px;
+    left: 170px; */
+    top: 20%;
+    left: 20%;
+    font-size: 1vw;
 }
 
 .cafe-p01 {
@@ -774,13 +814,13 @@ div.img-wrap  p {
     background-color: #ff9;
 }
 
-.icon-ig::before {
+/* .icon-ig::before {
     background-image: url(http://www.w3.org/2000/svg);
     background-color: #ff9;
     background-size: 24px 24px;
     height: 24px;
     width: 24px;
-}
+} */
 
 /* ここまでショップCSS */
 
@@ -793,7 +833,7 @@ div.img-wrap  p {
 .contact {
     width: fit-content;
     margin: 100px auto;
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .form01 {
@@ -805,74 +845,77 @@ div.img-wrap  p {
     "e f"
     "g h";
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 200px 200px 200px 300px;
+    grid-template-rows: 7vw 7vw 10vw 12vw;
+}
+
+.form01 > * {
+    font-size: 1vw;
 }
 
 .name {
     position: relative;
-    left: 400px;
+    left: 70%;
     grid-area: a;
 }
 
 .name2 {
     grid-area: b;
-    width: 1000px;
-    height: 100px;
+    width: 40vw;
+    height: 3vw;
+    left: 90%;
 }
 
 .mail-address {
     position: relative;
     grid-area: c;
-    left: 400px;
+    left: 70%;
 }
 
 .mail2 {
     grid-area: d;
-    width: 1000px;
-    height: 100px;
+    width: 40vw;
+    height: 3vw;
 }
 
 .happen {
     position: relative;
-    left: 400px;
+    left: 70%;
     grid-area: e;
 }
 
 .form02 {
     grid-area: f;
-    width: 1000px;
-    height: 100px;
+    width: 40vw;
+    height: 6vw;
 }
 
 .contents {
     position: relative;
-    left: 400px;
+    left: 70%;
     grid-area: g;
 }
 
 .form03 {
     grid-area: h;
-    width: 1000px;
-    height: 300px;
+    width: 40vw;
+    height: 10vw;
 }
 
 .privacy-wrap {
-    width: fit-content;
-    margin: 0 auto;
+    width: 30vw;
+    margin: 3vw auto 3vw auto;
+    vertical-align: baseline;
 }
 
 .privacy {
     position: relative;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
+    height: 1vw;
     margin: 0 auto;
-    bottom: 5px;
 }
 
 .span2 {
     position: relative;
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 .btn01-submit-btn {
@@ -885,8 +928,10 @@ div.img-wrap  p {
 }
 
 .btn02-submit-btn {
-    font-size: 30px;
-    padding: 30px 200px;
+    font-size: 1.5vw;
+    padding: 3vw 17vw;
+    background-color: transparent;
+    border: solid 0.1vw;
 }
 
 .ft-copyright { 
@@ -974,33 +1019,41 @@ div.img-wrap  p {
         width: auto;
     }
 
-    .news-p {
+    /* .news-p {
         font-size: 0.86rem;
-    }
+    } */
 
     .h3 {
-        font-size: 1.0rem;
+        font-size: 1.5vw;
     }
 
-    .detail {
+    .art01 > * {
+        font-size: 1.5vw;
+    }
+
+    .art02 > * {
+        font-size: 1.5vw;
+    }
+
+    /* .detail {
         font-size: 1.0rem;
     }
 
     .time {
         font-size: 1.0rem;
-    }
+    } */
 
     .latest {
-        background-color: aqua;
         width: fit-content;
     }
 
     .new-imf {
         position: relative;
-        background-color: #ff9;
+        top: 85vw;
+        left: 35vw;
         width: fit-content;
         height: fit-content;
-        font-size: 1.0rem;
+        font-size: 2vw;
         padding: 0;
         margin: 0 auto;
     }
@@ -1010,7 +1063,6 @@ div.img-wrap  p {
     }
 
     #new {
-        background-color: chocolate;
     }
     /* ここまでnews */
 

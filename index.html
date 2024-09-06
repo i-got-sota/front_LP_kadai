@@ -19,16 +19,23 @@
                 <img src="img/header/hd_img01_a.jpg" alt="">
             </picture>
             <ul class="hd-btns"> 
-                <img src="img/icon_cart.svg" alt="">
-                <img src="img/icon_ig.svg" alt="">
-                <img src="img/icon_menu.svg" alt="" class="hd-btn-menu">
+                <img src="img/icon_cart.svg" alt="" class="icon">
+                <img src="img/icon_ig.svg" alt="" class="icon">
+                <img src="img/icon_menu.svg" alt="" class="icon">
             </ul>
             <ul class="header">TEA PRODUCTS by DeMiA CAFE</ul>
         </div>
     </header>
     <section id="new">
         <div class="NEWS">
-        <h2 class="news">NEWS</h2>
+            <h2 class="news">NEWS</h2>
+            <div class="latest">
+                <div class="svg-container">
+                <button class="new-imf">
+                <!-- <img src="img/icon_ig.svg" alt="" class="new-imf-ig"> -->
+                    最新情報はこちら</button>
+                </div>
+            </div> 
         <ul class="list">
         <div class="news-slide-wrap">    
             <div class="news-slide-in">
@@ -36,40 +43,31 @@
                     <img src="img/news/tea_day.jpg" alt="ローカル画像" class="tea-day">
                     <h3 class="h3">「紅茶の日」</h3>
                     <div class="news-container">
-                        <p class="news-p">11月1日は、大黒屋光太夫が日本人とし<br>て始めて外国人の正式な茶会で紅茶を飲ん<br>だ日。<br>2022年11月1日から一週間限定商品を発<br>売予定です。</p>
+                        <p class="news-p">11月1日は、大黒屋光太夫が日本人とし始めて外国人の正式な茶会で紅茶を飲ん日。<br>2022年11月1日から一週間限定商品を発予定です。</p>
                     </div>
                     <button class="detail">詳細はこちら</button>
-                    <hr class="hr">
-                    <time datetime="2022.6.30" class="time">2022.9.10</time>
+                    <p class="time">2022.9.10</p>
                 </article>
             </div>
             <div class="news-slide-in">
                 <article class="art02">
                     <img src="img/news/notion.jpg" alt="ローカル画像" class="notion">
                     <h3 class="h3">大切なお知らせ</h3>
-                    <p class="news-p">この度、創業10周年を記念して、セー<br>ルを開催します。<br>セールには、定番商品の各種フレーバ<br>ーティーからその他アレンジ商品まで<br>様々なものが対象になっています。</p>
+                    <p class="news-p">この度、創業10周年を記念して、セーを開催します。ールには、定番商品の各種フレーバティーからその他アレンジ商品まで々なものが対象になっています。</p>
                     <button class="detail">詳細はこちら</button>
-                    <hr class="hr">
-                    <time datetime="2022.6.30" class="time">2022.6.30</time>
+                    <p class="time">2022.6.30</p>
                 </article>
             </div>
         </div>
         </ul>
-        <div class="latest">
-            <div class="svg-container">
-            <button class="new-imf">
-            <img src="img/icon_ig.svg" alt="" class="new-imf-ig">
-                最新情報はこちら</button>
-            </div>
-        </div> 
         </div>   
     </section>
 
     <!-- aboutstart -->
     <section id="about">
         <div class="about-tea">
-            <h2>TEAの可能性を私たちは信じている。</h2>
-            <h2>「DeMiA CAFE」は、スリランカから仕入れた茶葉や紅茶にマリアージュする原料を世界中から<br>仕入れ、手作りでアレンジし、店舗に販売しています。</h2>
+            <h2 class="tea-h2">TEAの可能性を私たちは信じている。<br>
+            「DeMiA CAFE」は、スリランカから仕入れた茶葉や紅茶にマリアージュする原料を世界中から<br>仕入れ、手作りでアレンジし、店舗に販売しています。</h2>
         </div>
         <div class="tea-h">
             <div class="about-wrap">
@@ -188,7 +186,7 @@
         <h2 class="inf-h2">SHOP INFORMATION</h2>
         <img src="img/shop/shop_img01.jpg" alt="" class="inf-img">
         <div class="inf-container01">
-            <h3 class="cafe-h3">CAFEa</h3>
+            <h3 class="cafe-h3">CAFE</h3>
             <p class="cafe-p01">2019年6月に、出町柳駅の近くにカフェがオープンしまし<br>た。営業する日には、紅茶と共においしいお茶菓子、食<br>事をご堪能いただけます。</p>
             <p class="cafe-p02">カフェ営業日以外でも、茶葉やテイクアウト用茶菓子は<br>お買い求めいただけます。<br>紹介していないレシピを用いた料理教室や紅茶の知識を<br>学べるワークショップも定期的に開催しています</p>
             <div class="access-container">
@@ -204,11 +202,11 @@
             </div>
         </div>
         <div class="online-container">
-            <p class="online-p"><span class="span">
+            <div class="online-p"><span class="span">
                 ONLINE SHOP<br>
                 オンラインショップをオープンしています。<br>※売り切れ次第閉店します。
-            </span></p>
-            <p class="shop-btn"><a href="#" class="btn01"><span class="icon-cart">OPEN</span></a></p>
+            </div></p>
+            <!-- <div class="shop-btn"><a href="#" class="btn01"><span class="icon-cart">OPEN</span></a></div> -->
         </div>
         <div class="inf-container02">
 
@@ -222,16 +220,13 @@
         <form class="form01">
             <label class="name">名前:</label>
             <input type="text" class="name2">
-            <br><br>
             <label class="mail-address">メールアドレス:</label>
             <input type="text" class="mail2">
-            <br><br>
             <label class="happen">件名:</label>
             <select name="category" class="form02">
                 <option value="products">商品について</option>
                 <option value="others">その他</option>
             </select>
-            <br><br>
             <label class="contents">内容:</label>
             <textarea name="contents" cols="30" rows="10" class="form03" required></textarea>
         </form>
