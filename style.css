@@ -206,7 +206,12 @@ font-style: normal;
 }
 
 .art01 {
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
 
+.art02 {
+    padding-right: 4vw;
 }
 
 .tea-day {
@@ -258,6 +263,12 @@ font-style: normal;
 /* ここまでヘッダーCSS */
 
 /* ここからニュースCSS */
+#new {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20vw;
+}
+
 .news {
     position: relative;
     left: 75px;
@@ -282,6 +293,7 @@ font-style: normal;
     justify-content: space-between;
     width: 80vw;
 }
+
 
 .news-slide-in {
     display: flex;
@@ -345,17 +357,22 @@ font-style: normal;
     margin: 10px;
 }
 
-/* .svg-container {
+.svg-container {
+    display: flex;
     position: relative;
-    top: -400px;
-    left: 1000px;
-    width: 200px;
-} */
+    width: fit-content;
+    right: 6%;
+}
+
+.svg-container p {
+    position: relative;
+    font-size: 1.7vw;
+    /* left: 80%; */
+}
 
 .new-imf {
     display: block;
     position: relative;
-    left: 80%;
     /* width: 5vw;
     height: 3vw; */
     font-size: 2vw;
@@ -721,15 +738,20 @@ div.img-wrap  p {
 .shop-btn {
     position: relative;
     font-size: 1.0vw;
-    font-weight: 700;
     text-align: center;
     vertical-align: baseline;
     margin-top: 20px;
+    top: 10%;
+    border: solid 2px;
+    padding: 1vw;
+    width: 30vw;
 }
 
 .shop-btn::before {
     content: url(../img/icon_ig.svg);
     height: 6em;
+    position: relative;
+    top: 0.3vw;
 }
 
 .icon-cart::before {
@@ -810,9 +832,9 @@ div.img-wrap  p {
     grid-area: d;
 }
 
-.btn01 {
+/* .btn01 {
     background-color: #ff9;
-}
+} */
 
 /* .icon-ig::before {
     background-image: url(http://www.w3.org/2000/svg);
@@ -821,6 +843,11 @@ div.img-wrap  p {
     height: 24px;
     width: 24px;
 } */
+
+.icon-ig {
+    color: #000;
+    text-decoration: none;
+}
 
 /* ここまでショップCSS */
 
@@ -911,6 +938,12 @@ div.img-wrap  p {
     position: relative;
     height: 1vw;
     margin: 0 auto;
+    transform: scale(2.0); /* 倍率を調整 */
+    -webkit-transform: scale(2.0); /* Safari対応 */
+    -moz-transform: scale(2.0); /* Firefox対応 */
+    -ms-transform: scale(2.0); /* IE対応 */
+    -o-transform: scale(2.0); /* Opera対応 */
+    margin: 10px; /* 必要に応じて余白を調整 */
 }
 
 .span2 {
@@ -948,7 +981,7 @@ div.img-wrap  p {
 /* ここまでコンタクトCSS */
 
 /* ここからレスポンシブ対応 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     /* ここからheader */
     #hd ul img {
         display: flex;
@@ -997,18 +1030,22 @@ div.img-wrap  p {
         width: 180px
     }
 
-    #new .news-slide-in {
-        width: 800%;
+    #new .news-slide-in01 {
+        width: 55vw;
+        margin: 0 5vw 0 0;
+    }
+
+    #new .news-slide-in02 {
+        width: 55vw;
         margin: 0;
     }
 
     #new .art01 {
-        margin: 0 0 300px 0;
-        width: 200px;
+        margin: 0 0 30vw 0;
     }
 
     #new .art02 {
-        margin: 0 0 300px 0;
+        margin: 0 0 30vw 0;
     }
 
     #new ul {
@@ -1016,7 +1053,21 @@ div.img-wrap  p {
     }
 
     .news-slide-wrap {
-        width: auto;
+        margin: auto;
+        height: 90vw;   
+    }
+
+    #new .h3 {
+        font-size: 2vw;
+    }
+
+    #new .news-p {
+        font-size: 2vw;
+        line-height: 1.7;
+        height: auto;
+    }
+
+    .news-slide-link {
     }
 
     /* .news-p {
@@ -1051,30 +1102,314 @@ div.img-wrap  p {
         position: relative;
         top: 85vw;
         left: 35vw;
-        width: fit-content;
-        height: fit-content;
         font-size: 2vw;
         padding: 0;
         margin: 0 auto;
     }
 
-    .new-imf-ig {
-        background-color: red;
+    #new {
     }
 
-    #new {
+    .svg-container {
+        left: 70%;
+    }
+
+    .svg-container p {
+        text-align: center;
+        margin: 0;
+        border: solid #000;
+        padding-top: 2vw;
+        padding-bottom: 3vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .new-imf {
+        top: 0;
+        left: 0%;
+    }
+
+    .new-imf-span {
+        margin: auto;
     }
     /* ここまでnews */
 
     /* ここからabout */
-    .tea-h {
+    .about-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: auto;
+        padding: 0;
+    }
+
+    .tea-h2 {
+        font-size: 2vw;
+    }
+
+    .boxA, .p1, .p2 {
+        font-size: 2vw;
+    }
+    /* ここまでabout */
+
+    /* ここからproducts */
+    .pro-wrap01 {
         display: flex;
         flex-direction: column;
     }
 
-    .about-wrap {
+    .products-pic01, .products-pic02 {
+        width: 100%;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .pro-head-cey, .pro-head-sec {
+        font-size: 5vw;
+    }
+
+    .st, .sc {
+        width: 100%;
+        padding: 0;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    .sc > h3 {
+        font-size: 3vw;
+    }
+
+    .st > h3 {
+        font-size: 3vw;
+    }
+
+    .st > p {
+        font-size: 2vw;
+    }
+
+    .sc > p {
+        font-size: 2vw;
+    }
+    /* ここまでproducts */
+    
+    /* ここからfeature */
+    .feature-container  {
         display: flex;
         flex-direction: column;
     }
-    /* ここまでabout */
+
+    .fe-h301 {
+        position: relative;
+        top: 83vw;
+        bottom: 0;
+        left: 2vw;
+        right: 0;
+        font-size: 4vw;
+    }
+
+    .fe-h302 {
+        position: relative;
+        top: 85vw;
+        bottom: 0;
+        left: 2vw;
+        right: 0;
+        font-size: 4vw;
+    }
+
+    .fe-p01, .fe-p02 {
+        font-size: 2vw;
+    }
+
+    .fe-h2 {
+        position: relative;
+        top: 10vw;
+    }
+
+    .fe-img01, .fe-img02 {
+        width: 90vw;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .fe-img02 {
+        margin-bottom: 20vw;
+    }
+    /* ここまでfeature */
+
+    /* ここからrecipe */
+    .recipe-wrap h2 {
+        position: relative;
+        top: 20vw;
+    }
+
+    .img-wrap {
+        width: 80vw;
+        height: 100vw;
+        left: 0;
+    }
+
+    .img-wrap img {
+        width: 70vw;
+    }
+
+    .img-wrap h3 {
+        font-size: 4vw;
+    }
+
+    div.img-wrap p {
+        font-size: 2.5vw;
+        line-height: 1;
+    }
+
+    .tea-wrap {
+        position: relative;
+        right: 0;
+        left: 0;
+        bottom: 20vw;
+        border-top: solid 1vw black;
+        font-size: 2vw;
+    }
+
+    .tea-wrap-in {
+        font-size: 2vw;
+    }
+    /* ここまでrecipe */
+
+    /* ここからshop */
+    #shop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inf-img {
+        width: 90vw;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .inf-h2 {
+        font-size: 4vw;
+    }
+
+    .inf-container01 {
+        right: 0;
+        left: 0;
+        width: 90vw;
+    }
+
+    .inf-container01 p {
+        font-size: 2vw;
+        line-height: 1;
+    }
+
+    .inf-container01 h3 {
+        font-size: 2vw;
+        line-height: 1;
+    }
+
+    .online-p {
+        position: relative;
+        margin-bottom: 40vw;
+        top: 35vw;
+        width: 90vw;
+        line-height: 1.7;
+        font-size: 3vw;
+        border: none;
+        right: 10%;
+    }
+
+    .span {
+        font-size: 3vw;
+    }
+
+    .online-container {
+        
+
+    }
+    /* ここまでshop */
+
+    /* ここからcontact */
+    .contact {
+        font-size: 4vw;
+    }
+
+    .form01 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 5vw;
+    }
+
+    .name, .mail-address, .happen, .contents {
+        left: 0;
+        right: 0;
+        font-size: 5vw;
+        margin: 2vw 0;
+        position: relative;
+        left: 2%;
+    }
+
+    .form01 input {
+        width: 90vw;
+        height: 10vw;
+        margin: auto;
+    }
+
+    .form01 textarea {
+        width: 90vw;
+        height: 40vw;
+        margin: auto;
+    }
+
+    .form01 select {
+        width: 90vw;
+        height: 20vw;
+        margin: auto;
+    }
+
+    .form02 {
+        font-size: 3vw;
+    }
+
+    .form01 input {
+        
+    }
+
+    .span2 {
+        font-size: 4vw;
+    }
+
+    .privacy-wrap {
+        width: 90%;
+    }
+    
+
+    .btn01-submit-btn {
+        width: 80vw;
+    }
+
+    .btn02-submit-btn {
+        display: block;
+        background-color: #ccc;
+        position: relative;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: fit-content;
+    }
+
+    .copyright {
+        width: 70vw;
+    }
+
+    /* ここまでcontact */
 }
