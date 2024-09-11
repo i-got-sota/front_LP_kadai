@@ -1100,8 +1100,7 @@ div.img-wrap  p {
 
     .new-imf {
         position: relative;
-        top: 85vw;
-        left: 35vw;
+        display: block;
         font-size: 2vw;
         padding: 0;
         margin: 0 auto;
@@ -1111,13 +1110,15 @@ div.img-wrap  p {
     }
 
     .svg-container {
-        left: 70%;
+        position: relative;
+        top: 100%;
+        right: 90%;
     }
 
     .svg-container p {
         text-align: center;
         margin: 0;
-        border: solid #000;
+        border: solid 1px #000;
         padding-top: 2vw;
         padding-bottom: 3vw;
         padding-left: 10vw;
@@ -1125,8 +1126,8 @@ div.img-wrap  p {
     }
 
     .new-imf {
-        top: 0;
-        left: 0%;
+        top: 100%;
+        right: 50%;
     }
 
     .new-imf-span {
