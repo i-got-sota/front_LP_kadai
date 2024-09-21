@@ -853,8 +853,8 @@ body{
 
 @media (min-width:769px){
     .form-block{
-       display: flex;
-       width: 80%;
+        display: flex;
+        width: 80%;
 
 
     }
