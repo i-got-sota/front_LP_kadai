@@ -168,3 +168,827 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+.header-img{z-index: -1;
+    width:100%;
+    height: auto;
+    aspect-ratio: 1600/1067;
+}
+.logo{
+    position: relative;
+    z-index: 1;
+    left: 70px;
+    bottom: 45px;
+}
+.icon{
+    display: flex;
+    position: relative;
+    left: 85%;
+    bottom: 75px;
+    gap: 1rem;
+    width: 40px;
+}
+@media print, screen and (max-width:767px) {
+    .header-img{
+    height: 530px;}
+    .logo{
+        width: 40%;
+        left:20px;
+        bottom: 30px;
+    }
+    .icon{
+        width: 30px;
+        margin-top: 20%;
+        margin-left: -25%;
+    }
+}
+.news_logo{
+    left:10%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.saishin{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    margin-left:35%;
+    margin-top: -3%;
+    font-size: 1.2rem;
+}
+.saishin::before{
+    font-family: "Font Awesome 5 Brands";
+    content: "\f16d";
+    font-weight: bold;
+}
+.news{
+    display: flex;
+    flex-wrap:wrap
+}
+.tea_day{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 20%;
+    height:auto;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.tea_day>h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 30px 0;
+}
+.tea_day>div{
+    line-height: 2em;
+    margin-bottom: 30px;
+}
+.tea_day>a{
+    display: block;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color:#000;
+    border-bottom: solid 3px #000 ;
+}
+.tea_day>time{
+    font-weight: bold;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+@media screen and (max-width:768px) {
+    .news_logo{
+        width: 30%;
+    }
+    .saishin{
+        border: #000 solid 3px;
+        margin: 10% 0 0 30% ;
+        width: 190px;    
+    }
+    .tea_day{
+        width: 170px;
+    }
+    .tea_day>div{
+        height: 150px;
+        line-height: 1.0rem;
+    }
+}
+
+.about{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 2rem;
+    font-size: 20px;
+    width: 70%;
+    display: block;
+    margin:5% auto;
+
+}
+.about_2{
+    display: flex;
+    position: relative;
+    width: 70%;
+    margin: auto auto 5%;
+    flex-wrap: wrap;
+}
+.about_1{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    margin-left: 0;
+
+}
+.about_2>h3{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: large;
+    position: relative;
+    width: 120px;
+    margin-right: 130px;
+}
+.about_1>div{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: large;
+    position: relative;
+    margin: 0% auto 5% 0;
+    line-height: 2.0rem;
+}
+@media print, screen and (max-width:767px) {
+    .about{
+        width: 85%;
+        font-size: 1.0rem;
+        line-height: 1.5rem;  
+    }
+    .about_2{
+        width: 85%;
+    }
+    .about_2>h3{
+        width: 100%; 
+        margin: 3% auto ;  
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .about_1>div{
+        width: 100%;
+        margin: 2% auto;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        font-weight:400;
+    }
+}
+.ceylontea_img{
+    z-index: -1;
+    position: relative;
+    margin: 5% 0 0 12%;
+    object-fit: cover;
+    object-position: center center;
+    height: 500px;
+}
+.ceylontea_logo{
+    position: absolute;
+    margin: 10% 0 0 -46%;
+}
+.ceylontea_explanation{
+    position: relative;
+    margin: -30% 0 0 53%;
+    width: 35%;
+    height: 400px;
+    background-color: white;
+    
+}
+.ceylontea>div>span{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    position: absolute;
+    margin: 10% 10%;
+}
+.tea_explanation{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    position: absolute;
+    line-height: 2rem;
+    margin: 25% 10%;
+}
+.tea_value{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    position: absolute;
+    line-height: 2rem;
+    margin: 50% 10%;
+}
+.scone_img{
+    z-index: -1;
+    position: relative;
+    margin: 10% 0 0 40%;
+    object-fit: cover;
+    object-position: center center;
+    height: 500px;
+}
+.scone_logo{
+    position: absolute;
+    margin: 10% 0 0 -7%;
+}
+.scone_explanation{
+    position: relative;
+    margin: -30% 0 0 10%;
+    width: 35%;
+    height: 400px;
+    background-color: white;
+    
+}
+.scone>div>span{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    position: absolute;
+    margin: 10% 0 10% 20%;
+}
+.scone_explanation_1{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    position: absolute;
+    line-height: 2rem;
+    margin: 25% 5% 25% 20%;
+}
+.scone_value{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    position: absolute;
+    line-height: 2rem;
+    margin: 60% 5% 25% 20%;
+}
+@media print, screen and (max-width:767px) {
+    .ceylontea_img {
+        margin: 5% 5% 0 5%;
+        width: 90%;
+    }
+    .ceylontea_logo {
+        margin: 10% 0 0 -90%;
+        width: 40%;
+    }
+    .ceylontea_explanation{
+        width: 85%;
+        margin: 5% 5% 0 0;
+        height: 200px;
+    }
+    .ceylontea_explanation>span{
+        font-size: 0.5rem;
+        margin: 2% 0;
+    }
+    .tea_explanation{
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin: 20% 0 5% 10%;
+    }
+    .tea_value{
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin: 45% 0 0 10%;
+    }
+    .scone_img {
+        margin: 10% 5% 0 5%;
+        width: 90%;
+    } 
+    .scone_logo{
+        margin: 13% 0 0 -30%;
+        width: 25%;
+    }
+    .scone_explanation{
+        width: 85%;
+        margin: 5% 0 0 0;
+        height: 200px;
+    }
+    .scone>div>span{
+        font-size: 2.0rem;
+        margin: 2% 0 0 5%;
+    }
+    .scone_explanation_1{
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin: 20% 0 5% 5%;
+    }
+    .scone_value{
+        line-height: 1.2rem;
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin: 45% 0 0 5%;
+    }
+}
+
+.feature_title{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10% auto;
+}
+.feature1_img{
+    z-index: -1;
+    position: relative;
+    margin: 0 0 0 12%;
+    object-fit: cover;
+    object-position: center center;
+    height: 500px;
+}
+.feature1_explanation{
+    position: relative;
+    margin: -30% 0 0 60%;
+    width: 30%;
+    height: 400px;
+    background-color: white;
+    
+}
+.feature1>div>span{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    position: absolute;
+    margin: 10% 10%;
+}
+.explanation1{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    position: absolute;
+    line-height: 2rem;
+    margin: 25% 10%;
+}
+.feature2_img{
+    z-index: -1;
+    position: relative;
+    margin: 5% 0 0 45%;
+    object-fit: cover;
+    object-position: center center;
+    height: 500px;
+}
+.feature2_explanation{
+    position: relative;
+    margin: -30% 0 0 10%;
+    width: 30%;
+    height: 400px;
+    background-color: white;
+    
+}
+.feature2>div>span{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    position: absolute;
+    margin: 10% 10%;
+}
+.explanation2_1{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    position: absolute;
+    line-height: 2rem;
+    margin: 25% 10%;
+}
+.explanation2_2{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    position: absolute;
+    line-height: 2rem;
+    margin: 50% 10%;
+}
+@media print, screen and (max-width:767px) {
+    .feature_title{
+        width: 70%;
+        font-size: 1.2rem;
+    }
+    .feature1_img{
+        width: 90%;
+        margin: 0 5%;
+        height: auto;
+    }
+    .feature1_explanation{
+        width: 80%;
+        margin: 3% 0 0 0;
+        height: 200px;
+    }
+    .feature1>div>span{
+        font-size: 1.2rem;
+    }
+    .explanation1{
+        font-size: 0.8rem;
+        width: 100%;
+        font-weight: bold;
+        line-height: 1rem;
+    }
+    .feature2_img{
+        width: 90%;
+        margin: 0 5%;
+        height: auto;
+    }
+    .feature2_explanation{
+        width: 80%;
+        margin: 3% 0 0 0;
+        height: 200px;
+    }
+    .feature2>div>span{
+        font-size: 1.2rem;
+    }
+    .explanation2_1 {
+        font-size: 0.8rem;
+        width: 100%;
+        font-weight: bold;
+        line-height: 1rem;
+    }
+    .explanation2_2{
+        font-size: 0.8rem;
+        width: 100%;
+        font-weight: bold;
+        line-height: 1rem;
+    }
+}
+.recipe_logo{
+    display: block;
+    margin: 5% auto;
+}
+.recipe_title{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+}
+.recipe{
+    position: relative;
+    margin: 10% 0 0 5%;
+    display: flex;
+}
+.recipe_bar{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 01rem;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-lr;
+    border-top: #000 10px solid;
+    line-height: 2.5rem;
+    padding: 10px 5px;
+}
+.recipe_bar>span{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+}
+.recipe_article{
+    display: flex;
+    overflow: scroll;
+    position: relative;
+    margin-left: 50px;
+    width:100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.recipe_1{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    width: 100%;
+    height: auto;
+    margin: 0 40px 0 0;
+    white-space: nowrap;
+}
+.recipe_2{
+    display: flex;
+}
+.recipe_1>h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 30px 0;
+    white-space: normal;
+}
+.recipe_1>div{
+    line-height: 2em;
+    margin-bottom: 30px;
+    white-space: normal;
+}
+.recipe_1>img{
+    white-space: normal;
+}
+@media print, screen and (max-width:767px) {
+    .recipe_logo{
+        width: 30%;
+        margin-top: 30%;
+    }
+    .recipe_title{
+        width: 50%;
+        font-size: 1.2rem;
+        margin-left: 25%;
+        padding: 0 20px;
+    }
+    .recipe_bar{
+        border-top: #000 3px solid;
+        font-size: 0.8rem;
+        line-height: 2.0rem;
+    }
+    .recipe_bar>span{
+        font-size: 1.5rem;
+    }
+    .recipe_1{
+        width: 300px;
+    }
+    .recipe_article{
+        flex-wrap: wrap;
+        height: 500px;
+    }
+    .recipe_1>h3{
+        margin: 20px 0;
+        font-weight: 1.2rem;
+    }
+    .recipe_1>div{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+}
+.recipe_logo_1{
+    display: block;
+    margin: 5% auto;
+}
+.shopinformation{
+    display: flex;
+}
+.shopinformation>img{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.inform{
+    width: 30%;
+}
+.inform>img{
+    margin: 5% 0;
+}
+.inform>div{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 0 5% 0;
+    line-height: 2rem;
+}
+.inform1{
+    border-bottom: #000 solid 1px;
+    padding-bottom: 5%;
+}
+.inform>table{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight:400;
+    font-style: normal;
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+th{
+    padding: 20px 5px;
+}
+td{
+    padding: 20px 5px;
+}
+.inform>span{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    border-top: #000 solid 1px;
+    padding-top: 3%;
+    margin-top: 5%;
+}
+.inform_saishin{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    border: #000 solid 1px;
+    width:70%;
+    height: 7%;
+    margin-top: 5%;
+    padding: 5% 0;
+    text-align: center;
+}
+.inform_saishin::before{
+    font-family: "Font Awesome 5 Brands";
+    content: "\f16d";
+}
+.onlineshop{
+    border-top: #000 solid 3px;
+    padding: 3% 0;
+    width: 70%;
+    margin: 5% auto;
+}
+.onlineshop>img{
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+.onlineshop>div{
+    margin-left: 5%;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 3rem;
+}
+.onlineshop_open{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    border: #000 solid 1px;
+    width:30%;
+    padding: 3% ;
+    text-align: center;
+    margin: -10% 0 0 70% ;
+}
+.onlineshop_open::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f07a";
+}
+@media print, screen and (max-width:767px) {
+    .recipe_logo_1{
+        width: 60%;
+    }
+    .shopinformation{
+        flex-wrap: wrap;
+    }
+    .shopinformation>img{
+        width: 100%;
+        margin: 0 0;
+    }
+    .inform{
+        width: 80%;
+        margin: 20% 10% 0 10%;
+    }
+    .inform>div{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    .inform>table{
+        font-size: 0.8rem;
+    }
+    .inform>span{
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+    .inform_saishin{
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin: 5% 0 0 15%;
+        padding: 3% 0;
+        
+    }
+    .onlineshop{
+        border-top: #000 solid 0px;
+        padding: 3% 0;
+        width: 85%;
+        margin: 10% auto;
+    }
+    .onlineshop>img{
+        width: 35%;
+        
+    }
+    .onlineshop>div{
+        margin-left: 5%;
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+    .onlineshop_open{
+        width:70%;
+        padding: 3% ;
+        margin: 10% 15% 0 15% ;
+    }
+}
+
+.form1>p{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    display: inline-block;
+    width: 20%;
+    margin-left: 15%;
+    font-size: 1rem;
+    vertical-align: top;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.form1>input{
+    display: inline-block;
+    width: 45%;
+    margin: 2% auto;
+    height: 3rem;
+}
+.form1>select{
+    display: inline-block;
+    width: 45%;
+    margin: 2% auto;
+    height: 3rem;
+}
+.form1>select>option{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+.form1>textarea{
+    display: inline-block;
+    width: 45%;
+    margin: 2% auto;
+    height: 10rem;
+}
+.form2{
+    margin-left: 40%;
+}
+.form2_label{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+button{
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+    width: 20%;
+    background-color: gray;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: block;
+    margin-left: 40%;
+    margin-top: 3%;
+}
+::placeholder {
+    color: #c7c7c7;
+}
+.footer{
+    margin: 10% 40% 10% 45%;
+}
+@media print, screen and (max-width:767px) {
+    .form1>p{
+        width: 30%;
+        margin-left: 5%;
+        font-size: 0.8rem;
+        vertical-align: top;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .form1>input{
+        display: inline-block;
+        width: 90%;
+        margin: 1% 5%;
+        height: 3rem;
+    }
+    .form1>select{
+        width: 90%;
+        margin: 1% 5%;
+        height: 3rem;
+    }
+    .form1>textarea{
+        width: 90%;
+        margin: 1% 5%;
+        height: 10rem;
+    }
+    .form2{
+        margin-left: 25%;
+    }
+    .form2_label{
+        font-size: 0.8rem;
+        font-weight: bold;    
+    }
+    button{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    ::placeholder {
+        color: #c7c7c7;
+    }
+    .footer{
+        margin: 15% 30% 30% 30%;
+        width: 60%;
+    }
+}
