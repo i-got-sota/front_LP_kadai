@@ -168,3 +168,1122 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+html {
+    font-size: 60%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Zen Maru Gothic";
+    font-weight: 500;
+    line-height: 2;
+}
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+.header-img > img {
+    width: 100vw;
+    max-width: 100%;
+}
+
+.header-logo::before {
+    background-image: url(img/header/hd_logo.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.header-icon a {
+    display: block;
+}
+
+.header-icon span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    color: transparent;
+    overflow: hidden;
+}
+
+.header-icon span::before {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header-icon .cart span::before {
+    background-image: url(img/icon_cart.svg);
+}
+
+.header-icon .ig span::before {
+    background-image: url(img/icon_ig.svg);
+}
+
+.header-icon .menu span::before {
+    background-image: url(img/icon_menu.svg);
+}
+
+.news {
+    padding-top: 144px;
+}
+
+.news-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-ig {
+    display: inline-block;
+    padding-left: 32px;
+    position: relative;
+    top: 10px;
+    font-size: 1.3rem;
+}
+
+.news-ig::before {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background-image: url(img/icon_ig.svg);
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    content: "";
+}
+
+
+
+.news-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.news-article-title {
+    margin-top: 17px;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.news-article-text {
+    line-height: 1.7;
+    margin-top: 7px;
+    font-size: 1.1rem;
+}
+
+.news-article-link {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+}
+
+.news-article-link a {
+    text-decoration: underline;
+}
+
+
+
+.news-article-date {
+    border-top: 1px solid black;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 230px;
+    font-weight: 700;
+}
+
+
+
+.about-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.about-detail {
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.about-section {
+    display: flex;
+    margin-top: 72px;
+}
+
+
+.about-section-text p + p {
+    margin-top: 32px;
+}
+
+.products {
+    margin-top: 100px;
+}
+
+.products-section {
+    position: relative;
+}
+
+.products-section-title-tea {
+    position: absolute;
+    z-index: 1;
+}
+
+.products-section-title-scone {
+    position: absolute;
+    z-index: 1;
+}
+
+.products-section-text-tea {
+    background-color: white;
+}
+
+.products-section-text-scone {
+    background-color: white;
+}
+
+
+.feature-title {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.feature-section-title {
+    line-height: 1.5;
+    margin-top: 32px;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.feature-section-text {
+    margin-top: 30px;
+    line-height: 1.7;
+    font-size: 1.7rem;
+}
+
+.feature-section-text p + p {
+    margin-top: 20px;
+}
+
+.recipe {
+    padding-left: 50px;
+}
+
+.recipe-title {
+    text-align: center;
+}
+
+.recipe-title-text {
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 3.2rem;
+    padding-bottom: 80px;
+} 
+
+.recipe-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.recipe-intro {
+    width: 100px;
+    writing-mode: vertical-lr;
+    border-top: 10px solid black;
+    padding: 20px 1px;
+    margin: 0px 30px;
+    line-height: 1.65;
+    
+}
+
+.recipe-intro-title {
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+.recipe-intro-text {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: scroll;
+    height: 550px;
+    margin-top: 20px;
+}
+
+.recipe-article {
+    padding: 0px 20px;
+    width: 370px;
+    height: 700px;
+}
+
+.recipe-article-img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+}
+
+.recipe-article-title {
+    font-size: 2.4rem;
+    padding: 10px 0px;
+}
+
+.recipe-article-text {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.recipe-article-text p + p {
+    margin-top: 10px;
+}
+
+.shop-title {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.shop-ig {
+    position: relative;
+    padding-left: 40px;
+    bottom: 10px;
+}
+
+.shop-ig::before {
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    background-image: url(img/icon_ig.svg);
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    content: "";
+}
+
+.shop-online-text p + p {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.online-cart {
+    position: relative;
+}
+
+.online-cart::before {
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    background-image: url(img/icon_cart.svg);
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    content: "";
+}
+
+input {
+    font-family: "Zen Maru Gothic";
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    
+    background-color: white;
+    font-family: "Zen Maru Gothic";
+    background-image: url("img/select.svg");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px 16px;
+    padding-left: 10px;
+}
+
+.submit-btn {
+    background: gray;
+    color: white;
+    border: solid 1px gray;
+    transition: background 0.5s, color 0.5s;
+}
+
+.submit-btn:hover {
+    background: white;
+    color: black;
+}
+
+.contact {
+    padding-top: 100px;
+}
+
+.contact-title {
+    text-align: center;
+    padding-right: 30px;
+}
+
+
+
+@media screen and (min-width: 767px) {
+    
+    .header-logo {
+        left: 64px;
+        bottom: 16px;
+        width: 40vw;
+        height: 24px;
+        position: absolute;
+        z-index: 10;
+    }
+    
+    .header-icon {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 64px;
+        bottom: 16px;
+    }
+
+    .ig span {
+        margin-left: 32px;
+    }
+
+    .menu span {
+        margin-left: 32px;
+    }
+
+    .news-top {
+        padding-left: 50px;
+        padding-right: 70px;
+    }
+
+    .sp  {
+        display: none;
+    }
+
+    .news-container {
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+    
+    .news-article {
+        width: 270px;
+        padding: 0 20px;
+        height: 500px;
+        position: relative;
+    }
+
+    .about {
+        margin-top: 50px;
+        padding: 123px;
+    }
+
+    .about-section-title {
+        width: 20%;
+        font-size: 1.8rem;
+    }
+    
+    .about-section-text {
+        width: 80%;
+        font-size: 1.8rem;
+    }
+    
+    .products-section {
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-bottom: 100px;
+    }
+    
+    .products-section-title-tea {
+        left: 40px;
+        top: 40px;
+    }
+
+    .products-section-img-tea {
+        height: 600px;
+        width: 64%;
+    }
+    
+    .products-img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .products-section-text-tea {
+        right: 5%;
+        padding: 72px 56px 96px;
+        position: absolute;
+        top: 44%;
+        transform: translateY(-50%);
+        width: 40%;
+    }
+
+    .products-title {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+
+    .products-section-text-tea p {
+        margin-top: 32px;
+        font-size: 1.7rem;
+    }
+
+    .products-section-text-tea p + p {
+        margin-top: 24px;
+    }
+
+    .products-section-img-scone {
+        height: 600px;
+        width: 64%;
+        margin-left: auto;
+    }
+
+    .products-section-title-scone {
+        right: 40px;
+        top: 40px;
+    }
+
+    .products-section-text-scone {
+        padding: 72px 56px 96px;
+        position: absolute;
+        top: 44%;
+        transform: translateY(-50%);
+        width: 40%;
+    }
+
+    .products-section-text-scone p {
+        margin-top: 32px;
+        font-size: 1.7rem;
+    }
+
+    .products-section-text-scone p + p {
+        margin-top: 24px;
+    }
+
+    .feature {
+        padding-left:120px;
+        padding-right: 120px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .feature-section-01 {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .feature-section-02 {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .feature-section-img-01 {
+        width: 65%;
+        object-fit: cover;
+    }
+
+    .feature-section-img-02 {
+        width: 65%;
+        object-fit: cover;
+    }
+
+    .feature-section-info-01 {
+        padding-left:  50px;
+    } 
+
+    .feature-section-info-02 {
+        padding-right: 50px;
+    }
+
+    .shop {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    
+    .shop-cafe-section {
+        display: flex; 
+    }
+
+    
+    
+    .shop-cafe {
+        transform: translateX(-70px);
+    }
+
+    .shop-cafe-img {
+        height: auto;
+    }
+
+    .shop-cafe-infomation {
+        margin-top: 15px;
+        width: 400px;
+        margin-left: 32px;
+    }
+    
+    .shop-cafe-infomation-title {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .shop-cafe-infomation-text {
+        font-size: 1.7rem;
+    }
+
+    .shop-cafe-infomation p + p {
+        margin-top: 20px;
+    }
+
+    .shop-cafe-infomation-table {
+        border-top: solid 1px gray;
+        border-bottom: solid 1px gray;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        width: 400px;
+    }
+
+    th {
+        padding: 16px 10px;
+        font-size: 1.4rem;
+    }
+
+    td {
+        padding: 16px 10px;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    
+    .shop-btn {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        border: 1px solid gray;
+        min-width: 320px;
+        height: 65px;
+        padding: 26px 0px 0px 5px;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .shop-btn {
+        background: white;
+        transition: background 0.5s;
+    }
+    
+    .shop-btn:hover {
+        background: #eee;
+    }
+
+    .shop-online {
+        margin-top: 50px;
+        padding-top: 40px;
+        border-top: solid 3px black;
+        padding-left: 50px;
+    }
+
+    .shop-online-title{
+        margin-bottom: 20px;
+    }
+
+
+    .shop-online-info {
+        padding-left: 5px;
+        display: flex;
+    }
+
+    .shop-online-text {
+        font-size: 1.6rem;
+        padding-right: 30px;
+        flex: 1;
+    }
+
+    
+
+    .online-open {
+        margin-right: 30px;
+        border: solid 1px black;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-right: 70px;
+    }
+
+    
+
+    .online-btn {
+        display: inline-block;
+        width: 320px;
+        height: 70px;
+        padding: 20px 0px 10px 15px;
+    }
+
+    .online-btn {
+        background: white;
+        transition: background 0.5s;
+    }
+    
+    .online-btn:hover {
+        background: #eee;
+    }
+
+    
+
+    .contact-form {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .contact-form-context {
+        display: flex;
+        width: 80%;
+    }
+
+    .form-label {
+        flex: 1;
+        font-size: 1.7rem;
+        width: 24vw;
+    }
+
+    .form-answer {
+        width: 72%;
+        padding: 16px 7px;
+    }
+
+    .privacy-policy {
+        font-size: 1.7rem;
+    }
+
+    .submit-btn {
+        width: 320px;
+        height: 70px;
+        font-size: 1.6rem;
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .header-logo {
+        left: 20px;
+        bottom: 16px;
+        width: 64vw;
+        height: 24px;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .header-icon {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 16px;
+        bottom: -60px;
+    }
+
+    .header-icon a {
+        width: 11vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .news-top {
+        padding-left: 10px;
+    }
+    
+    .news-container {
+        height: 450px;
+    }
+
+    .news-article {
+        width: 270px;
+        padding: 0 20px;
+        height: 500px;
+        position: relative;
+    }
+
+
+    .news-etc {
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .news-btn {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        border: 1px solid gray;
+        min-width: 64px;
+        padding: 8px 150px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .news-ig {
+        display: inline-block;
+        padding-left: 32px;
+        position: relative;
+        top: 0px; 
+    }
+
+    .news-ig::before {
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        left: 12px;
+        top: 5px;
+    }
+
+    .about-info {
+        margin-top: 100px;
+        padding: 0 40px;
+    }
+
+    .about-title {
+        font-size: 1.6rem;
+    }
+
+    .about-detail {
+        font-size: 1.6rem;
+    }
+
+    .about-section {
+        margin-top: 60px;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .about-section-title {
+        line-height: 1.1;
+        font-size: 1.4rem;
+    }
+
+    .about-section-text {
+        line-height: 1.4;
+        font-size: 1.4rem;
+    }
+
+    .products {
+        padding-top: 50px;
+    }
+
+    .products-section-title-tea {
+        left: 40px;
+        top: 16px;
+        height: 40px;
+        width: auto;
+    }
+    
+    .products-section-title-scone {
+        right: 10px;
+        top: 16px;
+        height: 40px;
+        width: auto;
+    }
+
+    .products-section {
+        padding: 0 40px;
+        margin-top: 50px;
+    }
+
+    .products-title {
+        margin-top: 24px;
+        font-size: 2.2rem;
+    }
+
+    .products-detail {
+        margin-top: 8px;
+        font-size: 1.4rem;
+    }
+
+    .products-section-text-tea p + p {
+        margin-top: 12px;
+        font-size: 1.2rem;
+    }
+
+    .products-section-text-scone p + p {
+        margin-top: 12px;
+        font-size: 1.2rem;
+    }
+
+    .feature {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+    }
+    
+    .feature-title {
+        font-size: 1.8rem;
+        padding-bottom: 30px;
+    }
+
+    .feature-section-title {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+
+    .feature-section-text {
+        font-size: 1.3rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .feature-section-text p + p {
+        margin-top: 10px;
+    }
+
+    .feature {
+        margin-bottom: 130px;
+    }
+
+    .recipe {
+        padding-left: 10px;
+    }
+
+    .recipe-title-img {
+        width: 640px;
+        text-align: center;
+    }
+
+
+    .recipe-title-text {
+        font-size: 1.8rem;
+        padding-bottom: 30px;
+    }
+
+    .recipe-intro {
+        width: 90;
+        border-top: 2px solid black;
+        padding: 20px 8px 20px 2px;
+        margin: 0px 10px;
+        margin-right: 20px;
+    }
+
+    .recipe-intro-title {
+        font-size: 3.5rem;
+    }
+
+    .recipe-intro-text {
+        font-size: 2.2rem;
+    }
+    
+    .recipe-container {
+        height: 570px;
+    }
+    
+    .recipe-article {
+        width: 440px;
+        height: 550px;
+    }
+
+    .recipe-article-img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .recipe-article-title {
+        font-size: 1.9rem;
+    }
+
+    .recipe-article-text {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .recipe-article-text p + p {
+        margin-top: 3px;
+    }
+
+    .shop-cafe-infomation {
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .shop-cafe-title-img {
+        width: 110px;
+        margin-bottom: 10px;
+    }
+
+    .shop-cafe-infomation-text {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .shop-cafe-infomation-text p + p {
+        margin-top: 10px;
+    }
+
+    .shop-cafe-infomation-table {
+        border-top: solid 1px gray;
+        border-bottom: solid 1px gray;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        line-height: 1.4;
+        width: 100%;
+    }
+
+    th {
+        padding: 16px 10px;
+        font-size: 1.3rem;
+    }
+
+    td {
+        padding: 16px 10px;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .shop-address {
+        line-height: 1.5;
+    }
+
+    .shop-etc {
+        text-align: center;
+    }
+    
+    .shop-btn {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        border: 1px solid gray;
+        min-width: 320px;
+        width: 75%;
+        height: 50px;
+        padding: 20px 0px 0px 5px;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .shop-ig::before {
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        left: 20px;
+        top: 3px;
+    }
+
+    .shop-online {
+        margin-top: 60px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .shop-online-title {
+        padding-left: 30px;
+        margin-bottom: 15px;
+    }
+
+    .shop-online-text {
+        font-size: 1.3rem;
+    }
+
+    .online-open {
+        
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .online-btn {
+        border: solid 1px black;
+        display: inline-block;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 700;
+        width: 75%;
+        height: 50px;
+        padding: 10px 0px 0px 5px;
+    }
+
+    .online-cart::before {
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        background-position: 9px 3px;
+    }
+
+    .contact {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .contact-form-context {
+        text-align: center;
+    }
+
+    .form-label {
+        text-align: start;
+        font-size: 1.3rem;
+    }
+
+    .form-answer {
+        width: 100%;
+        padding: 16px 7px;
+        margin-bottom: 20px;
+    }
+
+    .privacy-policy {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .submit {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    
+    .submit-btn {
+        text-align: center;
+        width: 100%;
+        height: 50px;
+    }
+    .submit-btn:hover {
+        background: gray;
+        color: black;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+}
+
