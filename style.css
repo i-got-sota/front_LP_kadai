@@ -168,3 +168,1005 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+    body {
+        font-family: "Zen Maru Gothic", serif;
+    }
+
+    a, a:link, a:visited, a:hover, a:active {
+        color: inherit;
+    }
+    
+    .phone {
+        display: none;
+    }
+
+    .header-img {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1600/1067;
+        background-image: url(img/header/hd_img01_a.jpg);
+        background-size: cover;
+    }
+
+    .header-title {
+        position: absolute;
+        bottom: 18px;
+        left: 72px;
+        font-weight: 450;
+        font-size: 21px;
+    }
+
+    .header-title > span {
+        font-weight: normal;
+        font-size: 10px;
+        position: relative;
+        bottom: 5px;
+        left: 3px;
+    }
+
+    .header-icons {
+        position: absolute;
+        bottom: 12px;
+        right: 56px;
+        font-size: 30px;
+        letter-spacing: 0.7rem;
+    }
+
+    .header-icons > a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .news-articles {
+        display: flex;
+        gap: 50px;
+    }
+
+    .news1, .news2 {
+        width: 250px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        line-height: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-main {
+        flex-grow: 1;
+    }
+
+    .article-title {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .news-article-button {
+        font-size: 1.0rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .news hr {
+        background-color: black;
+    }
+
+    .news {
+        position: relative;
+        margin: 120px 75px 75px 75px
+    }
+
+    .news-information {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        color: inherit;
+        font-size: 1rem;
+    }
+
+    .news-information > a {
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .news-information > a > i {
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .news > h1 {
+        width: 100px;
+        margin-bottom: 50px;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .about {
+        margin: 50px 120px 0px 120px;
+    }
+
+    .about > div {
+        margin-bottom: 50px;
+    }
+
+    .about-introduction {
+        width: 100%;
+        font-size: 1.25rem;
+        line-height: 2em;
+    }
+
+    .about p {
+        margin-bottom: 1.5em;
+    }
+
+    .about-tea {
+        display: flex;
+    }
+
+    .about-tea-title {
+        width: 20%;
+        font-size: 1.2rem;
+        line-height: 2em;
+        font-weight: 600;
+    }
+
+    .about-tea-main {
+        width: 80%;
+        font-size: 1.1rem;
+        line-height: 2em;
+        font-weight: 500;
+    }
+
+    .about-tempting {
+        display: flex;
+    }
+
+    .about-tempting-title {
+        width: 20%;
+        font-size: 1.2rem;
+        line-height: 2em;
+        font-weight: 600;
+    }
+
+    .about-tempting-main {
+        width: 80%;
+        font-size: 1.1rem;
+        line-height: 2em;
+        font-weight: 500;
+    }
+
+    .product {
+        margin: 200px 70px 0px 70px;
+    }
+
+    .ceylon-img {
+        width: 700px;
+        height: 600px;
+        background-image: url(img/products/products_tea.jpg);
+        background-size: cover;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .scone-img {
+        width: 700px;
+        height: 600px;
+        background-image: url(img/products/products_scone.jpg);
+        background-size: cover;
+        background-position: 50% 100%;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .ceylon-title {
+        position: absolute;
+        top: 60px;
+        transform: translate(-5px);
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .scone-title {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        transform: translate(10px);
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .ceylon-main {
+        background-color: #fff;
+        width: 400px;
+        height: 400px;
+        padding-top: 70px;
+        padding-left: 60px;
+        transform: translate(-100px, 0);
+        z-index: 1000;
+    }
+
+    .scone-main {
+        background-color: #fff;
+        width: 400px;
+        height: 400px;
+        padding-top: 50px;
+        padding-right: 50px;
+        transform: translate(100px, 0);
+        z-index: 1000;
+    }
+
+    .product p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .product h1 {
+        font-size: 30px;
+    }
+
+    .ceylon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .scone {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .feature {
+        margin: 180px 120px 0px 120px;
+    }
+
+    .feature-tea-img {
+        width: 700px;
+        height: 450px;
+        background-image: url(img/feature/feature_img01.jpg);
+        background-size: cover;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .feature-sweets-img {
+        width: 700px;
+        height: 450px;
+        background-image: url(img/feature/feature_img02.jpg);
+        background-size: cover;
+        background-position: 50% 100%;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .feature-tea-main {
+        width: 400px;
+        height: 400px;
+        padding-top: 70px;
+        padding-left: 60px;
+    }
+
+    .feature-sweets-main {
+        width: 380px;
+        height: 400px;
+        padding-top: 50px;
+        padding-right: 50px;;
+    }
+
+    .feature p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .feature h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .feature-tea {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .feature-sweets {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .feature-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 60px;
+    }
+
+    .recipe {
+        margin-left: 60px;
+    }
+
+    .recipe-title1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .recipe-title2 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 150px;
+        line-height: 60px;
+    }
+
+    .recipe-main {
+        display: flex;
+    }
+    
+    .recipe-subtitle {
+        border-top: 7px solid #000 ;
+        writing-mode: vertical-lr;
+        margin: 0 50px 0 0;
+        padding-top: 10px;
+        line-height: 40px;
+    }
+
+    .recipe-subtitle h1 {
+        font-size: 36px;
+        padding: 8px;
+    }
+
+    .recipe-subtitle h2 {
+        font-size: 18px;
+        padding-top: 5px;
+    }
+
+    .recipe-articles {
+        margin-top: 20px;
+        overflow: scroll;
+        display: flex;
+    }
+
+    .recipe-articles article {
+        min-width: 350px;
+        margin: 0 25px;
+    }
+
+    .recipe-name {
+        font-size: 24px;
+        padding: 30px 0;
+    }
+
+    .recipe-description {
+        font-size: 14px;
+        line-height: 26px;
+        padding-right: 10px;
+        font-weight: 500;
+    }
+
+    .shop-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+        padding: 60px;
+        margin-top: 60px;
+    }
+
+    .shop-main {
+        display: flex;
+    }
+
+    .shop-img {
+        width: 60%;
+    }
+
+    .shop-cafe {
+        width: 50%;
+        margin: 20px 90px;
+    }
+
+    .shop-cafe h1 {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 25px 0;
+    }
+
+    .shop-cafe p {
+        font-size: 16px;
+        font-weight: 450;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+
+    .shop table {
+        font-size: 13px;
+        border-collapse: separate;
+        line-height: 20px;
+
+    }
+
+    .table1,  .table2 {
+        padding: 0 20px 40px 20px;
+    }
+
+    .table3 {
+        padding: 0 20px 0 20px
+    }
+
+    .shop hr {
+        background-color: #000;
+        height: 0px;
+    }
+
+    .shop-table td {
+        font-weight: 500;
+    }
+
+    .shop-info {
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 0;
+        display: block;
+        width: 80%;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 16px 0;
+        transition: background 0.5s;
+    }
+
+    .shop-insta {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    .shop-info:hover {
+        background-color: whitesmoke;
+    }
+
+    .shop-online {
+        margin: 40px 80px;
+        border-top: 3px solid #000;
+        padding: 0 50px;
+        position: relative;
+    }
+
+    .shop-online h1 {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 30px;
+    }
+
+    .shop-online p {
+        font-size: 15px;
+        font-weight: 500;
+        padding: 12px;
+    }
+
+    .shop-online-open {
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 0;
+        width: 300px;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 16px 0;
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+        display: block;
+        transition: background 0.5s;
+    }
+
+    .shop-online-cart {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    .shop-online-open:hover {
+        background-color: whitesmoke;
+    }
+
+    .contact-title {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+        padding: 60px;
+        margin-top: 60px;
+    }
+
+    .contact form {
+        padding: 0  120px 0 120px;
+    }
+
+    .form-option {
+        padding: 15px 0;
+    }
+
+    .form-option label {
+        display: inline-block;
+        width: 25%;
+        font-weight: 600;
+    }
+
+    .form-option input, select, textarea{
+        width: 70%;
+        height: 50px;
+        border-radius: 0;
+        border: 1px solid #000;
+        padding-left: 10px;
+        font-weight: 600;
+    }
+
+    textarea {
+        height: 180px;
+        vertical-align: top;
+    }
+
+    .privacycheck {
+        text-align: center;
+        padding: 30px 0;
+        font-weight: 500;
+    }
+
+    input[type="submit"] {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: 60px;
+        padding: auto;
+        text-align: center;
+        border-radius: 0%;
+        border: 1px solid #000;
+        background-color: dimgray;
+        color: #fff;
+        font-weight: 600;
+        transition: background 0.5s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: whitesmoke;
+        color: #000;
+    }
+
+    footer {
+        font-size: 15px;
+        text-align: center;
+        margin: 150px auto;
+    }
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+@media print, screen and (max-width: 1080px) {
+
+    .phone {
+        display: block;
+    }
+
+    .header-img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 750/1000;
+        background-image: url(img/header/hd_img01_a_sp.jpg);
+        background-size: cover;
+    }
+
+    .header-title {
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+        font-weight: 500;
+        font-size: 40px;
+    }
+
+    .header-title > span {
+        font-weight: 500;
+        font-size: 28px;
+        position: relative;
+        bottom: 5px;
+        left: 5px;
+    }
+
+    .header-icons {
+        position: absolute;
+        bottom: -80px;
+        right: 36px;
+        font-size: 48px;
+        letter-spacing: 1.5rem;
+    }
+
+    .header-icons > a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .news-information {
+        width: 75%;
+        margin-top: 40px;
+        right: 50%;
+        top: 100%;
+        font-size: 1.5rem;
+        border: 2px solid grey;
+        transform: translate(50%, 0);
+        padding: 30px 120px 20px 120px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .news-information > a > i {
+        vertical-align: middle;
+        margin-right: 18px;
+    }
+ 
+    .news1, .news2 {
+        width: 50%;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-title {
+        font-size: 2.6rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .news-article-button {
+        font-size: 1.8rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .news {
+        position: relative;
+        margin: 320px 50px 75px 50px
+    }
+
+    .news > h1 {
+        width: 100px;
+        margin-bottom: 80px;
+        font-size: 3.5rem;
+        font-weight: 500;
+    }
+
+    .news-main {
+        flex-grow: 1;
+    }
+
+    .about {
+        margin-top: 500px;
+        text-size-adjust:100%;
+    }
+
+    .about-introduction {
+        width: 100%;
+        font-size: 1.95rem;
+    }
+
+    .about p {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .about-tea {
+        display: inline;
+    }
+
+    .about-tempting {
+        display: inline;
+    }
+
+    .about-tea-title {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .about-tea-main {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .about-tempting-title {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .about-tempting-main {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .ceylon-img, .scone-img {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0;
+    }
+
+    .ceylon-main, .scone-main {
+        width: 90%;
+        left: 50%;
+        padding: 0;
+        margin: 40px auto;
+        transform: translate(0);
+    }
+
+    .ceylon, .scone {
+        display: block;
+    }
+
+    .product p {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .product h1 {
+        font-size: 50px;
+    }
+
+    .feature {
+        margin: 180px 20px 0 20px;
+    }
+
+    .feature-tea-img, .feature-sweets-img {
+        width: 90%;
+        height: 550px;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 0;
+    }
+
+    .feature-tea-main, .feature-sweets-main {
+        width: 90%;
+        left: 50%;
+        padding: 0;
+        margin: 40px auto;
+        transform: translate(0);
+    }
+
+    .feature-tea, .feature-sweets {
+        display: block;
+        margin-bottom: 0px;
+    }
+
+    .feature p {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .feature h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .feature-title {
+        font-size: 20px;
+        margin-bottom: 100px;
+    }
+
+    .recipe {
+        margin-top: 400px;
+    }
+
+    .recipe-title1 {
+        font-size: 70px;
+    }
+
+    .recipe-title2 {
+        font-size: 30px;
+        margin-bottom: 100px;
+    }
+
+    .recipe-subtitle {
+        padding: 30px 20px;
+        line-height: 60px;
+    }
+
+    .recipe-subtitle h1 {
+        font-size: 54px;
+    }
+
+    .recipe-subtitle h2 {
+        font-size: 32px;
+    }
+
+    .recipe-articles article {
+        min-width: 620px;
+        margin: 0 32px;
+    }
+
+    .recipe-name {
+        font-size: 40px;
+        padding: 40px 0;
+    }
+
+    .recipe-description {
+        font-size: 16px;
+        line-height: 40px;
+        padding-right: 10px;
+        font-weight: 500;
+    }
+
+    .shop-main {
+        display: block;
+    }
+
+    .shop-img {
+        width: 100%;
+        height: 1000px;
+        object-fit: cover;
+        object-position: 50% 100%;
+    }
+
+    .shop-title {
+        font-size: 72px;
+        padding: 50px;
+        margin-top: 480px;
+    }
+
+    .shop-cafe {
+        width: 100%;
+        margin: 0 0;
+        padding: 0 80px;
+    }
+
+    .shop-cafe h1 {
+        font-size: 50px;
+        font-weight: 500;
+        padding: 70px 0;
+        margin-top: 90px;
+    }
+
+    .shop-cafe p {
+        text-size-adjust: 100%;
+        font-size: 32px;
+        font-weight: 450;
+        line-height: 60px;
+        margin: 40px 0;
+    }
+
+    .shop table {
+        font-size: 30px;
+        line-height: 40px;
+        border-collapse: separate;
+        margin: 50px 0;
+
+    }
+
+    .table1,  .table2 {
+        padding: 0 40px 80px 40px;
+    }
+
+    .table3 {
+        padding: 0 40px 0 40px
+    }
+
+    .shop-info {
+        width: 80%;
+        font-size: 30px;
+        padding: 36px 0;
+        margin: 100px auto;
+    }
+
+    .shop-insta {
+        font-size: 40px;
+        margin-right: 16px;
+    }
+
+    .shop-online {
+        margin: 40px 80px;
+        padding: 0 0;
+        position: relative;
+        border-top: 0;
+    }
+
+    .shop-online h1 {
+        font-size: 48px;
+        font-weight: 500;
+        padding: 30px 0;
+    }
+
+    .shop-online p {
+        font-size: 30px;
+        font-weight: 500;
+        padding: 24px 0;
+    }
+
+    .shop-online-open {
+        width: 80%;
+        font-size: 30px;
+        padding: 36px 0;
+        margin: 40px auto;
+        position: inherit;
+        right: inherit;
+        bottom: inherit;
+    }
+
+    .shop-online-cart {
+        font-size: 40px;
+        margin-right: 16px;
+    }
+
+    .contact-title {
+        margin-top: 300px;
+    }
+
+    .contact form {
+        padding: 0  50px 0 50px;
+    }
+
+    .form-option label {
+        font-size: 32px;
+        width: 40%;
+        padding: 20px 0;
+    }
+
+    .form-option input, select, textarea {
+        width: 100%;
+        font-size: 32px;
+        height: 150px;
+        padding-left: 28px;
+        font-weight: 500;
+    }
+
+    textarea {
+        height: 450px;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 25px;
+        transform:scale(2)
+    }
+
+    .privacycheck {
+        font-size: 35px;
+        padding: 40px 0;
+        font-weight: 500;
+    }
+
+    input[type="submit"] {
+        font-size: 35px;
+        width: 700px;
+        height: 120px;
+    }
+
+    footer {
+        font-size: 12px;
+        margin-bottom: 300px;
+    }
+
+}
