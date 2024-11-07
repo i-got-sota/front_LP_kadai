@@ -8,11 +8,34 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="zen-maru-gothic-regular">
     <header>
-      <img src="img/header/hd_img01_a.jpg" alt="" class="hdr-img" />
+      <!-- スライドの枠 -->
+      <div class="slide-wrapper">
+        <!-- スライドの中身 -->
+        <div class="slide" id="js-slide">
+          <div>
+            <img src="img/header/hd_img01_a.jpg" alt="" class="hdr-img" />
+          </div>
+          <div>
+            <img src="img/header/hd_img01_b.jpg" alt="" class="hdr-img" />
+          </div>
+          <div>
+            <img src="img/feature/feature_img01.jpg" alt="" class="hdr-img" />
+          </div>
+          <div>
+            <img src="img/feature/feature_img02.jpg" alt="" class="hdr-img" />
+          </div>
+        </div>
+        <!-- 左右のボタン -->
+        <span id="js-prev" class="prev"></span>
+        <span id="js-next" class="next"></span>
+      </div>
       <span class="hdr-logo">TEA PRODUCTS by DeMiA CAFE</span>
       <ul class="hdr-icons">
         <li>
@@ -69,22 +92,36 @@
       <section class="belief">
         <div class="belief-abs">
           TEAの無限の可能性を私たちは信じている。<br />
-          「DeMiA CAFE」は、スリランカから仕入れた茶葉や紅茶にマリアージュする原料を世界中から仕入れ、手作りでアレンジし、店舗で販売しています。
+          「DeMiA
+          CAFE」は、スリランカから仕入れた茶葉や紅茶にマリアージュする原料を世界中から仕入れ、手作りでアレンジし、店舗で販売しています。
         </div>
         <div class="belief-container">
           <div class="belief-title">T; Tea</div>
           <div class="belief-text">
-            <p>DeMiA CAFEは、十数年前、イギリスで本場の紅茶と共にティータイムを嗜んだ創業メンバーがこの習慣を日本でも広めたいということで始まりました。</p>
-            <p>紅茶は本格的な茶葉を使用とするともに、それに見合ったお茶菓子も必要だ。</p>
-            <p>このような精神の元、本格的な茶葉を提供するとともにそれにマリアージュするお菓子を販売したり、レシピを紹介しています。</p>
+            <p>
+              DeMiA
+              CAFEは、十数年前、イギリスで本場の紅茶と共にティータイムを嗜んだ創業メンバーがこの習慣を日本でも広めたいということで始まりました。
+            </p>
+            <p>
+              紅茶は本格的な茶葉を使用とするともに、それに見合ったお茶菓子も必要だ。
+            </p>
+            <p>
+              このような精神の元、本格的な茶葉を提供するとともにそれにマリアージュするお菓子を販売したり、レシピを紹介しています。
+            </p>
           </div>
         </div>
         <div class="belief-container">
-          <div class="belief-title">T: Tempting</div>
+          <div class="belief-title">T; Tempting</div>
           <div class="belief-text">
-            <p>紅茶は17世紀ごろ大英帝国のコーヒーハウスが大衆化したことで、そこで売られていた紅茶は一般の人にも愛飲されるようになりました。</p>
-            <p>人々はこのような紅茶の持つ魅惑に心酔し、紅茶の取引の利益が大英帝国の礎を築き、産業革命にまでつながったと言われるほどです。</p>
-            <p>「おいしい紅茶で、やすらぎに満ちた至福のひと時を」過ごしてほしい。</p>
+            <p>
+              紅茶は17世紀ごろ大英帝国のコーヒーハウスが大衆化したことで、そこで売られていた紅茶は一般の人にも愛飲されるようになりました。
+            </p>
+            <p>
+              人々はこのような紅茶の持つ魅惑に心酔し、紅茶の取引の利益が大英帝国の礎を築き、産業革命にまでつながったと言われるほどです。
+            </p>
+            <p>
+              「おいしい紅茶で、やすらぎに満ちた至福のひと時を」過ごしてほしい。
+            </p>
             <p>魅力の詰まった我々のプロダクトをぜひお楽しみください。</p>
           </div>
         </div>
@@ -97,7 +134,9 @@
           </div>
           <div class="products-text ceylon">
             <h2>セイロンティー</h2>
-            <p class="text">スリランカの中でも世界三大紅茶として知られるウバで生産された爽やかな香りが特徴のセイロンティー。</p>
+            <p class="text">
+              スリランカの中でも世界三大紅茶として知られるウバで生産された爽やかな香りが特徴のセイロンティー。
+            </p>
             <p class="price">S Size: 100g / 2,000yen (Tax in)</p>
             <p class="price">M Size: 200g / 3,500yen (Tax in)</p>
           </div>
@@ -109,7 +148,9 @@
           </div>
           <div class="products-text scone">
             <h2>スコーン</h2>
-            <p class="text">世界中の小麦粉を取り寄せ、我がカフェ独自の生地の配合を研究し、お茶菓子としては究極の域に達したスコーン。</p>
+            <p class="text">
+              世界中の小麦粉を取り寄せ、我がカフェ独自の生地の配合を研究し、お茶菓子としては究極の域に達したスコーン。
+            </p>
             <p class="price">240g / 900yen (Tax in)</p>
           </div>
         </div>
@@ -119,7 +160,9 @@
         <div class="feature-container black_tea">
           <div class="feature-text black_tea">
             <h2>丁寧に生産された<br />スリランカの紅茶</h2>
-            <p>ティープロダクツの主役はやはり紅茶。当カフェが懇意にしている一流のスリランカの茶畑から茶葉を主に仕入れ、販売しています。</p>
+            <p>
+              ティープロダクツの主役はやはり紅茶。当カフェが懇意にしている一流のスリランカの茶畑から茶葉を主に仕入れ、販売しています。
+            </p>
           </div>
           <div class="feature-img black_tea">
             <img src="img/feature/feature_img01.jpg" alt="" />
@@ -128,7 +171,9 @@
         <div class="feature-container sweets">
           <div class="feature-text sweets">
             <h2>研究を重ねた<br />究極のお茶菓子</h2>
-            <p>我々は、10数年前紅茶文化に衝撃を受けて以来、世界中から食材を取り寄せ、紅茶に合うお菓子の研究を日々重ねています。</p>
+            <p>
+              我々は、10数年前紅茶文化に衝撃を受けて以来、世界中から食材を取り寄せ、紅茶に合うお菓子の研究を日々重ねています。
+            </p>
             <p>それらのお菓子を店舗で販売したりレシピとして紹介しています。</p>
           </div>
           <div class="feature-img sweets">
@@ -155,7 +200,9 @@
                 <h3>紅茶クッキー</h3>
               </div>
               <div class="recipe-content-text">
-                <p>通常のクッキーのレシピに当店の茶葉を練り込むだけで香り高いクッキーを楽しめます。</p>
+                <p>
+                  通常のクッキーのレシピに当店の茶葉を練り込むだけで香り高いクッキーを楽しめます。
+                </p>
               </div>
             </div>
             <div class="recipe-content">
@@ -166,7 +213,9 @@
                 <h3>アイスクリーム</h3>
               </div>
               <div class="recipe-content-text">
-                <p>実はアイスクリームはセイロンティーにとても合います。当店で販売しているノンホモ牛乳を用いたアイスをぜひご堪能あれ。</p>
+                <p>
+                  実はアイスクリームはセイロンティーにとても合います。当店で販売しているノンホモ牛乳を用いたアイスをぜひご堪能あれ。
+                </p>
               </div>
             </div>
             <div class="recipe-content">
@@ -177,7 +226,9 @@
                 <h3>フルーツティー</h3>
               </div>
               <div class="recipe-content-text">
-                <p>当店では様々なフレーバティーも販売しています。それらに有った果物をティーに加えることでより豊かなティータイムを楽しむことができます。</p>
+                <p>
+                  当店では様々なフレーバティーも販売しています。それらに有った果物をティーに加えることでより豊かなティータイムを楽しむことができます。
+                </p>
               </div>
             </div>
             <div class="recipe-content">
@@ -188,7 +239,9 @@
                 <h3>紅茶豚</h3>
               </div>
               <div class="recipe-content-text">
-                <p>お好きな豚肉を紅茶で茹で、酒、醤油、みりんを合わせたタレに一晩漬け込むだけ。<br />紅茶に含まれるタンニンという成分により柔らかく、さっぱりしたチャーシューを味わえます。</p>
+                <p>
+                  お好きな豚肉を紅茶で茹で、酒、醤油、みりんを合わせたタレに一晩漬け込むだけ。<br />紅茶に含まれるタンニンという成分により柔らかく、さっぱりしたチャーシューを味わえます。
+                </p>
               </div>
             </div>
           </div>
@@ -204,10 +257,15 @@
           <div class="shop-cafe">
             <h2>CAFE</h2>
             <div class="shop-text">
-              <p>2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共に美味しいお茶菓子、食事をご堪能いただけます。</p>
+              <p>
+                2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共に美味しいお茶菓子、食事をご堪能いただけます。
+              </p>
             </div>
             <div class="shop-text">
-              <p>カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。 紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。</p>
+              <p>
+                カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。
+                紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。
+              </p>
             </div>
             <div class="shop-table">
               <table>
@@ -228,7 +286,9 @@
                 </tr>
               </table>
             </div>
-            <div class="shop-rmk">※営業日など最新情報はInstagramでご確認ください。</div>
+            <div class="shop-rmk">
+              ※営業日など最新情報はInstagramでご確認ください。
+            </div>
             <div class="shop-button">
               <a href="#"> <p>最新情報はこちら</p> </a>
             </div>
@@ -240,30 +300,40 @@
           <h2>ONLINE SHOP</h2>
           <div class="shop-text">オンラインショップをオープンしています。</div>
           <div class="shop-rmk">※売り切れ次第閉店します。</div>
-          <div class="shop-button">
-            <a href="#"><p>OPEN</p></a>
+          <div class="shop-button" id="shop-js_alert">
+            <p>OPEN</p>
           </div>
         </div>
       </section>
       <section class="contact">
         <h1>CONTACT</h1>
-        <form action="">
+        <form action="#" id="form">
           <div class="container name">
             <label>
               名前:
-              <input type="text" placeholder="例) 出見亜 太郎" />
+              <input
+                type="text"
+                placeholder="例) 出見亜 太郎"
+                id="name"
+                required
+              />
             </label>
           </div>
           <div class="container mail">
             <label>
               メールアドレス:
-              <input type="email" placeholder="例) example@example.com" />
+              <input
+                type="email"
+                placeholder="例) example@example.com"
+                id="address"
+                required
+              />
             </label>
           </div>
           <div class="container subject">
             <label>
               件名:
-              <select name="件名" id="">
+              <select name="件名" id="subject">
                 <option selected>商品について</option>
                 <option>その他</option>
               </select>
@@ -272,15 +342,67 @@
           <div class="container detail">
             <label>
               内容:
-              <textarea name="detail" cols="30" , rows="10"></textarea>
+              <textarea
+                name="detail"
+                cols="30"
+                ,
+                rows="10"
+                id="detail"
+                required
+              ></textarea>
             </label>
           </div>
           <div class="container policy">
-            <label> <input class="policy" type="checkbox" />プライバシーポリシーに同意します </label>
+            <label>
+              <input
+                class="policy"
+                type="checkbox"
+              />プライバシーポリシーに同意します
+            </label>
           </div>
           <div class="container button">
-            <input type="submit" class="submit" />
+            <a href="JavaScript:void(0)" class="modal-open" id="js-modal-open"
+              >送信</a
+            >
           </div>
+
+          <!-- モーダル本体 -->
+          <div class="modal" id="js-modal">
+            <div class="modal-container">
+              <div class="modal-content">
+                <h2>送信内容確認</h2>
+                <p id="content-name"></p>
+                <p id="content-address"></p>
+                <p id="content-subject"></p>
+                <p id="content-detail"></p>
+              </div>
+              <div class="modal-buttons">
+                <!-- モーダルを閉じるボタン -->
+                <div class="modal-button">
+                  <a class="modal-close js-modal-close">キャンセル</a>
+                </div>
+                <!-- 送信ボタン -->
+                <input type="submit" class="submit js-modal-close" />
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="container button">
+            <!-- モーダルを開くボタン
+            <a href="JavaScript:void(0)" class="modal-open js-modal-open"
+              >送信</a
+            >
+          </div>
+          <div class="modal js-modal">
+            <div class="modal-container">
+              <div class="modal-content">
+                <p>モーダル内部開きました．</p>
+              </div>
+              <!-- モーダルを閉じるボタン
+              <div class="modal-close js-modal-close">キャンセル</div>
+              <input type="submit" class="submit" />
+            </div>
+          </div> -->
         </form>
       </section>
     </main>
@@ -288,5 +410,6 @@
     <footer class="ftr">
       <p>Copyright &copy; DeMiA CAFE</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

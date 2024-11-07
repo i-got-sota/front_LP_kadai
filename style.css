@@ -884,6 +884,7 @@ header {
   }
 
   .contact {
+    /* width: 80vw; */
     margin-left: 0;
     margin-right: 0;
   }
@@ -910,8 +911,155 @@ header {
     right: 0;
   }
 
-  .contact .container.button input {
-    width: 50vw;
-    background: #ddd;
+  .contact .container.button {
+    left: 50%;
+    /* background: #777; */
+    translate: -50%;
   }
+}
+
+/* ヘッダーのスライドショー */
+.slide-wrapper {
+  width: 100%;
+  height: 66vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.next {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  right: 10px;
+  bottom: 50%;
+  z-index: 1;
+  cursor: pointer; /* マウスカーソルが要素の上にある時の表示を設定 */
+  border-top: 3px #000 solid;
+  border-right: 3px #000 solid;
+  -webkit-transform: rotate(45deg) translateY(50%);
+  transform: rotate(45deg) translateY(50%);
+}
+.prev {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  left: calc(10px + 5vw);
+  bottom: 50%;
+  z-index: 1;
+  cursor: pointer; /* マウスカーソルが要素の上にある時の表示を設定 */
+  border-top: 3px #000 solid;
+  border-right: 3px #000 solid;
+  -webkit-transform: rotate(-135deg) translateY(-50%);
+  transform: rotate(-135deg) translateY(-50%);
+}
+
+.slide {
+  height: 100%;
+  display: flex;
+  transition: all 0.25s;
+}
+
+.slide div {
+  height: 100%;
+}
+
+/* モーダル */
+
+.modal-open {
+  font-size: 20px;
+  color: #fff;
+  background: #777;
+  text-decoration: none;
+  text-align: center;
+  padding: 5% 25%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
+}
+
+/* モーダルと背景の指定 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 50%);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+/* モーダルの疑似要素の指定 */
+.modal::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-left: -0.2em;
+}
+
+/* クラスが追加された時の指定(jsで操作) */
+.modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダル内側の指定 */
+.modal-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 600px;
+  width: 90%;
+}
+
+/* モーダルを閉じるボタンの指定 */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  translate: -50%;
+  width: 100%;
+}
+
+.submit {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  background: #777;
+  text-decoration: none;
+}
+.modal-button {
+  position: relative;
+  /* width: 20%; */
+  /* padding: 1px 6px 1px 6px; */
+}
+.modal-close {
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  text-align: center;
+  padding: 1px 6px 1px 6px;
+  border: 1px solid #000;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5em;
+}
+
+/* モーダルのコンテンツ部分の指定 */
+.modal-content {
+  background: #fff;
+  text-align: left;
+  line-height: 1.8;
+  padding: 20px;
+}
+.modal-content p {
+  margin: 1em 0;
 }
