@@ -2,7 +2,7 @@
 
 // header をスライドショーにする
 
-const slideContainer = document.querySelector('.slide')
+const slideContainer = document.querySelector(".slide");
 const prev = document.getElementById("js-prev");
 const next = document.getElementById("js-next");
 const slides = document.querySelectorAll(".slide > div");
@@ -30,12 +30,12 @@ function resetAutoPlayInterval() {
 }
 
 function nextClick() {
-  count = count+1 >= totalSlides ? 0 : count+1;
+  count = count + 1 >= totalSlides ? 0 : count + 1;
   updateSlidePosition();
 }
 
 function prevClick() {
-  count = count <= 0 ? totalSlides - 1 : count-1;
+  count = count <= 0 ? totalSlides - 1 : count - 1;
   updateSlidePosition();
 }
 
