@@ -168,3 +168,75 @@ body * {
 }
 
 /* ここまで リセットcss */
+
+.header-block {
+    position: relative;
+}
+
+.header-main-img {
+    width: 100%;
+}
+
+.header-h1 {
+    font-weight: normal;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+}
+
+.header-h1 span {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 5px;
+}
+
+.icon-block {
+    display: flex;
+    height: 32px;
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+}
+
+.icon-block>* {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.icon-block>*:not(:last-child) {
+    margin-right: 32px;
+}
+
+.news {
+    margin: 144px 80px;
+}
+
+.news-texts {
+    display: flex;
+}
+
+.news-texts .insta-link {
+    margin-left: auto;
+    font-size: 15.872px;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.news-texts .insta-link::before {
+    content: url(img/icon_ig.svg);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.insta-link .insta-icon img {
+    height: 32px;
+}
+
+.news-texts .news-text {
+    font-size: 42px;
+    font-weight: normal;
+}
