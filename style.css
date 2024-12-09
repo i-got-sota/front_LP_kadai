@@ -169,15 +169,28 @@ body * {
 
 /* ここまで リセットcss */
 
-.header-block {
-    position: relative;
+body {
+    font-family: "Zen Maru Gothic", sans-serif;
 }
 
-.header-main-img {
+.header-block {
+    position: relative;
+    background-image: url("img/header/hd_img01_a.jpg");
     width: 100%;
+    aspect-ratio: 8 / 5;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 700px) {
+    .header-block {
+        background-image: url("img/header/hd_img01_a_sp.jpg");
+        aspect-ratio: 3 / 4;
+    }
 }
 
 .header-h1 {
+    font-family: sans-serif;
     font-weight: normal;
     font-size: 20px;
     align-items: center;
@@ -185,6 +198,12 @@ body * {
     position: absolute;
     bottom: 2%;
     left: 5%;
+}
+
+@media (max-width: 700px) {
+    .header-h1 {
+        font-size: 17px;
+    }
 }
 
 .header-h1 span {
@@ -201,6 +220,14 @@ body * {
     bottom: 2%;
 }
 
+@media (max-width: 700px) {
+    .icon-block {
+        height: 22px;
+        right: 5%;
+        bottom: -8%;
+    }
+}
+
 .icon-block>* {
     height: 100%;
     aspect-ratio: 1 / 1;
@@ -214,16 +241,30 @@ body * {
     margin: 144px 80px;
 }
 
+@media (max-width: 700px) {
+    .news {
+        margin: 144px 20px;
+    }
+}
+
 .news-texts {
     display: flex;
+    align-items: center;
 }
 
 .news-texts .insta-link {
+    text-decoration: none;
+    color: black;
     margin-left: auto;
-    font-size: 15.872px;
-    font-family: "Zen Maru Gothic", serif;
+    font-size: 16px;
     font-weight: bold;
     font-style: normal;
+}
+
+@media (max-width: 700px) {
+    .news-texts .insta-link {
+        display: none;
+    }
 }
 
 .news-texts .insta-link::before {
@@ -237,6 +278,833 @@ body * {
 }
 
 .news-texts .news-text {
-    font-size: 42px;
+    font-size: 2.5rem;
     font-weight: normal;
+    font-family: sans-serif;
 }
+
+@media (max-width: 700px) {
+    .news-texts .news-text {
+        font-size: 1.8rem;
+    }
+}
+
+.news-contents {
+    margin-top: 56px;
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .news-contents {
+        justify-content: space-between;
+    }
+}
+
+.news-contents .news-content {
+    width: 270px;
+    margin-right: 80px;
+    position: relative;
+}
+
+@media (max-width: 700px) {
+    .news-contents .news-content {
+        width: 48%;
+        margin-right: 0;
+    }
+}
+
+.news-content .news-img {
+    width: 100%;
+}
+
+.news-content .news-title {
+    font-size: 1.3rem;
+    margin: 24px 0;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .news-contents .news-title {
+        font-size: 1rem;
+    }
+}
+
+.news-content .news-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .news-contents .news-description {
+        font-size: 0.7rem;
+    }
+}
+
+.news-content .detail-link {
+    color: black;
+}
+
+.news-content .news-date {
+    width: 100%;
+    position: absolute;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-top: 1px solid black;
+    padding-top: 16px;
+    bottom: -60px;
+}
+
+@media (max-width: 700px) {
+    .news-contents .news-date {
+        font-size: 0.7rem;
+    }
+}
+
+.insta-sp-link {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .insta-sp-link {
+        display: block;
+        border: 1px solid black;
+        padding: 13px;
+        margin: 100px 13vw;
+        font-size: 0.75rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+
+    .insta-sp-link::before {
+        content: "";
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        background-image: url(img/icon_ig.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+}
+
+.cafe-information {
+    margin-top: 150px;
+}
+
+.cafe-information .text-block {
+    padding: 0 13vw;
+}
+
+@media (max-width: 700px) {
+    .cafe-information .text-block {
+        padding: 0 10vw;
+    }
+}
+
+.text-block .intro-text {
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    .text-block .intro-text {
+        font-size: 0.86rem;
+    }
+}
+
+.description-block {
+    display: flex;
+    width: 100%;
+    font-size: 1.15rem;
+    margin-top: 80px;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    .description-block {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.74rem;
+    }
+}
+
+.description-block .sub-title {
+    width: 30%;
+}
+
+@media (max-width: 700px) {
+    .description-block .sub-title {
+        font-size: 0.85rem;
+    }
+}
+
+.description-block .description-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+@media (max-width: 700px) {
+    .description-block .description-text {
+        height: 250px;
+    }
+}
+
+.introduce-products {
+    margin-top: 20vw;
+}
+
+.introduce-products .ceylontea {
+    padding: 0 8vw;
+    position: relative;
+}
+
+.introduce-products .scone {
+    margin-top: 100px;
+    padding: 0 8vw;
+    position: relative;
+}
+
+@media (max-width: 700px) {
+    .introduce-products .scone {
+        margin-top: 30px;
+    }
+}
+
+.introduce-products .product-name {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 700px) {
+    .introduce-products .product-name {
+        font-size: 1.3rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.introduce-products .price-text {
+    margin-top: 30px;
+    line-height: 2;
+}
+
+@media (max-width: 700px) {
+    .introduce-products .price-text {
+        font-size: 0.85rem;
+    }
+}
+
+.introduce-products .title {
+    font-size: 2.4rem;
+    font-family: sans-serif;
+    font-weight: normal;
+    position: absolute;
+    top: 8%;
+}
+
+@media (max-width: 700px) {
+    .introduce-products .title {
+        font-size: 2rem;
+        top: 5%;
+    }
+}
+
+@media (min-width: 700px) {
+    .introduce-products .description {
+        background-color: white;
+        width: 35%;
+        position: absolute;
+        top: 10%;
+        padding: 8% 5%;
+    }
+
+    .scone .description {
+        left: 6%;
+    }
+
+    .ceylontea .description {
+        right: 6%;
+    }
+}
+
+.scone .title {
+    right: 9%;
+}
+
+.ceylontea .title {
+    left: 7%;
+}
+
+.ceylontea img {
+    width: 70%;
+}
+
+@media (max-width: 700px) {
+    .ceylontea img {
+        width: 100%;
+    }
+}
+
+.scone img {
+    width: 70%;
+    margin-left: 30%;
+}
+
+@media (max-width: 700px) {
+    .scone img {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 700px) {
+    .description .description-text {
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 700px) {
+    .description .description-text {
+        font-size: 0.85rem;
+    }
+}
+
+.cafe-feature {
+    margin-top: 15vw;
+}
+
+.cafe-feature .title {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    justify-self: center;
+}
+
+@media (max-width: 700px) {
+    .cafe-feature .title {
+        font-size: 1.1rem;
+    }
+}
+
+.cafe-feature .feature {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 75%;
+    margin-bottom: 10vw;
+}
+
+@media (max-width: 700px) {
+    .cafe-feature .feature {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .cafe-feature .feature:nth-of-type(2) {
+        flex-direction: column-reverse;
+        width: 80%;
+    }
+}
+
+.feature img {
+    width: 60%;
+}
+
+@media (max-width: 700px) {
+    .feature img {
+        width: 100%;
+    }
+}
+
+.feature .description {
+    width: 30%;
+}
+
+@media (max-width: 700px) {
+    .feature .description {
+        width: 100%;
+    }
+}
+
+.description .description-title {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 700px) {
+    .description .description-title {
+        font-size: 1.1rem;
+        margin: 1.1rem 0;
+    }
+}
+
+.description .description-text {
+    margin-bottom: 1.1rem;
+}
+
+.recipe {
+    margin-top: 4vw;
+}
+
+.section-title {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .section-title {
+        font-size: 1.7rem;
+    }
+}
+
+.recipe .sub-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 4vw 0;
+}
+
+@media (max-width: 700px) {
+    .recipe .sub-title {
+        font-size: 1.15rem;
+    }
+
+    .sub-title>* {
+        display: block;
+        line-height: 1.3;
+    }
+}
+
+.recipe .slider-container {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.slider-container .slider-contents {
+    display: flex;
+    min-width: max-content;
+    gap: 30px;
+    margin: 0 7vw;
+}
+
+.slider-contents .title-contents {
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+    border-top: 8px solid black;
+    padding-top: 15px;
+}
+
+@media (max-width: 700px) {
+    .slider-contents .title-contents {
+        width: 70px;
+        border-top: 2px solid black;
+    }
+}
+
+.slider-contents .title-contents>* {
+    writing-mode: vertical-rl;
+}
+
+.title-contents .slider-title {
+    font-size: 2rem;
+}
+
+@media (max-width: 700px) {
+    .title-contents .slider-title {
+        font-size: 1.4rem;
+    }
+
+    .title-contents .slider-sub-title {
+        font-size: 0.8rem;
+    }
+}
+
+.slider-contents .slider-item {
+    width: 35vw;
+}
+
+@media (max-width: 700px) {
+    .slider-contents .slider-item {
+        width: 256px;
+    }
+}
+
+.slider-item img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.slider-item .recipe-name {
+    margin: 20px 0;
+    font-size: 1.3rem;
+}
+
+.slider-item .recipe-description {
+    font-size: 0.9rem;
+    white-space: normal;
+    line-height: 2;
+}
+
+.shop-information {
+    margin-top: 20vw;
+}
+
+.shop-information .shop-information-block {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+    .shop-information .shop-information-block {
+        flex-direction: column;
+    }
+}
+
+.shop-information-block .cafe-image {
+    width: 50%;
+    background-image: url("img/shop/shop_img01.jpg");
+    aspect-ratio: 7 / 9;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 700px) {
+    .shop-information-block .cafe-image {
+        width: 100%;
+        background-image: url("img/shop/shop_img01_sp.jpg");
+        aspect-ratio: 1 / 1;
+    }
+}
+
+.shop-information-block .shop-description {
+    width: 50%;
+    padding: 10px 10vw;
+}
+
+@media (max-width: 850px) {
+    .shop-information-block .shop-description {
+        width: 60%;
+    }
+}
+
+@media (max-width: 700px) {
+    .shop-information-block .shop-description {
+        width: 100%;
+    }
+}
+
+.shop-description .title {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1.9rem;
+}
+
+@media (max-width: 700px) {
+    .shop-description .title {
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+}
+
+.shop-description .description-text {
+    margin-top: 30px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .shop-description .description-text {
+        font-size: 0.8rem;
+    }
+}
+
+.shop-description .detail-information {
+    margin-top: 30px;
+    padding: 5px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.detail-information table td,
+.detail-information table th {
+    padding: 20px 12px;
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.shop-description p {
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .shop-description p {
+        font-size: 0.8rem;
+        margin: 30px 0;
+    }
+}
+
+.shop-description .insta-link {
+    display: block;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.shop-description .insta-link::before {
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url(img/icon_ig.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 700px) {
+    .shop-description .insta-link {
+        width: 80%;
+        margin: 10px auto;
+        padding: 15px;
+        font-size: 0.7rem;
+    }
+    
+    .shop-description .insta-link::before {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.shop-information .category-border {
+    width: 85%;
+    border: 1.5px solid black;
+    justify-self: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 700px) {
+    .shop-information .category-border {
+        display: none;
+    }
+}
+
+.shop-information .online-information-block {
+    margin: 0 10vw;
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .shop-information .online-information-block {
+        flex-direction: column;
+    }
+}
+
+.online-information-block .online-description {
+    width: 50%;
+}
+
+@media (max-width: 700px) {
+    .online-information-block .online-description {
+        width: 100%;
+    }
+}
+
+.online-description .title {
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-family: sans-serif;
+    margin: 25px 0;
+}
+
+@media (max-width: 700px) {
+    .online-description .title {
+        font-size: 1.1rem;
+    }
+}
+
+.online-description .description-text {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+    .online-description .description-text {
+        font-size: 0.8rem;
+    }
+}
+
+.online-description .description-text:nth-of-type(2) {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .online-description .description-text:nth-of-type(2) {
+        font-size: 0.8rem;
+    }
+}
+
+.online-information-block .open-button {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    height: 4rem;
+    width: 40%;
+    margin-left: 10%;
+}
+
+.online-information-block .open-button::before {
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url(img/icon_cart.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+@media (max-width: 700px) {
+    .online-information-block .open-button {
+        width: 80%;
+        margin-left: 0;
+        height: 3rem;
+        font-size: 0.8rem;
+    }
+    
+    .online-information-block .open-button::before {
+        width: 0.9rem;
+        height: 0.9rem;
+        margin-bottom: 0;
+    }
+}
+
+.contact{
+    margin-top: 10vw;
+}
+
+.contact .contact-form{
+    margin-top: 50px;
+    margin: 50px 13vw;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 700px) {
+    .contact .contact-form{
+        margin: 50px 20px;
+    }
+}
+
+.contact-form .form-element{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 700px) {
+    .contact-form .form-element{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+.form-element .label-control{
+    margin-top: 15px;
+}
+
+@media (max-width: 700px) {
+    .form-element .label-control{
+        margin-bottom: 5px;
+        font-size: 0.85rem;
+    }
+}
+
+.form-element .form-control{
+    width: 72%;
+    padding: 15px;
+    border: 1px solid black;
+    font-family: "Zen Maru Gothic";
+}
+
+@media (max-width: 700px) {
+    .form-element .form-control{
+        width: 100%;
+    }
+}
+
+.contact-form .form-check{
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .contact-form .form-check{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-check .label-control{
+        font-size: 0.8rem;
+        align-self: center;
+    }
+}
+
+.contact-form .submit-button{
+    width: 43%;
+    line-height: 4;
+    margin: 0 auto;
+    background-color: #666;
+    border: none;
+    font-family: "Zen Maru Gothic";
+    color: white;
+    font-size: 1rem;
+}
+
+@media (max-width: 700px) {
+    .contact-form .submit-button{
+        width: 70%;
+        line-height: 4;
+        font-size: 0.8rem;
+    }
+}
+
+footer{
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10vw;
+}
+

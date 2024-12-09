@@ -2,36 +2,241 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet" href="style.css">
+    <!-- googleFontの読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&amp;display=swap"
+        rel="stylesheet">
+    <title>Document</title>
 </head>
 
 <body>
-  <header>
-    <div class="header-block">
-      <img src="img/header/hd_img01_a.jpg" alt="サムネ画像" class="header-main-img">
-      <h1 class="header-h1">TEA PRODUCTS <span>by</span> DeMiA CAFE</h1>
-      <div class="icon-block">
-        <a href="#" class="shop-icon"><img src="img/icon_cart.svg" alt="shop-icon" height="100%"></a>
-        <a href="#" class="insta-icon"><img src="img/icon_ig.svg" alt="insta-icon" height="100%"></a>
-        <a href="#" class="menu-icon"><img src="img/icon_menu.svg" alt="menu-icon" height="100%"></a>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="news">
-        <div class="news-texts">
-            <h1 class="news-text">NEWS</h1>
-            <h1 class="insta-link">最新情報はこちら</h1>
+    <header>
+        <div class="header-block">
+            <div class="header-main-img"></div>
+            <h1 class="header-h1">TEA PRODUCTS <span>by</span> DeMiA CAFE</h1>
+            <div class="icon-block">
+                <a href="#" class="shop-icon"><img src="img/icon_cart.svg" alt="shop-icon" height="100%"></a>
+                <a href="#" class="insta-icon"><img src="img/icon_ig.svg" alt="insta-icon" height="100%"></a>
+                <a href="#" class="menu-icon"><img src="img/icon_menu.svg" alt="menu-icon" height="100%"></a>
+            </div>
         </div>
-        <div class="news-contents">
+    </header>
+    <main>
+        <section class="news">
+            <div class="news-texts">
+                <h1 class="news-text">NEWS</h1>
+                <a class="insta-link" href="#">最新情報はこちら</a>
+            </div>
+            <div class="news-contents">
+                <div class="news-content">
+                    <img src="img/news/tea_day.jpg" alt="紅茶の日" class="news-img">
+                    <h1 class="news-title">「紅茶の日」</h1>
+                    <p class="news-description">11月1日は、大黒屋光太夫が日本人として初めて外国の正式な茶会で紅茶を飲んだ日。<br>
+                        2022年11月1日から一週間限定商品を発売予定です。</p>
+                    <a href="#" class="detail-link">詳細はこちら</a>
+                    <p class="news-date">2022.09.10</p>
+                </div>
+                <div class="news-content">
+                    <img src="img/news/notion.jpg" alt="大切なお知らせ" class="news-img">
+                    <h1 class="news-title">大切なお知らせ</h1>
+                    <p class="news-description">この度、創業10周年を記念して、セールを開催します。<br>
+                        セールには、定番商品の各種フレーバーティーからその他アレンジ商品まで様々なものが対象になっています。</p>
+                    <a href="#" class="detail-link">詳細はこちら</a>
+                    <p class="news-date">2022.06.30</p>
+                </div>
+            </div>
+            <a class="insta-sp-link" href="#">最新情報はこちら</a>
 
-        </div>
-    </section>
-  </main>
-  <footer></footer>
+        </section>
+        <section class="cafe-information">
+            <div class="text-block">
+                <p class="intro-text">TEAの無限の可能性を私たちは信じている。<br>
+                    「DeMiA CAFE」は、スリランカから仕入れた茶葉や紅茶にマリアージュする原料を世界中から仕入れ、手作りでアレンジし、店舗で販売しています。</p>
+
+                <div class="description-block">
+                    <h1 class="sub-title">T; Tea</h1>
+                    <div class="description-text">
+                        <p>DeMiA CAFEは、十数年前、イギリスで本場の紅茶と共にティータイムを嗜んだ創業メンバーがこの習慣を日本でも広めたいということで始まりました。</p>
+                        <p>紅茶は本格的な茶葉を使用するとともに、それに見合ったお茶菓子も必要だ。</p>
+                        <p>このような精神の元、本格的な茶葉を提供するとともにそれにマリアージュするお菓子を販売したり、レシピを紹介しています。</p>
+                    </div>
+                </div>
+                <div class="description-block">
+                    <h1 class="sub-title">T; Tempting</h1>
+                    <div class="description-text">
+                        <p>紅茶は17世紀ごろ大英帝国のコーヒーハウスが大衆化したことで、そこで売られていた紅茶は一般の人にも愛飲されるようになりました。</p>
+                        <p>人々はこのような紅茶の持つ魅惑に心酔し、紅茶の取引の利益が大英帝国の礎を築き、産業革命にまでつながったと言われるほどです。</p>
+                        <p>「おいしい紅茶で、やすらぎに満ちた至福のひと時を」過ごしてほしい。</p>
+                        <p>魅力の詰まった我々のプロダクトをぜひお楽しみください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="introduce-products">
+            <div class="ceylontea">
+                <img src="img/products/products_tea.jpg" alt="セイロンティー">
+                <h1 class="title">Ceylon Tea</h1>
+                <div class="description">
+                    <h1 class="product-name">セイロンティー</h1>
+                    <p class="description-text">スリランカの中でも世界三代紅茶として知られるウバで生産された爽やかな香りが特徴のセイロンティー。</p>
+                    <p class="price-text">S Size: 100g / 2,000yen (Tax in)<br>
+                        M Size: 200g / 3,500yen (Tax in)</p>
+                </div>
+            </div>
+
+            <div class="scone">
+                <img src="img/products/products_scone.jpg" alt="スコーン">
+                <h1 class="title">Scone</h1>
+                <div class="description">
+                    <h1 class="product-name">スコーン</h1>
+                    <p class="description-text">世界中の小麦粉を取り寄せ、我がカフェ独自の生地の配合を研究し、お茶菓子としては究極の域に達したスコーン。</p>
+                    <p class="price-text">240g / 900yen (Tax in)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cafe-feature">
+            <h1 class="title">伝統と魅惑のティープロダクツ</h1>
+            <div class="feature">
+                <img src="img/feature/feature_img01.jpg" alt="お茶の葉の収穫">
+                <div class="description">
+                    <h1 class="description-title">丁寧に生産された<br>スリランカの紅茶</h1>
+                    <p class="description-text">ティープロダクツの主役はやはり紅茶。当カフェが懇意にしている一流のスリランカの茶畑から茶葉を主に仕入れ、販売しています。</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="description">
+                    <h1 class="description-title">研究を重ねた<br>究極のお茶菓子</h1>
+                    <p class="description-text">我々は、１０数年前紅茶文化に衝撃を受けて以来、世界中から食材を取り寄せ、紅茶に合うお菓子の研究を日々重ねています。</p>
+                    <p class="description-text">それらのお菓子を店舗で販売したりレシピとして紹介しています。</p>
+                </div>
+                <img src="img/feature/feature_img02.jpg" alt="デザート">
+            </div>
+        </section>
+
+        <section class="recipe">
+            <h1 class="section-title">RECIPE</h1>
+            <h1 class="sub-title"><span>紅茶に合う</span><span>簡単で美味しいレシピ</span></h1>
+            <div class="slider-container">
+                <div class="slider-contents">
+                    <div class="title-contents">
+                        <h1 class="slider-title">ティープロダクツ</h1>
+                        <h1 class="slider-sub-title">甘いお菓子から紅茶のアレンジまで様々</h1>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/recipe/cookie.jpg" alt="紅茶クッキー">
+                        <h1 class="recipe-name">紅茶クッキー</h1>
+                        <p class="recipe-description">通常のクッキーのレシピに当店の茶葉を練り込むだけで香り高いクッキーを楽しめます。</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/recipe/ice_cream.jpg" alt="アイスクリーム">
+                        <h1 class="recipe-name">アイスクリーム</h1>
+                        <p class="recipe-description">実はアイスクリームはセイロンティーにとても合います。当店で販売しているノンホモ牛乳を用いたアイスをぜひご堪能あれ。</p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/recipe/fruit_tea.jpg" alt="フルーツティー">
+                        <h1 class="recipe-name">フルーツティー</h1>
+                        <p class="recipe-description">
+                            当店では様々なフレーバーティーも販売しています。それらにあった果物をティーに加えることでより豊かなティータイムを楽しむことができます。
+                        </p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="img/recipe/roasted_pork.jpg" alt="紅茶豚">
+                        <h1 class="recipe-name">紅茶豚</h1>
+                        <p class="recipe-description">お好きな豚肉を紅茶で茹で、酒、醤油、みりんを合わせたタレに一晩漬け込むだけ。
+                            紅茶に含まれるタンニンという成分により柔らかく、さっぱりしたチャーシューを味わえます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-information">
+            <h1 class="section-title">SHOP INFORMATION</h1>
+            <div class="shop-information-block">
+                <div class="cafe-image"></div>
+                <div class="shop-description">
+                    <h1 class="title">CAFE</h1>
+                    <p class="description-text">2019年6月に、出町柳駅の近くにカフェがオープンしました。営業する日には、紅茶と共においしいお茶菓子、食事をご堪能いただけます。</p>
+                    <p class="description-text">
+                        カフェ営業日以外でも、茶葉やテイクアウト用茶菓子はお買い求めいただけます。<br>紹介していないレシピを用いた料理教室や紅茶の知識を学べるワークショップも定期的に開催しています。</p>
+                    <div class="detail-information">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>住所</th>
+                                    <td>〒600-0000<br>〇〇〇〇〇〇〇〇〇〇〇〇〇〇</td>
+                                </tr>
+                                <tr>
+                                    <th>アクセス</th>
+                                    <td>京阪出町柳駅から徒歩12分</td>
+                                </tr>
+                                <tr>
+                                    <th>営業時間</th>
+                                    <td>営業日・時間ともに不定期</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>※営業日など最新情報はInstagramでご確認ください。</p>
+                    <a class="insta-link" href="#">最新情報はこちら</a>
+                </div>
+            </div>
+            <hr class="category-border">
+            <div class="online-information-block">
+                <div class="online-description">
+                    <h1 class="title">ONLINE SHOP</h1>
+                    <p class="description-text">オンラインショップをオープンしています。</p>
+                    <p class="description-text">※売り切れ次第閉店します。</p>
+                </div>
+                <a href="#" class="open-button">OPEN</a>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h1 class="section-title">CONTACT</h1>
+            <form action="#" class="contact-form">
+                <div class="form-element">
+                    <label for="name" class="label-control">名前 :</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="例) 城戸大智">
+                </div>
+
+                <div class="form-element">
+                    <label for="email" class="label-control">メールアドレス :</label>
+                    <input type="text" name="email" id="email" class="form-control" placeholder="例) daichi.bigshine777@gmail.com">
+                </div>
+
+                <div class="form-element">
+                    <label for="incidence" class="label-control">件名 :</label>
+                    <select name="incidence" id="incidence" class="form-control">
+                        <option value="product">商品について</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+
+                <div class="form-element">
+                    <label for="incidence" class="label-control">内容 :</label>
+                    <textarea name="incidence" id="incidence" class="form-control" rows="7"></textarea>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" name="privacy-policy" id="privacy-policy">
+                    <label for="privacy-policy" class="label-control">プライバシーポリシーに同意します</label>
+                </div>
+
+                <button type="submit" class="submit-button">送信</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        Copyright © DeMiA CAFE
+    </footer>
 </body>
 
 </html>
