@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -204,25 +204,25 @@
             <form action="#" class="contact-form">
                 <div class="form-element">
                     <label for="name" class="label-control">名前 :</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="例) 城戸大智">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="例) 城戸大智" required>
                 </div>
 
                 <div class="form-element">
                     <label for="email" class="label-control">メールアドレス :</label>
-                    <input type="text" name="email" id="email" class="form-control" placeholder="例) daichi.bigshine777@gmail.com">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="例) daichi.bigshine777@gmail.com" required>
                 </div>
 
                 <div class="form-element">
-                    <label for="incidence" class="label-control">件名 :</label>
-                    <select name="incidence" id="incidence" class="form-control">
+                    <label for="subject" class="label-control">件名 :</label>
+                    <select name="subject" id="subject" class="form-control">
                         <option value="product">商品について</option>
                         <option value="other">その他</option>
                     </select>
                 </div>
 
                 <div class="form-element">
-                    <label for="incidence" class="label-control">内容 :</label>
-                    <textarea name="incidence" id="incidence" class="form-control" rows="7"></textarea>
+                    <label for="content" class="label-control">内容 :</label>
+                    <textarea name="content" id="content" class="form-control" rows="7" required></textarea>
                 </div>
 
                 <div class="form-check">

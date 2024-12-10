@@ -343,6 +343,7 @@ body {
 
 .news-content .detail-link {
     color: black;
+    font-weight: bold;
 }
 
 .news-content .news-date {
@@ -598,7 +599,7 @@ body {
     justify-self: center;
     align-items: center;
     justify-content: space-between;
-    align-items: space-between;
+    align-content: space-between;
     width: 75%;
     margin-bottom: 10vw;
 }
