@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.header{
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    bottom: 15px;
+    left: 60px;
+    width: 27%;
+}
+
+@media screen and (max-width:768px) {
+    .logo{
+        left: 17px;
+        bottom: 8px;
+        width: 48%;
+    }
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    color: black;   
+}
+
+.icon-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    bottom: 20px;
+    right: 25px;
+}
+
+@media screen and (max-width:768px){
+    .icon-container{
+        width: 200px;
+        bottom: -40px;
+        right: 20px;
+    }
+}
+
+.icon-container > li{
+    flex: 0 0 30%;
+}
+
+/*
+.cart-icon{
+    font-family: "Font Awesome 5 Free";
+    content: 'f07a';
+    font-weight: 900;
+}
+
+.instagram-icon{
+    font-family: "Font Awesome 5 Brands";
+    content: 'f16d';
+    font-weight: 900;
+}
+
+.bar-icon{
+    font-family: "Font Awesome 5 Free";
+    content: 'f0c9';
+    font-weight: 900;
+}
+*/
