@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="./Lptop.css">
 <script src="https://kit.fontawesome.com/07edaccf7b.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,15 +20,61 @@
             <source media="(max-width: 767px)" srcset="img/header/hd_img01_a_sp.jpg">
             <img src="img/header/hd_img01_a.jpg" alt="ヘッダー画像">
           </picture>
-        <h1 class="logo">
+        <div class="logo">
             <img src="./img/header/hd_logo.svg" alt="ロゴ">
-        </h1>
+        </div>
         <ul class="icon-container">
                 <li><a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
         </ul>
     </header>
+    <main class="main">
+        <article>
+            <section class="news-block">
+                <div class="news-title-container">
+                    <h1 class="news">NEWS</h1>
+                    <p class="latest-info-pc">
+                        <a href="#">  最新情報はこちら</a>
+                    </p>
+                </div>
+                <div class="news-wrap">
+                    <div class="news-slider slick-initialized">
+                        <div class="slick-list">
+                            <div class="news-container">
+                                <div class="news-slide slick-slide">
+                                    <div class="news-content">
+                                        <img src="./img/news/tea_day.jpg" alt="ミルクティー">
+                                        <h2 class="news-content-title">「紅茶の日」</h2>
+                                        <p class="news-content-text">11月1日は、大黒屋光太夫が日本人として初めて外国の正式な茶会で紅茶を飲んだ日。<br>2022年11月1日から一週間限定商品を発売予定です。</p>
+                                        <p class="detail"><a href="#">詳細はこちら</a></p>
+                                        <p class="news-date">2022.09.10</p>
+                                    </div>
+                                </div>
+                                <div class="news-slide slick-slide">
+                                    <div class="news-content">
+                                        <img src="./img/news/notion.jpg" alt="ハイタッチ">
+                                        <h2 class="news-content-title">大切なお知らせ</h2>
+                                        <p class="news-content-text">この度、創業10周年を記念して、セールを開催します。<br>セールには、定番商品の各種フレーバーティーからその他アレンジ商品まで様々なものが対象になっています。</p>
+                                        <p class="detail"><a href="#">詳細はこちら</a></p>
+                                        <p class="news-date">2022.06.30</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-info-sp">
+                    <a href="#" class="btn">
+                        <span class="icon-ig">  最新情報はこちら</span>
+                    </a>
+                </div>
+            </section>
+            <section class="t-text">
+                <h1></h1>
+            </section>
+        </article>
+    </main>
 </body>
 <footer>
 </footer>
