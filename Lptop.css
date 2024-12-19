@@ -21,15 +21,6 @@ a{
     color: #000000;   
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
 /*ヘッダー*/
 .header{
     position: relative;
@@ -267,6 +258,346 @@ p {
 }
 /*ここまでnews*/
 
+.t-text{
+    padding-top: 144px;
+}
+
+.about{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.about-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+}
+
+.about-title-text{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.about-content{
+    display: flex;
+    margin-top: 72px;
+}
+
+.about-content-title{
+    margin-top: 16px;
+    width: 20%;
+    font-size: 1.0rem;
+}
+
+.about-content-text{
+    width: 80%;
+    font-size: 1.0rem;
+}
+
+@media screen and (max-width:768px){
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 72px;
+    }
+}
+/*--------ここまでabout--------*/
+
+.item{
+    padding-top: 144px;
+}
+
+.item-box{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+.item-img-ceylon{
+    height: 600px;
+    width: 64%;
+}
+
+.item-img-scone{
+    transform: translateX(60%);
+    height: 600px;
+    width: 64%;
+}
+
+.item-title-ceylon{
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    padding: 72px 15px 96px;
+    top: 10%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.item-title-scone{
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    padding: 72px 15px 96px;
+    top: 10%;
+    right: -20%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.item-content-ceylon{
+    position: absolute;
+    padding: 72px 56px 96px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    right: 5%;
+    background-color: #ffffff;
+}
+
+.item-content-scone{
+    position: absolute;
+    padding: 72px 56px 96px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    left: 5%;
+    background-color: #ffffff;
+}
+
+.item-content-title{
+    letter-spacing: -0.05em;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.item-text{
+    margin-top: 32px;
+    font-size: 1.0rem;
+}
+/*--------ここまでitem--------*/
+
+.tea-products{
+    padding-top: 144px;
+}
+
+.products-title{
+    position: absolute;
+    left: 33%;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    letter-spacing: -0.08em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.products-box-tea{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+.products-box-desert{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+}
+
+.products-img{
+    width: 64%;
+    object-fit: cover;
+}
+
+.products-content-tea{
+    flex: 1;
+    padding-left: 56px;
+    background-color: #ffffff;
+    width: 36%;
+}
+
+.products-content-desert{
+    flex: 1;
+    padding-right: 56px;
+    background-color: #ffffff;
+    width: 36%;
+}
+
+.products-content-title{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    letter-spacing: -0.08em;
+    line-height: 1.5;
+    margin-top: 32px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.products-text{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    margin-top: 32px;
+    font-size: 1.0rem;
+}
+/*--------ここまでproducts--------*/
+
+.recipe{
+    padding-top: 210px;
+}
+
+.recipe-title{
+    text-align: center;
+}
+
+.recipe-subtitle{
+    line-height: 1.5;
+    margin-top: 40px;
+    padding: 0 72px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width:769px){
+    .recipe-subtitle span{
+        display: inline-block;
+    }
+
+    .space{
+        display: none;
+    }
+}
 
 
-/**/
+.recipe-box{
+    position: relative;
+    margin-top: 96px;
+    margin-left: 72px;
+    min-height: 512px;
+    padding-left: 112px;
+}
+
+.recipe-side-title{
+    height: 100%;
+    line-height: 1;
+    padding-top: 24px;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    font-weight: 500;
+}
+
+.recipe-side-title::before{
+    background-color: #000;
+    content: "";
+    display: block;
+    height: 8px;
+    width: 96px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.side-title{
+    height: 100%;
+}
+
+.side-title > span{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    font-size: 2.0rem;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+}
+
+.side-subtitle{
+    height: 100%;
+    position: absolute;
+    left: 56px;
+    top: 10px;
+}
+
+.side-subtitle > span{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    display: inline-block;
+    font-size: 1.0rem;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+}
+
+.recipe-scroll-container{
+    scroll-snap-type: x proximity;
+    overflow-x: scroll;
+    width: 95%;
+}
+
+.scroll-wrap{
+    margin-top: 5px;
+    width: 145%;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.recipe-scroll-container section{
+    scroll-snap-align: start;
+    width: 25%;
+    margin: 25px;
+}
+
+.recipe-content-title{
+    margin-top: 24px;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.recipe-content-text{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    margin-top: 16px;
+    font-size: 0.9rem;
+    line-height: 2;
+}
+/*--------ここまでrecipe--------*/
+
+/*--------------------------------*/
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 2;
+}
