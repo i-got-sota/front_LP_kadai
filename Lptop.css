@@ -587,6 +587,237 @@ a{
     line-height: 2;
 }
 /*--------ここまでrecipe--------*/
+.shop-info{
+    padding-top: 144px;
+}
+
+.shop-title{
+    text-align: center;
+}
+
+.shop-box{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-right: 5cqmax;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.shop-img{
+    width: 58%;
+    object-fit: cover;
+}
+
+.shop-content{
+    padding-left: 8%;
+    background-color: #ffffff;
+    width: 42%;
+}
+
+.shop-content-title{
+    line-height: 1.5;
+    margin-top: 32px;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.shop-text{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.0rem;
+}
+
+.shop-address{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    font-size: 0.8rem;
+}
+
+.shop-table{
+    line-height: 1.5;
+    font-size: 0.8rem;
+}
+
+.shop-address th{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    padding: 16px 8px;
+}
+
+.shop-address td{
+    padding: 16px 8px;
+}
+
+.latest-info-shop{
+    display: block;
+    margin-top: 40px;
+}
+
+.latest-info-shop> .btn{
+    min-width: 25vw;
+    padding: 16px;
+    font-size: 1.0rem;
+    text-decoration: none;
+}
+
+.latest-info-shop >a::before{
+    font-family: "Font Awesome 5 Brands";
+    content: '\f16d';
+    font-size: xx-large;
+    font-weight: 500;
+    vertical-align: -4px;
+}
+
+.online-shop{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.online-shop::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    display: inline-block;
+    width: 85%;
+    height: 3px;
+    transform: translateX(-50%);
+    background-color: #000000;
+}
+
+.online-text-box{
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.online-title{
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.online-text{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    font-size: 1.0rem;
+}
+
+.online-text p{
+    line-height: 1;
+}
+
+.online-open{
+    display: block;
+    margin-top: 20px;
+}
+
+.online-open> .btn{
+    min-width: 25vw;
+    padding: 16px;
+    font-size: 1.0rem;
+    text-decoration: none;
+}
+
+.icon-cart{
+    padding-left: 10%;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.icon-cart::before{
+    background-image: url(img/icon_cart.svg);
+    content: "";
+    display: block;
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+}
+/*--------ここまでshop-info--------*/
+.contact{
+    padding-top: 144px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    padding-left: 72px;
+    padding-right: 72px;
+    text-align: center;
+}
+
+.contact-title{
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    gap: 32px;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.contact-form input, select, textarea {
+    display: flex;
+}
+
+.form-label{
+    width: 24vw;
+    text-align: start;
+    margin-top: 0%;
+}
+
+.form{
+    width: 64vw;
+    padding: 16px 8px;
+    border: 1px solid gray;
+}
+
+.privacy{
+    display: flex;
+    align-items: center;
+}
+
+.submit-btn{
+    display: inline-block;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
+    line-height: 1.2;
+    text-align: center;
+    background-color: gray;
+    color: #ffffff;
+    border: none;
+    min-width: 320px;
+    padding: 24px;
+    position: relative;
+    font-size: 1.0rem;
+    font-weight: 500;
+    align-items: center;
+}
+
+footer{
+    line-height: 1;
+    padding: 160px 0;
+    text-align: center;
+}
+
 
 /*--------------------------------*/
 p {
