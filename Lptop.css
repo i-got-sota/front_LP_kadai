@@ -182,7 +182,6 @@ a{
     width: calc(100% - 32px* 2);
     line-height: 1;
     padding-top: 16px;
-    left: 32px;
     bottom: 0;
     border-top: 1px solid #000000;
 }
@@ -219,41 +218,61 @@ a{
         padding: 0 8px;
     }
     
+    .news-container > div{
+        margin-left: 0%;
+    }
+
     .news-content-title{
         margin-top: 16px;
         line-height: 1.2;
-        font-size: 1.6rem;
+        font-size: 1.0rem;
     }
     
     .news-content-text{
         margin-top: 8px;
-        font-size: 1.1rem;
+        font-size: 0.7rem;
         line-height: 1.7;
+    }
+
+    .detail{
+        margin: 0px;
+        font-size: 0.9rem;
+    }
+
+    .news-date{
+        font-size: 0.6rem;
+        font-weight: 700;
+        width: calc(100% - 7vw);
     }
 
     .latest-info-sp{
         display: block;
-        margin-top: 40px;
+        margin-top: 25px;
         text-align: center;
     }
 
     .latest-info-sp> .btn{
+        position: relative;
+        display: inline-block;
         min-width: 64vw;
-        padding: 16px;
-        font-size: 1.2rem;
+        padding: 8px 16px;
+        font-size: 0.9rem;
         text-decoration: none;
+        line-height: 1.2;
+        text-align: center;
+        border: 1px solid gray;
     }
 
     .latest-info-sp >a::before{
         font-family: "Font Awesome 5 Brands";
         content: '\f16d';
-        font-size: xx-large;
-        font-weight: 500;
-        vertical-align: -6px;
+        font-size: x-large;
+        font-weight: 400;
+        vertical-align: -4px;
     }
 
-    .icon-ig{
-        padding-left: 24px;
+    .icon-latest{
+        display: inline-block;
     }
 }
 /*ここまでnews*/
@@ -300,11 +319,43 @@ a{
 }
 
 @media screen and (max-width:768px){
+    .about{
+        max-width: 1280px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .about-title{
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-style: normal;
+    }
+    
+    .about-title-text{
+        margin: 1%;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
     .about-content{
         display: flex;
         flex-direction: column;
-        margin-top: 72px;
+        margin-top: 35px;
     }
+
+    .about-content-title{
+        margin-top: 16px;
+        margin-bottom: 5px;
+        width: 20%;
+        font-size: 0.8rem;
+    }
+    
+    .about-content-text{
+        width: 100%;
+        font-size: 0.75rem;
+    }
+
 }
 /*--------ここまでabout--------*/
 
@@ -389,6 +440,85 @@ a{
     margin-top: 32px;
     font-size: 1.0rem;
 }
+
+@media screen and (max-width:768px){
+    .item-box{
+        margin-bottom: 50%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .item-img-ceylon{
+        object-fit: fill;
+        width: 100%;
+    }
+    
+    .item-img-scone{
+        object-fit: fill;
+        transform: none;
+        width: 100%;
+    }
+    
+    .item-title-ceylon{
+        font-size: 2.0rem;
+        font-weight: 600;
+        padding: 72px 15px 96px;
+        top: 10%;
+        transform: translateY(-50%);
+        width: 40%;
+    }
+    
+    .item-title-scone{
+        padding: 72px 65px 96px;
+        top: 10%;
+        right: 0%;
+        transform: translateY(-50%);
+        width: 40%;
+    }
+    
+    
+    .slick-list{
+        position: relative;
+        display: block;
+        overflow: visible;
+        margin: 0;
+        padding: 0;
+    }
+
+    .item-content-ceylon{
+        position: absolute;
+        display: block;
+        padding: 10px 10px;
+        top: 100%;
+        transform: none;
+        width: 100%;
+        left: 0%;
+    }
+    
+    .item-content-scone{
+        position: absolute;
+        display: block;
+        padding: 10px 10px;
+        top: 118%;
+        transform: none;
+        width: 100%;
+        left: 0%;
+    }
+    
+    .item-content-title{
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-style: normal;
+        letter-spacing: -0.05em;
+        line-height: 1.5;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .item-text{
+        margin-top: 32px;
+        font-size: 0.9rem;
+    }
+}
 /*--------ここまでitem--------*/
 
 .tea-products{
@@ -397,7 +527,7 @@ a{
 
 .products-title{
     position: absolute;
-    left: 33%;
+    width: 100%;
     font-size: 2.2rem;
     font-weight: 700;
     font-family: "M PLUS Rounded 1c", sans-serif;
@@ -463,6 +593,57 @@ a{
     margin-top: 32px;
     font-size: 1.0rem;
 }
+
+@media screen and (max-width:768px){
+    .title-sp{
+        margin-bottom: 10px;
+    }
+
+    .products-title{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .products-box-tea{
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+    }
+    
+    .products-box-desert{
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 5%;
+    }
+    
+    .products-img{
+        width: 100%;
+    }
+    
+    .products-content-tea{
+        padding-left: 0px;
+        width: 100%;
+    }
+    
+    .products-content-desert{
+        flex: 1;
+        padding-right: 0px;
+        width: 100%;
+    }
+    
+    .products-content-title{
+        margin-top: 16px;
+        font-size: 1.2rem;
+    }
+    
+    .products-text{
+        margin-top: 16px;
+        font-size: 0.8rem;
+    }
+}
+
 /*--------ここまでproducts--------*/
 
 .recipe{
@@ -481,17 +662,6 @@ a{
     font-size: 2.5rem;
     font-weight: 700;
 }
-
-@media screen and (min-width:769px){
-    .recipe-subtitle span{
-        display: inline-block;
-    }
-
-    .space{
-        display: none;
-    }
-}
-
 
 .recipe-box{
     position: relative;
@@ -573,6 +743,8 @@ a{
 }
 
 .recipe-content-title{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-style: normal;
     margin-top: 24px;
     line-height: 1.6;
     font-size: 1.3rem;
@@ -585,6 +757,97 @@ a{
     margin-top: 16px;
     font-size: 0.9rem;
     line-height: 2;
+}
+
+@media screen and (min-width:769px){
+    .recipe-subtitle span{
+        display: inline-block;
+    }
+
+    .space{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .recipe{
+        padding-top: 140px;
+    }
+    
+    .recipe-subtitle{
+        margin-top: 20px;
+        margin-bottom: -50px;
+        padding: 0 72px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .recipe-box{
+        margin-left: 0px;
+        min-height: 100px;
+        padding-left: 50px;
+        width: 100%;
+    }
+    
+    .recipe-side-title{
+        height: 100%;
+        line-height: 1;
+        padding-top: 24px;
+        position: absolute;
+        left: 0;
+        width: 80px;
+        font-weight: 500;
+    }
+    
+    .recipe-side-title::before{
+        height: 2px;
+        width: 100px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    
+    .side-title{
+        height: 100%;
+    }
+    
+    .side-title > span{
+        font-size: 2.5rem;
+    }
+
+    .side-subtitle > span{
+        font-size: 1.5rem;
+    }
+    
+    .recipe-scroll-container{
+        width: 90%;
+        margin-left: 10%;
+    }
+    
+    .scroll-wrap{
+        width: 400%;
+    }
+
+    .recipe-scroll-container section{
+        width: 100%;
+        margin: 25px;
+    }
+
+    .recipe-content-title{
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-style: normal;
+        margin-top: 12px;
+        font-size: 1.2rem;
+    }
+    
+    .recipe-content-text{
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-style: normal;
+        margin-top: 8px;
+        font-size: 0.8rem;
+        line-height: 1;
+    }
 }
 /*--------ここまでrecipe--------*/
 .shop-info{
@@ -700,6 +963,7 @@ a{
 }
 
 .online-title{
+    padding-bottom: 10px;
     font-size: 1.1rem;
     font-weight: 100;
 }
@@ -744,6 +1008,138 @@ a{
     height: 24px;
     width: 24px;
 }
+
+@media screen and (max-width:768px){
+    .shop-box{
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    
+    .shop-img{
+        width: 100%;
+    }
+    
+    .shop-content{
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+    }
+    
+    .shop-content-title{
+        margin-top: 64px;
+        font-size: 2.5rem;
+    }
+    
+    .shop-text{
+        font-size: 0.8rem;
+    }
+    
+    .shop-address{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        font-size: 0.8rem;
+    }
+    
+    .shop-table{
+        line-height: 1.5;
+        font-size: 0.8rem;
+    }
+
+    .shop-info-sp{
+        margin-top: 7%;
+        line-height: 1.5;
+        font-size: 0.8rem;
+    }
+    
+    .shop-address th{
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-style: normal;
+        padding: 16px 8px;
+    }
+    
+    .shop-address td{
+        padding: 16px 8px;
+    }
+    
+    .latest-info-shop{
+        display: block;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .latest-info-shop> .btn{
+        min-width: 80%;
+        padding: 8px;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+    
+    .latest-info-shop >a::before{
+        font-size: x-large;
+        font-weight: 500;
+        vertical-align: -4px;
+    }
+    
+    .online-shop{
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    
+    .online-shop::before{
+        content: none;
+    }
+    
+    .online-text-box{
+        margin-left: 10%;
+        margin-right: 15%;
+    }
+    
+    .online-title{
+        font-size: 1.2rem;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .online-text{
+        font-size: 0.8rem;
+        margin-left: -30px;
+    }
+    
+    .online-open{
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .online-open> .btn{
+        min-width: 72%;
+        padding: 14px;
+        font-size: 0.8rem;
+        text-decoration: none;
+    }
+    
+    .icon-cart{
+        padding-left: 0%;
+        font-size: 12px;
+        display: inline-block;
+    }
+    
+    .icon-cart::before{
+        background-image: url(img/icon_cart.svg);
+        content: "";
+        display: block;
+        position: absolute;
+        left: 38%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-size: 24px 24px;
+        height: 24px;
+        width: 24px;
+    }
+}
+
 /*--------ここまでshop-info--------*/
 .contact{
     padding-top: 144px;
@@ -812,12 +1208,70 @@ a{
     align-items: center;
 }
 
+.submit-btn:hover{
+    color: #000000;
+}
+
 footer{
     line-height: 1;
     padding: 160px 0;
     text-align: center;
 }
 
+@media screen and (max-width:768px){
+    .contact{
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+    }
+    
+    .contact-title{
+        text-align: center;
+    }
+    
+    .contact-container{
+        gap: 20px;
+    }
+    
+    .contact-form{
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .contact-form input, select, textarea {
+        display: flex;
+        width: 100%;
+    }
+    
+    .form-label{
+        line-height: 1;
+        font-size: 0.8rem;
+        width: 24vw;
+        text-align: start;
+        margin-top: 0%;
+    }
+    
+    .form{
+        width: 100%;
+        padding: 16px 8px;
+    }
+    
+    .privacy{
+        font-size: 0.8rem;
+    }
+    
+    .submit-btn{
+        line-height: 1.2;
+        width: 70%;
+        padding: 18px;
+        font-size: 0.8rem;
+    }
+    
+    footer{
+        font-size: 0.9rem;
+        padding: 50px 0;
+    }
+}
 
 /*--------------------------------*/
 p {
