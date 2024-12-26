@@ -165,6 +165,7 @@ select {
 
 body * {
     box-sizing: border-box;
+    font-family: "Zen Maru Gothic", serif;
 }
 
 /* ここまで リセットcss */
