@@ -1,0 +1,878 @@
+body {
+  font-family: "Zen Maru Gothic", serif;
+}
+
+header {
+  width: 100%;
+  position: relative;
+}
+
+.sans {
+  font-family: sans-serif;
+}
+
+.header-wrap {
+  width: 100%;
+  height: max-content;
+  display: block;
+  height: max-content;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.header-img>img {
+  width: 100%;
+}
+
+.hd_img01_a {
+  width: 100%;
+}
+
+.logo {
+  width: 350px;
+  position: absolute;
+  font-size: 20px;
+  bottom: 3%;
+  left: 2%;
+}
+
+.logo-text-by {
+  font-size: 10px;
+  vertical-align: middle;
+}
+
+
+.logo img {
+  width: 700px;
+  vertical-align: bottom;
+}
+
+.h_icons {
+  display: flex;
+  position: absolute;
+  right: 8%;
+  bottom: 3%;
+}
+
+.icon_cart {
+  margin-right: 30px;
+}
+
+.icon_ig {
+  margin-right: 30px;
+}
+
+.icon_menu {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 15px;
+    bottom: 2%;
+    left: 2%;
+  }
+
+  .logo-text-by {
+    font-size: 8px;
+  }
+
+  .h_icons {
+    right: 8%;
+    bottom: -10%;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.news {
+  width: 90%;
+  position: relative;
+  margin: 0 auto 100px;
+}
+
+.news-title {
+  margin-bottom: 30px;
+}
+
+h2 span {
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.news-wrap {
+  display: flex;
+  position: relative;
+}
+
+.ig-link-1 {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.ig-text::before {
+  content: url(img/icon_ig.svg);
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.news-wrap>li {
+  flex: 0 0 22%;
+}
+
+.news-item>img {
+  margin-bottom: 30px;
+}
+
+.news-wrap> :nth-child(1) {
+  margin-right: 4%;
+}
+
+.news-detail {
+  text-decoration: underline;
+  padding-bottom: 20px;
+  border-bottom: #000000 solid 2px;
+  margin-bottom: 40px;
+}
+
+.news-body {
+  width: 100%;
+  height: 100px;
+}
+
+.news-text {
+  margin-bottom: 10px;
+  line-height: 1.7;
+  font-size: 10px;
+}
+
+.ig-link-2>div {
+  width: max-content;
+  padding: 20px 120px;
+  margin: 30px auto;
+  border: #000000 solid 1px;
+}
+
+@media (max-width: 768px) {
+  .news {
+    margin-bottom: 200px;
+  }
+
+  .news-wrap>li {
+    flex: 0 0 45%;
+  }
+
+  .news-wrap> :nth-child(1) {
+    margin-right: 5%;
+  }
+
+  .ig-link-1 {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .news .ig-link-2 {
+    display: none;
+  }
+}
+
+.about {
+  width: 81%;
+  margin: 0 auto 100px;
+}
+
+.about-lead {
+  margin-bottom: 90px;
+  line-height: 1.7;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about-contents>li {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  flex: 0 0 20%;
+}
+
+.about-detail {
+  flex: 0 0 80%;
+}
+
+.about-detail-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.9;
+}
+
+@media(max-width: 768px) {
+  .about {
+    width: 90%;
+  }
+
+  .about-lead {
+    font-size: 15px;
+  }
+
+  .about-contents>li {
+    display: block;
+  }
+
+  .about-title {
+    margin-bottom: 30px;
+  }
+
+  .about-detail-text {
+    font-size: 12px;
+  }
+}
+
+.products {
+  width: 90%;
+  margin: 0 auto 0;
+}
+
+.products-wrap {
+  width: 100%;
+  position: relative;
+  margin: 0 auto 100px;
+  cursor: pointer;
+}
+
+.product1>img {
+  position: absolute;
+  top: 3vw;
+  left: -1vw;
+  cursor: initial;
+}
+
+.product2>img {
+  position: absolute;
+  top: 3vw;
+  left: 77vw;
+  cursor: initial;
+}
+
+.products-img {
+  width: 0;
+  height: 0;
+  padding: 0% 0% 54% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product1>.products-img {
+  background-image: url(img/products/products_tea.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product2>.products-img {
+  margin: 0 0 0 auto;
+  background-image: url(img/products/products_scone.jpg);
+}
+
+.products-detail {
+  width: 40%;
+  background-color: #ffffff;
+}
+
+.product1-detail {
+  position: absolute;
+  top: 7vw;
+  left: 54vw;
+  height: max-content;
+  padding: 4vw 0 4vw;
+}
+
+.product2-detail {
+  position: absolute;
+  top: 10vw;
+  left: 0vw;
+  height: max-content;
+  padding: 4vw 0 4vw;
+}
+
+.products-title {
+  width: 80%;
+  height: max-content;
+  margin: 0 auto 4vw;
+}
+
+.products-text {
+  width: 80%;
+  margin: 0 auto 3vw;
+}
+
+.products-price {
+  width: 80%;
+  margin: 0 auto 2vw;
+}
+
+.products-text>span {
+  line-height: 1.7;
+}
+
+.products-title>h3 {
+  font-size: 30px;
+}
+
+.products-price>p {
+  line-height: 2;
+}
+
+@media(max-width: 768px) {
+  .products-img {
+    padding: 0 0 110% 100%;
+    margin: 0 auto 0;
+  }
+
+  .product2>img {
+    left: 0;
+  }
+
+  .product2>.products-img {
+    margin: 0 auto 0;
+  }
+
+  .products-detail {
+    position: static;
+    width: 100%;
+  }
+
+  .products-detail>* {
+    width: 100%;
+  }
+}
+
+.feature>h2 {
+  font-size: 35px;
+  text-align: center;
+  margin: 200px auto 80px;
+}
+
+.feature-wrap-1,
+.feature-wrap-2 {
+  width: 81%;
+  height: 425px;
+  display: flex;
+  margin: 0 auto 100px;
+}
+
+.feature-wrap-2 {
+  flex-direction: row-reverse;
+}
+
+.feature-picture {
+  height: 100%;
+  flex: 13;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-wrap-1>.feature-picture {
+  background-image: url(img/feature/feature_img01.jpg);
+}
+
+.feature-wrap-2>.feature-picture {
+  background-image: url(img/feature/feature_img02.jpg);
+}
+
+.feature-detail {
+  flex: 7;
+  height: 100%;
+  padding-left: 50px;
+}
+
+.feature-wrap-2>.feature-detail {
+  padding: 0 50px 0 0;
+}
+
+.feature-detail>h3 {
+  line-height: 1.6;
+  font-size: 25px;
+  margin: 30px 0 30px;
+}
+
+.feature-text {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+@media(max-width:768px) {
+  .feature {
+    width: 95%;
+    margin: 0 auto 0;
+  }
+
+  .feature>h2 {
+    font-size: 18px;
+    text-align: center;
+    margin: 50px auto 20px;
+    font-weight: normal;
+  }
+
+  .feature-wrap-1,
+  .feature-wrap-2 {
+    width: 100%;
+    display: block;
+    height: max-content;
+    margin-bottom: 40px;
+  }
+
+  .feature-picture {
+    height: 50vw;
+  }
+
+  .feature-detail {
+    padding-left: 0;
+  }
+
+  .feature-detail>h3 {
+    line-height: 1.2;
+    font-size: 18px;
+    margin: 15px 0 10px;
+    font-weight: normal;
+  }
+
+  .feature-text {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+
+}
+
+.recipe {
+  margin: 150px 0 150px 80px;
+  position: relative;
+}
+
+.recipe-ttl {
+  width: max-content;
+  margin: 0 auto 50px;
+}
+
+.recipe>h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 150px;
+}
+
+.recipe-body {
+  height: 520px;
+  display: flex;
+}
+
+.recipe-lead {
+  writing-mode: vertical-lr;
+  flex: 1;
+  border-top: #000000 solid 5px;
+  margin-right: 40px;
+  padding-top: 25px;
+  margin-top: -20px;
+}
+
+.recipe-lead>:nth-child(1) {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0 30px 0 10px;
+}
+
+.recipe-lead>:nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.recipe-contents-wrap {
+  height: 560px;
+  flex: 9;
+  display: flex;
+  overflow: scroll;
+}
+
+.recipe-contents-wrap>* {
+  margin-right: 50px;
+}
+
+.recipe-contents-wrap>:last-child {
+  margin-right: 0;
+}
+
+.recipe-name {
+  margin: 20px 0 20px;
+  font-size: 22px;
+}
+
+.recipe-text {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+@media(min-width:769px) {
+  .recipe .br-sp {
+    display: none;
+  }
+}
+
+@media(max-width:768px) {
+  .recipe {
+    margin: 100px 0 150px 10px;
+    position: relative;
+  }
+
+  .recipe>h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .recipe-lead {
+    width: 20%;
+    border-top: #000000 solid 2px;
+  }
+
+  .recipe-lead>:nth-child(1) {
+    font-weight: bold;
+    font-size: 6vw;
+    margin: 0 15px 0 10px;
+  }
+
+  .recipe-lead>:nth-child(2) {
+    font-size: 3vw;
+    font-weight: 500;
+  }
+}
+
+.shop {
+  width: 100%;
+}
+
+.shop-ttl {
+  width: max-content;
+  margin: 0 auto 60px;
+}
+
+.shop-ttl img {
+  width: 430px;
+  height: 45px;
+}
+
+.shop-contents {
+  display: flex;
+  margin: 0 auto 30px;
+}
+
+.shop-img {
+  flex: 3;
+}
+
+.shop-img>img {
+  width: 100%;
+}
+
+.shop-body {
+  min-width: 500px;
+  flex: 2;
+  padding: 1vw 5vw 2vw 7vw;
+}
+
+.shop-ttl-cafe {
+  width: max-content;
+  margin-left: 0;
+}
+
+.shop-ttl-cafe img {
+  width: 75px;
+  height: 35px;
+}
+
+.shop-text {
+  margin: 10px 0 20px;
+}
+
+.shop-text>p {
+  line-height: 2;
+  font-size: 15px;
+}
+
+.shop-access {
+  width: 100%;
+  margin: 30px auto;
+  border-bottom: #000000 solid 1px;
+  border-top: #000000 solid 1px;
+}
+
+.shop-access th {
+  padding: 18px;
+}
+
+.shop tr> :nth-child(1) {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.shop tr> :nth-child(2) {
+  font-weight: 100;
+  text-align: left;
+}
+
+.shop-text-ig {
+  text-align: center;
+}
+
+.shop .ig-link-2 div {
+  padding: 20px 60px;
+}
+
+.shop-online {
+  width: 85%;
+  padding: 30px 60px 0;
+  border-top: #000000 solid 4px;
+  margin: 0 auto 0;
+}
+
+.shop-ttl-online {
+  width: max-content;
+  margin-bottom: 20px;
+}
+
+.shop-ttl-online img {
+  width: 175px;
+  height: 27px;
+}
+
+.shop-online-body {
+  display: flex;
+}
+
+.shop-online-link {
+  width: max-content;
+  padding: 20px 120px;
+  border: #000000 solid 1px;
+}
+
+.shop-online-link span::before {
+  content: url(img/icon_cart.svg);
+  margin: 4px;
+  vertical-align: middle;
+}
+
+.shop-online-text {
+  flex: 1;
+  padding-right: 30px;
+}
+
+@media(max-width: 768px) {
+  .shop .br-sp {
+    display: none;
+  }
+
+  .shop-body {
+    padding-top: 8vw;
+  }
+
+  .shop-contents {
+    display: block;
+  }
+
+  .shop-ttl-cafe img {
+    width: 110px;
+    height: 50px;
+  }
+
+  .shop-text-ig {
+    text-align: left;
+  }
+
+  .shop .ig-link-2 div {
+    padding: 20px 180px;
+  }
+
+  .shop-online {
+    border-top: none;
+    padding: 0;
+  }
+
+  .shop-ttl-online {
+    padding-left: 50px;
+  }
+
+  .shop-online-text {
+    margin-bottom: 30px;
+  }
+
+  .shop-online-body {
+    display: block;
+  }
+
+  .shop-online-link {
+    margin: 0 auto;
+    padding: 20px 200px;
+  }
+}
+
+.contact {
+  margin-top: 160px;
+}
+
+.contact-ttl {
+  width: max-content;
+  margin: 0 auto 40px;
+}
+
+.contact-ttl img {
+  width: 180px;
+  height: 40px;
+}
+
+.forms {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  height: 60px;
+  margin-bottom: 3vw;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  flex: 1;
+  appearance: none;
+  border: #000000 solid 1px;
+  padding: 0.1vw 0 0.1vw 1vw;
+}
+
+.contact-form ::placeholder {
+  font-family: "Zen Maru Gothic", serif;
+}
+
+.contact-subject {
+  font-family: "Zen Maru Gothic", serif;
+}
+
+.contact-form-about {
+  height: max-content;
+}
+
+.contact-label {
+  flex: 1;
+  margin-right: -30vw;
+}
+
+.contact-form select {
+  background-image: url(img/select.svg);
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-size: 1.2vw;
+}
+
+.contact-form textarea {
+  height: 180px;
+}
+
+.contact-label-about {
+  vertical-align: top;
+}
+
+.contact-form-consensus {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.forms button {
+  display: block;
+  width: 300px;
+  height: 60px;
+  margin: 30px auto 0;
+  appearance: none;
+  border: #000000 solid 1px;
+  background-color: #808080;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+}
+
+.forms button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media(max-width:768px) {
+  .contact {
+    width: 90%;
+    margin: 80px auto;
+  }
+
+  .forms {
+    width: 100%;
+  }
+
+  .contact-form {
+    display: block;
+    height: max-content
+  }
+
+  .contact-label {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    height: 60px;
+  }
+
+  .contact-form textarea {
+    height: 20vw;
+  }
+
+  .forms button {
+    width: 70%;
+  }
+}
+
+.footer-img {
+  width: max-content;
+  margin: 150px auto 150px;
+}
+
+.footer-img img {
+  width: 178px;
+  height: 15px;
+}
+
+@media(max-width:768px) {
+  .footer-img {
+    margin-top: 80px;
+  }
+}
