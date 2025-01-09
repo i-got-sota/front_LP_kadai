@@ -1,0 +1,827 @@
+@charset "UTF-8";
+
+body{
+    font-family: "Zen Maru Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+}
+
+.header {
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.header img {
+    width: 100%;
+}
+
+h1{
+    font-size: 1.6rem;
+}
+
+.logo {
+    font-family:sans-serif;
+    font-weight: 400;
+    position: absolute;
+    bottom: 20px;
+    left: 64px;
+}
+
+.logo span {
+    font-size: 50%;
+    vertical-align: 3px;
+}
+
+.icon-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    right: 65px;
+    bottom: 15px;
+}
+
+.icon-container img {
+    width: 30px;
+}
+
+.news {
+    font-size: 2rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+
+.news-title-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.news-title{
+    font-family:sans-serif;
+    font-weight: 400;
+    margin-left: 70px;
+}
+
+.PC-information{
+    margin-right: 70px;
+    font-size: 1rem;
+    background: none;
+    border: none;
+}
+
+.PC-information::before{
+    content: url(img/icon_ig.svg);
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+/* .news-img {
+    height: auto;
+    line-height: 1;
+    max-width: 100%;
+} */
+
+.news-content-wrap {
+    display: flex;
+}
+
+.news-content {
+    margin-left: 70px;
+    width: 320px;
+    overflow-wrap: break-word;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-img {
+    width: 100%;
+    height: auto;
+}
+
+.news-caption{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    flex-grow: 1;
+    line-height: 2;
+}
+
+p{
+    line-height: 2;
+} 
+
+.news-text{
+    font-size: 1rem;
+}
+
+.news-content a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+time{
+    font-size: 0.8rem;
+}
+
+.mobile-information{
+    visibility: hidden;
+}
+
+.about{
+    margin: 0 120px;
+    margin-bottom: 300px;
+}
+
+.about-title{
+    margin-bottom: 6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.about-content{
+    margin-bottom: 4rem;
+    display: flex;
+}
+
+.about-content h4{
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 10rem;
+    flex-grow: 1;
+    margin-right: 3rem;
+    line-height: 2.4rem;
+}
+
+.about-content p{
+    font-size: 1.2rem;
+    font-weight:500;
+    flex-grow: 4;
+    word-break: break-all;
+    flex-shrink: 3;
+    /* line-height: 2; */
+}
+
+.products-content{
+    margin: 0 60px 100px 60px;
+    position: relative;
+}
+
+.products-content:nth-child(2){
+    transform: scale(-1,1);
+}
+
+.products-caption-en{
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    font-family: sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.products-img{
+    width: 60%;
+    height: 600px;
+    object-fit: cover;
+
+}
+
+.products-text{
+    width: 45%;
+    background-color: #fff;
+    padding: 70px 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.products-caption-ja{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.products-paragraph{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.products-inversion>h3, .products-inversion>img{
+    transform: scale(-1,1)
+}
+
+.products-inversion>div{
+    transform: translateY(-50%) scale(-1,1);
+}
+
+.feature{
+    margin: 0 120px;
+    margin-bottom: 200px;
+}
+
+.feature-title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.feature-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.feature-img{
+    width: 65%;
+    object-fit: cover;
+}
+
+.feature-text{
+    width: 25%;
+}
+
+.feature-caption{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+.feature-p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.feature-content:nth-of-type(2){
+    transform: scale(-1,1);
+}
+
+.feature-content:nth-of-type(2)>*{
+    transform: scale(-1,1);
+}
+
+.recipe{
+    margin-left: 60px;
+    margin-bottom: 200px;
+}
+
+.recipe-title{
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.recipe-subtitle{
+    font-size: 2rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+
+.br-ipad{
+    display: none;
+}
+
+.recipe-content{
+    display: flex;
+}
+
+.recipe-caption{
+    writing-mode: vertical-rl;
+    border-top: solid #000 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-top: 1rem;
+    margin-right: 3rem;
+}
+
+.recipe-caption-main{
+    font-size: 2.2rem;
+}
+
+.recipe-scroll-box{
+    display: flex;
+    overflow-x: scroll;
+    padding-top: 30px;
+}
+
+.recipe-scroll-content{
+    
+    margin-right: 60px;
+}
+
+.recipe-img{
+    width: 350px;
+}
+
+.recipe-scroll-caption{
+    font-size: 1.6rem;
+    line-height: 3;
+}
+
+.recipe-text{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.shop{
+    margin-bottom: 200px;
+}
+
+.shop-title{
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: sans-serif;
+}
+
+.shop-content{
+    display: flex;
+    margin-right:60px;
+    margin-bottom: 60px;
+}
+
+.shop-img{
+    width: 100%;
+}
+
+.shop-text-wrap{
+    width: 300px;
+    flex-shrink: 0;
+    margin-left: 100px;
+}
+
+.shop-caption{
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.shop-text{
+    font-size: 1rem;
+    font-weight: 500;
+    /* line-height: 2; */
+}
+
+.shop-address{
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+}
+
+.shop-address-caption{
+    width: 100px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 2;
+    text-align: center;
+}
+
+.shop-address-info{
+    flex-grow: 1;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+.shop-button{
+    width: 100%;
+    height: 4rem;
+    font-family: "Zen Maru Gothic";
+    font-size: 1rem;
+    font-weight: 500;
+    background: none;
+    display: block;
+    border: solid #bbb 1px;
+    margin: 30px auto;
+}
+
+.shop-button::before{
+    content:'';
+    display: inline-block;
+    background-image: url(img/icon_ig.svg);
+    background-size: cover;
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: sub;
+    margin-right: 0.4rem;
+}
+
+.shop-online-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+    border-top: solid #000 3px;
+}
+
+.shop-online-text{
+    padding: 30px 60px;
+}
+
+.shop-online-caption{
+    font-size: 1.4rem;
+    font-weight: 500;
+
+}
+
+.shop-online-add-info{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.shop-button-open{
+    width: 300px;
+    height: 4rem;
+    font-family: "Zen Maru Gothic";
+    font-size: 1rem;
+    font-weight: 500;
+    background: none;
+    display: block;
+    border: solid #bbb 1px;
+    margin: auto;
+    align-self: center;
+}
+
+.shop-button-open::before{
+    content:'';
+    display: inline-block;
+    background-image: url(img/icon_cart.svg);
+    background-size: cover;
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: sub;
+    margin-right: 0.4rem;
+}
+
+.contact{
+    margin-bottom: 200px;
+}
+
+.contact-title{
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-form{
+    display: block;
+    margin: 0 100px;
+    font-weight: 500;
+}
+
+.contact-form p{
+    display: block;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.contact-label{
+    display: inline-block;
+    width: 24%;
+    line-height: 2;
+    vertical-align: top;
+}
+
+.contact-input{
+    display: inline-block;
+    width: 75%;
+    font-family: "Zen Maru Gothic";
+    font-weight: 500;
+    line-height: 2;
+    padding: 0.7rem;
+}
+
+.contact-footer{
+    text-align: center;
+}
+
+.contact-submit{
+    width: 20rem;
+    height: 4rem;
+    border-color: #666;
+    background-color: #666;
+    color: #fff;
+    font-family: "Zen Maru Gothic";
+    font-weight: 500;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        bottom: 13px;
+        left: 17px;
+        font-size: 4vw;
+    }
+
+    .icon-container {
+        width: 30%;
+        right: 5%;
+        bottom: -10%;
+    }
+
+    .icon-container img{
+        width: 5vw;
+    }
+
+    .news{
+        font-size: 6vw;
+    }
+
+    .news-title {
+        width: 20vw;
+        max-width: 100%;
+        overflow-x: visible;
+        margin-left: 5vw;
+    }
+
+    .PC-information{
+        visibility: hidden;
+    }
+
+    .news-content {
+        margin-left: 10px;
+        width: 45vw;
+    }
+
+    .news-caption{
+        font-size: 1rem;
+    }
+
+    /* p{
+        font-size: 0.7rem;
+    } */
+
+    .news-text{
+        font-size: 0.7rem;
+    }
+
+    .news-content a{
+        font-size: 0.8rem;
+    }
+
+    time{
+        font-size: 0.6rem;
+    }
+
+    .mobile-information{
+        visibility: visible;
+        width: 50vw;
+        height: 2.5rem;
+        font-size: 0.6rem;
+        background: none;
+        display: block;
+        border: solid #bbb 1px;
+        margin: 0 auto 0 auto;
+    }
+
+    .mobile-information::before{
+        content:'';
+        display: inline-block;
+        background-image: url(img/icon_ig.svg);
+        background-size: contain;
+        width: 1rem;
+        height: 1rem;
+        vertical-align: middle;
+        margin-right: 0.4rem;
+    }
+
+    .about{
+        margin: 0 40px;
+    }
+
+    .about-content{
+        flex-direction: column;
+    }
+
+    .about-content h4{
+        font-size: 1rem;
+    }
+
+    .about-content p{
+        font-size: 0.9rem;
+    }
+    
+    .products-content:nth-child(2){
+        transform: scale(1,1);
+    }
+    
+    .products-caption-en{
+        font-size: 2rem;
+        top: 1rem;
+        left: 1rem;
+    }
+    
+    .products-img{
+        width: 100%;
+        height: 400px;
+    }
+    
+    .products-text{
+        width: 100%;
+        padding: 0;
+        position: initial;
+        transform: none;
+    }
+    
+    .products-caption-ja{
+        font-size: 1.3rem;
+    }
+    
+    .products-inversion>h3, .products-inversion>img{
+        transform: none;
+    }
+    
+    .products-inversion>div{
+        transform: none;
+    }
+
+    .feature{
+        margin: 0 30px;
+        margin-bottom: 100px;
+    }
+    
+    .feature-title{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .feature-content{
+        display: block;
+    }
+    
+    .feature-img{
+        width: 100%;
+    }
+    
+    .feature-text{
+        width: 100%;
+    }
+    
+    .feature-caption{
+        font-size: 1.2rem;
+    }
+    
+    .feature-p{
+        font-size: 0.8rem;
+    }
+    
+    .feature-content:nth-of-type(2){
+        transform: scale(1,1);
+    }
+    
+    .feature-content:nth-of-type(2)>*{
+        transform: scale(1,1);
+    }
+
+    .recipe{
+        margin: 0 30px;
+        margin-bottom: 100px;
+    }
+    
+    .recipe-subtitle{
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+
+    .br-ipad{
+        display: initial;
+    }
+
+    .recipe-caption{
+        border-top: solid #000 2px;
+    }
+    
+    .recipe-caption-sub{
+        font-size: 3vw;
+    }
+
+    .recipe-caption-main{
+        font-size: 6vw;
+    }
+    
+    .recipe-scroll-box{
+        padding-top: 10px;
+    }
+    
+    .recipe-img{
+        width: 70vw;
+    }
+    
+    .recipe-scroll-caption{
+        font-size: 1.1rem;
+        line-height: 2.5;
+    }
+    
+    .recipe-text{
+        font-size: 0.8rem;
+    }
+
+    .shop-content{
+        display: initial;
+    }
+    
+    .shop-text-wrap{
+        width: auto;
+        margin:0 60px;
+    }
+    
+    .shop-caption{
+        font-family: sans-serif;
+        font-size: 2rem;
+        line-height: 2.5;
+    }
+    
+    .shop-text{
+        font-size: 0.8rem;
+    }
+    
+    .shop-address{
+        margin: 1rem 0;
+    }
+    
+    .shop-address-caption{
+        width: 10rem;
+    }
+    
+    .shop-button{
+        width: 70%;
+    }
+    
+    .shop-online-wrap{
+        display: block;
+        border-top: none;
+    }
+    
+    .shop-online-text{
+        padding: 0;
+    }
+    
+    .shop-online-caption{
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-left:2rem ;
+    }
+    
+    .shop-online-add-info{
+        line-height: 3rem;
+    }
+    
+    .shop-button-open{
+        width: 70%;
+    }
+
+    .contact{
+        margin-bottom: 50px;
+    }
+    
+    .contact-form{
+        margin: 0 30px;
+        font-size: 0.8rem;
+    }
+    
+    .contact-form textarea{
+        height: 8rem;
+    }
+
+    .contact-label{
+        width: 100%;
+        vertical-align: initial;
+    }
+    
+    .contact-input{
+        width: 100%;
+    }
+    
+    .contact-submit{
+        width: 70vw;
+        height: 3rem;
+    }
+
+    footer{
+        font-size: 0.7rem;
+    }
+}
+
